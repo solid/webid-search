@@ -1,0 +1,27 @@
+name: Crawl WebID
+description: Submit a WebID or URL to be crawled for discovering new WebIDs
+title: "[Crawl] "
+labels: ["crawler"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing a WebID to crawl! This will automatically trigger the crawler to discover new WebIDs.
+  
+  - type: input
+    id: webid
+    attributes:
+      label: WebID or URL
+      description: Enter the WebID or URL you want to crawl
+      placeholder: "https://example.com/profile#me"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Additional Information
+      description: Any additional context or information about this WebID
+      placeholder: Optional notes about this WebID...
+    validations:
+      required: false

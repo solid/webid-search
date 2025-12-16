@@ -1,0 +1,16 @@
+{
+  "name": "webid-search",
+  "version": "1.0.0",
+  "description": "WebID discovery and search tool",
+  "main": "index.js",
+  "scripts": {
+    "crawl": "node scripts/crawl.js"
+  },
+  "keywords": ["webid", "solid", "linked-data", "crawler"],
+  "author": "Jesse Wright",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "rdflib": "^2.2.20"
+  }
+}
