@@ -1,0 +1,130 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix mo: <http://purl.org/ontology/mo/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix won: </>.
+@prefix knows: <https://data.knows.idlab.ugent.be/person/office/#>.
+@prefix prof: <./>.
+@prefix in: </inbox/>.
+@prefix c10: <https://renyuneyun.solidcommunity.net/profile/card#>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix ent: <http://www.wikidata.org/entity/>.
+@prefix skill: <http://data.europa.eu/esco/skill/>.
+
+skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7 schema:name "JavaScript".
+
+skill:ccd0a1d9-afda-43d9-b901-96344886e14d
+schema:name "Python (programmation informatique)".
+ent:Q34433 schema:name "University of Oxford"@en.
+
+prof:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1676287725380 solid:publicId l:de.
+
+:id1676287770578 solid:publicId l:fr.
+
+:id1676287786343 solid:publicId l:zh.
+
+:id1676287831681
+    a solid:CurrentRole;
+    schema:startDate "2015-11-01"^^xsd:date;
+    vcard:role "Computer Scientist";
+    org:member :me;
+    org:organization :id1676297017723 .
+:id1676297017723
+a schema:ResearchOrganization, vcard:Organization; solid:publicId ent:Q34433 .
+:id1676297167867 solid:publicId skill:ccd0a1d9-afda-43d9-b901-96344886e14d.
+
+:id1676297212938 solid:publicId skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7 .
+
+:id1676297367842 vcard:role "Student"; org:member :me.
+
+:me
+    a schema:Person, foaf:Person;
+    dct:create
+        "Identifying barriers to better privacy in children\u2019s apps from developers\u2019 perspectives";
+    mo:Track "Down by the Sally Garden";
+    schema:knowsLanguage
+        ( :id1676287770578 :id1676287786343 ), ( :id1676287725380 ),
+        ( :id1676287770578 );
+    schema:skills :id1676297167867, :id1676297212938;
+    vcard:fn "Jun (Jane) Zhao";
+    vcard:hasEmail :id1676287908775;
+    vcard:hasPhoto <4CDZF92X_400x400.jpg>;
+    vcard:organization-name "Oxford University";
+    vcard:role "SRF";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://drive.verborgh.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://me-ai.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://oxfordhcc.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solid-calendar.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://test.pod.ewada.ox.ac.uk>
+            ],
+        [ acl:mode acl:Read; acl:origin <https://ramen.noeldemartin.com> ],
+        [ acl:mode acl:Read; acl:origin <https://ramen.noeldemartin.com> ],
+        [ acl:mode acl:Read; acl:origin <https://ramen.noeldemartin.com> ],
+        [ acl:mode acl:Read; acl:origin <https://ramen.noeldemartin.com> ],
+        [ acl:mode acl:Read; acl:origin <https://ramen.noeldemartin.com> ],
+        [ acl:mode acl:Read; acl:origin <https://ramen.noeldemartin.com> ],
+        [ acl:mode acl:Read; acl:origin <https://solid.github.io> ],
+        [ acl:mode acl:Read; acl:origin <https://solid.github.io> ],
+        [ acl:mode acl:Read; acl:origin <https://solid.github.io> ],
+        [ acl:mode acl:Read; acl:origin <https://solid.github.io> ],
+        [ acl:mode acl:Read; acl:origin <https://solid.github.io> ],
+        [ acl:mode acl:Read; acl:origin <https://solid.github.io> ];
+    ldp:inbox in:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage won:;
+    solid:account won:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:oidcIssuerRegistrationToken "78b74d57-16eb-4f44-a2b9-f85b688758a7";
+    solid:preferredObjectPronoun "her";
+    solid:preferredRelativePronoun "hers";
+    solid:preferredSubjectPronoun "she";
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c10:me;
+    foaf:name "Alice Wonder";
+    knows:hasAvailabilityCalendar
+        [ schema:url "https://me-ai.org/availability" ],
+        [ schema:url "https://me-ai.org/availability" ],
+        [ schema:url "https://me-ai.org/availability" ],
+        [ schema:url "https://me-ai.org/availability" ],
+        [ schema:url "https://me-ai.org/availability" ],
+        [ schema:url "https://me-ai.org/availability" ].
+:paper
+    dct:creator :me;
+    dct:title
+        "Identifying barriers to better privacy in children\u2019s apps from developers\u2019 perspectives".
+l:de schema:name "allemand"@fr.
+
+l:fr schema:name "French"@en.
+
+l:zh schema:name "langues chinoises"@fr.
+

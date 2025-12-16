@@ -1,0 +1,151 @@
+<https://patrickhochstenbach.net/profile/card> a <http://xmlns.com/foaf/0.1/PersonalProfileDocument>;
+    <http://xmlns.com/foaf/0.1/maker> <#me>;
+    <http://xmlns.com/foaf/0.1/primaryTopic> <#me>.
+<#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://www.w3.org/2002/07/owl#sameAs> <https://hochstenbach.solidcommunity.net/profile/card#me>;
+    <http://xmlns.com/foaf/0.1/name> "Patrick Hochstenbach";
+    <http://xmlns.com/foaf/0.1/familyName> "Hochstenbach"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Patrick"@en;
+    <http://xmlns.com/foaf/0.1/img> <https://patrickhochstenbach.net/images/Patrick_Hochstenbach.png>;
+    <http://xmlns.com/foaf/0.1/publications> <https://biblio.ugent.be/person/F5134A54-F0ED-11E1-A9DE-61C894A0A6B4>;
+    <http://xmlns.com/foaf/0.1/homepage> <https://patrickhochstenbach.net/>;
+    <http://xmlns.com/foaf/0.1/account> <https://github.com/phochste>, <https://scholar.social/web/@hochstenbach>;
+    <http://www.wikidata.org/prop/direct/P4033> "hochstenbach@scholar.social"@en;
+    <http://xmlns.com/foaf/0.1/workplaceHomepage> <https://lib.ugent.be/>, <https://www.ugent.be/>;
+    <http://www.w3.org/ns/org#memberOf> <http://idlab.technology/#organization>, <http://dbpedia.org/resource/Ghent_University>, <http://elag.org>;
+    <http://dbpedia.org/ontology/orcidId> "0000-0001-8390-6171";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:patrick.hochstenbach@ugent.be>;
+    <http://www.w3.org/2006/vcard/ns#email> <mailto:patrick.hochstenbach@ugent.be>;
+    <http://www.w3.org/2006/vcard/ns#title> "PhD Student"@en, "Library IT"@en;
+    <http://www.w3.org/ns/ldp#inbox> <https://patrickhochstenbach.net/inbox/>;
+    <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://patrickhochstenbach.net/>;
+    <http://www.w3.org/ns/pim/space#storage> <https://patrickhochstenbach.net/>, <https://hochstenbach.inrupt.net/>, <https://hochstenbach.solidcommunity.net/>;
+    <http://xmlns.com/foaf/0.1/knows> <https://demo.service.net>, <https://ruben.verborgh.org/profile/#me>, <https://hvdsomp.info/index.ttl#me>, <https://patrickhochstenbach.net/people/ruben_dedecker>, <https://patrickhochstenbach.net/people/miel_vander_sande>, <https://pietercolpaert.be/#me>, <https://pieterheyvaert.com/#me>, <https://josd.github.io/card.rdf#me>, <https://www.rubensworks.net/#me>, <https://patrickhochstenbach.net/people/pieter_bonte>, <http://ben.de-meester.org/#me>, <https://patrickhochstenbach.net/people/martin_vanbrabant>, <https://patrickhochstenbach.net/people/harm_delva>, <https://brechtvdv.github.io/#me>, <https://dylanvanassche.be/#me>, <https://patrickhochstenbach.net/people/gerald_haesendonck>, <https://patrickhochstenbach.net/people/joachim_van_herwegen>, <https://id.eriador.io/jonni#me>, <https://kadroo.pod.knows.idlab.ugent.be/profile/card#me>, <https://mvnoort.pod.knows.idlab.ugent.be/profile/card#me>, <https://data.knows.idlab.ugent.be/person/woslabbi/#me>, <https://argahsuknesib.github.io/me>, <https://data.knows.idlab.ugent.be/person/ajuvercr/#me>, <https://data.knows.idlab.ugent.be/person/bryanelliotttam/#me>, <https://elsdvlee.pod.knows.idlab.ugent.be/profile/card#me>, <https://edloof.pod.knows.idlab.ugent.be/profile/card#me>, <https://data.knows.idlab.ugent.be/person/femkeongenae/#me>, <https://wouter.termont.online/>, <https://csarven.ca/#i>, <https://mynarz.net/#jindrich>;
+    <https://data.knows.idlab.ugent.be/person/office/#hasAvailabilityCalendar> <https://patrickhochstenbach.net/vacation#> ;
+    <http://www.w3.org/ns/solid/terms#privateTypeIndex> <https://patrickhochstenbach.net/settings/privateTypeIndex>;
+    <http://www.w3.org/ns/pim/space#preferencesFile> <https://patrickhochstenbach.net/Settings/Preferences.ttl>.
+
+
+<https://github.com/phochste> a <https://data.knows.idlab.ugent.be/person/office/#GitHubAccount>;
+    <http://xmlns.com/foaf/0.1/accountName> "phochste";
+    <http://xmlns.com/foaf/0.1/accountServiceHomepage> <https://github.com/>.
+<https://demo.service.net> a <http://xmlns.com/foaf/0.1/Service>;
+    <http://xmlns.com/foaf/0.1/name> "Test@Demo";
+    <http://www.w3.org/ns/ldp#inbox> <https://bellow2.ugent.be/test/inbox/>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Demo Service"@en.
+<https://ruben.verborgh.org/profile/#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Verborgh"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Ruben"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Ruben Verborgh"@en.
+<https://hvdsomp.info/#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Van de Sompel"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Herbert"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Herbert Van de Sompel"@en.
+<https://patrickhochstenbach.net/people/ruben_dedecker> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Dedecker"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Ruben"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Ruben Dedecker"@en.
+<https://patrickhochstenbach.net/people/miel_vander_sande> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Vander Sande"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Miel"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Miel Vander Sande"@en.
+<https://pietercolpaert.be/#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Colpaert"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Pieter"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Pieter Colpaert"@en.
+<https://pieterheyvaert.com/#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Heyvaert"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Pieter"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Pieter Heyvaert"@en.
+<https://josd.github.io/card.rdf#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "De Roo"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Jos"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Jos De Roo"@en.
+<https://www.rubensworks.net/#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Taelman"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Ruben"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Ruben Taelman"@en.
+<https://patrickhochstenbach.net/people/pieter_bonte> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Bonte"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Pieter"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Pieter Bonte"@en.
+<http://ben.de-meester.org/#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "De Meester"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Ben"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Ben De Meester"@en.
+<https://patrickhochstenbach.net/people/martin_vanbrabant> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Vanbrabant"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Martin"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Martin Vanbrabant"@en.
+<https://patrickhochstenbach.net/people/harm_delva> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Delva"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Harm"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Harm Delva"@en.
+<https://brechtvdv.github.io/#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Van de Vyvere"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Brecht"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Brecht Van de Vyvere"@en.
+<https://dylanvanassche.be/#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Van Assche"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Dylan"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Dylan Van Assche"@en.
+<https://patrickhochstenbach.net/people/gerald_haesendonck> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Haesendonck"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Gerald"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Gerald Haesendonck"@en.
+<https://patrickhochstenbach.net/people/joachim_van_herwegen> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Van Herwegen"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Joachim"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Joachim Van Herwegen"@en.
+<https://id.eriador.io/jonni#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Hanski"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Jonni"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Jonni Hanski"@en.
+<https://kadroo.pod.knows.idlab.ugent.be/profile/card#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Deroo"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Katrien"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Katrien Deroo"@en.
+<https://mvnoort.pod.knows.idlab.ugent.be/profile/card#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Van Noort"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Mathijs"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Mathijs Van Noort"@en.
+<https://data.knows.idlab.ugent.be/person/woslabbi/#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Slabbinck"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Wout"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Wout Slabbinck"@en.
+<https://argahsuknesib.github.io/me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Singh Bisen"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Kushagra"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Kushagra Singh Bisen"@en.
+<https://data.knows.idlab.ugent.be/person/ajuvercr/#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Vercruysse"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Arthur"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Arthur Vercruysse"@en.
+<https://data.knows.idlab.ugent.be/person/bryanelliotttam/#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Tam"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Bryan-Elliott"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Bryan-Elliott Tam"@en.
+<https://elsdvlee.pod.knows.idlab.ugent.be/profile/card#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "de Vleeschauwer"@en; 
+    <http://xmlns.com/foaf/0.1/givenName> "Els"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Els de Vleeschauwer"@en.
+<https://edloof.pod.knows.idlab.ugent.be/profile/card#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "De Loof"@en; 
+    <http://xmlns.com/foaf/0.1/givenName> "Esther"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Esther De Loof"@en.
+<https://data.knows.idlab.ugent.be/person/femkeongenae/#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Ongenae"@en; 
+    <http://xmlns.com/foaf/0.1/givenName> "Femke"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Femke Ongenae"@en.
+<https://wouter.termont.online/> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Termont"@en; 
+    <http://xmlns.com/foaf/0.1/givenName> "Wouter"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Femke Ongenae"@en.
+<https://csarven.ca/#i> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Capadisli"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Sarven"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Sarven Capadisli"@en.
+<https://mynarz.net/#jindrich> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://xmlns.com/foaf/0.1/familyName> "Mynarz"@en;
+    <http://xmlns.com/foaf/0.1/givenName> "Jindřich"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Jindřich Mynarz"@en.

@@ -1,0 +1,17 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+PREFIX ns1:     <http://www.w3.org/ns/solid/terms#>
+PREFIX ns2:     <http://www.w3.org/ns/pim/space#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+
+<https://thisismissem.inrupt.net>
+        dcterms:isReplacedBy  <https://storage.inrupt.com/da28f514-ded2-4caa-9d51-603c24d6018f/>;
+        <https://storage.inrupt.com/da28f514-ded2-4caa-9d51-603c24d6018f/>
+                "2025-03-31T12:22:41.015208+00:0000:00" .
+
+<https://id.inrupt.com/thisismissem>
+        a                      foaf:Agent;
+        rdfs:seeAlso           <https://storage.inrupt.com/bc98eedd-dd2e-4935-a367-6ac6bf664137/extendedProfile> , <https://storage.inrupt.com/da28f514-ded2-4caa-9d51-603c24d6018f/profile/card>;
+        ns2:storage            <https://storage.inrupt.com/bc98eedd-dd2e-4935-a367-6ac6bf664137/> , <https://storage.inrupt.com/da28f514-ded2-4caa-9d51-603c24d6018f/>;
+        ns1:oidcIssuer         <https://login.inrupt.com>;
+        foaf:isPrimaryTopicOf  <https://storage.inrupt.com/bc98eedd-dd2e-4935-a367-6ac6bf664137/extendedProfile> , <https://storage.inrupt.com/da28f514-ded2-4caa-9d51-603c24d6018f/profile/card> .

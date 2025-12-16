@@ -1,0 +1,367 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix schema: <http://schema.org/>.
+@prefix sioc: <http://rdfs.org/sioc/ns#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix jst: <https://jstein.solidcommunity.net/profile/card#>.
+@prefix c5: <https://renyuneyun.solidweb.org/profile/card#>.
+@prefix c7: <https://test.pod.ewada.ox.ac.uk/rui/profile/card#>.
+@prefix c8: <https://thechilterns.solidcommunity.net/profile/card#>.
+@prefix c4: <https://goel.solidcommunity.net/profile/card#>.
+@prefix inbox: </inbox/>.
+@prefix knows: <https://data.knows.idlab.ugent.be/person/office/#>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix ren: </>.
+@prefix wd: <http://www.wikidata.org/entity/>.
+@prefix pro: <./>.
+@prefix n2: <https://>.
+@prefix c1: <https://hunarb.solidcommunity.net/profile/card#>.
+@prefix c9: <https://wonderland.solidcommunity.net/profile/card#>.
+@prefix www: <https://www.pod-chat.com/>.
+@prefix c: <https://rui.pod.ewada.ox.ac.uk/profile/card#>.
+@prefix podtok: <urn:podtok:core#>.
+@prefix n0: <http://>.
+
+wd:Q34433 schema:name "University of Oxford"@en.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1675769031362 solid:publicId l:zh.
+
+:id1675769040369 solid:publicId l:en.
+
+:id1679697919060
+    a solid:CurrentRole;
+    schema:description
+        "Postdoc for the (Ethical Web and Data Architecture in the Age of AI) EWADA Project";
+    vcard:role "Postdoc";
+    org:member :me;
+    org:organization :id1679697919523 .
+:id1679697919523
+a schema:EducationalOrganization, vcard:Organization; solid:publicId wd:Q34433 .
+:me
+    a schema:Person, foaf:Person;
+    schema:knowsLanguage
+    ( :id1675769031362 :id1675769040369 ), ( :id1675769031362 );
+    schema:skills :id1679698086887;
+    owl:sameAs c:me;
+    vcard:fn "Rui";
+    vcard:hasPhoto <mono_avatar4.cleaned.scaled.jpg>;
+    vcard:note
+        "Working on topics related to data privacy, data-use policy, formalization and reasoning";
+    vcard:organization-name "Univesity of Oxford";
+    vcard:role "Postdoc";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://jeff-zucker.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://pod-chat.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://solidos.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://solidos.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://0.0.0.0:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:1234>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:1234>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3333>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3333>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:4173>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:4173>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:5173>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:5173>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8501>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8800>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8800>
+            ],
+        [ acl:mode acl:Append, acl:Read, acl:Write; acl:origin n0:localhost ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://podpro.dev:443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://podpro.dev:443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://podpro.fly.dev:443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://podpro.fly.dev:443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://socialgenpod.azurewebsites.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://api.liqid.chat>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://csarven.ca>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://dokie.li>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://dokie.li>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://drive.verborgh.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://focus.noeldemartin.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://me.ryey.icu>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://my-terms.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://noeldemartin.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://noeldemartin.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://ohmypod.netlify.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://ohmypod.netlify.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://otto-aa.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://otto-aa.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://oxfordhcc.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://oxfordhcc.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://permix.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://podpro.dev>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://profile.pondersource.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://sleepy.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://socialgenpod.azurewebsites.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solid-calendar.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solid-calendar.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin
+                <https://solid-fixer-cq468j5aa-renyuneyun.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin
+                <https://solid-fixer-kwr5ext3i-renyuneyun.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solid-fixer.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solid.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solid.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidcryptpad.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidpod.ryey.icu>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidpod.ryey.icu>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://test.pod.ewada.ox.ac.uk>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://test.pod.ewada.ox.ac.uk>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://umai.noeldemartin.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://web.inox.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://web.inox.app>
+            ],
+        [ acl:mode acl:Read; acl:origin <http://localhost:9000> ],
+        [ acl:mode acl:Read; acl:origin <http://localhost:9000> ],
+        [ acl:mode acl:Read; acl:origin n2:gh-client ],
+        [ acl:mode acl:Read; acl:origin n2:gh-client ],
+        [ acl:mode acl:Read; acl:origin <https://localhost:9000> ],
+        [ acl:mode acl:Read; acl:origin <https://localhost:9000> ],
+        [ acl:mode acl:Read; acl:origin <https://ryey.icu> ],
+        [ acl:mode acl:Read; acl:origin <https://ryey.icu> ],
+        [ acl:origin <http://127.0.0.1:4000> ],
+        [ acl:origin <http://example.org> ];
+    ldp:inbox inbox:;
+    space:preferencesFile <preferences.ttl>, </settings/prefs.ttl>;
+    space:storage ren:;
+    solid:account ren:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:oidcIssuerRegistrationToken "af9adc04-35ff-44c2-8e22-ad972771ec48";
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:profileBackgroundColor "#eef5f0"^^xsd:color;
+    solid:profileHighlightColor "#346daa"^^xsd:color;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c4:me, c1:me,
+# jst:me,
+ c5:me, c7:me, c8:me, c9:me;
+    foaf:name "RYEY"@en;
+    knows:hasAvailabilityCalendar
+        [ schema:url "https://solidpod.ryey.icu/availability" ],
+        [ schema:url "https://solidpod.ryey.icu/availability" ];
+    <urn:solid:mpc#trustedComputationServer>
+        [ schema:url "http://localhost:8010" ],
+        [ schema:url "http://localhost:8010" ],
+        [ schema:url "http://localhost:8011" ],
+        [ schema:url "http://localhost:8011" ],
+        [ schema:url "http://localhost:8012" ],
+        [ schema:url "http://localhost:8012" ];
+    <urn:solid:mpc#trustedEncryptionServer>
+        [ schema:url "http://localhost:8000" ],
+        [ schema:url "http://localhost:8000" ],
+        [ schema:url "http://localhost:8001" ],
+        [ schema:url "http://localhost:8001" ].
+www:RSAPublicKey
+    sioc:content_encoded
+        "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAof+Ey7fuFvrC8tDCdwEUXDKblCLfM5YGx3XLySIWQdGT8BE19XDVCGMwlVGBZ7VelW0T68LPNghFmIFoVYljbJy2ClNDvY3mL0vBTw5G3b7lE0cllPidGgI9Yx1vnLFimTAN8Ud9JTr/bi7QlBQ397PDU/zzR+P83ikekX5SzbLYuZt6lemPWzanJdqKOPeTGljPxgpn/1bLjJ5XZIJ9Y55r5ubAM+tvVkzIwcTyNgpKwK/ltERYuK5yR2Xofo5jjceOqv+LRoTMwUq7kXUMLGxU3ZajepaxI/7DedW6vhEPVPjV54Z/FsxNuw83MlEW2A2jxazs2BdkPjX7/GSG9y0NpHuss4wo4vX0+33nkEA0JROdOOUwhx0+8SjUGKaaQGicR+gPI8kKhm1+j2ADvxqIJumYiUDGp+wFhKRHOTyPGqv+6w7g/a8UL0PPnqH/ZfKMjPl5IMKn0hWHaz/wZGQb0PA3byC/9rq5yfVWOuS+cf8nhUabIpRGebybzqYAxx7JNuam0Z25Y8aj0W0HJbYYRCzKHDdg+gtTPTXZuRwzJC0iHWmRuMIuElF9Ru3fB26US1XaHnlTRpsfQWPIPg63UqL8SEGZcJg2NDVLHmCRO8uHCmIbBVyapOTFAu6uwBMmOBaG3UQPdQ+dkEgLwexR5pRJ6/8NwlnGg6R7HdsCAwEAAQ==".
+l:en schema:name "English"@en.
+
+l:zh schema:name "Chinese"@en.
+
+:me podtok:userInfo <https://renyuneyun.solidcommunity.net/podtok/data/userInfo.ttl>.

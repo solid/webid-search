@@ -21,4 +21,4 @@
     vcard:note "I am a research associate and PhD student at the Karlsruhe Institute of Technology (KIT).\n";
     solid:publicTypeIndex <https://uvdsl.solid.aifb.kit.edu/profile/publicTypeIndex.ttl>;
     space:preferencesFile <https://uvdsl.solid.aifb.kit.edu/Settings/Preferences.ttl>;
-ldp:inbox </inbox/>.
+    ldp:inbox <https://uvdsl.solid.aifb.kit.edu/inbox/>.

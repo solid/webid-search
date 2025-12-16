@@ -1,0 +1,25 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix schema: <http://schema.org/> .
+@prefix knows:  <https://data.knows.idlab.ugent.be/person/office/#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+<>
+    a foaf:PersonalProfileDocument;
+    foaf:maker <https://mvnoort.pod.knows.idlab.ugent.be/profile/card#me>;
+    foaf:primaryTopic <https://mvnoort.pod.knows.idlab.ugent.be/profile/card#me>.
+
+<https://mvnoort.pod.knows.idlab.ugent.be/profile/card#me>
+    
+    solid:oidcIssuer <https://mvnoort.pod.knows.idlab.ugent.be/>;
+    a foaf:Person;
+    schema:name "Mathijs van Noort";
+    foaf:givenName "Mathijs";
+    foaf:familyName "van Noort";
+    vcard:title "PhD student";
+    foaf:mbox <mailto:mathijs.vannoort@ugent.be>;
+    foaf:img        <profile.jpg> ;
+    foaf:account [ a                           knows:GitHubAccount ;
+                   foaf:accountName            "MathijsvN" ;
+                   foaf:accountServiceHomepage <https://github.com/>
+                 ] .

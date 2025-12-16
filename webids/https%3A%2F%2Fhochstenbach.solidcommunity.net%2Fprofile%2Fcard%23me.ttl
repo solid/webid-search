@@ -1,0 +1,157 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ont: <https://www.example.org/ontology#>.
+@prefix core: <http://www.w3.org/ns/hydra/core#>.
+@prefix JD: </public/JD-03-2017-0040/JD-03-2017-0040_publication.ttl#>.
+@prefix on: <http://dbpedia.org/ontology/>.
+@prefix hoc: </>.
+@prefix inbox: </inbox/>.
+@prefix pro: <./>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix knows: <https://data.knows.idlab.ugent.be/person/office/#>.
+@prefix git: <https://github.com/>.
+@prefix pr: <https://data.knows.idlab.ugent.be/project/>.
+@prefix c: <https://pod.rubendedecker.be/profile/card#>.
+@prefix n0: <https://ruben.verborgh.org/profile/#>.
+@prefix n1: <https://pietercolpaert.be/#>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix c0: <https://patrickhochstenbach.net/profile/card#>.
+@prefix n2: <https://csarven.ca/#>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1601103298590
+    vcard:country-name "Belgium";
+    vcard:locality "Gent";
+    vcard:postal-code "8000";
+    vcard:region "Oost-Vlaanderen";
+    vcard:street-address "Rozier 9".
+:id1601103343115 a vcard:Work; vcard:value <mailto:Patrick.Hochstenbach@UGent.be>.
+
+:id1652292060192 solid:publicId l:nl.
+
+:id1652292119194 solid:publicId l:en.
+
+:id1652292132945 solid:publicId l:de.
+
+:id1652292152951 solid:publicId l:fr.
+
+:id1652292161482 solid:publicId l:id.
+
+:me
+    a schema:Person, foaf:Person;
+    on:birthDate "1971-05-05"^^xsd:date;
+    on:location "Belgium";
+    schema:knowsLanguage
+            ( :id1652292060192 :id1652292119194 :id1652292132945
+            :id1652292152951 :id1652292161482 );
+    owl:sameAs c0:me;
+    vcard:fn "Patrick Hochstenbach";
+    vcard:hasAddress :id1601103298590;
+    vcard:hasEmail :id1601103343115;
+    vcard:hasTelephone :id1601103340610;
+    vcard:organization-name "Ghent University";
+    vcard:role "Phd Student";
+    vcard:title "PhD Researcher";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://csarven.ca>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://dokie.li>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://formgenerator.smessie.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://inrupt.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://knoodle.knows.idlab.ugent.be>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://notepod.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://phochste.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solideditor.patrickhochstenbach.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidproject.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidweb.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://www.w3.org>
+            ],
+        [ acl:mode acl:Read; acl:origin </public/myclient.ttl> ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage hoc:;
+    solid:account hoc:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    wdt:P4033 "hochstenbach@scholar.social"@en;
+    foaf:account
+            [
+                a knows:GitHubAccount;
+                foaf:accountName "phochste";
+                foaf:accountServiceHomepage git:
+            ];
+    foaf:currentProject pr:mellon;
+    foaf:familyName "Hochstenbach"@en;
+    foaf:givenName "Patrick"@en;
+    foaf:homePage <https://patrickhochstenbach.net>;
+    foaf:img
+    <https://www.gravatar.com/avatar/a81d8885f87689c7428f64cad77d1bda?s=400>;
+    foaf:knows n2:i, n1:me, c:me, n0:me;
+    foaf:mbox <mailto:Patrick.Hochstenbach@UGent.be>;
+    foaf:name "Patrick Hochstenbach"@en;
+    ont:publications :publications.
+:publications
+    a core:Collection;
+    dct:description "Collection of publications";
+    dct:subject ont:Publication;
+    core:member JD:artefact.
+l:de schema:name "German"@en.
+
+l:en schema:name "English"@en.
+
+l:fr schema:name "French"@en.
+
+l:id schema:name "Bahasa Indonesia"@oc.
+
+l:nl schema:name "Dutch"@en.
+

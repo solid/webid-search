@@ -1,0 +1,27 @@
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<https://solid.champin.net/pa/profile/card> a <http://xmlns.com/foaf/0.1/PersonalProfileDocument>;
+    <http://xmlns.com/foaf/0.1/maker> <#me>;
+    <http://xmlns.com/foaf/0.1/primaryTopic> <#me>;
+.
+
+<#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solid.champin.net/>;
+    <http://www.w3.org/ns/solid/terms#privateTypeIndex> <https://solid.champin.net/pa/settings/privateTypeIndex>;
+    <http://www.w3.org/2006/vcard/ns#fn> "Pierre-Antoine Champin";
+    <http://xmlns.com/foaf/0.1/givenName> "Pierre-Antoine";
+    <http://xmlns.com/foaf/0.1/depiction> <https://solid.champin.net/pa/profile/face>;
+    <http://www.w3.org/2006/vcard/ns#hasPhoto> <https://solid.champin.net/pa/profile/face>;
+    <http://xmlns.com/foaf/0.1/homepage> <http://champin.net/>;
+    <http://xmlns.com/foaf/0.1/holdsAccount> <https://w3c.social/@p20n>;
+    <http://www.w3.org/ns/pim/space#preferencesFile> <https://solid.champin.net/pa/settings/preferences.ttl>;
+    ldp:inbox <https://solid.champin.net/pa/inbox/>;
+    <http://www.w3.org/ns/pim/space#storage> <https://solid.champin.net/pa/>, <https://p20n.solidcommunity.net/>;
+    <http://www.w3.org/ns/solid/terms#publicTypeIndex> <https://solid.champin.net/pa/profile/publicTypeIndex.ttl>;
+    rdfs:seeAlso <https://solid.champin.net/pa/profile/known>;
+    <http://www.w3.org/2006/vcard/ns#organization-name> "W3C / Inria";
+    <http://www.w3.org/ns/auth/acl#trustedApp> _:b1642_b1125_e_bn_j80z55.
+_:b1642_b1125_e_bn_j80z55 <http://www.w3.org/ns/auth/acl#origin> <https://pod-chat.com>;
+    <http://www.w3.org/ns/auth/acl#mode> <http://www.w3.org/ns/auth/acl#Read>, <http://www.w3.org/ns/auth/acl#Write>, <http://www.w3.org/ns/auth/acl#Append>, <http://www.w3.org/ns/auth/acl#Control>.
+<https://www.pod-chat.com/RSAPublicKey> <http://rdfs.org/sioc/ns#content_encoded> "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArUDX1hFwyL39AQE9h7polN7K1GSNrmdEvOtbnZxuqf5pgBnKLBHkGlULYzcMe+0yTGEyz4ujVndu8kV3O8/OWL8+NzZZCmrbVXcbUz+369Ne7dxiW6Ydo77IJrVizAvh1sxK2TkOVf2UXgS7PKLdWjRVVbZMHLp+jlraV8pv86TLy691PYZIrg+M8huMAuwtSCg5lQ0lIFH+IvNXhhVX7C3azwvngV0vCwPG2z34Lgrsq1qK0iDH62gjFAon8BrfjobHvW5qMKZkvmzv8esMhsD1J794i9WenJTwFhRtyitcCXgpfPuX4P4bWCqRM6HQNlAK0rufglXHsVOedVf45GoeWGpiyEaJQG8jFJMyah7o1frwq4nJPxd6QalMwZM5AjaFXV4P9ZD3OEY8A3FOEVCJbiUHiIGSSYKhl3XA+lik60l9vnYrNFUOAj39BPcKyrRki/BiwgO7BihtNI0LBsyFWkd7jDDzljGwU7GCCgMhm52+Ho7zBIenJAAjhf2TzXb/W/H+4zAXhQzBY7of5E3Ug+N5aG8mLED1r1g0+/P9dtW6zuO3jdjKVzXZxW8EBoiCRz5vBMYDFHbjxOmMApsMrf3oFWXIl3IU6jHql7jkP4guT9vOTS/v1diAGB5i5qvsxBFig/H7/QzEZawzAsubrOVxVqd/gEE3H5fILjMCAwEAAQ==".

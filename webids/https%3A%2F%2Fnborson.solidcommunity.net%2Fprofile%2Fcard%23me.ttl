@@ -1,0 +1,52 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix nbo: </>.
+@prefix inbox: </inbox/>.
+@prefix pro: <./>.
+@prefix soci: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1640656087760 a vcard:Home; vcard:value <mailto:nate+solid@borson.net>.
+
+:id1701656949543 solid:publicId l:en.
+
+:id1734828742512 a soci:BlueSkyAccount; foaf:accountName "@nate.borson.net".
+
+:me
+    a schema:Person, foaf:Person;
+    schema:knowsLanguage ( :id1701656949543 ), ( :id1701656949543 );
+    vcard:fn "Nathan Borson";
+    vcard:hasEmail :id1640656087760;
+    vcard:hasPhoto <bluedot.png>;
+    vcard:note
+        """Very interested in solid as a storage space for dokieli and curious about other apps that use this platform!
+https://nate.borson.net""";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://dokie.li>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://jeff-zucker.github.io>
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage nbo:;
+    solid:account nbo:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:account ( :id1734828742512 );
+    foaf:name "Nathan Borson";
+    foaf:nick "Nate".
+l:en schema:name "English"@en.
+

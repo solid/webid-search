@@ -1,0 +1,13 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+
+<https://pod.liquid.surf/thhck/profile/card> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a foaf:Person;
+    solid:oidcIssuer <https://pod.liquid.surf/>;
+    <http://www.w3.org/ns/pim/space#preferencesFile> <https://pod.liquid.surf/thhck/settings/preferences.ttl>;
+    solid:publicTypeIndex <https://pod.liquid.surf/thhck/settings/publicTypeIndex.ttl>;
+    <http://www.w3.org/ns/ldp#inbox> <https://pod.liquid.surf/thhck/inbox/>;
+    foaf:knows <https://id.mrkvon.org>;
+    foaf:topic_interest <http://www.wikidata.org/entity/Q55408718>, <http://www.wikidata.org/entity/Q97368451>, <http://www.wikidata.org/entity/Q10911465>, <http://www.wikidata.org/entity/Q93184>, <http://www.wikidata.org/entity/Q26384>, <http://www.wikidata.org/entity/Q95143896>.

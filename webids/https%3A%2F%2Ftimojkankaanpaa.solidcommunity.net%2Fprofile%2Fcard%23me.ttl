@@ -1,0 +1,175 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix pro: <./>.
+@prefix cv: <http://rdfs.org/resume-rdf/cv.rdfs#>.
+@prefix schem: <https://schema.org/>.
+@prefix Event: <https://schema.org/Event#>.
+@prefix pr: <http://localhost:3000/project.owl#>.
+@prefix prot: <http://localhost:3000/protege.owl#>.
+@prefix jef: <https://jeff-zucker.github.io/>.
+@prefix inbox: </inbox/>.
+@prefix tim: </>.
+@prefix Pro: <https://schema.org/Project#>.
+@prefix sc: <https://schema.org#>.
+@prefix sche: <https://schema.org2#>.
+@prefix n2: </share/ekseli/ns.ttl#>.
+@prefix proj: </share/ekseli/projectcard.rdf#>.
+@prefix p: </share/ekseli/projectcard.ttl#>.
+@prefix prote: </share/ekseli/protege.owl#>.
+@prefix hindi: <https://hindia.solidcommunity.net/>.
+@prefix nik: <https://nikosiltaloppi.solidcommunity.net/>.
+@prefix n3: <https://apurvaganoo.solidcommunity.net/>.
+@prefix tr: <https://tranle.solidcommunity.net/>.
+@prefix quo: <https://quochuynguyen.solidcommunity.net/>.
+@prefix joh: <https://johanpricam.solidcommunity.net/>.
+@prefix phe: <https://phelo.solidcommunity.net/>.
+@prefix n: <http://localhost:3000/ns#>.
+@prefix ns0: </share/ekseli/ns#>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:1591411216228 a vcard:Work; vcard:value <mailto:timo.kankaanpaa@ekseli.fi>.
+
+:1591411430110 cv:Company "VAMK Oy".
+
+:160568372778512027590766680607
+    a schem:Event;
+    Event:alternateName
+        """[{"hour":"8:00","person":""},{"hour":"9:00","person":""},{"hour":"10:00","person":""},{"hour":"11:00","person":""},{"hour":"12:00","person":""},{"hour":"13:00","person":""},{"hour":"14:00","person":""},{"hour":"15:00","person":""},{"hour":"16:00","person":""}]""";
+    Event:location "Vaasa";
+    Event:startDate "2020-11-19T00:00:00Z"^^xsd:dateTime.
+:16178463671476362988816190757 a vcard:Home; vcard:value <tel:+358407677080>.
+
+:id1588010164503
+    vcard:country-name "Finland";
+    vcard:locality "";
+    vcard:postal-code "65200";
+    vcard:region "Vaasa";
+    vcard:street-address "Iiriksentie 7".
+:id1592736763594
+    vcard:postal-code "65730";
+    vcard:region "Jungsund";
+    vcard:street-address "Svartholmintie 106".
+:me
+    a schema:Person, foaf:Person;
+    n:fn "test7";
+    pr:name "hhh5";
+    prot:name "world2";
+    cv:hasWorkHistory :1591411430110;
+    vcard:bday "1964-12-23T06:00:00.000Z"^^xsd:dateTime;
+    vcard:fn "Timo Kankaanp\u00e4\u00e4";
+    vcard:hasAddress :id1588010164503, :id1592736763594;
+    vcard:hasEmail :1591411216228;
+    vcard:hasPhoto <Image_1588170042633.png>;
+    vcard:hasTelephone :16178463671476362988816190757;
+    vcard:organization-name "Ekseli LTD";
+    vcard:role "CEO";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3001>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:5000>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://www.cc.puv.fi>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin
+                <https://delivery-portal-frontend-react.herokuapp.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://dnd5e.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://otto-aa.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://podbrowser.inrupt.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://scenaristeur.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://solid-pod-file-upload.herokuapp.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://www.cc.puv.fi>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://alice.dev.inrupt.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://css.verborgh.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://osdb.openlinksw.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://ramen.noeldemartin.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://react-demo.docs.inrupt.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://trinpod.us>
+            ],
+        [ acl:mode acl:Read, acl:Write; acl:origin jef: ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage tim:;
+    solid:account tim:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows n3:, hindi:, joh:, nik:, phe:, quo:, tr:;
+    foaf:name "Timo";
+    Pro:leiCode "1234";
+    Pro:name "ABB PSBB";
+    sc:name "timo7";
+    sche:name "hellohello";
+    n2:fn "hei";
+    ns0:fn "asasa";
+    proj:fn "assa";
+    p:fn "asasa";
+    prote:name "lkllkkllkl".
+<#me/pp.ttl> Pro:leiCode "1234"; Pro:name "Test".
+
+<#mepp.ttl> Pro:leiCode "1245"; Pro:name "TEst".
+
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

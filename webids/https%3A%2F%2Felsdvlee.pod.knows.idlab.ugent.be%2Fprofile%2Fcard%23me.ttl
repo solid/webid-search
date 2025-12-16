@@ -1,0 +1,16 @@
+<https://elsdvlee.pod.knows.idlab.ugent.be/profile/card> a <http://xmlns.com/foaf/0.1/PersonalProfileDocument>;
+    <http://xmlns.com/foaf/0.1/maker> <#me>;
+    <http://xmlns.com/foaf/0.1/primaryTopic> <#me>.
+<#me> a <http://xmlns.com/foaf/0.1/Person>;
+    <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://elsdvlee.pod.knows.idlab.ugent.be/>;
+    <http://xmlns.com/foaf/0.1/givenName> "Els"@en;
+    <http://xmlns.com/foaf/0.1/familyName> "de Vleeschauwer"@en;
+    <http://www.w3.org/2006/vcard/ns#title> "PhD Student"@en;
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:Els.deVleeschauwer@UGent.be>;
+    <http://xmlns.com/foaf/0.1/img> <https://elsdvlee.pod.knows.idlab.ugent.be/profile/picture.jpg>;
+    <https://data.knows.idlab.ugent.be/person/office/#hasAvailabilityCalendar> _:b2318_n3-4;
+    <http://xmlns.com/foaf/0.1/account> _:b2318_n3-5;
+    <http://www.w3.org/ns/solid/terms#privateTypeIndex> <https://elsdvlee.pod.knows.idlab.ugent.be/profile/undefinedsettings/privateTypeIndex>.
+_:b2318_n3-4 <http://schema.org/url> "https://elsdvlee.pod.knows.idlab.ugent.be/availability".
+_:b2318_n3-5 a <https://data.knows.idlab.ugent.be/person/office/#GitHubAccount>;
+    <http://xmlns.com/foaf/0.1/accountName> "elsdvlee".

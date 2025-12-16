@@ -1,0 +1,303 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix sioc: <http://rdfs.org/sioc/ns#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix c3: <https://testtest.solidtest.space/profile/card#>.
+@prefix lp: <https://w3id.org/def/lpapps#>.
+@prefix fr: </friends.ttl#>.
+@prefix c5: <https://douginamug.solidcommunity.net/profile/card#>.
+@prefix c7: <https://mrkvon.solidtest.space/profile/card#>.
+@prefix c8: <https://smarkaty.solidcommunity.net/profile/card#>.
+@prefix c9: <https://talita.solidcommunity.net/profile/card#>.
+@prefix mrk: </>.
+@prefix fri: </friend-requests-inbox/>.
+@prefix pr: <./>.
+@prefix inb: </inbox/>.
+@prefix res: <http://dbpedia.org/resource/>.
+@prefix ent: <http://www.wikidata.org/entity/>.
+@prefix www: <https://www.pod-chat.com/>.
+@prefix ter: <https://terms.math.livegraph.org#>.
+@prefix so: <https://solidcommunity.net/>.
+@prefix c1: <https://grouptest1.solidcommunity.net/profile/card#>.
+@prefix c2: <https://grouptest2.solidcommunity.net/profile/card#>.
+@prefix c4: <https://vcxy.solidcommunity.net/profile/card#>.
+@prefix n1: <https://www.w3.org/TR/activitypub/#>.
+
+fr:this ldp:inbox fri: .
+
+pr:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    vcard:fn "test first name";
+    vcard:hasPhoto <image_0.jpeg>;
+    vcard:note "";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3333>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3333>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3333>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3333>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3333>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3333>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3333>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3333>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:5173>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://app.solidcouch.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://dev.sleepy.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://evil-solid.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://new.sleepy.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://ohn.livegraph.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://pod-chat.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://shepherd.darcy.is>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin
+                <https://sleepy-bike-git-static-clientid-ohn.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin
+                <https://sleepy-bike-git-use-ldhop-query-ohn.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://solidelight.stieger.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://tired.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://umai.noeldemartin.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3001>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3002>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3333>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:4000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://api.liqid.chat>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://ditup.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://drive.owntech.de>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://edit.o.team>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://friends.livegraph.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://hypey.mysilio.page>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://interests.ditup.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://math.livegraph.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://melvincarvalho.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://mrkvon.inrupt.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://noeldemartin.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://notepod.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://ohmypod.netlify.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://pheyvaer.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://proto.fractopia.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://rrustom.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://scenaristeur.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://sleepy.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solid.ditup.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solid.openhospitality.network>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidarity.inrupt.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidcryptpad.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://taisukef.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://understory.garden>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://vincentt.inrupt.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://vincenttunru.gitlab.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://whyineedtofillusername.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://www.semantyk.com>
+            ],
+            [
+                acl:mode acl:Read;
+                acl:origin <https://podexplorer.gigalixirapp.com>
+            ],
+        [ acl:mode acl:Read; acl:origin <https://solidweb.me> ];
+    ldp:inbox inb:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage mrk:;
+    solid:account mrk:;
+    solid:oidcIssuer so:;
+    solid:oidcIssuerRegistrationToken
+        "3f02ab96-bd0c-4933-971b-f3eb3c99487d",
+        "7108e24a-bf3f-4d46-aa47-fa924938912c",
+        "97071033-c0be-4aa8-bebd-e5bfae06c5bb";
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:account ( :id1764660797920 );
+    foaf:img "/profile/9b87d930-ad4a-11ed-8937-df0b96824124.jpeg";
+    foaf:knows
+        c5:me, c1:me, c2:me, <https://id.mrkvon.org>, :me, c7:me, c8:me, c9:me,
+        c3:me, c4:me;
+    foaf:name "Janka";
+    foaf:topic_interest
+        res:Homelessness, res:Wild_boar, ent:Q1000032, ent:Q1145523, ent:Q12029,
+        ent:Q131327, ent:Q131572, ent:Q1513352, ent:Q169940, ent:Q177634,
+        ent:Q188728, ent:Q2373919, ent:Q2979, ent:Q2987018, ent:Q395, ent:Q454,
+        ent:Q55408718, ent:Q564606, ent:Q58697, ent:Q6199, ent:Q831735,
+        ent:Q8355, ent:Q90614242;
+    ter:storage
+        </private/math/index.ttl>, </public/math/category.ttl>,
+        </public/math/category2.ttl>, </public/math/index.ttl>,
+        </public/math/test/asdf.ttl>, </public/math/test/test.ttl>,
+        </public/math/test/test2.ttl>, </public/math/test/test3.ttl>;
+    lp:lpStorage mrk:linkedpipes;
+    n1:following fr:this;
+    <urn:podtok:core#userInfo> :userInfo.
+:userInfo <urn:podtok:core#privacyProfile> "accuracy".
+
+www:RSAPublicKey
+    sioc:content_encoded
+        "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA+Ya4Y15ZtsM4B63UUwvmn6K2SGFCGg7G37k7CRg7vw+3gRCHU7uT1y6bLKwyYgyncH6wlcU83U0Xd1u92te3IgDrneubhSQDAXMBU562KmfPfYFP/cL0KOqIQ5fij2aXEV39IYLxTbSNzvwsNzphw0bnvwfojipRcUAgtcyVKR5sW2hbDHUuBmO25BwdVuAepZyWkbKlpvAHTlkwGjzCDaarJE/tEgQeck1k0QtXFvPLUbTwrYRoaEx4dj+EiVh/L/MvyNhqXxfrjzV9VYteJIWdj0cLRfNypWd0Pmy0fu1TRnpvnyZhderPQNIeLau8BPH/M0CE7s1pyvkwNoXMdVevYAGj5BSbFN31uIpKuZQYPTEYE+IWearxAEWmmSMzCTcJoHyZ+24s8wHrTeuy93mpOCeUuLurbeae2nnE4/k3p36n7yv3fregKRjX6dbCmj90uLLBq3HitGxkxp2b/buFvOd19ZUPAyHrTnicu+RQ4z+bckT0KmiM+1qNo2ClOocMp5nxNsRMaSxh0AZBEPe6iBzdrWlDYmV/t7xHrG9jcSYZIbxTnKeAi4/cGZGmaROjIi8/uutt5WnMNPOd4zd7N5aWzrVfmoFKGk1krxzv2nfSC4I0WSqAnAVK6pRCLA16LA/UNQxpDFdaIVNOCjQMak5lu3v7NNs8ResGzQ0CAwEAAQ==".

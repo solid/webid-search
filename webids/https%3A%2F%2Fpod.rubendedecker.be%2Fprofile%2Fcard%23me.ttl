@@ -1,0 +1,48 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix frapo: <http://purl.org/cerif/frapo/>.
+@prefix knows: <https://data.knows.idlab.ugent.be/person/office/#>.
+@prefix schema: <http://schema.org/>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix cv: <http://rdfs.org/resume-rdf/cv.rdfs#>.
+@prefix cvb: <http://rdfs.org/resume-rdf/base.rdfs#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix root: <https://pod.rubendedecker.be/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix cert: <http://www.w3.org/ns/auth/cert#>.
+
+<https://pod.rubendedecker.be/profile/card> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>;
+    rdfs:seeAlso <https://pod.rubendedecker.be/profile/card-private>, <https://pod.rubendedecker.be/profile/card-public>, <https://pod.rubendedecker.be/profile/cv-data>.
+<#me> a foaf:Person;
+    solid:oidcIssuer <https://pod.rubendedecker.be/>;
+    space:storage <https://pod.rubendedecker.be/>;
+    ldp:inbox <https://pod.rubendedecker.be/inbox/>;
+    foaf:name "Ruben Dedecker"@en;
+    schema:name "Ruben Dedecker"@en;
+    foaf:givenName "Ruben"@en;
+    foaf:familyName "Dedecker"@en;
+    foaf:age "27"^^xsd:integer;
+    foaf:knows <https://patrickhochstenbach.net/profile/card#me>, <https://pietercolpaert.be/#me>, <https://ruben.verborgh.org/profile/#me>, <https://pieterheyvaert.com/#me>, <http://www.rubensworks.net/#me>, <http://ben.de-meester.org/#me>, <https://josd.github.io/card.ttl#me>, <https://solid.smessie.com/profile/card#me>;
+    vcard:title "PhD Student";
+    foaf:mbox <mailto:Ruben.Dedecker@UGent.be>;
+    foaf:img <https://pod.rubendedecker.be/profile/image.png>;
+    schema:image <https://pod.rubendedecker.be/profile/image.png>;
+    cert:key <https://pod.rubendedecker.be/keys/test_public>;
+    frapo:hasORCID "0000-0002-3257-3394";
+    foaf:homepage <https://rubendedecker.be>;
+    schema:url <https://rubendedecker.be>;
+    foaf:publications <https://scholar.google.be/citations?user=CtteItMAAAAJ>;
+    foaf:account _:b52852_b31266_b31262_b31259_b31257_b31252_b31248_b23181_b1953_b1845_b5358_n3-412;
+    solid:publicTypeIndex <https://pod.rubendedecker.be/profile/publicTypeIndex.ttl>;
+    space:preferencesFile <https://pod.rubendedecker.be/Settings/Preferences.ttl>;
+    <https://www.w3.org/ns/activitystreams#outbox> <https://pod.rubendedecker.be/outbox/>;
+    <https://example.com/ns/orchestrator> <https://myorchestrator.be/>;
+    solid:privateTypeIndex <https://pod.rubendedecker.be/settings/privateTypeIndex>.
+_:b52852_b31266_b31262_b31259_b31257_b31252_b31248_b23181_b1953_b1845_b5358_n3-412 a knows:GitHubAccount;
+    foaf:accountName "raddecke";
+    foaf:accountServiceHomepage <https://github.com/>.

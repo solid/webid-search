@@ -1,0 +1,61 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://id.myopenlink.net/DAV/home/danielhm/YouID/Daniel_Heward_Mills_LinkedIn_2_id_myopenlink_net/profile.ttl#> .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+ns1:identity	rdf:type	foaf:Agent .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+ns1:identity	owl:sameAs	ns1:identity .
+@prefix ns4:	<http://id.myopenlink.net/DAV/home/danielhm/YouID/Daniel_Heward_Mills_LinkedIn_2_id_myopenlink_net/profile.jsonld#> .
+ns1:identity	owl:sameAs	ns4:identity .
+@prefix ns5:	<http://id.myopenlink.net/DAV/home/danielhm/YouID/Daniel_Heward_Mills_LinkedIn_2_id_myopenlink_net/profile_rdfa.html#> .
+ns1:identity	owl:sameAs	ns5:identity .
+@prefix ns6:	<http://id.myopenlink.net/DAV/home/danielhm/YouID/Daniel_Heward_Mills_LinkedIn_2_id_myopenlink_net/index.html#> .
+ns1:identity	owl:sameAs	ns6:identity .
+@prefix ns7:	<http://id.myopenlink.net/DAV/home/danielhm/YouID/Daniel_Heward_Mills_LinkedIn_2_id_myopenlink_net/index_rdfa.html#> .
+ns1:identity	owl:sameAs	ns7:identity ;
+	foaf:mbox_sha1sum	<mailto:Uoud+lvvv8NEaDEAX5Iriivogm8=> ;
+	foaf:name	"Daniel Heward-Mills" .
+@prefix xhv:	<http://www.w3.org/1999/xhtml/vocab#> .
+ns1:identity	xhv:alternate	ns6:identity ,
+		ns7:identity ,
+		ns4:identity ,
+		ns5:identity ,
+		ns1:identity .
+@prefix vcard2006:	<http://www.w3.org/2006/vcard/ns#> .
+ns1:identity	vcard2006:fn	"Daniel Heward-Mills" ;
+	vcard2006:organization-name	"OpenLink Software" ;
+	foaf:img	<https://media.licdn.com/dms/image/C5603AQEqvgxnJWs_iw/profile-displayphoto-shrink_100_100/0?e=1534377600&v=beta&t=cu9tPpSTeEB7TBgdMqD1e3NZgWJqgxKCtHgAt1SvIOs> ;
+	vcard2006:organization-unit	"" .
+@prefix cert:	<http://www.w3.org/ns/auth/cert#> .
+@prefix ns11:	<http://id.myopenlink.net/DAV/home/danielhm/YouID/Daniel_Heward_Mills_LinkedIn_2_id_myopenlink_net/public_key.ttl#> .
+ns1:identity	cert:key	ns11:PublicKey .
+@prefix ns12:	<http://www.openlinksw.com/schemas/cert#> .
+@prefix ns13:	<http://id.myopenlink.net/DAV/home/danielhm/YouID/Daniel_Heward_Mills_LinkedIn_2_id_myopenlink_net/certificate.ttl#> .
+ns1:identity	ns12:hasCertificate	ns13:cert ;
+	vcard2006:hasAddress	ns1:adr .
+@prefix ns14:	<http://www.w3.org/ns/solid/terms#> .
+ns1:identity	ns14:oidcIssuer	"http://id.myopenlink.net" .
+ns13:cert	rdf:type	ns12:Certificate .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+ns13:cert	rdfs:label	"/C=US/ST=Massachusetts/O=OpenLink Software/CN=Daniel Heward-Mills/emailAddress=didehen@openlinksw.com" ;
+	foaf:mbox_sha1sum	<mailto:Uoud+lvvv8NEaDEAX5Iriivogm8=> ;
+	ns12:fingerprint	"62641BAFEA143D92779EA1C3DF51DB355C3998CE52D3424346ABF1AEC1E25D93" ;
+	ns12:fingerprint-digest	"sha256" ;
+	ns12:subject	"/C=US/ST=Massachusetts/O=OpenLink Software/CN=Daniel Heward-Mills/emailAddress=didehen@openlinksw.com" ;
+	ns12:issuer	"/C=US/ST=Massachusetts/O=OpenLink Software/OU=Identity Management/CN=id.myopenlink.net/emailAddress=kidehen@openlinksw.com" ;
+	ns12:notBefore	"2022-01-25T16:29:56Z" ;
+	ns12:notAfter	"2023-01-25T16:29:56Z" ;
+	ns12:serial	"2937" ;
+	ns12:hasPublicKey	ns11:PublicKey ;
+	ns12:signature	<ni:///sha-512withrsaencryption;S2Le419fVP5En35C2uJrRFm165Yi1U71SM-KvdbIKK9qfOIssJQypdpnHPVeUMSiWSPcXWJXk-EBwH4VQl5SzeRL2XnRPUeuYSLCT-_HmVJr6G_aHoFF635YMSFu1TpEyDPenGRx7WAvcWYBlQofC4Ab43No8mDUEjqzrKUwLJgBKw7TQ2e76LV1B2QCK3vlfHGynZvi8SuMipCbAoVeNPA8oK_vDeLMSz_kndrORsQJN8shdms8pDijf0Bn7NvVP0Ha9mhJFlCjnYgskKsePhBKC7EBKeVcZvbBZopCDtpXPeeWw0AiTPV0nb6AZV2dpD2F2NLqPxKWmI4eu3grIg?http=id.myopenlink.net> ;
+	ns12:SAN	ns1:identity .
+<http://id.myopenlink.net/DAV/home/danielhm/YouID/Daniel_Heward_Mills_LinkedIn_2_id_myopenlink_net/profile.ttl>	rdf:type	foaf:Document ;
+	rdfs:label	"Profile Document Subject: Daniel Heward-Mills" ;
+	foaf:primaryTopic	ns1:identity .
+ns1:adr	rdf:type	vcard2006:Home ;
+	vcard2006:locality	"" ;
+	vcard2006:country-name	"United States" ;
+	vcard2006:region	"Massachusetts" .
+ns11:PublicKey	rdf:type	cert:RSAPublicKey .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+ns11:PublicKey	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"b1633759375a56e1977d3cb994e1f0466584b7fc112034788befe8fe85416af77ab4ec225f4ae4032780faac963a789f9c3ce3479d2e798e658cddd2a69995cda7023949df70b01bbe0e402517b814bee88b8c585fab78944ddd5de7c7044121c4a6956fb176d89f7a4271059a3dde1aea0482242acb05dc6864768104ab5a039da77403b992fd68d4dd563740e3e99638c44404b99857fd809d2faae1b63aa915aa22b9375c283eb821b96a823054bf9fb72d9d476b5626b40ad450e407c9c9717b2e770e5e3c5efd41d7e70f6a4e5377556717745a4f88abfdbf97a500a61fa1572d05026cf612cce9d6e2b87e3e2e3b98af7ff8f69100bacfe8f9f140aa1d"^^xsd:hexBinary .

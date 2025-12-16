@@ -1,0 +1,110 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix tes: </>.
+@prefix inbox: </inbox/>.
+@prefix pro: <./>.
+@prefix c0: <https://renyuneyun.solidcommunity.net/profile/card#>.
+@prefix skill: <http://data.europa.eu/esco/skill/>.
+@prefix c: <https://renyuneyun.solidweb.org/profile/card#>.
+
+skill:0a9acb6b-1139-4be9-b431-3a80a959f2f4 schema:name "Agile project management".
+
+skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7 schema:name "JavaScript".
+
+skill:ccd0a1d9-afda-43d9-b901-96344886e14d
+schema:name "Python (computer programming)".
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1678354987545 solid:publicId l:en.
+
+:id1678354996966 solid:publicId l:zh.
+
+:id1678355009672 solid:publicId l:fr.
+
+:id1678355021600 solid:publicId skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7 .
+
+:id1678355033630 solid:publicId skill:ccd0a1d9-afda-43d9-b901-96344886e14d.
+
+:id1678355040440 solid:publicId skill:0a9acb6b-1139-4be9-b431-3a80a959f2f4 .
+
+:me
+    a schema:Person, foaf:Person;
+    schema:knowsLanguage
+        ( :id1678354987545 :id1678354996966 :id1678355009672 ),
+        ( :id1678354987545 ), ( :id1678354987545 :id1678354996966 );
+    schema:skills :id1678355021600, :id1678355033630, :id1678355040440;
+    vcard:fn "Jun Zhao";
+    vcard:hasPhoto <4CDZF92X_400x400.jpg>;
+    vcard:organization-name "University of Oxford";
+    vcard:role "SRF";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin
+                <http://localhost:8080>, <https://oxfordhcc.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://api.liqid.chat>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://drive.verborgh.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://oxfordhcc.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://oxfordhcc.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://oxfordhcc.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://timbl.com>
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage tes:;
+    solid:account tes:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:preferredObjectPronoun "her";
+    solid:preferredRelativePronoun "hers";
+    solid:preferredSubjectPronoun "she";
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c0:me, c:me;
+    foaf:name "test".
+l:en schema:name "English"@en.
+
+l:fr schema:name "French"@en.
+
+l:zh schema:name "Chinese"@en.
+

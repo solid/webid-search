@@ -1,0 +1,58 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix sioc: <http://rdfs.org/sioc/ns#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix pro: <./>.
+@prefix inbox: </inbox/>.
+@prefix gro: </>.
+@prefix www: <https://www.pod-chat.com/>.
+@prefix c: <https://grouptest1.solidcommunity.net/profile/card#>.
+@prefix c0: <https://mrkvon.solidweb.org/profile/card#>.
+@prefix c1: <https://mrkvon.solidcommunity.net/profile/card#>.
+@prefix c2: <https://vcxy.solidcommunity.net/profile/card#>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    vcard:hasPhoto <27a79690-d07c-11ed-83c0-33fef67bcc97.jpeg>;
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://new.sleepy.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://pod-chat.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://tired.bike>
+            ],
+        [ acl:origin <https://grouptest1.solidweb.org> ],
+        [ acl:origin <https://solidweb.me> ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage gro:;
+    solid:account gro:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c:me, <https://id.mrkvon.org>, c1:me, c0:me, c2:me;
+    foaf:name "group test 2".
+www:RSAPublicKey
+    sioc:content_encoded
+        "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApFBT8uRvW1yHZmweg8EHKD7rEzsaGU3GKoW+la3sX1JB6RH7tXjhzV1sCNC7Dv/1PQP3rMPlt//rZpFRLj8+jPXtaWf+3wf3IM28PRuBzoWEzWsBySLnhOJFNaQ4wI2pPznQwZIHyaYHP1zu+yVaC63WONQsHLBMtQgteIEOHvrMoLL0wlG5YyBEzihqQBL9P2DAfPm2YZgOwG0UYt+v1F1hFEQIUi1lm2r4ngE4oYlLMDIigQslaReXI2gz6KeQ7NUioxPPqxRfUmz8RpZgjWc8BQEFtXG03Nr45QO+WQEKDnPAYRzd9/gfKzlAM+GcLYxg2blqikYXCmHhQeRElK5mvHAcbPqyguwrv7g/iB73nxL6fq0JzR7kB8xEIfMr71zKPdkIJ9nnLR7uYMZVrnH2CETJaekzs9bjhi09lG7btybT7JLrlfs42sX4ttkuPs5Q9fDvpsrPHFf25GudCGW/my+RwnWa2rEYrafvcds/CO/dMjSn6MZeMKGvt+ezg4vQcrQh6Q4jlnS7jVVQq6HNX/VP/UC2P+7GysLp6ot9K7/1hRyDh4pFwG1te6digEOQ711jLTFoFBhHT7d+UtvJaAfqKB/gxk/F+yYDJ9zAfF+udVNVNoHW+eGuakG6XBuHeqNudTqfaB5EZnHrJ0JaxE2Zp6J9T2A219V7ARcCAwEAAQ==".

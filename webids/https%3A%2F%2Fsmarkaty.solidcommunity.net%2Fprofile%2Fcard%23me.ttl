@@ -1,0 +1,38 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix che: <https://mrkvon.solid.community/public/chess_20190208.ttl#>.
+@prefix stor: <http://example.org/storage/>.
+@prefix schem: <http://schema.org/>.
+@prefix pro: <./>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix sm: </>.
+@prefix c: <https://janka.solid.community/profile/card#>.
+@prefix c: <https://mrkvon.solid.community/profile/card#>.
+@prefix ter: <https://terms.math.livegraph.org#>.
+
+che:jrw4spn1 stor:storeIn </public/chess_20190208.ttl>; schem:contributor :me.
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:me
+    a schem:Person, n0:Person;
+    n1:trustedApp
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://math.livegraph.org>
+            ];
+    ldp:inbox inbox:;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage sm:;
+    solid:account sm:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    n0:knows c:me;
+    n0:name "smarkaty";
+    ter:storage </public/math/dziki.ttl>, </public/math/index.ttl>.
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

@@ -1,0 +1,76 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix cert: <http://www.w3.org/ns/auth/cert#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix pro: <./>.
+@prefix inbox: </inbox/>.
+@prefix k: </>.
+@prefix c: <https://timbl-2018-demo.solid.community/profile/card#>.
+@prefix sol: <https://solid.aifb.kit.edu/>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    vcard:fn "Tobias K\u00e4fer";
+    vcard:hasPhoto <https://www.for5339.kit.edu/img/tobias_k%c3%a4fer.png>;
+    vcard:organization-name "Karlsruhe Institute of Technology";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8081>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://aharth.inrupt.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://hector-dke24.solid.aifb.kit.edu>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://km.aifb.kit.edu>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://otto-aa.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://uvdsl.solid.aifb.kit.edu>
+            ],
+        [ acl:origin <https://solid.ti.rw.fau.de> ];
+    cert:key
+            [
+                a cert:RSAPublicKey;
+                cert:exponent 65537;
+                cert:modulus
+                    "9D1CA7F6DC3012117AFE47A2D6951A16892D7F5A234D996AD7BBEDEDA884BCCA6E483051CC6A8BA57377CE1A81004C920C6519A1B2297AF12112AC0F526B281A43D92F8E2F9A5DA02FE60843E44710AFA328081A4F1A5E0A62D7E569414EAC8E63416BBD12F2E3CADA038F3E6111EDA3406CCE563A9265284A28D7468C531FAD647E4E86E242BE22E3526A42F10C7D187799BFA7E4A55F0B8CE0463024BE9AC783A2B6B325926514057B28C4D7F950C83637A5C89215C4A42FEC805F13E4FD601033DB68711140D89E5BDCA7EB1E068A76C2FCC611B09AF74CB9646BC17C95E99841B2948012C636DF91EC1C037516976A2A9C93163D07F5BCBF33868DA84201"^^xsd:hexBinary
+            ],
+            [
+                a cert:RSAPublicKey;
+                cert:exponent 65537;
+                cert:modulus
+                    "C989DA761DD8D850500F7FF0C61371CBE1E3FF59BBCCF6AFCAEABF539D8A2609344E70C71A216A4388699FB355F9C7FB521F80F96F4A12EE7948AAFC8F37CC5CDB187A4116C7B1867B83288FCEB932EFB4FE8246E732E3374BAD20EDC5611483FA6B653FF1764A07120E14590932EEB7C32EB2C793C79A34C338186E33BE0A7E2D1BCB9E9A13F643E652EA02821FD9EA40BC37841B7CE7C0839CA5DEF87E8EA73AD76FC0027633AA1ECA1BF8C90A6532134228F387EDF12373205CBEFE7786EE2A0937B5901FB6F0D5C1DE08EBCF264F2C3A0B991EF1C6C628AE25E475270A30B029D917C540501BA0E9B934BC2D88602FE37435E0D6F57079582A52A0E0064D"^^xsd:hexBinary
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage k:;
+    solid:account k:;
+    solid:oidcIssuer sol:, <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex
+    <publicTypeIndex.ttl>, </settings/publicTypeIndex.ttl>;
+    foaf:knows c:me;
+    foaf:name "Tobias K\u00e4fer".

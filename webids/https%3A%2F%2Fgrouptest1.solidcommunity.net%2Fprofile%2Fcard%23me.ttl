@@ -1,0 +1,94 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix sioc: <http://rdfs.org/sioc/ns#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix pro: <./>.
+@prefix inbox: </inbox/>.
+@prefix gro: </>.
+@prefix www: <https://www.pod-chat.com/>.
+@prefix ent: <http://www.wikidata.org/entity/>.
+@prefix c: <https://mrkvon.solidcommunity.net/profile/card#>.
+@prefix c0: <https://chagai.solidcommunity.net/profile/card#>.
+@prefix c1: <https://mariha.solidcommunity.net/profile/card#>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    vcard:hasPhoto <94467980-ad57-11ed-8937-df0b96824124.jpeg>;
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3001>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:5173>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://dev.sleepy.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://new.sleepy.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://pod-chat.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://sleepy-bike-bnsnaqeui-ohn.vercel.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://sleepy.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://solid.ditup.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://tired.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://grouptest1.solidweb.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solid.openhospitality.network>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidweb.me>
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage gro:;
+    solid:account gro:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c0:me, <https://id.mrkvon.org>, c1:me, c:me;
+    foaf:name "group test 1";
+    foaf:topic_interest
+    ent:Q1003030, ent:Q2979, ent:Q4421, ent:Q55408718, ent:Q58697 .
+www:RSAPublicKey
+    sioc:content_encoded
+        "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAznTvU205Q/T1fqROaJ0Ctdox7xDSSdIVOXiuGVTbN4Hr/VG7LUf9GVtlln6K4sr5skewRvdbA9k2bE0rRdSJHPERtzqnP2bk19waJLdhhM66zlHobv19zTho8iFeS4g5//WCrsjNc2gsfrJZOMEdlsCau5LEKMBvM8rY856b8C3f1kLHx0btC9dZ+PO2F/Iy7xazMCxf9ZjUNumCftrNN1gZrqyw5ElCU34SSo9rMYe8heSdo0ttBpy6+kQy8Sw5pK233BERlFXuckm2dWIBute4dPToavjRTcDFGwvrGl79i1ZO9yDAwQ13unxE4/9dGt4jLoSJ9k10GhYAMfO7WxY+0tueCXh1jnjX9petesoRwa3Z36Rl9obnoydsnGX0hqvcnQdbkQ5UC9uu6o9wSi5qi9eJ1rHkMIyQ1MrO+6I30hIvV5gHY7BUVWehrOEdGhAFvR3DOzjRemoZrZN6PBDsbwYebVudYjF2sqQHExezVHhOmOCd2SIFnXAYT1vld3XCDuppAFaVamqlprv+EsrYyqitw3/1iOzQTv3+WQYVWzl+kxIPyDR+wawMWq+5AFBCj+NjGB8LKEvFjcfoiZwEctrXNABOpKd/DETLg7Iquh9ZuAgziU9hSwZW7SkQweiRbGmQOozg9ZY3VIFdG4mDMk8lhXbxKXgHabiAt5cCAwEAAQ==".

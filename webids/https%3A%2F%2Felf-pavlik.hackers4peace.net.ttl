@@ -1,0 +1,7 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX solid: <http://www.w3.org/ns/solid/terms#>
+
+<https://elf-pavlik.hackers4peace.net>
+    a foaf:Person ;
+    foaf:name "elf Pavlik" ;
+    solid:oidcIssuer <https://oidc.hackers4peace.net/> .

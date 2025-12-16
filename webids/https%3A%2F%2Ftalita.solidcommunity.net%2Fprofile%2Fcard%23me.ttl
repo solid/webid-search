@@ -1,0 +1,65 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix che: </public/chess_20190208.ttl#>.
+@prefix c: <https://mrkvon.solid.community/profile/card#>.
+@prefix stor: <http://example.org/storage/>.
+@prefix ent: <http://www.wikidata.org/entity/>.
+
+c:me foaf:knows :me.
+
+:me
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://sleepy.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solid.ditup.org>
+            ];
+    solid:publicTypeIndex <publicTypeIndex.ttl>;
+    foaf:knows c:me;
+    foaf:topic_interest ent:Q1000032, ent:Q1003030 .
+che:jrvee2ts stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrvefkx9 stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw13rm3 stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw15t0l stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw1cbji stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw1chyu stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw1xncg stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw255li stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw265br stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw2788l stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw2bgat stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw2gstl stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw2ik8h stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw2jspa stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw2wqjl stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw3lt0u stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw3narz stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw3o67n stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+che:jrw41gh8 stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

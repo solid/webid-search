@@ -1,0 +1,74 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix goe: </>.
+@prefix inbox: </inbox/>.
+@prefix pro: <./>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix c: <https://renyuneyun.solidcommunity.net/profile/card#>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1678449597718 solid:publicId l:en.
+
+:id1678449605149 solid:publicId l:hi.
+
+:me
+    a schema:Person, foaf:Person;
+    schema:knowsLanguage
+    ( :id1678449597718 :id1678449605149 ), ( :id1678449597718 );
+    vcard:fn "Naman Goel";
+    vcard:hasPhoto <goel.jpg>;
+    vcard:organization-name "University of Oxford";
+    vcard:role "Oxford Martin Fellow";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8501>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://socialgenpod.azurewebsites.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://solidos.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://drive.verborgh.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://oxfordhcc.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://socialgenpod.azurewebsites.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://socialgenpod.ryey.icu>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://test.pod.ewada.ox.ac.uk>
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile <preferences.ttl>, </settings/prefs.ttl>;
+    space:storage goe:;
+    solid:account goe:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c:me;
+    foaf:name "Naman Goel".
+l:en schema:name "English"@en.
+
+l:hi schema:name "Hindi"@en.
+

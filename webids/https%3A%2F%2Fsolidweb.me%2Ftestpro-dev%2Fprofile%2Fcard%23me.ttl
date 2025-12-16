@@ -1,0 +1,51 @@
+@prefix : <https://solidweb.me/testpro-dev/profile/card#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix webid: <http://www.w3.org/ns/solid/webid#>.
+@prefix webidp: <http://www.w3.org/ns/solid/webid-profile#>.
+@prefix ac: <https://www.w3.org/ns/auth/acl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+
+<https://solidweb.me/testpro-dev/profile/card> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/>;
+    dcterms:created "2025-01-13T00:00:00Z"^^xsd:dateTime;
+    dcterms:modified "2025-01-13T00:00:01Z"^^xsd:dateTime.
+<#me> a foaf:Person;
+    foaf:homepage <https://meisdata.io/>;
+    foaf:img <https://solidweb.me/testpro-dev/public/image.jpg>;
+    foaf:mbox <mailto:info@meisdata.io>;
+    foaf:birthday "1968-11-01"^^xsd:date;
+    solid:oidcIssuer <https://solidweb.me/>;
+    solid:publicTypeIndex <https://solidweb.me/testpro-dev/profile/publicTypeIndex.ttl>;
+    solid:privateTypeIndex <https://solidweb.me/testpro-dev/Settings/privateTypeIndex.ttl>, <https://solidweb.me/testpro-dev/settings/privateTypeIndex>, <https://solidweb.me/testpro-dev/settings/privateTypeIndex-7ad76aca-07b6-47f6-a0df-4ed20052d843>;
+    webidp:publicKey _:b15222_b15215_b15159_n3-15;
+    webidp:inbox <https://solidweb.me/testpro-dev/inbox/>;
+    webidp:outbox <https://solidweb.me/testpro-dev/outbox/>;
+    solid:preferencesFile <https://solidweb.me/testpro-dev/Settings/Preferences.ttl>;
+    foaf:knows <https://bob.solidcommunity.net/profile/card#me>;
+    foaf:name "Matthias Evering";
+    foaf:givenName "Matthias";
+    foaf:familyName "Evering";
+    foaf:gender "male";
+    webid:webId <#me>;
+    owl:sameAs <https://testpro.solidweb.org/profile/card#me>;
+    ac:control <https://solidweb.me/testpro-dev/profile/.acl>;
+    <http://www.w3.org/ns/pim/space#preferencesFile> <https://solidweb.me/testpro-dev/Settings/Preferences.ttl>.
+_:b15222_b15215_b15159_n3-15 a webid:WebIdPublicKey;
+    webidp:publicKeyValue "<RSA PUBLIC KEY>";
+    webidp:keyType "rsa#RS256".
+<https://solidweb.me/testpro-dev/public/> a solid:Container, solid:Storage;
+    rdfs:label "Public Storage Container";
+    solid:readAccessControl <https://solidweb.me/testpro-dev/public/.acl>.
+<https://solidweb.me/testpro-dev/private/> a solid:Container, solid:Storage;
+    rdfs:label "Private Storage Container";
+    solid:readAccessControl <https://solidweb.me/testpro-dev/private/.acl>.
+<https://solidweb.me/testpro-dev/Settings/> a solid:Container, solid:Storage;
+    rdfs:label "Settings Container";
+    solid:readAccessControl <https://solidweb.me/testpro-dev/Settings/.acl>.

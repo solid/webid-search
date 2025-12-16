@@ -1,0 +1,8 @@
+<https://id.inrupt.com/rajugeorge>
+        a       <http://xmlns.com/foaf/0.1/Agent>;
+        <http://www.w3.org/ns/pim/space#storage>
+                <https://storage.ap.inrupt.com/bb83bf55-4559-4908-ae68-55d11d0c3927/>;
+        <http://www.w3.org/ns/solid/terms#oidcIssuer>
+                <https://login.inrupt.com>;
+        <http://xmlns.com/foaf/0.1/isPrimaryTopicOf>
+                <https://storage.ap.inrupt.com/bb83bf55-4559-4908-ae68-55d11d0c3927/profile> .

@@ -1,0 +1,91 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix sioc: <http://rdfs.org/sioc/ns#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix pro: <./>.
+@prefix inbox: </inbox/>.
+@prefix mrk: </>.
+@prefix c: <https://mrkvon.solidcommunity.net/profile/card#>.
+@prefix www: <https://www.pod-chat.com/>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://127.0.0.1:3001>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3333>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://app.solidcouch.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://dev.sleepy.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://martin.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3001>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://friends.livegraph.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://mrkvon.solidcommunity.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://proto.fractopia.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://sleepy.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solid.ditup.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://starting.place>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://whyineedtofillusername.github.io>
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage mrk:;
+    solid:account mrk:;
+    solid:oidcIssuer <https://solidweb.org>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c:me;
+    foaf:name "Michal".
+www:RSAPublicKey
+    sioc:content_encoded
+        "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA6BhT2WYmxHvjQZWjJIhKLOC1KmsTMtxAWFb5PtdzKeS8S7s6iibPdcAamQi7+46X/okWcmrsEJCfPPecQ3cyKRp2j6JqJp1kl+0wZBGA1bc32b+wzi31pgJpmThSCG7wMtj9zKd7Ka5EzRrn+pXm7rOOs78e3tJvJ6qvEoInO/nfVs2O1Ixj1vFCSVTo2AUTJcbpI4ZB6l37nQZO5CO2ACG4Mi3UvXvwdqb2NdZs1++VcpTs0xuVL/7/saG22dF5n+sKgN450fPB4hdvyGnL36W2ODS0f2+b3jdDtVAwMFPynDA3tCyON1Qw+GOxjLUbE4UgSd7tz7C/oKobK4151NCGz1dk4aQLMRW48EfGWwjxOgZiNKwq+VqhbjkOoVrKxaEu2H/rcR7ar5BPgrf+C22qhPqi49uu4gPFwGdpYSg/eS/7R7YNRmuNK9HtGtcE5zirtTnijqHggsu8TcRrIYLUjxMBFwmLLWeC0DJch2TEnl1aAbbHDJIkI2pWqKnGLNxXddcgxn6wUp6a2Zc6VDbkW2viEaMfGE80SC02BiBYZpBhwEtvXsB0JGEPjKNfcAud13RE1PkiuwmPN8tXqUR7MM5HrTE++hTht1g8AiEQgKkwImd5lkgCqC04ExkT5hIzYVgPirzywOfc+e8+FqybEOwYGQdGeQbofs3CXY8CAwEAAQ==".

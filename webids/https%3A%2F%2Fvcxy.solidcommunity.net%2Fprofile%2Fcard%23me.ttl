@@ -1,0 +1,75 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix che: <https://mrkvon.solid.community/public/chess_20190208.ttl#>.
+@prefix stor: <http://example.org/storage/>.
+@prefix pro: <./>.
+@prefix inbox: </inbox/>.
+@prefix vcx: </>.
+@prefix c: <https://mrkvon.solid.community/profile/card#>.
+@prefix ent: <http://www.wikidata.org/entity/>.
+@prefix res: <http://dbpedia.org/resource/>.
+@prefix ter: <https://terms.math.livegraph.org#>.
+@prefix c0: <https://grouptest2.solidcommunity.net/profile/card#>.
+
+che:jrv9ubp9 stor:storeIn </public/chess_20190208.ttl>; schema:contributor :me.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    vcard:fn "foo baz";
+    vcard:hasPhoto <El_cuentito.jpg>;
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://new.sleepy.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://ohn.livegraph.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://hypey.mysilio.page>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://math.livegraph.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://notepod.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://sleepy.bike>
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage vcx:;
+    solid:account vcx:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c0:me, c:me;
+    foaf:name "vcxy";
+    foaf:topic_interest
+        <http://dbpedia.org/resource/Hopscotch_(Cortázar_novel)>, res:Wild_boar,
+        ent:Q1145523, ent:Q1755351, ent:Q181078, ent:Q63309078;
+    ter:storage
+        </public/math/index.ttl>, </public/math/test/index.ttl>,
+        </public/math/test/test/index.ttl>.

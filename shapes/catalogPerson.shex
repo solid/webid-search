@@ -1,0 +1,6 @@
+PREFIX ex: <http://example.org#>
+
+ex:CatalogPersonShape {
+  a [ex:Person] ;
+  ex:webid IRI ?
+}

@@ -1,0 +1,85 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix sioc: <http://rdfs.org/sioc/ns#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix pro: <./>.
+@prefix inbox: </inbox/>.
+@prefix ren: </>.
+@prefix c: <https://renyuneyun.solidcommunity.net/profile/card#>.
+@prefix c0: <https://hunarb.solidcommunity.net/profile/card#>.
+@prefix n0: <https://>.
+@prefix c1: <https://testusermovie.solidcommunity.net/profile/card#>.
+@prefix www: <https://www.pod-chat.com/>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    vcard:fn "ryey";
+    vcard:hasPhoto <protoss-archon.jpeg>;
+    vcard:note
+        """test profile for ryey.
+Also find me on https://pod.ryey.icu/@renyuneyun""";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://pod-chat.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://solidcryptpad.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:5173>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:9000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://podpro.dev:443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://hunarb.solidcommunity.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://oxfordhcc.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://renyuneyun.solidcommunity.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://scenaristeur.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidos.github.io>
+            ],
+        [ acl:mode acl:Read; acl:origin n0:solid-node-client ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage ren:;
+    solid:account ren:;
+    solid:oidcIssuer <https://https://solidweb.org>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c0:, c:me, c1:me;
+    foaf:name "Rui".
+www:RSAPublicKey
+    sioc:content_encoded
+        "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA3k631o/FWKolyQc6RhGg6qzyuw9rCW2L1ipbpOZyQOws64zsWjkVQz38FzrRYRTayXR4ccye+kKFz+HldHZf0jthasYMKVeBMsQ5QtkqUUZ+PuMxK2huOBT1YXhRAc1YkljyVluIV+lGIVh57SreSHT/VRdIxEt0YncoKtVagv9Vkh67L7bVdSURqywDSl9fPOf4Qxfr3V0C8jkzLWa7D+1kga1HUs25lTGX8PdU2bRoTjh/UbWX2XvsVKRX2DpRVsSnIZgo/IKNRzD54wGcmzy3MpZCFG5RgCmy2xf/xT3LkyyoOJ1xpoIODtxvjbETEX69zTzNlvxoS7PFhSy3NqYf0jYhqpngTXsZWWQytl2mDMXxlcyCEiPdZIgSyZc7YiYRdaK1TMiBDwQAm6tsdY7rqctrPZQM5ByFXx+C0+vwk8bxluNhV3gp4Lmf3k8rf6oLauJzdxOs6enzgG04mmR2adx3i0Ea10QsQnA6N2XSk4S7sGLp3uOyUni4W5RQPVINg5AQIGfpDUiZjKpI5JlIkixc+u+UgjNsI4Ct7U+Qqimq4VJZ6a0qE5dI2UgXARQKzxgWq0ueL4YEDEG8TN2HZHXgVSKj2AvnulQ1afbv2/iUR2VoaoXwD4PHU1qs2Fr9wD30bpQo/TqRge6y2uwfXBMXNykxC4Mr3XDB+jsCAwEAAQ==".

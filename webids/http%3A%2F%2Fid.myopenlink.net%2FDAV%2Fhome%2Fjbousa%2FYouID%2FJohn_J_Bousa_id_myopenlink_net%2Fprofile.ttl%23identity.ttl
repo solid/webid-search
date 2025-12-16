@@ -1,0 +1,58 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://id.myopenlink.net/DAV/home/jbousa/YouID/John_J_Bousa_id_myopenlink_net/profile.ttl#> .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+ns1:identity	rdf:type	foaf:Agent .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix ns4:	<http://id.myopenlink.net/DAV/home/jbousa/YouID/John_J_Bousa_id_myopenlink_net/profile.jsonld#> .
+ns1:identity	owl:sameAs	ns4:identity .
+@prefix ns5:	<http://id.myopenlink.net/DAV/home/jbousa/YouID/John_J_Bousa_id_myopenlink_net/profile_rdfa.html#> .
+ns1:identity	owl:sameAs	ns5:identity .
+@prefix ns6:	<http://id.myopenlink.net/DAV/home/jbousa/YouID/John_J_Bousa_id_myopenlink_net/index.html#> .
+ns1:identity	owl:sameAs	ns6:identity .
+@prefix ns7:	<http://id.myopenlink.net/DAV/home/jbousa/YouID/John_J_Bousa_id_myopenlink_net/index_rdfa.html#> .
+ns1:identity	owl:sameAs	ns7:identity ,
+		ns1:identity ;
+	foaf:name	"John J. Bousa" ;
+	foaf:mbox	<mailto:jbousa@openlinksw.com> .
+@prefix xhv:	<http://www.w3.org/1999/xhtml/vocab#> .
+ns1:identity	xhv:alternate	ns1:identity ,
+		ns6:identity ,
+		ns7:identity ,
+		ns4:identity ,
+		ns5:identity .
+@prefix vcard2006:	<http://www.w3.org/2006/vcard/ns#> .
+ns1:identity	vcard2006:fn	"John J. Bousa" ;
+	vcard2006:organization-name	"LinkedIn" .
+@prefix cert:	<http://www.w3.org/ns/auth/cert#> .
+@prefix ns11:	<http://id.myopenlink.net/DAV/home/jbousa/YouID/John_J_Bousa_id_myopenlink_net/public_key.ttl#> .
+ns1:identity	cert:key	ns11:PublicKey .
+@prefix ns12:	<http://www.openlinksw.com/schemas/cert#> .
+@prefix ns13:	<http://id.myopenlink.net/DAV/home/jbousa/YouID/John_J_Bousa_id_myopenlink_net/certificate.ttl#> .
+ns1:identity	ns12:hasCertificate	ns13:cert ;
+	vcard2006:hasAddress	ns1:adr .
+@prefix ns14:	<http://www.w3.org/ns/solid/terms#> .
+ns1:identity	ns14:oidcIssuer	"http://id.myopenlink.net" .
+ns13:cert	rdf:type	ns12:Certificate .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+ns13:cert	rdfs:label	"/C=US/ST=Massachusetts/O=LinkedIn/CN=John J. Bousa/emailAddress=jbousa@openlinksw.com" ;
+	foaf:mbox	<mailto:jbousa@openlinksw.com> ;
+	ns12:fingerprint	"64D762699D9DF1203063B38E6BF3A1530EEE5E7CE66934259BF847F1BD4BC4B4" ;
+	ns12:fingerprint-digest	"sha256" ;
+	ns12:subject	"/C=US/ST=Massachusetts/O=LinkedIn/CN=John J. Bousa/emailAddress=jbousa@openlinksw.com" ;
+	ns12:issuer	"/C=US/ST=Massachusetts/O=OpenLink Software/OU=Identity Management/CN=id.myopenlink.net/emailAddress=kidehen@openlinksw.com" ;
+	ns12:notBefore	"2021-03-30T17:02:02Z" ;
+	ns12:notAfter	"2021-04-14T17:02:02Z" ;
+	ns12:serial	"2751" ;
+	ns12:hasPublicKey	ns11:PublicKey ;
+	ns12:signature	<ni:///sha-512withrsaencryption;YMuxuqt9p7Upof18fD_LMqQ8tGviPtVRfSzEE2Mkmk15RrHIZOXlnv4Ar8eRYl71eiy9Lh1x5Y7XBX3yawVuEuQr6SAoc7Y_bqkV7Iw9zoxYA1pbVCiWiQGWxbnb8xF5Eo6RX11knnXgVmwXGlnCanMCMTQspv8MKwOJudk1ehP2wT0ruAvpsknDruxYT36IBKU-M-cqZhfYKUgt7bHKSKmkYXViudIzgOY5JhdL1fwlCa8g-ZNp-zpbzghsEOd6dOkP-FRtAV52UMSomsX8tpzyzjCfggx9jTOHzD67Rst_OEfPfLVKLiyOLUb51Q69P-kOSW_NkqhgNdyAb-8xkg?http=id.myopenlink.net> ;
+	ns12:SAN	ns1:identity .
+<http://id.myopenlink.net/DAV/home/jbousa/YouID/John_J_Bousa_id_myopenlink_net/profile.ttl>	rdf:type	foaf:Document ;
+	rdfs:label	"Profile Document Subject: John J. Bousa" ;
+	foaf:primaryTopic	ns1:identity .
+ns1:adr	rdf:type	vcard2006:Home ;
+	vcard2006:country-name	"United States" ;
+	vcard2006:region	"Massachusetts" .
+ns11:PublicKey	rdf:type	cert:RSAPublicKey .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+ns11:PublicKey	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"c792a8ed42ab4998c85a2c71d4e72e36d3b954654a1a70e3eccd0d0d69afba38386b5cb1aad54e75cebe1f0bd9d94b5899dd4d279c1d463b3042ca291616ebb9c163c6895214fc6cbfca27bf1a884355a667994d1c9acde09cc2955a959e77e6934458a5376947ed1b671b81aa09a8116ef14e7546377ee59d4acafdaa620b16c1e01d24f97fc10ec19f80350571cbf00bddc6feca7ea674d9f1eaf63af3b28ba8f120f0aa8f7fb5564bad9a311b1605117e0043be8c78c9944f5b8ddf205bf3da8d71206ac08690aba83a179372800d6622affb30a86df99ffa58650627d41964ef8328537995a7538ae43a88256d1aaac90c162858dea72732dc17bc25d8a9"^^xsd:hexBinary .

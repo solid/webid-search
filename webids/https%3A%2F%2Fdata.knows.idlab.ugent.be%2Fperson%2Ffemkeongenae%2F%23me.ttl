@@ -1,0 +1,26 @@
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix knows:  <https://data.knows.idlab.ugent.be/person/office/#> .
+@prefix schema: <http://schema.org/> .
+
+<#me>
+    a                 foaf:Person ;
+    foaf:givenName    "Femke"@en ;
+    foaf:familyName   "Ongenae"@en ;
+    vcard:title       "Prof. Data analytics for healthcare" ;
+    foaf:mbox         <mailto:Femke.Ongenae@UGent.be> ;
+    foaf:img          <FemkeOngenae.png> ;
+    frapo:hasORCID    "0000-0003-2529-5477" ;
+    foaf:homepage     <https://sites.google.com/view/femkeongenae> ;
+    foaf:publications <https://scholar.google.com/citations?user=ezkNNF4AAAAJ&hl> ;
+    foaf:account      <https://twitter.com/fongenae>, <https://www.linkedin.com/in/femke-ongenae-10b2587/> ;
+    foaf:account      [ a                           knows:GitHubAccount ;
+                        foaf:accountName            "fongenae" ;
+                        foaf:accountServiceHomepage <https://github.com/> ] ;
+    knows:hasAvailabilityCalendar [ schema:url "https://fongenae.pod.knows.idlab.ugent.be/availability" ] .
+
+<https://data.knows.idlab.ugent.be/person/femkeongenae/#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://fongenae.pod.knows.idlab.ugent.be/>.
+
+
+

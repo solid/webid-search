@@ -1,0 +1,40 @@
+@prefix : <#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix frapo: <http://purl.org/cerif/frapo/>.
+@prefix knows: <https://data.knows.idlab.ugent.be/person/office/#>.
+@prefix pro: <./>.
+@prefix sol: </>.
+@prefix twi: <https://twitter.com/>.
+@prefix ieb: <https://www.linkedin.com/in/ieben-smessaert/>.
+@prefix git: <https://github.com/>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a foaf:Person;
+    frapo:hasORCID "0009-0004-5281-0723";
+    schema:name "Ieben Smessaert";
+    vcard:fn "Ieben Smessaert";
+    vcard:hasPhoto <ieben.jpeg>;
+    vcard:organization-name "Ghent University";
+    vcard:role "PhD Student";
+    vcard:title "PhD Student";
+    space:preferencesFile </Settings/Preferences.ttl>;
+    solid:oidcIssuer sol:;
+    solid:publicTypeIndex <publicTypeIndex.ttl>;
+    foaf:account
+        twi:smessie, ieb:,
+            [
+                a knows:GitHubAccount;
+                foaf:accountName "smessie";
+                foaf:accountServiceHomepage git:
+            ];
+    foaf:familyName "Smessaert"@en;
+    foaf:givenName "Ieben"@en;
+    foaf:homepage <https://smessaert.be>;
+    foaf:img <ieben.jpeg>;
+    foaf:mbox <mailto:Ieben.Smessaert@UGent.be>.
