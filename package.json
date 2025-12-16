@@ -9,7 +9,7 @@
     "build:ldo": "ldo build --input ./shapes --output ./src/ldo",
     "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
-    "crawl": "tsx src/index.ts"
+    "crawl": "tsx src/crawler.ts"
   },
   "keywords": [
     "solid",

@@ -1,0 +1,103 @@
+name: Daily Crawler
+
+on:
+  schedule:
+    # Run daily at 2:00 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build project
+        run: npm run build
+      
+      - name: Run crawler
+        run: npm run crawl
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git add -A
+          if git diff --staged --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected"
+          fi
+      
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.has_changes == 'true'
+        id: create_pr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'Update WebID crawler data'
+          committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+          author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+          branch: crawler-update-${{ github.run_number }}
+          delete-branch: true
+          title: 'Update WebID crawler data - ${{ github.run_number }}'
+          body: |
+            ## Automated Crawler Update
+            
+            This PR contains updates from the daily WebID crawler run.
+            
+            - **Run Date**: ${{ github.event.repository.updated_at }}
+            - **Run Number**: ${{ github.run_number }}
+            - **Workflow**: [View Run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            
+            ### Changes
+            The crawler has detected changes in the WebID data. Please review the changes in the `data/webids.json` file.
+            
+            ---
+            *This PR was automatically created by the daily crawler workflow and will be automatically merged if all checks pass.*
+          labels: |
+            automated
+            crawler-update
+      
+      - name: Enable Pull Request Automerge
+        if: steps.check_changes.outputs.has_changes == 'true' && steps.create_pr.outputs.pull-request-number
+        run: |
+          gh pr merge --auto --squash "${{ steps.create_pr.outputs.pull-request-number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Summary
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          echo "### Crawler Update Summary :rocket:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **PR Created**: #${{ steps.create_pr.outputs.pull-request-number }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **PR URL**: ${{ steps.create_pr.outputs.pull-request-url }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Branch**: \`${{ steps.create_pr.outputs.pull-request-head-sha }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "The PR has been configured for automatic merge upon approval." >> $GITHUB_STEP_SUMMARY
+      
+      - name: No Changes Summary
+        if: steps.check_changes.outputs.has_changes == 'false'
+        run: |
+          echo "### Crawler Update Summary :white_check_mark:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "No changes detected in the crawler data. No PR created." >> $GITHUB_STEP_SUMMARY
