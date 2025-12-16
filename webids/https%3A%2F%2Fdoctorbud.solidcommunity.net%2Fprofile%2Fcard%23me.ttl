@@ -1,0 +1,99 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix doc: </>.
+@prefix c0: <https://solidos.solidcommunity.net/profile/card#>.
+@prefix c1: <https://michielbdejong.solidcommunity.net/profile/card#>.
+@prefix prof: <./>.
+@prefix inb: </inbox/>.
+@prefix c2: <https://jeff-zucker.solidcommunity.net/profile/card#>.
+@prefix n3: <https://csarven.ca/#>.
+
+prof:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1606948651554 a vcard:Home; vcard:value <mailto:dan@quantumclay.com>.
+
+:me
+    a schema:Person, foaf:Person;
+    vcard:fn "Daniel Keith";
+    vcard:hasEmail :id1606948651554;
+    vcard:hasPhoto <Fudd.png>;
+    vcard:organization-name "Quantum Clay, LLC";
+    vcard:role "Looking for employment";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://example.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3001>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3004>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3113>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:5555>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:5556>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://doctorbud.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://dokie.li>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://inrupt.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://jeff-zucker.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://localhost:8989>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://podbrowser.inrupt.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://trinpod.us>
+            ];
+    ldp:inbox inb:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage doc:;
+    solid:account doc:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:profileBackgroundColor "#cce8b5"^^xsd:color;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows n3:i, c2:me, c1:me, c0:me;
+    foaf:name "Daniel Keith".

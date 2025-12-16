@@ -1,0 +1,82 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dew: </>.
+@prefix inbox: </inbox/>.
+@prefix pro: <./>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1629429082140 vcard:country-name "Germany"; vcard:locality "Worms".
+
+:id1629429183934 solid:publicId l:de.
+
+:id1677058776549
+    a solid:CurrentRole;
+    schema:description "I do the webpage and sometimes organizing rooms";
+    vcard:role "K\u00fcmmerer";
+    org:member :me;
+    org:organization :id1677058776844 .
+:id1677058776844
+    a schema:Project, vcard:Organization;
+    schema:name "wolust";
+    schema:uri <https://wolust.de>.
+:me
+    a schema:Person, foaf:Person;
+    schema:knowsLanguage
+    ( :id1629429183934 ), ( :id1629429183934 ), ( :id1629429183934 );
+    vcard:bday "1960-06-14"^^xsd:date;
+    vcard:fn "Stefan H\u00f6hn";
+    vcard:hasAddress :id1629429082140;
+    vcard:hasPhoto <Julian-Assange_20220918_111541.png>;
+    vcard:organization-name "Wormser Linux User Stammtisch";
+    vcard:role "K\u00fcmmerer";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://noeldemartin.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://notepod.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://notepod.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://otto-aa.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://otto-aa.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://poddit.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://poddit.app>
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage dew:;
+    solid:account dew:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:preferredSubjectPronoun "";
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows :me;
+    foaf:name "Stefan H\u00f6hn".
+l:de schema:name "German"@en.
+

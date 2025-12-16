@@ -1,0 +1,640 @@
+@prefix :         <#> .
+@prefix solid:    <http://www.w3.org/ns/solid/terms#> .
+@prefix pro:      <./> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix n:        <http://rdfs.org/sioc/ns#> .
+@prefix git:      <https://github.com/> .
+@prefix gitl:     <https://gitlab.com/> .
+@prefix vcard:    <http://www.w3.org/2006/vcard/ns#> .
+@prefix schem:    <http://schema.org/> .
+@prefix acl:      <http://www.w3.org/ns/auth/acl#> .
+@prefix ldp:      <http://www.w3.org/ns/ldp#> .
+@prefix inbox:    </inbox/> .
+@prefix sp:       <http://www.w3.org/ns/pim/space#> .
+@prefix n2:       </> .
+@prefix outbox:   </public/outbox/> .
+@prefix pic:      </pictures/> .
+@prefix fo:       <http://www.kjetil.kjernsmo.net/foaf#> .
+@prefix d:        <https://datenwissen.de#> .
+@prefix kon:      <https://kontroversen.de#> .
+@prefix twi:      <https://twitter.com/> .
+@prefix xin:      <https://xing.com/> .
+@prefix pr:       <https://www.xing.com/profile/> .
+@prefix types:    <http://rdfs.org/sioc/types#> .
+@prefix rd:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lod:      </conferences/talks/linked-open-data#> .
+@prefix se:       </conferences/talks/solid-einfuehrung#> .
+@prefix ltdtw:    </conferences/talks/lets-tear-down-these-walls#> .
+@prefix woa:      </conferences/talks/web-of-apis#> .
+@prefix jsonld:   </events/talks/json-ld#> .
+@prefix od:       </events/talks/open-data#> .
+@prefix si:       </events/talks/solid-introduction#> .
+@prefix sib:      </events/talks/solid-introduction-berlin#> .
+@prefix as:       <https://www.w3.org/ns/activitystreams#> .
+@prefix friends:  </friends#> .
+@prefix fr:       </inbox/friend-requests/> .
+@prefix accounts: <./accounts#> .
+@prefix XML:      <http://www.w3.org/2001/XMLSchema#> .
+
+## Metadata
+
+pro:card
+    a
+        foaf:PersonalProfileDocument;
+    foaf:maker
+            :me;
+    foaf:primaryTopic
+            :me.
+
+## About me
+
+:me
+    a
+        schem:Person,
+        foaf:Person,
+        as:Person;
+    vcard:fn
+            "Angelo Veltens";
+    foaf:name
+            "Angelo Veltens";
+    as:name
+            "Angelo Veltens";
+    vcard:organization-name
+            "codecentric";
+    vcard:role
+            "Software developer & IT consultant";
+    vcard:note """
+   Software developer by heart, trying to build great software, that serves people. Therefore interested in #softwarequality, #softwarecrafting, #uxthinking and #agile software development.
+
+To bring back control over our digital lives I care about #openweb, #foss, #datasovereignty #interoperabilty and am actively working on the #solidproject.
+    """ ;
+    vcard:hasPhoto
+            <me.jpg>;
+    foaf:img
+            <me.jpg>;
+    foaf:homepage
+            n2:;
+    schem:url <https://www.codecentric.de/team/angelo-veltens> ;
+    foaf:weblog
+            d:it,
+            kon:it,
+            </blogs/codecentric#it>;
+    foaf:account
+            accounts:github-account,
+            accounts:gitlab-account,
+            accounts:twitter-account,
+            accounts:xing-account,
+            accounts:matrix-account,
+            accounts:mastodon-account,
+            accounts:linkedin-account;
+    vcard:hasAddress
+            :address;
+    vcard:hasEmail
+            :mail;
+    solid:timeline
+            pic:;
+    foaf:tipjar
+            <https://tippin.me/@aveltens>;
+    schem:performerIn
+            sib:it,
+            jsonld:it,
+            se:it,
+            si:it,
+            woa:it,
+            ltdtw:it,
+            lod:it,
+            od:it,
+                    <https://angelo.veltens.org/conferences/talks/65ce7a8e-50ad-45e7-a44d-827071f24906/session/#it>,
+                    <https://angelo.veltens.org/conferences/talks/65ce7a8e-50ad-45e7-a44d-827071f24906/session/a-vision-for-personal-knowledge-graphs/#it>,
+                    <https://angelo.veltens.org/conferences/talks/65ce7a8e-50ad-45e7-a44d-827071f24906/session/an-insiders-view-on-solidos/#it>;
+    foaf:publications
+            </articles/2019/04/solid-with-jsonld>,
+            </articles/2020/solid-groups>.
+
+:address
+    vcard:country-name
+        "Germany";
+    vcard:locality
+            "Hamburg".
+
+:mail
+    vcard:value
+        <mailto:angelo.veltens@online.de>.
+
+## Settings
+
+:me
+    solid:oidcIssuer
+        <https://angelo.veltens.org/>;
+    ldp:inbox
+            inbox:;
+    sp:preferencesFile
+            </settings/prefs.ttl>;
+    sp:storage
+            n2:,
+            </private/>,
+            </public/>,
+            <https://solidweb.me/aveltens/>;
+    solid:account
+            n2:;
+    solid:profileBackgroundColor
+            "#FFFFFF"^^XML:color;
+    solid:profileHighlightColor
+            "#007286"^^XML:color;
+    solid:privateTypeIndex
+            </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex
+            </settings/publicTypeIndex.ttl>.
+
+## Friends
+
+:me
+    foaf:knows
+        <https://paula.veltens.org/profile/card#me>,
+        <https://ruben.verborgh.org/profile/#me>,
+        #<https://michielbdejong.inrupt.net/profile/card#me>,
+        #<https://jmartin-6.inrupt.net/profile/card#me>,
+        <https://carloss.solidcommunity.net/profile/card#me>,
+        #<https://mohamedsaidhamed.org/profile/card#me>,
+        <https://dewomser.solidcommunity.net/profile/card#me>,
+        #<https://kartikatulusan.inrupt.net/profile/card#me>,
+        #<https://thewebalyst.solidcommunity.net/profile/card#me>,
+        <https://nada.solidcommunity.net/profile/card#me>,
+        <https://jollyorc.solidcommunity.net/profile/card#me>,
+        <https://morettian.solidcommunity.net/profile/card#me>,
+        <https://gaia.solidcommunity.net/profile/card#me>,
+        <https://melvin.solidcommunity.net/profile/card#me>,
+        <https://timbl.solidcommunity.net/profile/card#me>,
+        <https://smag0.solidcommunity.net/profile/card#me>,
+        <https://spoggy.solidcommunity.net/profile/card#me>,
+        #<https://johnb.inrupt.net/profile/card#me>,
+        #<https://justin.inrupt.net/profile/card#me>,
+        #<https://mitzilaszlo.solidcommunity.net/profile/card#me>,
+        <https://csarven.ca/#i>,
+        <https://jackson.solidcommunity.net/profile/card#me>,
+        #<https://vincentt.inrupt.net/profile/card#me>,
+        #<https://kellyo.inrupt.net/profile/card#me>,
+        #<https://megoth.inrupt.net/profile/card#me>,
+        <https://teodora.solidcommunity.net/profile/card#me>,
+        <https://srs.solidcommunity.net/profile/card#me>,
+        <https://alejandroj.solidcommunity.net/profile/card#me>,
+        #<https://karlhrichter.inrupt.net/profile/card#me>,
+        <https://ericp.solidcommunity.net/profile/card#me>,
+        #<https://bkeil.inrupt.net/profile/card#me>,
+        #<https://sharonstrats.inrupt.net/profile/card#me>,
+        <https://ejbyne.solidcommunity.net/profile/card#me>,
+        <https://jeff-zucker.solidcommunity.net/profile/card#me>,
+        <https://timea.solidcommunity.net/profile/card#me>,
+        <https://aharth.solidcommunity.net/profile/card#me>,
+        <https://uvdsl.solid.aifb.kit.edu/profile/card#me>,
+        <https://jacobdaniel.solidcommunity.net/profile/card#me>;
+    as:following
+            friends:this;
+    as:outbox
+            outbox:.
+
+friends:this
+    ldp:inbox
+        fr:.
+
+## Trusted apps
+
+:me
+    acl:trustedApp
+        :trust-solid-community,
+        :trust-solid-github-io,
+        :trust-dokieli,
+        :trust-localhost,
+        :trust-pixolid,
+        :trust-solid-focus,
+        :trust-tadanime,
+        :trust-tweefi,
+        :trust-dechat,
+        :trust-communica,
+        :trust-melvincarvalho,
+        :trust-vincenttunru,
+        :trust-notepod,
+        :trust-scenaristeur,
+        :trust-ibex,
+        :trust-markbook,
+        :trust-friend-request-experiment,
+        :trust-notify,
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://preview.myportal.zone> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://useconcept.art> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://generator.inrupt.com> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://podbrowser.inrupt.com> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://michielbdejong.solidcommunity.net> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://sideshowtom.inrupt.net> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://web.inox.app> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://podexplorer.gigalixirapp.com> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://shepherd.darcy.is> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://ramen.noeldemartin.com> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://penny.vincenttunru.com> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Control,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://api.liqid.chat> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Control,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://devapi.liqid.chat> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Control,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://liqid.chat> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://solid-demo.generativeobjects.com> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://openlinksoftware.github.io> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://ruben.verborgh.org> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Control,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://ohmypod.netlify.app> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://de.solidcommunity.net> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://solid-groups.solidcommunity.net> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://welcome.solidcommunity.net> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://inbox-client.herokuapp.com> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://solid-chat.5apps.com> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://solidos.solidcommunity.net> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <http://workpod.localhost> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://data.localhost:8443> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://localhost:8444> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <http://localhost:3333> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <http://localhost:8080> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <http://localhost:3000> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <http://localhost:9000> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://solid-node-client> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://mfgjcggbpdkbnnpgllaicoeplfgkfnkj.chromiumapp.org> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write;
+          acl:origin
+                  <https://drive.owntech.de> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://mikcatester.inrupt.net> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://inrupt.net> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://michielbdejong.solidcommunity.net:8443> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://pod-chat.com> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://janschill.net> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://applications.linkedpipes.com> ],
+        [ acl:mode
+                  acl:Append,
+                  acl:Read,
+                  acl:Write,
+                  acl:Control;
+          acl:origin
+                  <https://understory.garden> ].
+
+:trust-solid-community
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://solidcommunity.net>.
+
+:trust-solid-github-io
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://solid.github.io>.
+
+:trust-dokieli
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://dokie.li>.
+
+:trust-dechat
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://dechat-b529e.firebaseapp.com>.
+
+:trust-vincenttunru
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://vincenttunru.gitlab.io>.
+
+:trust-communica
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write,
+        acl:Control;
+    acl:origin
+            <https://comunica.github.io>.
+
+:trust-tadanime
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://pheyvaer.github.io>.
+
+:trust-tweefi
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://twee.fi>.
+
+:trust-melvincarvalho
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://melvincarvalho.github.io>.
+
+:trust-localhost
+    acl:mode
+        acl:Control,
+        acl:Read,
+        acl:Write,
+        acl:Append;
+    acl:origin
+            <http://localhost:3000>,
+            <http://localhost:3001>,
+            <http://localhost:9000>.
+
+:trust-pixolid
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://pixolid.netlify.app>.
+
+:trust-solid-focus
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://noeldemartin.github.io>.
+
+:trust-notepod
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://notepod.vincenttunru.com>.
+
+:trust-scenaristeur
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write,
+        acl:Control;
+    acl:origin
+            <https://scenaristeur.github.io>.
+
+:trust-ibex
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://ibex.darcy.is>.
+
+:trust-markbook
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://markbook.org>.
+
+:trust-friend-request-experiment
+    acl:mode
+        acl:Append,
+        acl:Read,
+        acl:Write;
+    acl:origin
+            <https://friend-requests-exploration.inrupt.app>.
+
+:trust-notify
+    acl:mode
+        acl:Read;
+    acl:origin
+            <https://solid-notify.5apps.com>.

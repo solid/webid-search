@@ -1,0 +1,119 @@
+@prefix : <https://timbl.solidcommunity.net/profile/card#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix che: <https://timbl.solidcommunity.net/public/chess_20190211.ttl#>.
+@prefix stor: <http://example.org/storage/>.
+@prefix frie: <https://timbl.solidcommunity.net/friends.ttl#>.
+@prefix c30: <https://nada.solidcommunity.net/profile/card#>.
+@prefix c32: <https://angelo.veltens.org/profile/card#>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix tim: <https://timbl.solidcommunity.net/>.
+@prefix fri: <https://timbl.solidcommunity.net/friend-requests-inbox/>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+@prefix c: <https://solidproject.solidcommunity.net/profile/card#>.
+@prefix prof: <https://timbl.solidcommunity.net/profile/>.
+@prefix inb: <https://timbl.solidcommunity.net/inbox/>.
+@prefix c8: <https://solidos.solidcommunity.net/profile/card#>.
+@prefix Pi: <https://timbl.solidcommunity.net/Pictures/>.
+@prefix n1: <https://www.w3.org/TR/activitypub/#>.
+@prefix sol: <https://solidcommunity.net/>.
+
+frie:this ldp:inbox <https://timbl.solidcommunity.net/friend-requests-inbox/>.
+prof:card a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> ldp:inbox <https://timbl.solidcommunity.net/inbox/>;
+    a schema:Person, foaf:Person;
+    schema:knowsLanguage _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4702, _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4705;
+    vcard:bday "1955-06-08"^^xsd:date;
+    vcard:fn "Tim Berners-Lee (solidcommunity.net)";
+    vcard:hasEmail <#id1532484491415>;
+    vcard:hasPhoto <https://timbl.solidcommunity.net/profile/TBL%20by%20coz%20Solid%20purple.png>;
+    vcard:note "Pescatarian allergic to crustaceans \n";
+    vcard:organization-name "Inrupt Inc";
+    vcard:role "Cofounder and CTO";
+    vcard:url c30:me, _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4707;
+    acl:trustedApp _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4708;
+    space:preferencesFile <https://timbl.solidcommunity.net/settings/prefs.ttl>;
+    space:storage <https://timbl.solidcommunity.net/>;
+    solid:account <https://timbl.solidcommunity.net/>;
+    solid:community c8:me, c:me;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:preferredObjectPronoun "him";
+    solid:preferredRelativePronoun "his";
+    solid:preferredSubjectPronoun "he";
+    solid:privateTypeIndex <https://timbl.solidcommunity.net/settings/privateTypeIndex.ttl>;
+    solid:profileBackgroundColor "#f0fffc"^^xsd:color;
+    solid:profileHighlightColor "#341bee"^^xsd:color;
+    solid:publicTypeIndex <https://timbl.solidcommunity.net/profile/publicTypeIndex.ttl>;
+    solid:timeline <https://timbl.solidcommunity.net/Pictures/>;
+    foaf:account _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4709, _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4713;
+    foaf:knows c32:me;
+    foaf:name "Tim Berners-Lee (solidcommunity.net)";
+    foaf:nick "timbl";
+    n1:following frie:this.
+_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4702 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1619558022938>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4703.
+_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4705 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1619557331243>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4706.
+<#id1532484491415> a vcard:Work;
+    vcard:value <mailto:cos@timbl.com>.
+_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4707 a vcard:WebID;
+    vcard:value "https://timbl.solidcommunity.net/profile/card#me".
+_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4708 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://martin.vincenttunru.com>.
+_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4709 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377167368>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4710.
+_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4713 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377167368>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4714.
+<#id1619558022938> solid:publicId l:en.
+_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4703 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1619557331243>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4704.
+<#id1619557331243> solid:publicId l:fr.
+_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4706 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1619555997749>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+<#id1732377167368> a soc:MastodonAccount;
+    foaf:accountName "@timbl@w3c.social".
+_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4710 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377224504>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4711.
+_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4714 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377224504>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+l:en schema:name "Englisch"@de.
+_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4704 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1619555997749>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+l:fr schema:name "French"@en.
+<#id1619555997749> solid:publicId l:de.
+<#id1732377224504> a soc:OrcidAccount;
+    foaf:accountName "0000-0003-1279-3709".
+_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4711 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377604676>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4712.
+l:de schema:name "German"@en.
+<#id1732377604676> a soc:MatrixAccount;
+    foaf:accountName "@timbl-54d26c98db8155e6700f7312:gitter.im".
+_:b15210_b15208_b15202_b15200_b15197_b15195_b15189_b15187_b15177_b15175_b15169_n3-4712 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732377678776>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+<#id1732377678776> a soc:BlueSkyAccount;
+    foaf:accountName "@timbl.bsky.social".
+<#id1532484371288> vcard:country-name "USA";
+    vcard:locality "Cambridge";
+    vcard:postal-code "02139";
+    vcard:region "MA";
+    vcard:street-address "32 Vassar Street MIT Building 32".
+che:js03vsbh stor:storeIn <https://timbl.solidcommunity.net/public/chess_20190211.ttl>;
+    schema:contributor <#me>.
+<#id1739892183690> a solid:CurrentRole;
+    vcard:role "CoFounder and CTO";
+    <http://www.w3.org/ns/org#member> <#me>;
+    <http://www.w3.org/ns/org#organization> <#id1739892184342>;
+    schema:description "Cofounder and CTO".
+<#id1739892184342> a schema:Corporation, vcard:Organization;
+    solid:publicId <http://www.wikidata.org/entity/Q106746930>;
+    schema:name "inrupt";
+    schema:uri <https://inrupt.com/>.
+<http://www.wikidata.org/entity/Q106746930> schema:name "Inrupt Inc."@en.

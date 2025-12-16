@@ -1,0 +1,157 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix wf: <http://www.w3.org/2005/01/wf/flow#>.
+@prefix pro: <./>.
+@prefix inbox: </inbox/>.
+@prefix spo: </>.
+@prefix c: <https://spoggy-test.solidcommunity.net/profile/card#>.
+@prefix c0: <https://spoggy-test3.solidcommunity.net/profile/card#>.
+@prefix c1: <https://spoggy-test4.solidcommunity.net/profile/card#>.
+@prefix c2: <https://spoggy-test5.solidcommunity.net/profile/card#>.
+@prefix c3: <https://spoggy-test6.solidcommunity.net/profile/card#>.
+@prefix c4: <https://spoggy-test9.solidcommunity.net/profile/card#>.
+@prefix fri: </friends.ttl#>.
+@prefix fr: </friend-requests-inbox/>.
+@prefix n2: <https://www.w3.org/TR/activitypub/#>.
+@prefix priv: </settings/privateTypeIndex.ttl#>.
+@prefix ind: <https://spoggy-test.solidcommunity.net/public/tasks2/index.ttl#>.
+@prefix c5: <https://ciaoquentin.solidweb.org/profile/card#>.
+
+fri:this ldp:inbox fr: .
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    rdfs:seeAlso
+        </652f32c0-8c91-11ea-b11d-ffbdfe16877c-app/profile.ttl>,
+        </app/profile.ttl>,
+        </c5ebc150-8c91-11ea-b11d-ffbdfe16877c-app/profile.ttl>,
+        </d9f90c00-8c93-11ea-b11d-ffbdfe16877c-app/profile.ttl>,
+        </de38ffa0-8c93-11ea-b11d-ffbdfe16877c-app/profile.ttl>,
+        </f06ea0f0-8c91-11ea-b11d-ffbdfe16877c-app/profile.ttl>,
+        </f387c7d0-8c91-11ea-b11d-ffbdfe16877c-app/profile.ttl>,
+        </f75a2c90-8c91-11ea-b11d-ffbdfe16877c-app/profile.ttl>;
+    vcard:fn "Spoggy-Test2";
+    vcard:hasPhoto <28966_kkrasta2.jpg>;
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://127.0.0.1:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:9000>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://divoplade.frama.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://dokie.li>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://friend-requests-exploration.inrupt.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://gallant-lewin-6da032.netlify.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://otto-aa.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://scenaristeur.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://solid-demo.generativeobjects.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://solid.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://spoggy-test.solidcommunity.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <app://obsidian.md>
+            ],
+        [ acl:mode acl:Append, acl:Read, acl:Write; acl:origin <blob://> ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://127.0.0.1:8082>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://192.168.1.22:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://podpro.dev:443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://browser.pod-os.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://develop.generator.inrupt.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://edit.o.team>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://markbook.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://sleepy.bike>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidos.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://vincenttunru.gitlab.io>
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage spo:;
+    solid:account spo:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c5:me, c:me, :me, c0:me, c1:me, c2:me, c3:me, c4:me;
+    foaf:name "Spoggy-Test2";
+    n2:following fri:this.
+priv:id1603297219708 solid:forClass wf:Tracker; solid:instance ind:this.
+

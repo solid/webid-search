@@ -1,0 +1,57 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix pro: <./>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix schem: <http://schema.org/>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix mor: </>.
+@prefix g: <https://gaia.solid.community/>.
+@prefix c: <https://giuliotest.solid.community/profile/card#>.
+@prefix jol: <https://jollyorc.solid.community/>.
+@prefix n2: <https://nada.solid.community/>.
+@prefix c0: <https://timbl.solid.community/profile/card#>.
+@prefix n3: <http://>.
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:me
+    a schem:Person, n0:Person;
+    n:fn "Giulio";
+    n:hasPhoto <photo%20copy.jpg>;
+    n:organization-name "Darcy";
+    n1:trustedApp
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://localhost:8080>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin n3:localhost
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://ibex.darcy.is>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://otto-aa.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://podbrowser.inrupt.com>
+            ];
+    ldp:inbox inbox:;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage mor:;
+    solid:account mor:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    n0:follows g:, jol:;
+    n0:knows g:, c:me, jol:, n2:, c0:me;
+    n0:name "Giulio".
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

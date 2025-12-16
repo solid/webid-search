@@ -1,0 +1,63 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix pro: <./>.
+@prefix inbox: </inbox/>.
+@prefix bou: </>.
+@prefix n0: <https://>.
+@prefix sol: <https://solidcommunity.net/>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://bourgeoa.ga:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://bourgeoa.ga:3100>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://bourgeoa.solidcommunity.net:8443>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://bourgeoa.solidweb.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://bourgeoa2.solidcommunity.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://solidweb.me>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://test-pod.solidcommunity.net:8443>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://timbl.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://bourgeoa.bourgeoa.ga:3100>
+            ],
+        [ acl:mode acl:Append, acl:Read, acl:Write; acl:origin n0:tester ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage bou:;
+    solid:account bou:;
+    solid:oidcIssuer sol:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:name "bourgeoa1".

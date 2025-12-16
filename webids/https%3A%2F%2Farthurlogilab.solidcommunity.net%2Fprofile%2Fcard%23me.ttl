@@ -1,0 +1,65 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix pim: <http://www.w3.org/ns/pim/space#>.
+@prefix schema: <http://schema.org/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix c: <https://arthurlogilab.solid.community/profile/card#>.
+@prefix inbox: </inbox/>.
+@prefix n0: </>.
+@prefix pro: <./>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix c0: <https://spoggy.solidcommunity.net/profile/card#>.
+@prefix c1: <https://semweb.solidcommunity.net/profile/card#>.
+@prefix c2: <https://solid.zwifi.eu/profile/card#>.
+@prefix c3: <https://www.w3.org/People/Berners-Lee/card#>.
+@prefix che: </public/chess_20201119.ttl#>.
+@prefix stor: <http://example.org/storage/>.
+@prefix sch: <https://schabot.solidcommunity.net/>.
+
+c:me
+    a schema:Person, foaf:Person;
+    ldp:inbox inbox:;
+    pim:preferencesFile </settings/prefs.ttl>;
+    pim:storage n0:;
+    solid:account n0:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:name "Arthur Lutz".
+pro:card a foaf:PersonalProfileDocument; foaf:maker c:me; foaf:primaryTopic c:me.
+
+:me
+    n:fn "Arthur Lutz";
+    n:organization-name "Logilab";
+    n:role "devops";
+    n1:trustedApp
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://notepod.vincenttunru.com>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://pheyvaer.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://scenaristeur.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://vincenttunru.gitlab.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://noeldemartin.github.io>
+            ];
+    foaf:knows sch:, c1:me, c2:me, c0:me, c3:i.
+che:khomnas3 stor:storeIn </public/chess_20201119.ttl>; schema:contributor :me.
+
+che:khoz69f0 stor:storeIn </public/chess_20201119.ttl>; schema:contributor :me.
+
+che:khoza2jr stor:storeIn </public/chess_20201119.ttl>; schema:contributor :me.
+
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

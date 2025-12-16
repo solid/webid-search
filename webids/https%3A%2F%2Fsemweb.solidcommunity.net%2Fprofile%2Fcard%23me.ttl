@@ -1,0 +1,36 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix pim: <http://www.w3.org/ns/pim/space#>.
+@prefix schema: <http://schema.org/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix pro: <./>.
+@prefix n0: <http://www.w3.org/ns/auth/acl#>.
+@prefix inbox: </inbox/>.
+@prefix sem: </>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix c: <https://spoggy.solidcommunity.net/profile/card#>.
+@prefix c0: <https://spoggy-test.solidcommunity.net/profile/card#>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    n:fn "SemWebPro";
+    n:organization-name "Logilab";
+    n:role "Conference";
+    n0:trustedApp
+            [
+                n0:mode n0:Append, n0:Control, n0:Read, n0:Write;
+                n0:origin <https://scenaristeur.github.io>
+            ];
+    ldp:inbox inbox:;
+    pim:preferencesFile </settings/prefs.ttl>;
+    pim:storage sem:;
+    solid:account sem:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c0:me, c:me;
+    foaf:name "SemWeb".
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

@@ -1,0 +1,23 @@
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix vcard:  <http://www.w3.org/2006/vcard/ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix knows:  <https://data.knows.idlab.ugent.be/person/office/#> .
+
+<#me>
+    a                             foaf:Person ;
+    foaf:givenName                "Sindhu"@en ;
+    foaf:familyName               "Vasireddy"@en ;
+    vcard:title                   "PhD Student" ;
+    foaf:mbox                     <mailto:Sindhu.Vasireddy@UGent.be> ;
+    foaf:img                      <sv.jpg> ;
+    foaf:account [ 
+    a knows:GitHubAccount ;
+    foaf:accountName "Sindhu-Vasireddy" ;
+    foaf:accountServiceHomepage <https://github.com/> ]; 
+    knows:hasAvailabilityCalendar [ schema:url "https://svasired.pod.knows.idlab.ugent.be/availability" ] .
+
+    <https://data.knows.idlab.ugent.be/person/SindhuVasireddy/#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://svasired.pod.knows.idlab.ugent.be/> .
+
+
+
+

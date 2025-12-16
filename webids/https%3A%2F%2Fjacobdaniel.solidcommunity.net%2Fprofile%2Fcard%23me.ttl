@@ -1,0 +1,40 @@
+@prefix : <https://jacobdaniel.solidcommunity.net/profile/card#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix pro: <https://jacobdaniel.solidcommunity.net/profile/>.
+@prefix inbox: <https://jacobdaniel.solidcommunity.net/inbox/>.
+@prefix j: <https://jacobdaniel.solidcommunity.net/>.
+@prefix pr: <https://jacobdaniel.solidcommunity.net/public/projects/>.
+@prefix sol: <https://solidcommunity.net/>.
+@prefix c: <https://angelo.veltens.org/profile/card#>.
+
+pro:card a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a schema:Person, foaf:Person;
+    vcard:fn "Jacob";
+    vcard:hasPhoto <https://jacobdaniel.solidcommunity.net/profile/thumbnail_jacob_2986363c4f.jpg>;
+    acl:trustedApp _:b34593_b630_n3-185, _:b34593_b630_n3-186, _:e_bn_ltjki40;
+    ldp:inbox <https://jacobdaniel.solidcommunity.net/inbox/>;
+    space:preferencesFile <https://jacobdaniel.solidcommunity.net/settings/prefs.ttl>;
+    space:storage <https://jacobdaniel.solidcommunity.net/>;
+    solid:account <https://jacobdaniel.solidcommunity.net/>;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex <https://jacobdaniel.solidcommunity.net/settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex <https://jacobdaniel.solidcommunity.net/profile/publicTypeIndex.ttl>, <https://jacobdaniel.solidcommunity.net/settings/publicTypeIndex.ttl>;
+    foaf:knows <#me>, c:me, <https://pduchesne.solidcommunity.net/profile/card#me>;
+    foaf:name "Jacob";
+    vcard:url _:b34593_b630_e_n52100.
+_:b34593_b630_n3-185 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin pr:cdae7e7f-08d7-464f-9031-e6d3c3af96c9.
+_:b34593_b630_n3-186 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://test.solidbench.dev>.
+_:b34593_b630_e_n52100 a vcard:WebID;
+    vcard:value "https://pduchesne.solidcommunity.net/profile/card#me".
+_:e_bn_ltjki40 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <http://localhost:3002>.

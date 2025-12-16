@@ -1,0 +1,55 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix pro: <./>.
+@prefix inbox: </inbox/>.
+@prefix srs: </>.
+@prefix c: <https://angelo.veltens.org/profile/card#>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1578053585526 vcard:value <mailto:stefan.rother-stuebs@posteo.de>.
+
+:me
+    a schema:Person, foaf:Person;
+    vcard:fn "Stefan Rother-St\u00fcbs";
+    vcard:hasEmail :id1578053585526;
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://example.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://mark-book.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://umai.noeldemartin.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read;
+                acl:origin <https://angelo.veltens.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read;
+                acl:origin <https://scenaristeur.github.io>
+            ],
+        [ acl:mode acl:Read, acl:Write; acl:origin <https://markbook.org> ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage srs:;
+    solid:account srs:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:profileBackgroundColor "#fdf6e3"^^xsd:color;
+    solid:profileHighlightColor "#586e75"^^xsd:color;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c:me;
+    foaf:name "Stefan Rother-Stuebs".

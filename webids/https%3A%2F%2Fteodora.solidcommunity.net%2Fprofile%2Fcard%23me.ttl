@@ -1,0 +1,78 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix pro: <./>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix schem: <http://schema.org/>.
+@prefix www: <http://www.teodorapetkova.com/>.
+@prefix ww: <http://www.thebravenewtext.com/>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix teo: </>.
+@prefix n2: <http://csarven.ca/#>.
+@prefix c: <https://alexrodrigues43.solid.community/profile/card#>.
+@prefix c0: <https://annpollak.solid.community/profile/card#>.
+@prefix c1: <https://davidbelliveau.solid.community/profile/card#>.
+@prefix dont: <https://dontai.inrupt.net/>.
+@prefix c2: <https://gideonro.inrupt.net/profile/card#>.
+@prefix c3: <https://johanbove.inrupt.net/profile/card#>.
+@prefix c4: <https://johnb.inrupt.net/profile/card#>.
+@prefix c5: <https://justin.inrupt.net/profile/card#>.
+@prefix c6: <https://kidehen2.solid.openlinksw.com:8444/profile/card#>.
+@prefix c7: <https://lcjlls.solid.community/profile/card#>.
+@prefix c8: <https://neumann.solid.community/profile/card#>.
+@prefix c9: <https://peterhatherley.inrupt.net/profile/card#>.
+@prefix n3: <https://ruben.verborgh.org/profile/#>.
+@prefix c10: <https://sopekmir.inrupt.net/profile/card#>.
+@prefix c11: <https://www.w3.org/People/Berners-Lee/card#>.
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:id1530948506596 n:value <mailto:toshko.afrikanski@gmail.com>.
+
+:me
+    a schem:Person, n0:Person;
+    n:fn "Teodora Petkova";
+    n:hasEmail :id1530948506596;
+    n:hasPhoto <teodorapetkova.png>;
+    n:note
+        """Hey there!
+I am a philologist fascinated by the metamorphoses of text on the Web. Curious about the ways the Semantic Web unfolds, I explore how content writing is changing, changing us and the way we think, write and live. I also recently published a book, called The Brave New Text. Currently am tinkering with Solid when not reading and writing about textuality and the Semantic Web :)""";
+    n:role "Content Writer";
+    n:url www:, ww:;
+    n1:trustedApp
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://notepod.vincenttunru.com>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://ohmypod.netlify.app>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://otto-aa.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://podbrowser.inrupt.com>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://scenaristeur.github.io>
+            ];
+    ldp:inbox inbox:;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage teo:;
+    solid:account teo:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex
+    <publicTypeIndex.ttl>, </settings/publicTypeIndex.ttl>;
+    n0:knows
+        n2:i, c:me, c0:me, c1:me, dont:, c2:me, c3:me, c4:me, c5:me, c6:me,
+        c7:me, c8:me, c9:me, n3:me, c10:me, c11:i;
+    n0:name "Teodora Petkova".
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

@@ -1,0 +1,65 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix pro: <./>.
+@prefix inbox: </inbox/>.
+@prefix spo: </>.
+@prefix c: <https://spoggy-test7.solidcommunity.net/profile/card#>.
+@prefix c0: <https://spoggy-test9.solidcommunity.net/profile/card#>.
+@prefix c1: <https://spoggy.solidcommunity.net/profile/card#>.
+@prefix c2: <https://spoggy-test5.solidcommunity.net/profile/card#>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    vcard:fn "Spoggy-test8";
+    vcard:organization-name "Smag0";
+    vcard:role "Facilitateur";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://127.0.0.1:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:9000>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://scenaristeur.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://understory.garden>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://drive.owntech.de>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://projektor.technology>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidelight.stieger.io>
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage spo:;
+    solid:account spo:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c2:me, c:me, c0:me, c1:me;
+    foaf:name "spoggy-test8".

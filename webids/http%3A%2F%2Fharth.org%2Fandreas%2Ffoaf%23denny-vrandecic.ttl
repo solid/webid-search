@@ -1,0 +1,721 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pim: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix org: <http://www.w3.org/2001/04/roadmap/org#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix dp: <http://sw.deri.ie/2004/08/pubs/swpubs#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix solid: <http://www.w3.org/ns/solid/terms#> .
+@prefix schema: <http://schema.org/> .
+
+<callto://aharth>
+    a <http://skype.com/> .
+
+<http://aidanhogan.com/foaf.rdf#me>
+    a foaf:Person ;
+    rdfs:seeAlso <http://sw.deri.org/~aidanh/foaf/foaf.rdf> ;
+    owl:sameAs <http://dblp.uni-trier.de/pers/h/Hogan:Aidan>, <http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan>, <http://www.deri.ie/about/team/member/Aidan_Hogan#me> ;
+    foaf:weblog <http://blog.aidanhogan.com/> .
+
+<http://apassant.net/alex>
+    rdfs:seeAlso <http://apassant.net/foaf.rdf> ;
+    owl:sameAs <http://www.deri.ie/about/team/member/Alexandre_Passant#me> ;
+    foaf:weblog <http://apassant.net/blog/> .
+
+<http://c2.com/cgi/wiki?DoingWithImagesMakesSymbols>
+    a <http://purl.org/dc/dcmitype/MovingImage> .
+
+<http://cb.semsol.org/person/nova-spivack#self>
+    rdfs:seeAlso <http://novaspivack.typepad.com/foaf.rdf> .
+
+<http://cbasewrap.ontologycentral.com/company/cisco#id>
+    owl:sameAs <http://dbpedia.org/resource/Cisco>, <http://km.aifb.kit.edu/services/crunchbase/api/organizations/cisco#id>, <http://sw.opencyc.org/2008/06/10/concept/Mx4rv0Uvz5wpEbGdrcN5Y29ycA>, <http://sw.opencyc.org/concept/Mx4rv0Uvz5wpEbGdrcN5Y29ycA> .
+
+<http://cbasewrap.ontologycentral.com/company/ibm#id>
+    owl:sameAs <http://dbpedia.org/resource/IBM>, <http://km.aifb.kit.edu/services/crunchbase/api/organizations/ibm#id> .
+
+<http://cbasewrap.ontologycentral.com/company/nortel-networks#id>
+    owl:sameAs <http://dbpedia.org/resource/Nortel>, <http://sw.opencyc.org/2008/06/10/concept/Mx4rSxvEAghmEduAAADggVaqvw>, <http://sw.opencyc.org/concept/Mx4rSxvEAghmEduAAADggVaqvw> .
+
+<http://cbasewrap.ontologycentral.com/person/paul-allen#id>
+    owl:sameAs <http://edgarwrap.ontologycentral.com/cik/904057#id> .
+
+<http://compsoc.nuigalway.ie/~fuzz/foaf.rdf#Fergal_Monaghan>
+    a foaf:Person ;
+    rdfs:seeAlso <http://compsoc.nuigalway.ie/~fuzz/foaf.rdf> ;
+    foaf:mbox <mailto:fergal.monaghan@deri.org> ;
+    foaf:name "Fergal Monaghan" .
+
+<http://csarven.ca/#i>
+    a foaf:Person ;
+    owl:sameAs <http://data.semanticweb.org/person/sarven-capadisli> .
+
+<http://data.semanticweb.org/person/basil-ell>
+    a foaf:Person ;
+    owl:sameAs <http://www.aifb.kit.edu/id/Basil_Ell> .
+
+<http://data.semanticweb.org/person/brian-davis>
+    a foaf:Person ;
+    owl:sameAs <http://www.deri.ie/about/team/member/Brian_Davis#me> .
+
+<http://data.semanticweb.org/person/craig-knoblock>
+    a foaf:Person ;
+    owl:sameAs <http://dblp.dagstuhl.de/pers/k/Knoblock:Craig_A=>, <http://dblp.l3s.de/d2r/page/authors/Craig_A._Knoblock>, <http://dblp.uni-trier.de/pers/k/Knoblock:Craig_A=>, <http://viaf.org/viaf/191878281>, <http://viaf.org/viaf/50887448> .
+
+<http://data.semanticweb.org/person/hugh-glaser>
+    a foaf:Person ;
+    owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Hugh_Glaser> .
+
+<http://data.semanticweb.org/person/katja-hose>
+    a foaf:Person ;
+    owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Katja_Hose> ;
+    foaf:homepage <http://people.cs.aau.dk/~khose/> .
+
+<http://data.semanticweb.org/person/martin-hepp>
+    a foaf:Person ;
+    rdfs:seeAlso <http://www.rkbexplorer.com/sameAs/?uri=http%3A%2F%2Facm.rkbexplorer.com%2Fid%2Fperson-715486-950006ecd385595c1641ecb94ea283a1> ;
+    owl:sameAs <http://acm.rkbexplorer.com/id/person-715486-950006ecd385595c1641ecb94ea283a1>, <http://semanticweb.org/id/Martin_Hepp>, <http://wiki.sembase.at/index.php/_Martin_Hepp>, <http://www.deri.ie/about/team/member/Martin_Hepp#me> ;
+    foaf:homepage <http://www.heppnetz.de/> ;
+    foaf:name "Martin Hepp" .
+
+<http://data.semanticweb.org/person/ralf-schenkel>
+    a foaf:Person ;
+    owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Ralf_Schenkel> .
+
+<http://dblp.l3s.de/d2r/resource/authors/Andreas_Harth>
+    rdfs:seeAlso <http://dblp.l3s.de/d2r/data/authors/Andreas_Harth> .
+
+<http://dblp.l3s.de/d2r/resource/authors/Andrew_Philpot>
+    a foaf:Person ;
+    rdfs:seeAlso <http://www.isi.edu/~philpot/foaf.rdf> .
+
+<http://dblp.l3s.de/d2r/resource/authors/Kai-Uwe_Sattler>
+    owl:sameAs <http://d-nb.info/gnd/1016568231>, <http://data.semanticweb.org/person/kai-uwe-sattler>, <http://dblp.uni-trier.de/pers/s/Sattler:Kai=Uwe> .
+
+<http://dblp.l3s.de/d2r/resource/authors/Katja_Hose>
+    a foaf:Person ;
+    owl:sameAs <http://data.semanticweb.org/person/katja-hose> .
+
+<http://dblp.l3s.de/d2r/resource/authors/Marcel_Karnstedt>
+    owl:sameAs <http://data.semanticweb.org/person/marcel-karnstedt>, <http://twitter2foaf.appspot.com/id/mynonami> .
+
+<http://dblp.l3s.de/d2r/resource/authors/Susie_Stephens>
+    a foaf:Person ;
+    owl:sameAs <http://www.ivan-herman.net/foafExtras.rdf#Susie>, <http://www.w3.org/People/Berners-Lee/card.rdf#ss> .
+
+<http://dbpedia.org/resource/Angela_Merkel>
+    owl:sameAs <http://data.nytimes.com/47020002042752366693>, <http://www.mademan.com/chickipedia/Special:URIResolver/angela_merkel> .
+
+<http://dbpedia.org/resource/Barack_Obama>
+    owl:sameAs <http://data.nytimes.com/47452218948077706853> .
+
+<http://dbpedia.org/resource/Dan_Connolly_%28computer_scientist%29>
+    owl:sameAs <http://wikidata.org/entity/Q3013037>, <http://www.w3.org/People/Connolly/#me> .
+
+<http://dbpedia.org/resource/Dieter_Fensel>
+    a foaf:Person ;
+    rdfs:seeAlso <http://www.rkbexplorer.com/sameAs/?uri=http://acm.rkbexplorer.com/id/person-53292-22877d02973d0d01e8f29c7113776e7e> ;
+    owl:sameAs <http://acm.rkbexplorer.com/id/person-53292-22877d02973d0d01e8f29c7113776e7e>, <http://semanticweb.org/id/Dieter_Fensel>, <http://wiki.sembase.at/index.php/_Dieter_Fensel>, <http://wikidata.org/entity/Q92918>, <http://www.deri.ie/about/team/member/Dieter_Fensel#me> ;
+    foaf:depiction <http://www.cs.vu.nl/~frankh/figs/dfe.jpg> ;
+    foaf:homepage <http://www.fensel.com/> ;
+    foaf:mbox <mailto:dieter.fensel@deri.org> ;
+    foaf:mbox_sha1sum "11a0c71f60f13dc0b9338f880355c71fa01854b4", "905ec4546ce5af69631b81be9bb27eb6c4303d2d" ;
+    foaf:name "Dieter Fensel" .
+
+<http://dbpedia.org/resource/James_Hendler>
+    owl:sameAs <http://www.cs.rpi.edu/~hendler/foaf.rdf#jhendler> .
+
+<http://dbpedia.org/resource/Michael_Genesereth>
+    a foaf:Person ;
+    owl:sameAs <http://dblp.l3s.de/d2r/page/authors/Michael_R._Genesereth>, <http://dblp.uni-trier.de/pers/g/Genesereth:Michael_R=> ;
+    foaf:depiction <http://forum.stanford.edu/graphics/photo/4004> ;
+    foaf:mbox <mailto:genesereth@cs.stanford.edu> ;
+    foaf:name "Michael Genesereth" .
+
+<http://estatwrap.ontologycentral.com/dic/geo#DE>
+    a geo:SpatialThing ;
+    owl:sameAs <http://aims.fao.org/aos/geopolitical.owl#Germany>, <http://dbpedia.org/resource/Germany>, <http://wikidata.org/entity/Q183> .
+
+<http://foaf.qdos.com/delicious/people/stefano.bertolo#me>
+    owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Stefano_Bertolo>, <http://semanticweb.org/id/Stefano_Bertolo> ;
+    foaf:homepage <http://lu.linkedin.com/in/stefanobertolo>, <http://twitter.com/sclopit> .
+
+<http://harth.org/andreas/abt-hth-all>
+    a vcard:Group ;
+    vcard:fn "Members of the Wintechis chair and the SCS-D department" ;
+    vcard:hasMember <http://harth.org/andreas/foaf#ah>, <https://aharth.inrupt.net/profile/card#me>, <https://aharth.solid.community/profile/card#me> .
+
+<http://harth.org/andreas/blog/>
+    rdfs:seeAlso <http://harth.org/andreas/blog/index.php?sioc_type=site> .
+
+<http://harth.org/andreas/foaf>
+    a foaf:PersonalProfileDocument ;
+    rdfs:label "FOAF file of Andreas Harth" ;
+    rdfs:seeAlso <http://harth.org/andreas/2014/dblp/cold2010-sameas-dblp.rdf>, <http://sw.deri.org/~aharth/deri-seealso.rdf>, <http://sw.deri.org/~aharth/doap-urls.rdf> ;
+    foaf:maker <http://harth.org/andreas/foaf#ah> ;
+    foaf:primaryTopic <http://harth.org/andreas/foaf#ah> .
+
+<http://harth.org/andreas/foaf#DoingWithImagesMakesSymbols>
+    dc:date "1987" ;
+    dc:description "Alan Kay's lecture about interacting with computers and problem solving.  Starting with even before Doug Engelbart and including historical videos of early demos.  Other topics include working with and learning from children, learning to play tennis, a Winston Churchill joke, and weight control. Sponsored by Apple Computer." ;
+    a <http://purl.org/dc/dcmitype/Sound> ;
+    foaf:maker <http://dbpedia.org//resource/Alan_Kay> ;
+    foaf:page <http://c2.com/cgi/wiki?DoingWithImagesMakesSymbols>, <http://www.archive.org/details/AlanKeyD1987>, <http://www.archive.org/details/AlanKeyD1987_2> .
+
+<http://harth.org/andreas/foaf#ah>
+    a schema:Person, foaf:Person ;
+    rdfs:comment "Andreas forscht am Fraunhofer IIS-SCS und der FAU in Nürnberg, vorher am AIFB, Karlsruher Institut für Technologie"@de, "Andreas is doing research at Fraunhofer IIS-SCS and FAU in Nuremberg, previously at AIFB, Karlsruhe Institute of Technology"@en ;
+    rdfs:label "Andreas Harth" ;
+    rdfs:seeAlso <http://apassant.net/home/2006/06/sioc-wiki2rdf/sites.rdf>, <http://c703-deri03.uibk.ac.at:8080/people/rdf/andreas.harth.rdf>, <http://captsolo.net/semweb/foaf-captsolo.rdf>, <http://harth.org/andreas/foaf.rdf>, <http://homepage.deri.org:8080/people/kweb/rdf/andreas%2Bharth.rdf>, <http://sameas.org/rdf?uri=http%3A%2F%2Fharth.org%2Fandreas%2Ffoaf%23ah>, <http://semanticweb.org/wiki/Special:ExportRDF/Andreas+Harth>, <http://www.rkbexplorer.com/sameAs/?uri=http%3A%2F%2Facm.rkbexplorer.com%2Fid%2Fperson-682206-760726a52a4d40b394f1fe35d623ddb0> ;
+    pim:organization <http://harth.org/andreas/foaf#deri> ;
+    owl:sameAs <http://acm.rkbexplorer.com/id/person-682206-760726a52a4d40b394f1fe35d623ddb0>, <http://cbasewrap.ontologycentral.com/person/andreas-harth#id>, <http://d-nb.info/gnd/143354639>, <http://data.semanticweb.org/person/andreas-harth>, <http://dblp.l3s.de/d2r/resource/authors/Andreas_Harth>, <http://dblp.uni-trier.de/pers/h/Harth:Andreas>, <http://harth.org/andreas/2014/dblp/cold2010-sameas-dblp.rdf#aha>, <http://harth.org/andreas/blog/author/admin/#foaf>, <http://identi.ca/user/47291>, <http://iswc2006.semanticweb.org/submissions/Harth2006dq_Harth_Andreas>, <http://orcid.org/0000-0002-0702-510X>, <http://semantictweet.com/aharth#me>, <http://semanticweb.org/id/Andreas_Harth>, <http://triple.semanticweb.org/svn/knud/library/books.rdf#andreasHarth>, <http://twitter2foaf.appspot.com/id/aharth>, <http://viaf.org/viaf/266223467>, <http://www.aifb.kit.edu/id/Andreas_Harth>, <http://www.aifb.uni-karlsruhe.de/Personen/viewPersonOWL/id2218instance>, <http://www.cs.vu.nl/~pmika/socionet#Andreas+Harth>, <http://www.deri.ie/about/team/member/Andreas_Harth#me>, <http://www.ecs.soton.ac.uk/~dt2/dlstuff/www2006_data#andreas_harth>, <http://www.harth.org/andreas/foaf#ah>, <http://www.harth.org/~andreas/foaf.rdf#ah>, <http://www.wikidata.org/entity/Q20754564>, <http://www.wikidata.org/entity/Q51283156>, <http://www4.wiwiss.fu-berlin.de/dblp/resource/person/287847>, <https://aharth.inrupt.net/profile/card#me>, <https://aharth.solid.community/profile/card#me> ;
+    vcard:fn "Andreas Harth" ;
+    vcard:role "Solid noob" ;
+    solid:oidcIssuer <https://solid.iis.fraunhofer.de/> ;
+    foaf:based_near <http://dbpedia.org/resource/Karlsruhe>, <http://estatwrap.ontologycentral.com/dic/geo#DE>, <http://nuts.geovocab.org/id/DE122> ;
+    foaf:currentProject <http://cbasewrap.ontologycentral.com/company/ontologycentral#id>, <http://harth.org/andreas/foaf#neon>, <http://rdfohloh.wikier.org/project/ldspider>, <http://sw.deri.org/2004/06/yars/doap.rdf#yars>, <http://sw.deri.org/2007/02/swsepaper/doap.rdf#swse>, <http://sw.deri.org/2009/01/visinav/doap.rdf#visinav>, <http://wiki.planet-data.eu/id/PlanetData> ;
+    foaf:depiction <http://sw.deri.org/~aharth/harth_thumb.jpg> ;
+    foaf:firstName "Andreas" ;
+    foaf:homepage <http://harth.org/andreas/>, <http://sw.deri.org/~aharth/>, <http://www.aifb.uni-karlsruhe.de/Personen/viewPersonenglish?id_db=2218>, <http://www.facebook.com/people/Andreas_Harth/575861994>, <http://www.linkedin.com/pub/4/37/926> ;
+    foaf:interest <http://www.w3.org/2001/sw/>, <http://www.w3.org/RDF/> ;
+    foaf:knows <http://140.203.154.209/~vit/foaf.rdf#me>, <http://aidanhogan.com/foaf.rdf#me>, <http://apassant.net/alex>, <http://captsolo.net/semweb/foaf-captsolo.rdf#Uldis_Bojars>, <http://cb.semsol.org/person/barney-pell#self>, <http://cb.semsol.org/person/nova-spivack#self>, <http://compsoc.nuigalway.ie/~fuzz/foaf.rdf#Fergal_Monaghan>, <http://csarven.ca/#i>, <http://data.semanticweb.org/person/brian-davis>, <http://data.semanticweb.org/person/craig-knoblock>, <http://data.semanticweb.org/person/heiner-stuckenschmidt>, <http://data.semanticweb.org/person/hugh-glaser>, <http://data.semanticweb.org/person/martin-hepp>, <http://data.semanticweb.org/person/mike-dean>, <http://dblp.l3s.de/d2r/resource/authors/Andrew_Philpot>, <http://dblp.l3s.de/d2r/resource/authors/Kai-Uwe_Sattler>, <http://dblp.l3s.de/d2r/resource/authors/Katja_Hose>, <http://dblp.l3s.de/d2r/resource/authors/Malgorzata_Mochol>, <http://dblp.l3s.de/d2r/resource/authors/Marcel_Karnstedt>, <http://dblp.l3s.de/d2r/resource/authors/Susie_Stephens>, <http://dbpedia.org/resource/Dan_Connolly_%28computer_scientist%29>, <http://dbpedia.org/resource/Dieter_Fensel>, <http://dbpedia.org/resource/James_Hendler>, <http://dbpedia.org/resource/Michael_Genesereth>, <http://eyaloren.org/foaf.rdf#me>, <http://f-dengler.de/foaf#fd>, <http://foaf.qdos.com/delicious/people/stefano.bertolo#me>, <http://harth.org/andreas/foaf#denny-vrandecic>, <http://harth.org/andreas/foaf#markusk>, <http://harth.org/andreas/foaf#rene>, <http://harth.org/andreas/foaf#rudi-studer>, <http://harth.org/andreas/foaf#tim>, <http://harth.org/andreas/foaf#tony>, <http://iandavis.com/blog/author/iand/#foaf>, <http://iandavis.com/id/paulmiller>, <http://id.ecs.soton.ac.uk/person/21>, <http://idehen.net/dataspace/person/kidehen#this>, <http://identi.ca/user/13692>, <http://identi.ca/user/226>, <http://identifiers.kmi.open.ac.uk/people/sofia-angeletou>, <http://iws.seu.edu.cn/people/gcheng>, <http://kantenwerk.org/metadata/foaf.rdf#me>, <http://kwarc.info/clange/foaf/foaf.rdf#me>, <http://liris.cnrs.fr/~pchampin/foaf.rdf#pa>, <http://mamund.com/foaf.rdf#me>, <http://mhausenblas.myopenid.com/>, <http://my.opera.com/tomheath/xml/foaf#me>, <http://nunolopes.org/foaf.rdf#me>, <http://olafhartig.de/foaf.rdf#olaf>, <http://rdf.freebase.com/ns/en.toms_bau_is>, <http://renaud.delbru.fr/rdf/foaf#me>, <http://richard.cyganiak.de/foaf.rdf#cygri>, <http://semanticweb.org/id/Antoine_Zimmermann>, <http://semanticweb.org/id/Jacco_Ossenbruggen>, <http://semanticweb.org/id/Jeen_Broekstra>, <http://semanticweb.org/id/Jerome_Euzenat>, <http://semanticweb.org/id/Steffen_Staab>, <http://semanticweb.org/id/Tim_Finin>, <http://southampton.rkbexplorer.com/id/person-04860>, <http://speiserweb.de/sebastian/foaf.rdf#me>, <http://sw-app.org/mic.xhtml#i>, <http://sw.deri.org/~haller/foaf.rdf#ah>, <http://sw.deri.org/~scorlosquet/foaf.rdf#me>, <http://sw.deri.org/~sheila/foaf.rdf#me>, <http://userver.ftw.at/~zhdanova/foaf.rdf#me>, <http://viaf.org/viaf/186889391>, <http://www-cdr.stanford.edu/~petrie/foaf.rdf#me>, <http://www.aifb.uni-karlsruhe.de/Personen/viewPersonOWL/id2084instance>, <http://www.aifb.uni-karlsruhe.de/Personen/viewPersonOWL/id40instance>, <http://www.aifb.uni-karlsruhe.de/WBS/awa/foaf.rdf#andreas>, <http://www.b-kaempgen.de/foaf.rdf#me>, <http://www.berrueta.net/foaf.rdf#me>, <http://www.bizer.de/#chris>, <http://www.blogweb.co.kr/haklae.rdf#me>, <http://www.cornelius-rabsch.de/foaf.rdf#me>, <http://www.cs.rpi.edu/~dingl/foaf.rdf#me>, <http://www.dajobe.org/foaf.rdf#i>, <http://www.deri.ie/about/team/member/Alexander_Schutz#me>, <http://www.deri.ie/about/team/member/Benjamin_Heitmann#me>, <http://www.deri.ie/about/team/member/Bill_McDaniel#me>, <http://www.deri.ie/about/team/member/Daniel_Schwabe#me>, <http://www.deri.ie/about/team/member/Ina_O%27Murchu#me>, <http://www.deri.ie/about/team/member/Karl_Aberer#me>, <http://www.deri.ie/about/team/member/Laurentiu_Vasiliu#me>, <http://www.deri.ie/about/team/member/Sebastian%20Ryszard_Kruk#me>, <http://www.deri.ie/about/team/member/Stefan_Decker#me>, <http://www.gassert.ch/foaf/hannes.rdf#hannesgassert>, <http://www.gearoid.org/index/foaf.rdf#me>, <http://www.georgikobilarov.com/foaf.rdf#me>, <http://www.holgerlausen.net/foaf.rdf#me>, <http://www.isi.edu/~ambite/foaf.rdf#me>, <http://www.isi.edu/~gil/foaf.rdf#me>, <http://www.ivan-herman.net/foaf.rdf#me>, <http://www.johnbreslin.com/foaf/foaf.rdf#me>, <http://www.kjetil.kjernsmo.net/foaf#me>, <http://www.openlinksw.com/dataspace/person/oerling#this>, <http://www.polleres.net/foaf.rdf#me>, <http://www.real-programmer.com/foaf/chbussler.foaf#me>, <http://www.siegfried-handschuh.net/metadata/foaf.rdf#me>, <http://www.stud.uni-karlsruhe.de/~uhbnq/martin/foaf.rdf#me>, <http://www.twine.com/item/1t7r716y-g3>, <http://www.umbrich.net/foaf.rdf#me>, <http://www.uni-koblenz.de/~sschenk/foaf.rdf#me>, <http://www.w3.org/People/Sandro/data#SandroHawke>, <http://www.wikier.org/foaf#wikier>, [
+        a foaf:Person ;
+        rdfs:seeAlso <http://sws.deri.ie/members/edward/foaf.rdf> ;
+        foaf:depiction <http://photos1.blogger.com/img/9/2591/640/Image026.jpg>, <http://sws.deri.ie/members/edward/images/DSCF0078.JPG> ;
+        foaf:mbox <mailto:edward.kilgarriff@deri.org> ;
+        foaf:name "Edward Kilgarriff"
+    ], [
+        a foaf:Person ;
+        rdfs:seeAlso <http://stud3.tuwien.ac.at/~e9925150/foaf.rdf> ;
+        foaf:mbox <mailto:simeon.petkov@deri.org> ;
+        foaf:name "Simeon Petkov"
+    ], [
+        a foaf:Person ;
+        foaf:name "Victor Charpenay"
+    ], [
+        a foaf:Person ;
+        foaf:homepage <http://www.blogger.com/profile/03562424333768625107> ;
+        foaf:name "Chris Horn" ;
+        foaf:weblog <http://chrishornat.blogspot.com/>
+    ], [
+        a foaf:Person ;
+        foaf:homepage <http://members.deri.at/~retok/> ;
+        foaf:name "Reto Krummenacher"
+    ], [
+        a foaf:Person ;
+        owl:sameAs <http://trust.mindswap.org/cgi-bin/FilmTrust/foaf.cgi?user=pinheiro> ;
+        foaf:homepage <http://www.ksl.stanford.edu/people/pp/> ;
+        foaf:name "Paulo Pinheiro da Silva"
+    ], [
+        a foaf:Person ;
+        foaf:mbox_sha1sum "288c19b480c19920f03220461bcf9207efd34e8a" ;
+        foaf:name "Matteo Magni"
+    ], [
+        a foaf:Person ;
+        foaf:mbox <mailto:mkassoff@cs.stanford.edu> ;
+        foaf:name "Michael Kassoff"
+    ], [
+        a foaf:Person ;
+        owl:sameAs <http://semanticweb.org/id/Brahmananda_Sapkota>, <http://sw.deri.org/~bnsapkota/foaf.rdf#me>, <http://www.deri.ie/about/team/member/Brahmananda_Sapkota#me> ;
+        foaf:depiction <http://sw.deri.org/~bnsapkota/np/pictures/DSC00108.JPG> ;
+        foaf:mbox <mailto:bnsapkota@gmail.com> ;
+        foaf:name "Brahmananda Sapkota"
+    ], [
+        a foaf:Person ;
+        rdfs:seeAlso <http://sw.deri.org/~kiqbal/foaf.rdf> ;
+        foaf:mbox <mailto:kashif.iqbal@deri.org> ;
+        foaf:name "Kashif Iqbal"
+    ] ;
+    foaf:made <http://harth.org/andreas/foaf#ldmgmt> ;
+    foaf:mbox <mailto:andreas.harth@deri.org>, <mailto:andreas@harth.org> ;
+    foaf:mbox_sha1sum "977bed7c4eb54971c2161e4eb2373b95ec3318f0" ;
+    foaf:name "Andreas Harth" ;
+    foaf:nick "aharth" ;
+    foaf:openid <http://aharth.myopenid.com/>, <http://aharth.pip.verisignlabs.com/>, <http://harth.org/andreas/> ;
+    foaf:page <http://harth.org/andreas/foaf>, <http://videolectures.net/andreas_harth/>, <http://www.aifb.kit.edu/web/Andreas_Harth>, <http://www.aifb.kit.edu/web/Andreas_Harth/en>, <http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/h/Harth:Andreas.html> ;
+    foaf:phone <callto://aharth> ;
+    foaf:schoolHomepage <http://www.fh-wuerzburg.de/>, <http://www.kit.edu/>, <http://www.nuigalway.ie/> ;
+    foaf:surname "Harth" ;
+    foaf:title "Dr." ;
+    foaf:topic_interest <http://d-nb.info/gnd/118514768>, <http://dbpedia.org//resource/Alan_Kay>, <http://dbpedia.org//resource/Marshall_McLuhan>, <http://dbpedia.org/resource/Artificial_intelligence>, <http://dbpedia.org/resource/Category:Electronica>, <http://dbpedia.org/resource/Internet>, <http://dbpedia.org/resource/Knowledge_Management>, <http://dbpedia.org/resource/Knowledge_representation>, <http://dbpedia.org/resource/Semantic_Web>, <http://dbpedia.org/resource/Semantic_search>, <http://dbtune.org/musicbrainz/resource/artist/79239441-bfd5-4981-a70c-55c3f15c1287>, <http://estatwrap.ontologycentral.com/dic/geo#DE>, <http://harth.org/andreas/foaf#DoingWithImagesMakesSymbols>, <http://harth.org/andreas/foaf#jt1>, <http://harth.org/andreas/foaf#jt2>, <http://harth.org/andreas/foaf#jt3>, <http://harth.org/andreas/foaf#jt4>, <http://id.loc.gov/authorities/sh2002000569#concept>, <http://id.loc.gov/authorities/sh2004000479#concept>, <http://id.loc.gov/authorities/sh92004914#concept>, <http://indexwrap.ontologycentral.com/sp500#id>, <http://www.bbc.co.uk/music/artists/aa7a2827-f74b-473c-bd79-03d065835cf7>, <http://www.bbc.co.uk/music/artists/c485632c-b784-4ee9-8ea1-c5fb365681fc> ;
+    foaf:weblog <http://harth.org/andreas/blog/> ;
+    foaf:workplaceHomepage <http://www.aifb.uni-karlsruhe.de/>, <http://www.aifb.uni-karlsruhe.de/Forschungsgruppen/WBS> .
+
+<http://harth.org/andreas/foaf#aifb>
+    a foaf:Organization ;
+    owl:sameAs <http://annotation.semanticweb.org/iswc/iswc.daml#AIFB>, <http://data.semanticweb.org/organization/institut-aifb-universitaet-karlsruhe>, <http://www.aifb.uni-karlsruhe.de/Kooperationen/viewOrganizationOWL/id7instance> ;
+    foaf:based_near <http://dbpedia.org/resource/Karlsruhe> ;
+    foaf:homepage <http://www.aifb.uni-karlsruhe.de/> .
+
+<http://harth.org/andreas/foaf#bio>
+    rdfs:seeAlso <http://bio2rdf.org/biomodels:BIOMD0000000048>, <http://data.linkedct.org/all>, <http://data.linkedct.org/resource/collabagency/204>, <http://data.linkedct.org/resource/linkedct/location>, <http://hcls.deri.org/atag-data/pastebin.html>, <http://ontology.neuinfo.org/NIF/nif.owl>, <http://openflydata.org/id/flybase/feature/FBgn0053919>, <http://rdf.openmolecules.net/?InChI=1/C12H8O2S/c13-8-5-6-10-11(12(8)14)7-3-1-2-4-9(7)15-10/h1-6,13-14H>, <http://spade.lbl.gov:2021/all/Image>, <http://www.affymetrix.com/community/publications/affymetrix/tmsplice/all_genes.1.rdf#2410016F19Rik_e4>, <http://www4.wiwiss.fu-berlin.de/dailymed/all>, <http://www4.wiwiss.fu-berlin.de/dailymed/all/organization>, <http://www4.wiwiss.fu-berlin.de/diseasome/all>, <http://www4.wiwiss.fu-berlin.de/diseasome/all/diseases>, <http://www4.wiwiss.fu-berlin.de/drugbank/all> .
+
+<http://harth.org/andreas/foaf#blogs>
+    rdfs:seeAlso <http://fgiasson.com/blog/index.php?sioc_type=site>, <http://harry.hchen1.com/index.php?sioc_type=site>, <http://planet.debian.org/foafroll.xml>, <http://sw.deri.org/2005/01/pyscutter/blogs.rdf>, <http://sw.deri.org/~aharth/2005/08/dbworld/feed.rdf>, <http://tech.newsjunk.com/>, <http://theregister.co.uk>, <http://torrez.us/index.php?sioc_type=site>, <http://valleywag.com/>, <http://www.economist.com/>, <http://www.firstmonday.org/>, <http://www.firstmondaypodcast.org/rss.xml>, <http://www.groklaw.net/backend/GLNewsPicks.rdf>, <http://www.groklaw.net/backend/GrokLaw.rdf>, <http://www.nzz.ch/>, <http://www.readwriteweb.com/>, <http://www.spiegel.de/>, <http://www.sueddeutsche.de/>, <http://www.tagesschau.de/>, <http://www.techcrunch.com/>, <http://www.zeit.de/> .
+
+<http://harth.org/andreas/foaf#books>
+    rdfs:seeAlso <http://www.gutenberg.org/feeds>, <http://www.gutenberg.org/feeds/today.rss> .
+
+<http://harth.org/andreas/foaf#bugmenot>
+    a foaf:Agent ;
+    rdfs:comment "An \"open\" OpenID account with password: isaidnot" ;
+    foaf:name "BugMeNot.com OpenID Account" ;
+    foaf:openid <http://bugmeno.myopenid.com/> ;
+    foaf:topic_interest <http://dbpedia.org/resource/Semantic_Web>, <http://dbpedia.org/resource/Semantic_search> .
+
+<http://harth.org/andreas/foaf#cb>
+    rdfs:seeAlso <http://cbasewrap.ontologycentral.com/company/amazon#id>, <http://cbasewrap.ontologycentral.com/company/apple#id>, <http://cbasewrap.ontologycentral.com/company/google#id>, <http://cbasewrap.ontologycentral.com/company/ibm#self>, <http://cbasewrap.ontologycentral.com/company/microsoft#id>, <http://cbasewrap.ontologycentral.com/company/tagcrumbs#id>, <http://cbasewrap.ontologycentral.com/company/yahoo#id>, <http://cbasewrap.ontologycentral.com/links.rdf>, <http://cbasewrap.ontologycentral.com/person/paul-allen#id> .
+
+<http://harth.org/andreas/foaf#dbworld>
+    rdfs:seeAlso <http://sw.deri.org/~aharth/2005/08/dbworld/cfp.owl>, <http://sw.deri.org/~aharth/2005/08/dbworld/dbworld.rdf> .
+
+<http://harth.org/andreas/foaf#denny-vrandecic>
+    owl:sameAs <http://data.semanticweb.org/person/denny-vrandecic>, <http://simia.net/foaf.rdf#denny>, <http://twitter2foaf.appspot.com/id/vrandezo>, <http://www.aifb.kit.edu/id/Denny_Vrandecic> .
+
+<http://harth.org/andreas/foaf#deri>
+    a foaf:Organization ;
+    rdfs:seeAlso <http://cbasewrap.ontologycentral.com/company/cisco#id>, <http://cbasewrap.ontologycentral.com/company/ibm#id>, <http://cbasewrap.ontologycentral.com/company/nortel-networks#id>, <http://chrishornat.blogspot.com/2008/12/accident-and-emergency-beds-or.html> ;
+    org:includes <http://harth.org/andreas/foaf#deri-gwy>, <http://harth.org/andreas/foaf#deri-seoul>, <http://harth.org/andreas/foaf#deri-stanford> ;
+    owl:sameAs <http://dbpedia.org/resource/Digital_Enterprise_Research_Institute>, <http://www.ecs.soton.ac.uk/~dt2/dlstuff/www2006_data#digital_enterprise_research_institute> ;
+    foaf:homepage <http://www.deri.org/> ;
+    foaf:name "DERI", "Digital Enterprise Research Institute" ;
+    foaf:weblog <http://blog.deri.ie/>, <http://openspring.net/planet-deri/rss> .
+
+<http://harth.org/andreas/foaf#deri-gwy>
+    a foaf:Organization ;
+    owl:sameAs <http://data.semanticweb.org/organization/deri-nui-galway>, <http://semanticweb.org/id/Digital_Enterprise_Research_Institute_(DERI)_Galway>, <http://social.semantic-2dweb.at/wiki/index.php/_DERI_Galway>, <http://www.tagcrumbs.com/cornelius/placemarks/deri-digital-enterprise-research-institute#placemark> ;
+    foaf:based_near <http://sws.geonames.org/2964180/> ;
+    foaf:homepage <http://www.deri.ie/> ;
+    foaf:name "DERI Galway" .
+
+<http://harth.org/andreas/foaf#deri-seoul>
+    a foaf:Organization ;
+    foaf:name "Digital Enterprise Research Institute (DERI) Seoul" .
+
+<http://harth.org/andreas/foaf#deri-stanford>
+    a foaf:Organization ;
+    foaf:homepage <http://deri.stanford.edu/>, <http://www.deri.us/> ;
+    foaf:name "Digital Enterprise Research Institute (DERI) Stanford" .
+
+<http://harth.org/andreas/foaf#elgeo>
+    rdfs:seeAlso <http://geo.linkedopendata.gr/gag/id/9132>, <http://geo.linkedopendata.gr/gag/id/9169> .
+
+<http://harth.org/andreas/foaf#encoding-tests>
+    rdfs:seeAlso <http://homepage.uibk.ac.at/~c703261/foaf-russian.rdf>, <http://homepage.uibk.ac.at/~c703319/various/foaf.rdf>, <http://sw.deri.org/~knud/knudfoaf.rdf> .
+
+<http://harth.org/andreas/foaf#geo>
+    rdfs:seeAlso <http://gadm.geovocab.org/id/0.rdf>, <http://nuts.geovocab.org/id/nuts0.rdf> .
+
+<http://harth.org/andreas/foaf#goodrelations>
+    rdfs:seeAlso <http://franz.com/semanticweb.rdf>, <http://iliumtechnologies.com/semanticweb.rdf>, <http://palimpsest-press.com/semanticweb.rdf>, <http://products.semweb.bestbuy.com/products/8182593/semanticweb.rdf>, <http://stores.bestbuy.com/281/semanticweb.rdf>, <http://www.3kbo.com/semanticweb.rdf>, <http://www.heavy-liquid.com/semanticweb.rdf>, <http://www.inndata.at/semanticweb.rdf>, <http://www.intisgiftalpacas.com/semanticweb.rdf>, <http://www.jarltech.de/semanticweb.rdf>, <http://www.momoshi.com/semanticweb.rdf>, <http://www.smart-infosys.at/semanticweb.rdf>, <http://www.tenera.ch/semanticweb.rdf> .
+
+<http://harth.org/andreas/foaf#iswc>
+    rdfs:seeAlso <http://sw.deri.org/2006/07/location/locations.rdf>, <http://www.eswc2006.org/index.rdf> .
+
+<http://harth.org/andreas/foaf#jobs>
+    rdfs:seeAlso <http://www.nature.com/naturejobs/jobs/biologicalsciences.rdf>, <http://www.nature.com/naturejobs/jobs/general.rdf>, <http://www.nature.com/naturejobs/jobs/physicalsciences.rdf> .
+
+<http://harth.org/andreas/foaf#jt1>
+    dc:description "Fables in this segment include \"The Unicorn in the Garden,\" perhaps the most famous of these fables, \"The Tiger who Understood People,\" and \"The Lion who Wanted to Zoom.\"" ;
+    foaf:maker <http://dbpedia.org/resource/James_Thurber> ;
+    foaf:page <http://town.hall.org/radio/HarperAudio/020794_harp_01_ITH.au> .
+
+<http://harth.org/andreas/foaf#jt2>
+    dc:description "Fables in this section include \"The Shrike and the Chipmunks,\" \"The Seal who Became Famous,\" \"The Bear who Let It Alone,\" and a tale illustrating the very human yearning for the unattainable, \"The Moth And The Star.\"" ;
+    foaf:maker <http://dbpedia.org/resource/James_Thurber> ;
+    foaf:page <http://town.hall.org/radio/HarperAudio/021794_harp_01_ITH.au> .
+
+<http://harth.org/andreas/foaf#jt3>
+    dc:description "Fables in this segment, some of which have a distinctly misogynistic tendency, include \"The Scotty who Knew Too Much,\" \"The Stork who Married a Dumb Wife,\" and a parable about the danger of looking outside one's own natural sphere, \"The Crow and the Oriole.\"" ;
+    foaf:maker <http://dbpedia.org/resource/James_Thurber> ;
+    foaf:page <http://town.hall.org/radio/HarperAudio/030494_harp_01_ITH.au> .
+
+<http://harth.org/andreas/foaf#jt4>
+    dc:description "These selections include \"The Courtship of Arthur and Al,\" a retelling of \"The Tortoise and the Hare,\" \"The Patient Bloodhound,\" and \"The Little Girl and the Wolf,\" which puts a new twist on the well-known fairy tale." ;
+    foaf:maker <http://dbpedia.org/resource/James_Thurber> ;
+    foaf:page <http://town.hall.org/radio/HarperAudio/031694_harp_01_ITH.au> .
+
+<http://harth.org/andreas/foaf#kit>
+    a foaf:Organization ;
+    org:includes <http://data.semanticweb.org/organization/universitaet-karlsruhe>, <http://semanticweb.org/id/Universit-C3-A4t_Karlsruhe_(TH)> ;
+    owl:sameAs <http://dbpedia.org/resource/Karlsruhe_Institute_of_Technology>, <http://semanticweb.org/id/Karlsruhe_Institute_of_Technology> ;
+    foaf:homepage <http://www.kit.edu/> .
+
+<http://harth.org/andreas/foaf#ldmgmt>
+    dcterms:publisher "Chapman and Hall/CRC" ;
+    dcterms:title "Linked Data Management" ;
+    dcterms:year "2014" ;
+    foaf:maker <http://data.semanticweb.org/person/katja-hose>, <http://data.semanticweb.org/person/ralf-schenkel> ;
+    foaf:page <http://www.crcpress.com/product/isbn/9781466582408> .
+
+<http://harth.org/andreas/foaf#lilly>
+    owl:sameAs <http://data.linkedct.org/resource/collabagency/1908>, <http://dbpedia.org/resource/Eli_Lilly_and_Company> .
+
+<http://harth.org/andreas/foaf#links>
+    rdfs:seeAlso <http://collection.britishmuseum.org/id/object/EOC3130>, <http://collection.britishmuseum.org/id/object/JCR10722>, <http://collection.britishmuseum.org/id/object/MCT3635>, <http://data.etihq.eu/etihq/anything.rdf>, <http://dbtune.org/jamendo/all/artist>, <http://eye48.com/foaf.rdf>, <http://files.openspring.net/2014/crawl/wild.rdf>, <http://journal.dajobe.org/journal/2003/07/semblogs/bloggers.rdf>, <http://linkedmap.unizar.es/id/BCN-3646793>, <http://location.testproject.eu/id/administrative-unit/STATBEL/23033>, <http://location.testproject.eu/so/ad/AddressRepresentation/AGIV/2000017467>, <http://lod.gesis.org/thesoz/>, <http://lod.gesis.org/thesoz/concept/10040596>, <http://opmi.labs.oreilly.com/product/9780596515812>, <http://people.aifb.kit.edu/bel/nlpdeppos.rdf>, <http://semanticweb.org/RDF/alldata.xml>, <http://sw.deri.org/~aharth/2005/08/dbworld/dbworld.rdf>, <http://sw.deri.org/~aharth/cfp.rdf>, <http://uberblic.org/resource/9bb30c05-a369-4bb4-86bd-42386cc0c0ae#thing>, <http://worldbank.270a.info/dataset/world-bank-climates>, <http://worldbank.270a.info/sparql?query=PREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20property%3A%20%3Chttp%3A%2F%2Fworldbank.270a.info%2Fproperty%2F%3E%0APREFIX%20country%3A%20%3Chttp%3A%2F%2Fworldbank.270a.info%2Fclassification%2Fcountry%2F%3E%0APREFIX%20income-level%3A%20%3Chttp%3A%2F%2Fworldbank.270a.info%2Fclassification%2Fincome-level%2F%3E%0APREFIX%20world-bank-projects-and-operations%3A%20%3Chttp%3A%2F%2Fworldbank.270a.info%2Fgraph%2Fworld-bank-projects-and-operations%3E%0APREFIX%20meta%3A%20%3Chttp%3A%2F%2Fworldbank.270a.info%2Fgraph%2Fmeta%3E%0A%0ACONSTRUCT%20%7B%20%3C%3E%20rdfs%3AseeAlso%20%3Fcountry%20.%20%7D%0AWHERE%20%7B%0AGRAPH%20world-bank-projects-and-operations%3A%20%7B%0A%20%20%20%20%20%20%20%20%3Fproject%20property%3Acountry%20%3Fcountry%20.%0A%7D%0A%0A%7D%0A>, <http://www.cs.rpi.edu/~dingl/foaf.rdf>, <http://www.cs.rpi.edu/~tayloj/DOCS/foaf.rdf>, <http://www.csd.abdn.ac.uk/~apreece/foaf.rdf>, <http://www.informatik.tu-cottbus.de/~agiurca/foaf.rdf>, <http://www.isi.edu/~gil/foaf.rdf>, <http://www.pms.ifi.lmu.de/mitarbeiter/bry/foaf.rdf>, <http://www.w3.org/2000/06/webdata/xslt?xslfile=http://www.ldodds.com/foaf/bulletin.xsl&xmlfile=http://cgi.w3.org/cgi-bin/tidy?docAddr=http%3A%2F%2Frdfweb.org%2Frweb%2Fwiki%2Fwiki.pl%3FFOAFBulletinBoard>, <http://www.w3.org/People/Berners-Lee/card.rdf> .
+
+<http://harth.org/andreas/foaf#lod>
+    rdfs:seeAlso <http://data.linkedmdb.org/all>, <http://data.semanticweb.org/conference/eswc/2008/tracks/research>, <http://dbpedia.org/resource/Angela_Merkel>, <http://dbpedia.org/resource/Banana>, <http://dbpedia.org/resource/Barack_Obama>, <http://dbpedia.org/resource/Brad_Pitt>, <http://dbpedia.org/resource/Category:Computer_companies_of_the_United_States>, <http://dbpedia.org/resource/Drupal>, <http://dbpedia.org/resource/Gordon_Brown>, <http://dbpedia.org/resource/Madonna>, <http://dbpedia.org/resource/Mona_Lisa>, <http://dbpedia.org/resource/Soccer>, <http://sw.deri.org/2009/04/airports/airports.rdf>, <http://swat.cse.lehigh.edu/resources/data/aigpdata.owl>, <http://swat.cse.lehigh.edu/resources/maps/map_aigp_foaf.owl>, <http://swat.cse.lehigh.edu/resources/maps/map_aigp_university.owl>, <http://swat.cse.lehigh.edu/resources/maps/sameas/aigp_dblp_SameAs.rdf>, <http://swat.cse.lehigh.edu/resources/maps/sameas/aigp_nsf_names_sameas.owl>, <http://swat.cse.lehigh.edu/resources/maps/sameas/aigp_nsf_sameas.owl>, <http://swat.cse.lehigh.edu/resources/onto/aigp.owl>, <http://www.rdfabout.com/rdf/usgov/congress/people/M000303>, <http://www.rdfabout.com/rdf/usgov/congress/people/O000167> .
+
+<http://harth.org/andreas/foaf#markusk>
+    a foaf:Person ;
+    owl:sameAs <http://dblp.uni-trier.de/pers/k/Kr=ouml=tzsch:Markus>, <http://semanticweb.org/id/Markus> .
+
+<http://harth.org/andreas/foaf#misc>
+    rdfs:seeAlso <http://twitterpacks.pbwiki.com/f/sempack.rdf>, <http://www.sfu.ca/~dgasevic/projects/PNO/OWL/PNO-core.owl>, <http://www.w3.org/2006/http>, <https://launchpad.net/subversion/+rdf> .
+
+<http://harth.org/andreas/foaf#neon>
+    doap:homepage <http://www.neon-project.org/> ;
+    a doap:Project ;
+    rdfs:seeAlso <http://aims.fao.org/aos/fi/water_EEZ_data.owl>, <http://aims.fao.org/aos/geopolitical.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/aquaticresourceobservation.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/aquaticresourceobservationNoInd.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/aquaticresourceobservation_old.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/aquaticresourceobservation_v1.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/aquaticresourceobservation_v11.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/aquaticresourceobservation_v12.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/aquaticresourceobservation_v14.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/aquaticresourceobservation_v15.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/aquaticresourceobservation_v16.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/aquaticresourceobservationdebug.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/aquaticresources.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/aquaticresourcesbroad.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/aquaticresourcesimplemap.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/catchrecord.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/catchrecord_v1.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/catchrecord_v11.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/catchrecord_v12.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/climaticzone.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/fsdasnetwork.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/fsdasnetwork2.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/gearspecies.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/gearvessel.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/gearwaterarea.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/horizontaldistribution.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/jurisdictionaldistribution.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/resourceabundanceobservation.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/resourceexploitationobservation.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/rtmsmapping.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/simpleresourceabundancenobservation.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/speciesbathymetry.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/speciesconditions.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/speciesconservation.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/specieseat.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/speciesfactsheets.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/speciesfactsheets_v10.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/specieshabitat.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/speciesnames.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/verticaldistance.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/verticaldistribution.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/vesselspecies.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/vesselwaterarea.owl>, <http://ontologydesignpatterns.org/cp/owl/fsdas/waterareasfactsheets.owl>, <http://ontologydesignpatterns.org/ont/fao/agrovoc.owl>, <http://ontologydesignpatterns.org/ont/fao/asfa/asfad.owl>, <http://www.agrifeeds.org/en/node/1044/xml>, <http://www.fao.org/aims/aos/fi/commodities_ISSCFC_HS.owl>, <http://www.fao.org/aims/aos/fi/commodities_ISSCFC_HS_data.owl>, <http://www.fao.org/aims/aos/fi/gear_ISSCFG.owl>, <http://www.fao.org/aims/aos/fi/species_ISSCAAP.owl>, <http://www.fao.org/aims/aos/fi/species_ISSCAAP_data.owl>, <http://www.fao.org/aims/aos/fi/species_taxonomic.owl>, <http://www.fao.org/aims/aos/fi/species_taxonomic_data.owl>, <http://www.fao.org/aims/aos/fi/vessels_GT_GRT_ISSCFV.owl>, <http://www.fao.org/aims/aos/fi/water_EEZ.owl>, <http://www.fao.org/aims/aos/fi/water_FAO_areas.owl>, <http://www.fao.org/aims/aos/fi/water_FAO_areas_data.owl>, <http://www.fao.org/aims/aos/fi/water_LME.owl>, <http://www.fao.org/aims/aos/fi/water_LME_data.owl>, <http://www.ontologydesignpatterns.org/ont/fao/asfa_to_agrovoc.owl>, <http://www.ontologydesignpatterns.org/ont/fao/commodities_to_asfa.owlhttp://ontologydesignpatterns.org/cp/owl/fsdas//cp/owl/>, <http://www.ontologydesignpatterns.org/ont/fao/species_vicinity_geopolitical.owl> ;
+    owl:sameAs <http://www.aifb.uni-karlsruhe.de/Projekte/viewProjektOWL/id71instance> ;
+    foaf:name "NeOn - Lifecycle support for networked ontologies" .
+
+<http://harth.org/andreas/foaf#nobel>
+    rdfs:seeAlso <http://data.nobelprize.org/all> .
+
+<http://harth.org/andreas/foaf#nuig>
+    a foaf:Organization ;
+    org:includes <http://harth.org/andreas/foaf#deri-gwy> ;
+    owl:sameAs <http://dbpedia.org/resource/National_University_of_Ireland,_Galway>, <http://iswc2006.semanticweb.org/submissions/affiliations/nuig>, <http://www.ecs.soton.ac.uk/~dt2/dlstuff/www2006_data#national_university_of_galway-ireland> ;
+    foaf:homepage <http://www.nuigalway.ie/> ;
+    foaf:name "NUIG", "National University of Ireland, Galway" .
+
+<http://harth.org/andreas/foaf#nuig-library>
+    rdfs:seeAlso <http://rss.library.nuigalway.ie/rdf/Arts-new-books.rdf>, <http://rss.library.nuigalway.ie/rdf/Commerce-new-books.rdf>, <http://rss.library.nuigalway.ie/rdf/Engineering-new-books.rdf>, <http://rss.library.nuigalway.ie/rdf/Law-new-books.rdf>, <http://rss.library.nuigalway.ie/rdf/Medicine-new-books.rdf>, <http://rss.library.nuigalway.ie/rdf/Science-new-books.rdf> .
+
+<http://harth.org/andreas/foaf#people>
+    rdfs:seeAlso <http://biessmann.de/andreas/foaf.rdf>, <http://c703-deri03.uibk.ac.at:8080/people/index/innindex.rdf>, <http://ontoworld.org/wiki/Special:ExportRDF/Category%3APerson>, <http://rdfig.xmlhack.com/index.rss>, <http://sra.itc.it/people/massa/paolofoaf.rdf>, <http://sw.deri.org/2005/02/flight/galway.rdf>, <http://sw.deri.org/~francois/foaf.rdf>, <http://sw.deri.org/~knud/library/bookfeed.rss>, <http://sws.deri.ie/members/edward/foaf.rdf>, <http://www.aifb.uni-karlsruhe.de/viewAIFB_OWL.owl>, <http://www.bbc.co.uk/indonesian/index.rdf>, <http://www.bbc.co.uk/indonesian/sports/index.rdf>, <http://www.cs.helsinki.fi/u/tsidorof/meta/foaf.rdf>, <http://www.obverse.com.au/~comrade/foaf.rdf>, <http://www.sidar.org/que/ge/egyr/egyr.rdf>, <http://www.upl.cs.wisc.edu/~zimage/foaf.rdf>, <http://www.w3.org/2001/06/airports.rdf> .
+
+<http://harth.org/andreas/foaf#photos>
+    rdfs:seeAlso <http://www.confoto.org/w3photo> .
+
+<http://harth.org/andreas/foaf#rene>
+    a foaf:Person ;
+    owl:sameAs <http://sw.deri.org/~scorlosquet/foaf.rdf#rene>, <http://www.deri.ie/about/team/member/René_Schubotz#me> ;
+    foaf:name "Rene Schubotz" ;
+    foaf:weblog <http://rschubotz.wordpress.com/> .
+
+<http://harth.org/andreas/foaf#rudi-studer>
+    rdfs:seeAlso <http://www.rkbexplorer.com/sameAs/?uri=http%3A%2F%2Facm.rkbexplorer.com%2Fid%2Fperson-236166-83978c5988dfadc10d339d90c0778d65> ;
+    owl:sameAs <http://acm.rkbexplorer.com/id/person-236166-83978c5988dfadc10d339d90c0778d65>, <http://data.semanticweb.org/person/rudi-studer>, <http://dblp.l3s.de/d2r/resource/authors/Rudi_Studer>, <http://dbpedia.org/resource/Rudi_Studer>, <http://semanticweb.org/id/Rudi_Studer>, <http://wikidata.org/entity/Q92692>, <http://www.aifb.kit.edu/id/Rudi_Studer>, <http://www.aifb.uni-karlsruhe.de/Personen/viewPersonOWL/id57instance>, <http://www.deri.ie/about/team/member/Rudi_Studer#me>, <http://www.deri.ie/about/team/member/Studer_Rudi#me>, <http://www.ecs.soton.ac.uk/~dt2/dlstuff/www2006_data#rudi_studer> .
+
+<http://harth.org/andreas/foaf#sioc>
+    rdfs:seeAlso <http://eye48.com/go/dokusioc>, <http://sw.deri.org/~aharth/2009/01/scutterplan/sioc.rdf>, <http://ws.sioc-project.org/mediawiki/mediawiki.php?wiki=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSemantic_Web>, <http://www.clauwa.info/index.php?sioc_type=site> .
+
+<http://harth.org/andreas/foaf#smile>
+    a foaf:Group ;
+    foaf:member <http://www.siegfried-handschuh.net/metadata/foaf.rdf#me> ;
+    foaf:weblog <http://smile.deri.ie/blog/> .
+
+<http://harth.org/andreas/foaf#stats>
+    rdfs:seeAlso <http://estatwrap.ontologycentral.com/table_of_contents.rdf> .
+
+<http://harth.org/andreas/foaf#tim>
+    a foaf:Person ;
+    foaf:name "Tim Clark" ;
+    foaf:page <http://iic.harvard.edu/user/tim-clark> .
+
+<http://harth.org/andreas/foaf#tony>
+    a foaf:Person ;
+    owl:sameAs <http://www.twine.com/item/1tmgwsp5-1zr> ;
+    foaf:made <http://www.semanticuniverse.com/> ;
+    foaf:name "Tony Shaw" .
+
+<http://harth.org/andreas/foaf#video>
+    rdfs:seeAlso <http://feeds.feedburner.com/UCTVVideoPodcasts>, <http://feeds.feedburner.com/tedtalks_video>, <http://uc.princeton.edu/main/index2.php?option=com_vodcast&feed=RSS&no_html=1>, <http://www.researchchannel.org/rss/schedule/>, <http://www.uwtv.org/podcasts/dynamic_uwtv.aspx?fid=4947&type=2> .
+
+<http://harth.org/andreas/foaf#xbrl>
+    rdfs:seeAlso <http://edgarwrap.ontologycentral.com/cik/1014931>, <http://edgarwrap.ontologycentral.com/cik/links.rdf>, <http://edgarwrap.ontologycentral.com/dbpedia-sameas.rdf>, <http://edgarwrap.ontologycentral.com/feed/usgaap> .
+
+<http://iandavis.com/blog/author/iand/#foaf>
+    owl:sameAs <http://iandavis.com/id/me> .
+
+<http://iandavis.com/id/paulmiller>
+    rdfs:seeAlso <http://blogs.talis.com/nodalities/>, <http://blogs.zdnet.com/semantic-web/?feed=rss2> .
+
+<http://identi.ca/user/13692>
+    foaf:weblog <http://bnode.org/blog> .
+
+<http://identi.ca/user/226>
+    owl:sameAs <http://danbri.org/foaf#danbri>, <http://danbri.org/foaf.rdf#danbri>, <http://semanticweb.org/id/Dan_Brickley> .
+
+<http://kantenwerk.org/metadata/foaf.rdf#me>
+    a foaf:Person ;
+    rdfs:seeAlso <http://sw.deri.org/~knud/knudfoaf.rdf> ;
+    owl:sameAs <http://www.deri.ie/about/team/member/Knud_Möller#me> ;
+    foaf:weblog <http://confuseddevelopment.blogspot.com/> .
+
+<http://linkedgeodata.org/ontology/gadmSameAs>
+    rdfs:subPropertyOf owl:sameAs .
+
+<http://mhausenblas.myopenid.com/>
+    owl:sameAs <http://identi.ca/user/12704> .
+
+<http://my.opera.com/tomheath/xml/foaf#me>
+    owl:sameAs <http://data.semanticweb.org/person/tom-heath>, <http://dblp.l3s.de/d2r/resource/authors/Tom_Heath>, <http://tomheath.com/id/me> .
+
+<http://olafhartig.de/foaf.rdf#olaf>
+    a foaf:Person ;
+    owl:sameAs <http://data.semanticweb.org/person/olaf-hartig>, <http://dblp.l3s.de/d2r/resource/authors/Olaf_Hartig> .
+
+<http://people.aifb.kit.edu/bel/nlpdeppos.rdf>
+    foaf:maker <http://data.semanticweb.org/person/basil-ell> .
+
+<http://products.semweb.bestbuy.com/company.rdf#Manufacturer_Microsoft>
+    owl:sameAs <http://dbpedia.org/resource/Microsoft> .
+
+<http://rdf.freebase.com/ns/en.toms_bau_is>
+    owl:sameAs <http://www.deri.ie/about/team/member/Toms_Baugis#me> .
+
+<http://renaud.delbru.fr/rdf/foaf#me>
+    a foaf:Person ;
+    rdfs:seeAlso <http://renaud.delbru.fr/rdf/foaf> ;
+    owl:sameAs <http://www.deri.ie/about/team/member/Renaud_Delbru#me> ;
+    foaf:homepage <http://renaud.delbru.fr/> ;
+    foaf:name "Renaud Delbru" .
+
+<http://richard.cyganiak.de/foaf.rdf#cygri>
+    owl:sameAs <http://data.semanticweb.org/person/richard-cyganiak>, <http://dblp.l3s.de/d2r/resource/authors/Richard_Cyganiak>, <http://dowhatimean.net/author/site-admin/#foaf> .
+
+<http://semanticweb.org/id/Antoine_Zimmermann>
+    a foaf:Person ;
+    rdfs:seeAlso <http://www.inrialpes.fr/exmo/people/zimmer/az-foaf.rdf> ;
+    owl:sameAs <http://www.deri.ie/about/team/member/Antoine_Zimmermann#me> ;
+    foaf:mbox_sha1sum "fe8558534c4eb4c894c9fad86288faa7ad057602" ;
+    foaf:name "Antoine Zimmermann" .
+
+<http://semanticweb.org/id/Jeen_Broekstra>
+    owl:sameAs <http://www.aifb.uni-karlsruhe.de/Publikationen/viewExternerAutorOWL/id81instance> ;
+    foaf:weblog <http://jeenbroekstra.blogspot.com/> .
+
+<http://semanticweb.org/id/Jerome_Euzenat>
+    a foaf:Person ;
+    rdfs:seeAlso <http://www.inrialpes.fr/exmo/people/euzenat/euzenatj.rdf> ;
+    owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Jerome_Euzenat>, <http://www.eswc2006.org/people/euzenat-jerome> ;
+    foaf:name "Jerome Euzenat" .
+
+<http://semanticweb.org/id/Steffen_Staab>
+    a foaf:Person ;
+    owl:sameAs <http://harth.org/andreas/2014/dblp/iswc2007-sameas-dblp.rdf#steffen>, <http://userpages.uni-koblenz.de/~staab/foaf.rdf#me>, <http://www.aifb.kit.edu/id/Steffen_Staab> .
+
+<http://semanticweb.org/id/Tim_Finin>
+    owl:sameAs <http://data.semanticweb.org/person/tim-finin>, <http://dblp.l3s.de/d2r/resource/authors/Tim_Finin>, <http://dbpedia.org/resource/Tim_Finin>, <http://trust.mindswap.org/cgi-bin/FilmTrust/foaf.cgi?user=finin#finin>, <http://wikidata.org/entity/Q7803487>, <http://www.cs.rpi.edu/~dingl/foaf.rdf#tim_finin> .
+
+<http://southampton.rkbexplorer.com/id/person-04860>
+    rdfs:seeAlso <http://www.rkbexplorer.com/sameAs/?uri=http://southampton.rkbexplorer.com/id/person-04860> .
+
+<http://sw.deri.org/2004/06/yars/doap.rdf#yars>
+    doap:homepage <http://sw.deri.org/2004/06/yars/> ;
+    a doap:Project .
+
+<http://sw.deri.org/2007/02/swsepaper/doap.rdf#swse>
+    doap:homepage <http://swse.deri.org/> ;
+    a doap:Project ;
+    rdfs:seeAlso <http://sw.deri.org/2007/02/swsepaper/doap.rdf> .
+
+<http://sw.deri.org/~haller/foaf.rdf#ah>
+    a foaf:Person ;
+    rdfs:seeAlso <http://sw.deri.org/~haller/foaf.rdf> ;
+    owl:sameAs <http://data.semanticweb.org/person/armin-haller>, <http://semanticweb.org/id/Armin_Haller>, <http://www.deri.ie/about/team/member/Armin_Haller#me> ;
+    foaf:mbox <mailto:armin.haller@deri.org> ;
+    foaf:name "Armin Haller" .
+
+<http://sw.deri.org/~knud/mov/beer.mov>
+    dc:description "Scandinavian ode to beer." ;
+    dc:subject "Beer" .
+
+<http://sw.deri.org/~scorlosquet/foaf.rdf#me>
+    a foaf:Person ;
+    rdfs:seeAlso <http://sw.deri.org/~scorlosquet/foaf.rdf> .
+
+<http://sw.deri.org/~sheila/foaf.rdf#me>
+    a foaf:Person ;
+    rdfs:seeAlso <http://sw.deri.org/~sheila/foaf.rdf> ;
+    foaf:mbox <mailto:sheila.kinsella@deri.org> ;
+    foaf:name "Sheila Kinsella" .
+
+<http://town.hall.org/radio/HarperAudio/020794_harp_01_ITH.au>
+    a <http://purl.org/dc/dcmitype/Sound> ;
+    foaf:maker <http://dbpedia.org/resource/Peter_Ustinov> .
+
+<http://town.hall.org/radio/HarperAudio/021794_harp_01_ITH.au>
+    a <http://purl.org/dc/dcmitype/Sound> ;
+    foaf:maker <http://dbpedia.org/resource/Peter_Ustinov> .
+
+<http://town.hall.org/radio/HarperAudio/030494_harp_01_ITH.au>
+    a <http://purl.org/dc/dcmitype/Sound> ;
+    foaf:maker <http://dbpedia.org/resource/Peter_Ustinov> .
+
+<http://town.hall.org/radio/HarperAudio/031694_harp_01_ITH.au>
+    a <http://purl.org/dc/dcmitype/Sound> ;
+    foaf:maker <http://dbpedia.org/resource/Peter_Ustinov> .
+
+<http://umbel.org/umbel/sc/Organization>
+    owl:disjointWith <http://dbpedia.org/ontology/Country> .
+
+<http://userver.ftw.at/~zhdanova/foaf.rdf#me>
+    a foaf:Person ;
+    rdfs:seeAlso <http://loi.sti2.at/2014/01/index.rdf>, <http://loi.sti2.at/2014/01/index.ttl>, <http://userver.ftw.at/~zhdanova/foaf.rdf> ;
+    foaf:name "Anna V. Fensel" .
+
+<http://viaf.org/viaf/186889391>
+    a foaf:Person ;
+    owl:sameAs <http://data.semanticweb.org/person/pedro-a-szekely>, <http://data.semanticweb.org/person/pedro-szekely>, <http://dblp.dagstuhl.de/pers/s/Szekely:Pedro_A=> .
+
+<http://www-cdr.stanford.edu/~petrie/foaf.rdf#me>
+    a foaf:Person ;
+    rdfs:seeAlso <http://www-cdr.stanford.edu/~petrie/foaf.rdf> ;
+    owl:sameAs <http://data.semanticweb.org/person/charles-petrie>, <http://dblp.uni-trier.de/pers/p/Petrie:Charles_J=> ;
+    foaf:depiction <http://www-cdr.stanford.edu/~petrie/May-03-petrie.jpg> ;
+    foaf:mbox <mailto:petrie@stanford.edu> ;
+    foaf:name "Charles Petrie" .
+
+<http://www.aifb.uni-karlsruhe.de/Personen/viewPersonOWL/id2084instance>
+    owl:sameAs <http://blog.semantic-web.at/author/pascal-hitzler/#foaf>, <http://korrekt.org/page/Special:URIResolver/Pascal_Hitzler>, <http://semanticweb.org/id/Pascal_Hitzler> .
+
+<http://www.bbc.co.uk/music/artists/aa7a2827-f74b-473c-bd79-03d065835cf7>
+    rdfs:label "Franz Ferdinand" .
+
+<http://www.bbc.co.uk/music/artists/c485632c-b784-4ee9-8ea1-c5fb365681fc>
+    rdfs:label "MGMT" ;
+    owl:sameAs <http://dbpedia.org/resource/MGMT>, <http://musicbrainz.org/mm-2.1/artist/c485632c-b784-4ee9-8ea1-c5fb365681fc/3>, <http://zitgist.com/music/artist/c485632c-b784-4ee9-8ea1-c5fb365681fc> .
+
+<http://www.bizer.de/#chris>
+    a foaf:Person ;
+    owl:sameAs <http://data.semanticweb.org/person/christian-bizer>, <http://dblp.l3s.de/d2r/page/authors/Christian_Bizer>, <http://wifo5-04.informatik.uni-mannheim.de/dws-group/resource/persons/Christian_Bizer> .
+
+<http://www.blogweb.co.kr/haklae.rdf#me>
+    a foaf:Person ;
+    owl:sameAs <http://data.semanticweb.org/person/hak-lae-kim>, <http://dblp.l3s.de/d2r/page/authors/Hak_Lae_Kim>, <http://www.blogweb.co.kr/author/sonagi/#foaf>, <http://www.deri.ie/about/team/member/Hak%20Lae_Kim#me> ;
+    foaf:name "Haklae Kim" ;
+    foaf:weblog <http://www.blogweb.co.kr/> .
+
+<http://www.dajobe.org/foaf.rdf#i>
+    a foaf:Person ;
+    foaf:homepage <http://www.dajobe.org/> .
+
+<http://www.daml.org/2001/09/countries/iso#DE>
+    owl:sameAs <http://dbpedia.org/resource/Germany> .
+
+<http://www.deri.ie/about/team/member/Andreas_Harth#me>
+    rdfs:seeAlso <http://www.deri.ie/fileadmin/scripts/foaf.php?id=81> .
+
+<http://www.deri.ie/about/team/member/Bill_McDaniel#me>
+    a foaf:Person ;
+    owl:sameAs <http://data.semanticweb.org/conference/eswc/2007/person-90018> ;
+    foaf:name "Bill McDaniel" ;
+    foaf:weblog <http://worldbehindtheglass.blogspot.com/> .
+
+<http://www.deri.ie/about/team/member/Daniel_Schwabe#me>
+    owl:sameAs <http://www-di.inf.puc-rio.br/schwabe/foaf-schwabe.rdf#DSchwabe> .
+
+<http://www.deri.ie/about/team/member/Ina_O%27Murchu#me>
+    a foaf:Person ;
+    foaf:mbox <mailto:ina.omurchu@deri.org> ;
+    foaf:mbox_sha1sum "712b83520bf846cdeb5b8158d541108b12a01447", "d21dd8e89548cf79fa8bb462561711fc09540856" ;
+    foaf:weblog <http://www.inao.blogspot.com/> .
+
+<http://www.deri.ie/about/team/member/Karl_Aberer#me>
+    a foaf:Person ;
+    rdfs:seeAlso <http://www.deri.ie/fileadmin/scripts/foaf.php?id=256> ;
+    owl:sameAs <http://data.semanticweb.org/person/karl-aberer> .
+
+<http://www.deri.ie/about/team/member/Laurentiu_Vasiliu#me>
+    a foaf:Person ;
+    rdfs:seeAlso <http://www.deri.ie/sws/members/laurentiu/foaf.rdf> ;
+    foaf:mbox <mailto:laurentiu.vasiliu@deri.org> ;
+    foaf:name "Laurentiu Vasiliu" .
+
+<http://www.deri.ie/about/team/member/Sebastian%20Ryszard_Kruk#me>
+    owl:sameAs <http://data.semanticweb.org/person/sebastian-ryszard-kruk> ;
+    foaf:weblog <http://blog.sebastiankruk.com/> .
+
+<http://www.deri.ie/about/team/member/Stefan_Decker#me>
+    a foaf:Person ;
+    rdfs:seeAlso <http://www.isi.edu/~stefan/foaf.rdf>, <http://www.rkbexplorer.com/sameAs/?uri=http://acm.rkbexplorer.com/id/person-314512-7883bb00a5fba3d73764926338b17605> ;
+    owl:sameAs <http://acm.rkbexplorer.com/id/person-314512-7883bb00a5fba3d73764926338b17605>, <http://dblp.l3s.de/d2r/resource/authors/Stefan_Decker>, <http://semanticweb.org/id/Stefan_Decker>, <http://www.aifb.uni-karlsruhe.de/Personen/viewPersonOWL/id11instance>, <http://www4.wiwiss.fu-berlin.de/dblp/resource/person/110724> ;
+    foaf:img <http://swordfish.rdfweb.org/photos/2004/08/31/2004-08-31-Images/17.jpg> ;
+    foaf:mbox <mailto:stefan.decker@deri.org> ;
+    foaf:mbox_sha1sum "1bc1f862b688a45b7e0c8d4a8467c23177c53fad" ;
+    foaf:name "Stefan Decker" ;
+    foaf:weblog <http://www.stefandecker.org/blog/> .
+
+<http://www.ecs.soton.ac.uk/~dt2/dlstuff/www2006_data#ireland>
+    owl:sameAs <http://dbpedia.org/resource/Ireland>, <http://www.daml.org/2001/09/countries/iso#IE> .
+
+<http://www.gassert.ch/foaf/hannes.rdf#hannesgassert>
+    a foaf:Person ;
+    foaf:mbox_sha1sum "bbdf0622f137cd2fc9ef768def9339091e4be779" .
+
+<http://www.isi.edu/~ambite/foaf.rdf#me>
+    a foaf:Person ;
+    owl:sameAs <http://data.semanticweb.org/person/jose-luis-ambite> .
+
+<http://www.isi.edu/~gil/foaf.rdf#me>
+    a foaf:Person ;
+    owl:sameAs <http://data.semanticweb.org/person/yolanda-gil>, <http://dblp.l3s.de/d2r/resource/authors/Yolanda_Gil> .
+
+<http://www.ivan-herman.net/foaf.rdf#me>
+    owl:sameAs <http://semanticweb.org/id/Ivan_Herman> .
+
+<http://www.johnbreslin.com/foaf/foaf.rdf#me>
+    a foaf:Person ;
+    owl:sameAs <http://identi.ca/user/11736>, <http://tweet.ie/user/1>, <http://www.ecs.soton.ac.uk/~dt2/dlstuff/www2006_data#john_breslin> ;
+    foaf:homepage <http://johnbreslin.com/> ;
+    foaf:name "John Breslin" .
+
+<http://www.kjetil.kjernsmo.net/foaf#me>
+    a foaf:Person ;
+    foaf:name "Kjetil Kjernsmo" .
+
+<http://www.openlinksw.com/dataspace/person/oerling#this>
+    a foaf:Person .
+
+<http://www.polleres.net/foaf.rdf#me>
+    a foaf:Person ;
+    rdfs:seeAlso <http://www.polleres.net/foaf.rdf>, <http://www.rkbexplorer.com/sameAs/?uri=http://acm.rkbexplorer.com/id/person-445238-12a6e141d7bca25baf5948bc5778d375> ;
+    owl:sameAs <http://acm.rkbexplorer.com/id/person-445238-12a6e141d7bca25baf5948bc5778d375>, <http://axel.deri.ie/~axepol/foaf.rdf#me>, <http://data.semanticweb.org/person/axel-polleres>, <http://twitter2foaf.appspot.com/id/AxelPolleres>, <http://wiki.sembase.at/index.php/_Axel_Polleres> ;
+    foaf:mbox_sha1sum "202c47af80aabdb5ce92a6310ea5cfd34f8d0777" ;
+    foaf:name "Axel Polleres" .
+
+<http://www.real-programmer.com/foaf/chbussler.foaf#me>
+    a foaf:Person ;
+    owl:sameAs <http://dblp.uni-trier.de/pers/b/Bussler:Christoph>, <http://hometown.aol.com/chbussler/foaf/chbussler.foaf#me> .
+
+<http://www.semanticuniverse.com/>
+    a sioc:Site ;
+    rdfs:label "Semantic Universe" ;
+    foaf:weblog <http://www.semanticuniverse.com/feeds/semantic-universe-rss.xml> .
+
+<http://www.siegfried-handschuh.net/metadata/foaf.rdf#me>
+    owl:sameAs <http://semanticweb.org/id/Siegfried_Handschuh>, <http://siegfried-handschuh.net/metadata/foaf.rdf#me>, <http://www.deri.ie/about/team/member/Siegfried_Handschuh#me> .
+
+<http://www.twine.com/item/1t7r716y-g3>
+    owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Manfred_Hauswirth>, <http://semanticweb.org/id/Manfred_Hauswirth>, <http://www.deri.ie/about/team/member/Manfred_Hauswirth#me> .
+
+<http://www.umbrich.net/foaf.rdf#me>
+    a foaf:Person ;
+    rdfs:seeAlso <http://www.umbrich.net/foaf.rdf> ;
+    owl:sameAs <http://data.semanticweb.org/person/juergen-umbrich>, <http://twitter2foaf.appspot.com/id/JuUm>, <http://www.aifb.uni-karlsruhe.de/Personen/viewPersonOWL/id2167instance> ;
+    foaf:homepage <http://www.umbrich.net/> ;
+    foaf:name "Juergen Umbrich"@en .
+
+<http://www.w3.org/People/Sandro/data#SandroHawke>
+    a foaf:Person ;
+    rdfs:seeAlso <http://www.w3.org/People/Sandro/data.rdf> .
+
+<http://www.wikier.org/foaf#wikier>
+    owl:sameAs <http://data.semanticweb.org/person/sergio-fernandez>, <http://twitter2foaf.appspot.com/id/Wikier> ;
+    foaf:holdsAccount <http://www.wikier.org/blog#wikier> .
+
+[]
+    a foaf:Person ;
+    foaf:name "Christian Fleiner" .
+

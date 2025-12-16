@@ -1,0 +1,127 @@
+@prefix : <https://timea.solidcommunity.net/profile/card#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix p: <https://timea.solidcommunity.net/profile/>.
+@prefix time: <https://timea.solidcommunity.net/>.
+@prefix skill: <http://data.europa.eu/esco/skill/>.
+@prefix c32: <https://angelo.veltens.org/profile/card#>.
+@prefix c8: <https://jeff-zucker.solidcommunity.net/profile/card#>.
+@prefix inbo: <https://timea.solidcommunity.net/inbox/>.
+@prefix c36: <https://bourgeoa.solidcommunity.net/profile/card#>.
+@prefix c37: <https://ewingson.solidcommunity.net/profile/card#>.
+@prefix c38: <https://noeldemartin.solidcommunity.net/profile/card#>.
+@prefix c39: <https://testingsolidos.solidcommunity.net/profile/card#>.
+@prefix c40: <https://timbl.solidcommunity.net/profile/card#>.
+@prefix l: <https://www.w3.org/ns/iana/language-code/>.
+@prefix c41: <https://chunt.solidcommunity.net/profile/card#>.
+@prefix c: <https://solid.smessie.com/profile/card#>.
+
+skill:19a8293b-8e95-4de3-983f-77484079c389 schema:name "Java (computer programming)".
+skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7 schema:name "JavaScript".
+skill:7a86907d-1fd5-4e8f-b0f1-f366a14f6f6d schema:name "Javanese".
+p:card a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a schema:Person, foaf:Person;
+    vcard:role "Software Engineer";
+    schema:knowsLanguage _:b498_b441_b172_b124_b122_n3-246, _:b498_b441_b172_b124_b122_n3-248;
+    schema:skills <#id1634289338819>, <#id1635929500934>, <#id1655232789144>;
+    vcard:bday "1986-12-14"^^xsd:date;
+    vcard:fn "Timea Turdean";
+    vcard:hasAddress <#id1651218114290>;
+    vcard:hasEmail <#id1628260052971>;
+    vcard:hasPhoto <https://timea.solidcommunity.net/profile/18238146_10155235814682370_4572264504492849633_o.jpg>;
+    vcard:hasTelephone <#id1655232781826>;
+    vcard:note "Hello Solidverse!";
+    acl:trustedApp _:b498_b441_b172_b124_b122_n3-250, _:b498_b441_b172_b124_b122_n3-251, _:b498_b441_b172_b124_b122_n3-252, _:b498_b441_b172_b124_b122_n3-253, _:b498_b441_b172_b124_b122_n3-254, _:b498_b441_b172_b124_b122_n3-256, _:b498_b441_b172_b124_b122_n3-257, _:b498_b441_b172_b124_b122_n3-258, _:b498_b441_b172_b124_b122_n3-259, _:b498_b441_b172_b124_b122_n3-260, _:b498_b441_b172_b124_b122_n3-261, _:b498_b441_b172_b124_b122_n3-262, _:b498_b441_b172_b124_b122_n3-263, _:b498_b441_b172_b124_b122_n3-264, _:b498_b441_b172_b124_b122_n3-265, _:b498_b441_b172_b124_b122_n3-266, _:b498_b441_b172_b124_b122_n3-267, _:b498_b441_b172_b124_b122_n3-268, _:b498_b441_b172_b124_b122_n3-269, _:b498_b441_b172_b124_b122_n3-270, _:b498_b441_b172_b124_b122_n3-271, _:b498_b441_b172_b124_b122_n3-272;
+    ldp:inbox <https://timea.solidcommunity.net/inbox/>;
+    space:preferencesFile <https://timea.solidcommunity.net/settings/prefs.ttl>;
+    space:storage <https://timea.solidcommunity.net/>;
+    solid:account <https://timea.solidcommunity.net/>;
+    solid:oidcIssuer <https://solidcommunity.net/>, <https://teamid.live/>;
+    solid:preferredObjectPronoun "her";
+    solid:preferredRelativePronoun "hers";
+    solid:preferredSubjectPronoun "she";
+    solid:privateTypeIndex <https://timea.solidcommunity.net/settings/privateTypeIndex.ttl>;
+    solid:profileBackgroundColor "#73baff"^^xsd:color;
+    solid:publicTypeIndex <https://timea.solidcommunity.net/settings/publicTypeIndex.ttl>, <https://timea.solidcommunity.net/profile/publicTypeIndex.ttl>;
+    foaf:knows <#me>, c32:me, c36:me, c41:me, c37:me, c8:me, c38:me, c40:me, c39:me;
+    foaf:name "Timea Turdean";
+    solid:oidcIssuerRegistrationToken "bddef624-e74a-4aca-b2c8-289806cf6ee2".
+_:b498_b441_b172_b124_b122_n3-246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1635929591644>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b498_b441_b172_b124_b122_n3-247.
+_:b498_b441_b172_b124_b122_n3-248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1644420692100>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b498_b441_b172_b124_b122_n3-249.
+<#id1634289338819> solid:publicId skill:3cd569a2-4f88-4c1e-9995-8dce8c5e51a7.
+<#id1635929500934> solid:publicId skill:19a8293b-8e95-4de3-983f-77484079c389.
+<#id1655232789144> solid:publicId skill:7a86907d-1fd5-4e8f-b0f1-f366a14f6f6d.
+<#id1628260052971> a vcard:Home;
+    vcard:value <mailto:timea.turdean@gmail.com>.
+_:b498_b441_b172_b124_b122_n3-250 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://localhost:3000>.
+_:b498_b441_b172_b124_b122_n3-251 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://localhost:3001>.
+_:b498_b441_b172_b124_b122_n3-252 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://localhost:8080>.
+_:b498_b441_b172_b124_b122_n3-253 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b498_b441_b172_b124_b122_n3-254 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://webapp.dededeals.es>.
+_:b498_b441_b172_b124_b122_n3-256 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://localhost:8443>.
+_:b498_b441_b172_b124_b122_n3-257 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b498_b441_b172_b124_b122_n3-258 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b498_b441_b172_b124_b122_n3-259 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b498_b441_b172_b124_b122_n3-260 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b498_b441_b172_b124_b122_n3-261 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rdfjs.vercel.app>.
+_:b498_b441_b172_b124_b122_n3-262 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://rrustom.github.io>.
+_:b498_b441_b172_b124_b122_n3-264 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b498_b441_b172_b124_b122_n3-265 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b498_b441_b172_b124_b122_n3-266 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.smessie.com>.
+_:b498_b441_b172_b124_b122_n3-267 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b498_b441_b172_b124_b122_n3-268 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b498_b441_b172_b124_b122_n3-269 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://survey-api.demo.konsolidate.eu>.
+_:b498_b441_b172_b124_b122_n3-270 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b498_b441_b172_b124_b122_n3-271 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b498_b441_b172_b124_b122_n3-272 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+<#id1635929591644> solid:publicId l:en.
+_:b498_b441_b172_b124_b122_n3-247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1646414710220>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+<#id1644420692100> solid:publicId l:en.
+_:b498_b441_b172_b124_b122_n3-249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1655232957134>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+l:en schema:name "English"@en.
+<#id1646414710220> solid:publicId l:de.
+<#id1655232957134> solid:publicId l:de.
+l:de schema:name "German"@en.
+<#id1629189338421> a solid:CurrentRole;
+    vcard:role "";
+    schema:description "Working on SolidOS";
+    schema:startDate "2021-08-02"^^xsd:date;
+    org:member <#me>;
+    org:organization <#id1634289234819>, <#id1651258958937>, <#id1651260070066>.
+<#id1634289234819> schema:name "Inrupt";
+    a schema:ResearchOrganization.
+<#id1652973530958> org:member <#me>.

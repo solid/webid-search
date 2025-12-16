@@ -1,0 +1,510 @@
+@prefix : </#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix stat: <http://www.w3.org/ns/posix/stat#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix cs: <>.
+@prefix n0: </archives/>.
+@prefix dok: </dokie.li.inbox/>.
+@prefix inbox: </inbox/>.
+@prefix key: </key/>.
+@prefix medi: </media/>.
+@prefix pre: </presentations/>.
+@prefix scr: </scripts/>.
+@prefix tmp: </tmp/>.
+@prefix html: <http://www.w3.org/ns/iana/media-types/text/html#>.
+@prefix n1: <http://www.w3.org/ns/iana/media-types/application/atom+xml#>.
+@prefix vnd: <http://www.w3.org/ns/iana/media-types/image/vnd.microsoft.icon#>.
+@prefix tur: <http://www.w3.org/ns/iana/media-types/text/turtle#>.
+@prefix pl: <http://www.w3.org/ns/iana/media-types/text/plain#>.
+@prefix rs: <http://www.w3.org/ns/iana/media-types/application/rss+xml#>.
+
+cs:
+    a ldp:BasicContainer, ldp:Container, space:Storage;
+    dct:modified "2025-12-11T17:03:02Z"^^xsd:dateTime;
+    ldp:contains
+        cs:7, cs:about, n0:, cs:atom, cs:call-for-linked-research,
+        cs:communication-protocols, cs:complexity-of-development-part-1,
+        cs:contacts, cs:cooling-down-web-science,
+        cs:css-background-order-and-w3c-specification-ambiguity-in-browsers,
+        cs:css-specificity-and-selectors, cs:cv, cs:dandelion-design, dok:,
+        cs:dokieli, cs:dokieli-authentic-web, cs:dokieli-rww,
+        cs:enabling-accessible-knowledge, cs:faipdaaf, </favicon.ico>,
+        cs:five-months, cs:front-end-developer-integrator,
+        cs:future-of-css-naked-day, cs:good-tips-and-customer-experience,
+        cs:google-deutschland-stole-my-article,
+        cs:googlebot-anchor-indexability-test, </googlef24ee8d5af3f254f.html>,
+        cs:hiding-email-addresses, cs:how-to-create-a-linked-data-site,
+        cs:html-minimal-verbose, cs:html-overview, cs:human-language-and-html,
+        cs:i-am-here-now, cs:identical-tabindex-values-and-group-iterations,
+        inbox:, </index.html>, cs:internal-seo-guidelines,
+        cs:interview-with-steven-pemberton, cs:irc-social-network, key:,
+        cs:language-and-connectivity, cs:library, cs:linked-data-notifications,
+        cs:linked-research, cs:linked-research-decentralised-web,
+        </linked-research-decentralised-web.timemap>,
+        cs:linked-research-scholarly-communication, cs:linked-sdmx-data,
+        cs:linked-specifications-reports, cs:linked-statistical-data-analysis,
+        cs:linked-web-storage-invited-expert-request,
+        cs:logo-identity-in-address-and-document-heading, cs:lorem-ipsum, medi:,
+        cs:microformats-introduction, cs:microformats-misconceptions,
+        cs:mingling-of-the-lover-and-the-warrior, cs:mirror-and-self,
+        cs:mobile-device-not-found, cs:mu, cs:my-responses-are-in-white,
+        cs:okieli-dokieli, cs:one-plus-one-equals-three-or-more,
+        cs:path-to-deri, cs:philosophy-of-city-walking-and-life, pre:,
+        cs:reaching-the-audience-part-1, </robots.txt>, cs:rss, scr:,
+        cs:self-review-chairing, cs:sense-of-lsd-analysis,
+        cs:soliloquy-of-the-solipsist-by-sylvia-plath, cs:souvenirs-from-lisbon,
+        cs:sparqlines-sparql-to-sparkline, cs:statistical-linked-dataspaces,
+        cs:systems-and-choices, cs:tag-statement, cs:this-paper-is-a-demo,
+        cs:three-significant-modes-of-human-organisation-and-learning, tmp:,
+        cs:tr-border-trick-for-ie, cs:upgrades, cs:volcanoes-with-fax-numbers,
+        cs:web-science-from-404-to-200, cs:web-standards, cs:web-typography,
+        cs:webmention, cs:where-are-my-web-standards;
+    stat:mtime 1765472582.62;
+    stat:size 12288 .
+cs:7
+    a html:Resource, ldp:Resource;
+    dct:modified "2023-04-16T16:49:11Z"^^xsd:dateTime;
+    stat:mtime 1681663751.428;
+    stat:size 8044 .
+cs:about
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-07T10:34:28Z"^^xsd:dateTime;
+    stat:mtime 1736246068.876;
+    stat:size 7724 .
+n0:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2025-04-03T07:56:20Z"^^xsd:dateTime;
+    stat:mtime 1743666980.942;
+    stat:size 4096 .
+cs:atom
+    a n1:Resource, ldp:Resource;
+    dct:modified "2024-10-22T18:39:41Z"^^xsd:dateTime;
+    stat:mtime 1729622381.849;
+    stat:size 1312700 .
+cs:call-for-linked-research
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-10-08T17:46:53Z"^^xsd:dateTime;
+    stat:mtime 1728409613.936;
+    stat:size 19117 .
+cs:communication-protocols
+    a html:Resource, ldp:Resource;
+    dct:modified "2021-02-25T15:21:52Z"^^xsd:dateTime;
+    stat:mtime 1614266512.974;
+    stat:size 11324 .
+cs:complexity-of-development-part-1
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:43:16Z"^^xsd:dateTime;
+    stat:mtime 1737895396.792;
+    stat:size 13176 .
+cs:contacts
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-06-04T11:04:36Z"^^xsd:dateTime;
+    stat:mtime 1749035076.952;
+    stat:size 7823 .
+cs:cooling-down-web-science
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-10-08T17:46:16Z"^^xsd:dateTime;
+    stat:mtime 1728409576.312;
+    stat:size 73377 .
+cs:css-background-order-and-w3c-specification-ambiguity-in-browsers
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:43:03Z"^^xsd:dateTime;
+    stat:mtime 1737895383.305;
+    stat:size 10311 .
+cs:css-specificity-and-selectors
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:42:50Z"^^xsd:dateTime;
+    stat:mtime 1737895370.76;
+    stat:size 19236 .
+cs:cv
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-12-10T12:33:32Z"^^xsd:dateTime;
+    stat:mtime 1765370012.456;
+    stat:size 160356 .
+cs:dandelion-design
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:42:37Z"^^xsd:dateTime;
+    stat:mtime 1737895357.403;
+    stat:size 7155 .
+dok:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2025-04-02T08:43:29Z"^^xsd:dateTime;
+    stat:mtime 1743583409.576;
+    stat:size 4096 .
+cs:dokieli
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-10-08T17:43:27Z"^^xsd:dateTime;
+    stat:mtime 1728409407.162;
+    stat:size 142348 .
+cs:dokieli-authentic-web
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-12-10T13:07:14Z"^^xsd:dateTime;
+    stat:mtime 1765372034.507;
+    stat:size 30299 .
+cs:dokieli-rww
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-10-08T17:34:37Z"^^xsd:dateTime;
+    stat:mtime 1728408877.098;
+    stat:size 80732 .
+cs:enabling-accessible-knowledge
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-10-08T17:41:53Z"^^xsd:dateTime;
+    stat:mtime 1728409313.064;
+    stat:size 113084 .
+cs:faipdaaf
+    a html:Resource, ldp:Resource;
+    dct:modified "2021-02-25T15:18:03Z"^^xsd:dateTime;
+    stat:mtime 1614266283.528;
+    stat:size 37050 .
+</favicon.ico>
+    a vnd:Resource, ldp:Resource;
+    dct:modified "2020-03-21T22:26:43Z"^^xsd:dateTime;
+    stat:mtime 1584829603.849;
+    stat:size 894 .
+cs:five-months
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:42:20Z"^^xsd:dateTime;
+    stat:mtime 1737895340.985;
+    stat:size 9323 .
+cs:front-end-developer-integrator
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:42:08Z"^^xsd:dateTime;
+    stat:mtime 1737895328.208;
+    stat:size 15813 .
+cs:future-of-css-naked-day
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:41:56Z"^^xsd:dateTime;
+    stat:mtime 1737895316.216;
+    stat:size 23345 .
+cs:good-tips-and-customer-experience
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:41:43Z"^^xsd:dateTime;
+    stat:mtime 1737895303.849;
+    stat:size 14989 .
+cs:google-deutschland-stole-my-article
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:41:17Z"^^xsd:dateTime;
+    stat:mtime 1737895277.829;
+    stat:size 8193 .
+cs:googlebot-anchor-indexability-test
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:41:31Z"^^xsd:dateTime;
+    stat:mtime 1737895291.79;
+    stat:size 11916 .
+</googlef24ee8d5af3f254f.html>
+    a html:Resource, ldp:Resource;
+    dct:modified "2021-09-23T07:42:31Z"^^xsd:dateTime;
+    stat:mtime 1632382951.713;
+    stat:size 53 .
+cs:hiding-email-addresses
+    a html:Resource, ldp:Resource;
+    dct:modified "2021-02-25T15:19:31Z"^^xsd:dateTime;
+    stat:mtime 1614266371.729;
+    stat:size 190398 .
+cs:how-to-create-a-linked-data-site
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:41:04Z"^^xsd:dateTime;
+    stat:mtime 1737895264;
+    stat:size 68065 .
+cs:html-minimal-verbose
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:40:49Z"^^xsd:dateTime;
+    stat:mtime 1737895249.225;
+    stat:size 9975 .
+cs:html-overview
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-10-26T10:28:51Z"^^xsd:dateTime;
+    stat:mtime 1729938531.213;
+    stat:size 8572 .
+cs:human-language-and-html
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-09-30T22:36:44Z"^^xsd:dateTime;
+    stat:mtime 1727735804.838;
+    stat:size 8592 .
+cs:i-am-here-now
+    a html:Resource, ldp:Resource;
+    dct:modified "2021-11-11T09:47:35Z"^^xsd:dateTime;
+    stat:mtime 1636624055.716;
+    stat:size 4142 .
+cs:identical-tabindex-values-and-group-iterations
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:40:36Z"^^xsd:dateTime;
+    stat:mtime 1737895236.202;
+    stat:size 22665 .
+inbox:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2025-04-02T08:45:16Z"^^xsd:dateTime;
+    stat:mtime 1743583516.436;
+    stat:size 4096 .
+</index.html>
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-12-11T17:03:02Z"^^xsd:dateTime;
+    stat:mtime 1765472582.185;
+    stat:size 9827 .
+cs:internal-seo-guidelines
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:40:22Z"^^xsd:dateTime;
+    stat:mtime 1737895222.971;
+    stat:size 25704 .
+cs:interview-with-steven-pemberton
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:40:08Z"^^xsd:dateTime;
+    stat:mtime 1737895208.421;
+    stat:size 10032 .
+cs:irc-social-network
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:39:53Z"^^xsd:dateTime;
+    stat:mtime 1737895193.813;
+    stat:size 18640 .
+key:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2023-04-05T08:03:31Z"^^xsd:dateTime;
+    stat:mtime 1680681811.399;
+    stat:size 4096 .
+cs:language-and-connectivity
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-06-04T20:54:33Z"^^xsd:dateTime;
+    stat:mtime 1717534473.54;
+    stat:size 5699 .
+cs:library
+    a html:Resource, ldp:Resource;
+    dct:modified "2021-12-15T09:37:11Z"^^xsd:dateTime;
+    stat:mtime 1639561031.122;
+    stat:size 79848 .
+cs:linked-data-notifications
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-09-23T15:31:25Z"^^xsd:dateTime;
+    stat:mtime 1727105485.819;
+    stat:size 130000 .
+cs:linked-research
+    a html:Resource, ldp:Resource;
+    dct:modified "2023-09-03T08:43:49Z"^^xsd:dateTime;
+    stat:mtime 1693730629.605;
+    stat:size 41401 .
+cs:linked-research-decentralised-web
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-11-03T08:47:48Z"^^xsd:dateTime;
+    stat:mtime 1762159668.791;
+    stat:size 1116025 .
+</linked-research-decentralised-web.timemap>
+    a tur:Resource, ldp:Resource;
+    dct:modified "2020-05-04T08:07:57Z"^^xsd:dateTime;
+    stat:mtime 1588579677.274;
+    stat:size 453 .
+cs:linked-research-scholarly-communication
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:39:33Z"^^xsd:dateTime;
+    stat:mtime 1737895173.661;
+    stat:size 135323 .
+cs:linked-sdmx-data
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:48:52Z"^^xsd:dateTime;
+    stat:mtime 1737895732.256;
+    stat:size 102000 .
+cs:linked-specifications-reports
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-01-15T02:06:29Z"^^xsd:dateTime;
+    stat:mtime 1705284389.495;
+    stat:size 49050 .
+cs:linked-statistical-data-analysis
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:49:49Z"^^xsd:dateTime;
+    stat:mtime 1737895789.869;
+    stat:size 114558 .
+cs:linked-web-storage-invited-expert-request
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-10-10T11:47:38Z"^^xsd:dateTime;
+    stat:mtime 1728560858.654;
+    stat:size 16886 .
+cs:logo-identity-in-address-and-document-heading
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:49:54Z"^^xsd:dateTime;
+    stat:mtime 1737895794.891;
+    stat:size 14654 .
+cs:lorem-ipsum
+    a html:Resource, ldp:Resource;
+    dct:modified "2021-07-09T08:06:06Z"^^xsd:dateTime;
+    stat:mtime 1625817966.669;
+    stat:size 6505 .
+medi:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2020-03-21T12:25:05Z"^^xsd:dateTime;
+    stat:mtime 1584793505.194;
+    stat:size 4096 .
+cs:microformats-introduction
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:50:04Z"^^xsd:dateTime;
+    stat:mtime 1737895804.708;
+    stat:size 18782 .
+cs:microformats-misconceptions
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:50:10Z"^^xsd:dateTime;
+    stat:mtime 1737895810.236;
+    stat:size 18833 .
+cs:mingling-of-the-lover-and-the-warrior
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:53:00Z"^^xsd:dateTime;
+    stat:mtime 1737895980.854;
+    stat:size 6847 .
+cs:mirror-and-self
+    a html:Resource, ldp:Resource;
+    dct:modified "2021-05-05T08:03:01Z"^^xsd:dateTime;
+    stat:mtime 1620201781.38;
+    stat:size 3743 .
+cs:mobile-device-not-found
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:50:14Z"^^xsd:dateTime;
+    stat:mtime 1737895814.699;
+    stat:size 12891 .
+cs:mu
+    a html:Resource, ldp:Resource;
+    dct:modified "2021-05-05T08:05:08Z"^^xsd:dateTime;
+    stat:mtime 1620201908.753;
+    stat:size 5586 .
+cs:my-responses-are-in-white
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:50:20Z"^^xsd:dateTime;
+    stat:mtime 1737895820.2;
+    stat:size 18492 .
+cs:okieli-dokieli
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-10-08T17:35:03Z"^^xsd:dateTime;
+    stat:mtime 1728408903.11;
+    stat:size 33544 .
+cs:one-plus-one-equals-three-or-more
+    a html:Resource, ldp:Resource;
+    dct:modified "2021-10-05T19:59:45Z"^^xsd:dateTime;
+    stat:mtime 1633463985.306;
+    stat:size 9308 .
+cs:path-to-deri
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:50:27Z"^^xsd:dateTime;
+    stat:mtime 1737895827.504;
+    stat:size 13677 .
+cs:philosophy-of-city-walking-and-life
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:50:31Z"^^xsd:dateTime;
+    stat:mtime 1737895831.535;
+    stat:size 23411 .
+pre:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2025-12-09T20:36:51Z"^^xsd:dateTime;
+    stat:mtime 1765312611.227;
+    stat:size 4096 .
+cs:reaching-the-audience-part-1
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:50:35Z"^^xsd:dateTime;
+    stat:mtime 1737895835.488;
+    stat:size 20355 .
+</robots.txt>
+    a pl:Resource, ldp:Resource;
+    dct:modified "2024-09-03T07:06:08Z"^^xsd:dateTime;
+    stat:mtime 1725347168.447;
+    stat:size 36 .
+cs:rss
+    a rs:Resource, ldp:Resource;
+    dct:modified "2024-10-22T18:40:07Z"^^xsd:dateTime;
+    stat:mtime 1729622407.56;
+    stat:size 1311225 .
+scr:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2020-03-21T23:02:31Z"^^xsd:dateTime;
+    stat:mtime 1584831751.372;
+    stat:size 4096 .
+cs:self-review-chairing
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-06-11T15:48:56Z"^^xsd:dateTime;
+    stat:mtime 1718120936.456;
+    stat:size 48306 .
+cs:sense-of-lsd-analysis
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:50:40Z"^^xsd:dateTime;
+    stat:mtime 1737895840.281;
+    stat:size 72405 .
+cs:soliloquy-of-the-solipsist-by-sylvia-plath
+    a html:Resource, ldp:Resource;
+    dct:modified "2021-10-22T08:29:58Z"^^xsd:dateTime;
+    stat:mtime 1634891398.955;
+    stat:size 8867 .
+cs:souvenirs-from-lisbon
+    a html:Resource, ldp:Resource;
+    dct:modified "2021-11-11T09:48:51Z"^^xsd:dateTime;
+    stat:mtime 1636624131.2;
+    stat:size 18161 .
+cs:sparqlines-sparql-to-sparkline
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-10-08T17:35:29Z"^^xsd:dateTime;
+    stat:mtime 1728408929.663;
+    stat:size 84541 .
+cs:statistical-linked-dataspaces
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:50:44Z"^^xsd:dateTime;
+    stat:mtime 1737895844.407;
+    stat:size 196860 .
+cs:systems-and-choices
+    a html:Resource, ldp:Resource;
+    dct:modified "2021-05-20T08:28:34Z"^^xsd:dateTime;
+    stat:mtime 1621499314.828;
+    stat:size 11387 .
+cs:tag-statement
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-11-12T13:50:05Z"^^xsd:dateTime;
+    stat:mtime 1731419405.734;
+    stat:size 16514 .
+cs:this-paper-is-a-demo
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:50:48Z"^^xsd:dateTime;
+    stat:mtime 1737895848.394;
+    stat:size 41486 .
+cs:three-significant-modes-of-human-organisation-and-learning
+    a html:Resource, ldp:Resource;
+    dct:modified "2022-09-15T09:32:22Z"^^xsd:dateTime;
+    stat:mtime 1663234342.492;
+    stat:size 11497 .
+tmp:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2025-11-25T07:59:34Z"^^xsd:dateTime;
+    stat:mtime 1764057574.146;
+    stat:size 4096 .
+cs:tr-border-trick-for-ie
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:47:50Z"^^xsd:dateTime;
+    stat:mtime 1737895670.285;
+    stat:size 66996 .
+cs:upgrades
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:47:14Z"^^xsd:dateTime;
+    stat:mtime 1737895634.301;
+    stat:size 10344 .
+cs:volcanoes-with-fax-numbers
+    a html:Resource, ldp:Resource;
+    dct:modified "2022-07-01T12:16:04Z"^^xsd:dateTime;
+    stat:mtime 1656677764.211;
+    stat:size 361567 .
+cs:web-science-from-404-to-200
+    a html:Resource, ldp:Resource;
+    dct:modified "2024-02-26T02:34:42Z"^^xsd:dateTime;
+    stat:mtime 1708914882.593;
+    stat:size 76845 .
+cs:web-standards
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:50:56Z"^^xsd:dateTime;
+    stat:mtime 1737895856.187;
+    stat:size 16089 .
+cs:web-typography
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:51:00Z"^^xsd:dateTime;
+    stat:mtime 1737895860.61;
+    stat:size 19658 .
+cs:webmention
+    a html:Resource, ldp:Resource;
+    dct:modified "2020-06-03T09:16:48Z"^^xsd:dateTime;
+    stat:mtime 1591175808.23;
+    stat:size 28490 .
+cs:where-are-my-web-standards
+    a html:Resource, ldp:Resource;
+    dct:modified "2025-01-26T12:28:42Z"^^xsd:dateTime;
+    stat:mtime 1737894522.363;
+    stat:size 40789 .

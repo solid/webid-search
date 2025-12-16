@@ -1,0 +1,186 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cert: <http://www.w3.org/ns/auth/cert#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX ldp: <http://www.w3.org/ns/ldp#>
+PREFIX as: <https://www.w3.org/ns/activitystreams#>
+PREFIX solid: <http://www.w3.org/ns/solid/terms#>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX pim: <http://www.w3.org/ns/pim/space#>
+
+<> a foaf:PersonalProfileDocument;
+  foaf:maker <https://champin.net/#pa>;
+  foaf:primaryTopic <https://champin.net/#pa>.
+
+<http://bblfish.net/people/henry/card#me>
+  foaf:name "Henry Story".
+
+<http://data.semanticweb.org/person/alexandre-passant>
+  foaf:name "Alexandre Passant".
+
+<http://github.com/pchampin> a foaf:OnlineAccount;
+  rdfs:label "Pierre-Antoine Champin's GitHub account";
+  foaf:accountName "pchampin";
+  foaf:accountServiceHomepage <http://github.com/>;
+  foaf:depiction <https://github.com/fluidicon.png>.
+
+<http://harth.org/andreas/foaf#ah>
+  foaf:name "Andreas Hart".
+
+<http://melvincarvalho.com/#me>
+  foaf:name "Melvin Carvalho".
+
+<http://ns.inria.fr/fabien.gandon/foaf.rdf#me>
+  foaf:name "Fabien Gandon".
+
+<http://olafhartig.de/foaf.rdf#olaf>
+  foaf:name "Olaf Hartig".
+
+<http://olivieraubert.net/foaf.rdf#me>
+  foaf:name "Olivier Aubert".
+
+<http://richard.cyganiak.de/foaf.rdf#cygri>
+  foaf:name "Richard Cyganiak".
+
+<http://stackoverflow.com/users/1235487/pierre-antoine> a foaf:OnlineAccount;
+  rdfs:label "Pierre-Antoine Champin's StackOverlfow account";
+  foaf:accountName "pierre-antoine";
+  foaf:accountServiceHomepage <http://stackoverflow.com/>;
+  foaf:depiction <http://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png>.
+
+<http://tomayac.com/thomas_steiner.rdf#me>
+  foaf:name "Thomas Steiner".
+
+<http://www.eurecom.fr/~troncy/troncyr-foaf.rdf#me>
+  foaf:name "Raphaël Troncy".
+
+<http://www.ivan-herman.net/foaf#me>
+  foaf:name "Ivan Herman".
+
+<https://champin.net/#pa> a foaf:Person;
+  rdfs:seeAlso <https://solid.champin.net/pa/profile/champin.net>;
+  owl:sameAs <http://champin.net/#pa>,
+    <http://champin.net/pa>,
+    <http://data.semanticweb.org/person/pierre-antoine-champin>,
+    <http://viaf.org/viaf/218253893>,
+    <http://www.idref.fr/070968675/id>,
+    <http://www.wikidata.org/entity/Q108379672>,
+    <https://data.archives-ouvertes.fr/author/pierre-antoine-champin#foaf:Person>,
+    <https://dblp.org/pid/33/1865>,
+    <https://isni.org/isni/0000000359388372>,
+    <https://orcid.org/0000-0001-7046-4474>,
+    <https://solid.champin.net/pa/profile/card#me>;
+  vcard:fn "Pierre-Antoine Champin";
+  vcard:hasPhoto <https://champin.net/face>;
+  vcard:organization-name "W3C / Inria";
+  ldp:inbox <https://solid.champin.net/pa/inbox/>;
+  pim:storage <https://solid.champin.net/pa/>;
+  solid:oidcIssuer <https://solid.champin.net/>;
+  solid:publicTypeIndex <https://solid.champin.net/pa/profile/publicTypeIndex.ttl>;
+  <http://www.wikidata.org/entity/P496> <http://orcid.org/0000-0001-7046-4474>;
+  foaf:based_near <http://www.wikidata.org/entity/Q456>;
+  foaf:currentProject <2009/ktbs#it>,
+    <https://pchampin.github.io/sophia_rs/doap.ttl#this>;
+  foaf:givenname "Pierre-Antoine";
+  foaf:holdsAccount <http://github.com/pchampin>,
+    <http://stackoverflow.com/users/1235487/pierre-antoine>,
+    <https://cv.archives-ouvertes.fr/pierre-antoine-champin>,
+    <https://keybase.io/pchampin>,
+    <https://w3c.social/@p20n>,
+    <https://www.linkedin.com/in/pierreantoinechampin>,
+    <https://www.patreon.com/user?u=15419859>,
+    <https://www.w3.org/users/129656/>;
+  foaf:homepage <https://champin.net/>;
+  foaf:img <face>;
+  foaf:isPrimaryTopicOf <https://solid.champin.net/pa/profile/champin.net>;
+  foaf:knows [ a foaf:Person;
+      foaf:homepage <http://liris.cnrs.fr/amelie.cordier/>;
+      foaf:name "Amélie Cordier"],
+    [ a foaf:Person;
+      foaf:homepage <http://liris.cnrs.fr/amille/>;
+      foaf:name "Alain Mille"],
+    [ a foaf:Person;
+      foaf:name "Benoît Habert";
+      foaf:workInfoHomepage <http://www.ens-lyon.eu/annuaire/m-habert-benoit-26303.kjsp>],
+    [ a foaf:Person;
+      foaf:homepage <https://barrysmyth.me/>;
+      foaf:name "Barry Smyth"],
+    [ a foaf:Person;
+      foaf:homepage <http://yannickprie.net/>;
+      foaf:name "Yannick Prié"],
+    [ a foaf:Person;
+      foaf:homepage <http://exmo.inrialpes.fr/~jdavid/>;
+      foaf:name "Jérôme David"],
+    <http://bblfish.net/people/henry/card#me>,
+    <http://data.semanticweb.org/person/alexandre-passant>,
+    <http://harth.org/andreas/foaf#ah>,
+    <http://melvincarvalho.com/#me>,
+    <http://ns.inria.fr/fabien.gandon/foaf.rdf#me>,
+    <http://olafhartig.de/foaf.rdf#olaf>,
+    <http://olivieraubert.net/foaf.rdf#me>,
+    <http://richard.cyganiak.de/foaf.rdf#cygri>,
+    <http://tomayac.com/thomas_steiner.rdf#me>,
+    <http://www.eurecom.fr/~troncy/troncyr-foaf.rdf#me>,
+    <http://www.ivan-herman.net/foaf#me>,
+    <https://csarven.ca/#i>,
+    <https://greggkellogg.net/foaf#me>,
+    <https://ruben.verborgh.org/profile/#me>,
+    <https://www.rubensworks.net/#me>;
+  foaf:name "Pierre-Antoine Champin";
+  foaf:nickname "p20n",
+    "pa",
+    "pchampin";
+  foaf:pastProject <http://advene.org/doap.rdf#advene>,
+    <t4r/doap.rdf#t4r>;
+  foaf:phone <tel:+33-666-52-01-22>;
+  foaf:publications <https://cv.archives-ouvertes.fr/pierre-antoine-champin>;
+  foaf:surname "Champin";
+  foaf:title "Dr";
+  foaf:workplaceHomepage <https://www.w3.org/>.
+
+<https://csarven.ca/#i>
+  foaf:name "Sarven Capadisli".
+
+<https://cv.archives-ouvertes.fr/pierre-antoine-champin> a foaf:OnlineAccount;
+  rdfs:label "Pierre-Antoine Champin's HAL account";
+  foaf:accountName "pchampin";
+  foaf:accountServiceHomepage <https://hal.archives-ouvertes.fr/>.
+
+<https://greggkellogg.net/foaf#me>
+  foaf:name "Gregg Kellogg".
+
+<https://keybase.io/pchampin> a foaf:OnlineAccount;
+  rdfs:label "Pierre-Antoine Champin's Keybase account";
+  foaf:accountName "pchampin";
+  foaf:accountServiceHomepage <https://keybase.io/>;
+  foaf:depiction <https://keybase.io/images/logo_no_text.png>.
+
+<https://ruben.verborgh.org/profile/#me>
+  foaf:name "Ruben Verborgh".
+
+<https://w3c.social/@p20n> a foaf:OnlineAccount;
+  rdfs:label "Pierre-Antoine Champin's Mastodon account";
+  foaf:accountName "@p20n@framapiag.org";
+  foaf:accountServiceHomepage <https://w3c.social/>;
+  foaf:depiction <mastodon.png>.
+
+<https://www.linkedin.com/in/pierreantoinechampin> a foaf:OnlineAccount;
+  rdfs:label "Pierre-Antoine Champin's LinkedIn account";
+  foaf:accountName "38054031";
+  foaf:accountServiceHomepage <http://www.linkedin.com/>;
+  foaf:depiction <http://www.linkedin.com/favicon.ico>.
+
+<https://www.patreon.com/user?u=15419859> a foaf:OnlineAccount;
+  rdfs:label "Pierre-Antoine Champin | Patreon";
+  foaf:accountServiceHomepage <https://www.patreon.com/>;
+  foaf:depiction <https://c5.patreon.com/external/favicon/apple-touch-icon.png>.
+
+<https://www.rubensworks.net/#me>
+  foaf:name "Ruben Taelman".
+
+<https://www.w3.org/users/129656/> a foaf:OnlineAccount;
+  rdfs:label "Pierre-Antoine Champin at W3C";
+  foaf:accountServiceHomepage <https://www.w3.org/>;
+  foaf:depiction <https://www.w3.org/Icons/w3cmember.png>.

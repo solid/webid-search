@@ -1,0 +1,3 @@
+<https://solidweb.me/jackson/profile/card> a <http://xmlns.com/foaf/0.1/PersonalProfileDocument>;
+    <http://xmlns.com/foaf/0.1/maker> <#me>;
+    <http://xmlns.com/foaf/0.1/primaryTopic> <#me>.

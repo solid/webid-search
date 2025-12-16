@@ -4,16 +4,16 @@ import fs from 'fs/promises';
 
 const MAX_CONCURRENT_REQUESTS = 100;
 
-const queue: string[] = (await fs.readdir('webids/'))
+const queue: { url: string, depth: number }[] = (await fs.readdir('webids/'))
   .filter((file) => file.endsWith('.ttl'))
-  .map((file) => decodeURIComponent(file.slice(0, -4)));
+  .map((file) => ({ url: decodeURIComponent(file.slice(0, -4)), depth: 0 }));
 
-const visited = new Set<string>(queue);
+const visited = new Set<string>(queue.map(item => item.url));
 let count = 0;
 
-async function handleWebID(webID: string): Promise<void> {
+async function handleWebID(webID: { url: string, depth: number }): Promise<void> {
   try {
-    const res = await fetch(webID, {
+    const res = await fetch(webID.url, {
       headers: {
         'Accept': 'text/turtle',
       },
@@ -30,18 +30,21 @@ async function handleWebID(webID: string): Promise<void> {
     // Process profile to extract WebID info
     const webIDInfo = profile
       .usingType(SolidProfileShapeType)
-      .fromSubject(webID);
+      .fromSubject(webID.url);
 
-    if (webIDInfo && webIDInfo?.oidcIssuer) {
-      console.log(`Discovered WebID: ${webID}`);
-      console.log(webIDInfo.oidcIssuer);
+    if (webIDInfo.oidcIssuer) {
+      console.log(`Discovered WebID: ${webID.url}`);
       count++;
-      await fs.writeFile(`webids/${encodeURIComponent(webID)}.ttl`, ttl).catch(() => {});
+      await fs.writeFile(`webids/${encodeURIComponent(webID.url)}.ttl`, ttl).catch(() => {});
+    } else {
+      console.log(`Ignored (no OIDC issuer): ${webID.url}`);
+    }
 
-      for (const known of webIDInfo.knows || []) {
-        if (known['@id'] && !visited.has(known['@id'])) {
-          visited.add(known['@id']);
-          queue.push(known['@id']);
+    if (webID.depth < 3) {
+      for (const friend of webIDInfo.knows || []) {
+        if (!visited.has(friend)) {
+          visited.add(friend);
+          queue.push({ url: friend, depth: webIDInfo.oidcIssuer ? 0 : webID.depth + 1 });
         }
       }
     }

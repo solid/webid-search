@@ -1,0 +1,141 @@
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+<http://en.wikipedia.org/wiki/Dan_Connolly_(computer_scientist)>	foaf:primaryTopic	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+@prefix dbo:	<http://dbpedia.org/ontology/> .
+@prefix dbr:	<http://dbpedia.org/resource/> .
+dbr:Technical_Architecture_Group	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+<http://dbpedia.org/resource/List_of_people_from_Prairie_Village,_Kansas>	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)>	rdf:type	owl:Thing .
+@prefix wikidata:	<http://www.wikidata.org/entity/> .
+<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)>	rdf:type	wikidata:Q215627 ,
+		wikidata:Q5 .
+@prefix schema:	<http://schema.org/> .
+<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)>	rdf:type	schema:Person ,
+		dbo:Eukaryote ,
+		dbo:Species ,
+		dbo:Animal ,
+		wikidata:Q729 ,
+		foaf:Person ,
+		wikidata:Q19088 .
+@prefix ns7:	<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)>	rdf:type	ns7:NaturalPerson ;
+	owl:sameAs	<http://viaf.org/viaf/54880444> ,
+		<http://yago-knowledge.org/resource/Dan_Connolly_(computer_scientist)> ,
+		<https://dblp.org/pid/33/2532> .
+@prefix dbpedia-fr:	<http://fr.dbpedia.org/resource/> .
+<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)>	owl:sameAs	dbpedia-fr:Dan_Connolly ,
+		<https://orcid.org/0000-0002-0928-7103> .
+@prefix dbpedia-mg:	<http://mg.dbpedia.org/resource/> .
+<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)>	owl:sameAs	dbpedia-mg:Dan_Connolly ,
+		wikidata:Q3013037 ,
+		<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> ,
+		<http://rdf.freebase.com/ns/m.09pkkt> ,
+		<https://global.dbpedia.org/id/2nmP5> ;
+	foaf:name	"Dan Connolly"@en .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)>	rdfs:label	"Dan Connolly (computer scientist)"@en ,
+		"Dan Connolly"@fr ;
+	foaf:homepage	<https://www.w3.org/People/Connolly/> .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)>	prov:wasDerivedFrom	<http://en.wikipedia.org/wiki/Dan_Connolly_(computer_scientist)?oldid=1292455837&ns=0> .
+@prefix dct:	<http://purl.org/dc/terms/> .
+@prefix dbc:	<http://dbpedia.org/resource/Category:> .
+<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)>	dct:subject	dbc:World_Wide_Web_Consortium ,
+		dbc:University_of_Texas_at_Austin_College_of_Natural_Sciences_alumni ,
+		dbc:Web_developers ,
+		<http://dbpedia.org/resource/Category:1967_births> ,
+		dbc:Internet_pioneers ,
+		dbc:American_computer_programmers ,
+		dbc:Living_people ,
+		dbc:Bishop_Miege_High_School_alumni ;
+	foaf:isPrimaryTopicOf	<http://en.wikipedia.org/wiki/Dan_Connolly_(computer_scientist)> ;
+	schema:sameAs	<http://viaf.org/viaf/54880444> ;
+	dbo:stateOfOrigin	dbr:Americans .
+@prefix dbp:	<http://dbpedia.org/property/> .
+<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)>	dbp:website	<https://www.w3.org/People/Connolly/> ;
+	dbo:almaMater	dbr:University_of_Texas_at_Austin ;
+	dbp:almaMater	dbr:University_of_Texas_at_Austin .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)>	dbo:birthYear	"1967"^^xsd:gYear ;
+	dbo:occupation	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)__PersonFunction__1> ;
+	dbp:nationality	dbr:Americans ;
+	dbp:occupation	"Computer scientist"@en ;
+	dbp:name	"Dan Connolly"@en ;
+	dbo:description	"forskare"@sv ,
+		"Amerikaans informaticus"@nl ,
+		"ara\u015Ft\u0131rmac\u0131"@tr ,
+		"\uC5F0\uAD6C\uC6D0"@ko ,
+		"Koautor bei vielen fr\u00FChen HTML-Standards"@de ,
+		"\u7814\u7A76\u8005"@zh ,
+		"\u7814\u7A76\u8005"@ja ,
+		"\u0438\u0437\u0438\u043B\u0434\u04E9\u04E9\u0447\u04AF"@ky ,
+		"\u043D\u0430\u0443\u043A\u043E\u0432\u0435\u0446\u044C \u0443 \u0433\u0430\u043B\u0443\u0437\u0456 \u043A\u043E\u043C\u043F'\u044E\u0442\u0435\u0440\u043D\u0438\u0445 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0456\u0439"@uk ,
+		"\u0570\u0565\u057F\u0561\u0566\u0578\u057F\u0578\u0572"@hy ,
+		"computer scientist"@en ,
+		"ikertzailea"@eu ;
+	dbo:wikiPageExternalLink	<http://www.advogato.org/person/connolly/> ,
+		<https://www.w3.org/People/Connolly/> ,
+		<http://www.madmode.com/> ,
+		<http://www.w3.org/People/Connolly/> ;
+	dbo:wikiPageWikiLink	dbr:Jon_Bosak ,
+		dbr:Bishop_Miege_High_School ,
+		dbc:Living_people ,
+		dbc:American_computer_programmers ,
+		<http://dbpedia.org/resource/Prairie_Village,_Kansas> ,
+		dbr:Boston ,
+		dbr:Resource_Description_Framework ,
+		dbr:SGML ,
+		dbr:University_of_Kansas_School_of_Medicine ,
+		dbr:Document_type_definition ,
+		dbr:American_people ,
+		dbr:Semantic_Web ,
+		dbr:University_of_Texas_at_Austin ,
+		dbc:Web_developers ,
+		dbr:Convex_Computer ,
+		dbr:Massachusetts_Institute_of_Technology ,
+		dbr:SPARQL ,
+		dbr:World_Wide_Web ,
+		dbr:XML ,
+		dbr:Web_Ontology_Language ,
+		dbr:Technical_Architecture_Group ,
+		dbr:Remote_work ,
+		dbr:Kansas_City ,
+		dbr:Internet_Engineering_Task_Force ,
+		dbr:Tim_Berners-Lee ,
+		dbr:HTML ,
+		dbc:Bishop_Miege_High_School_alumni ,
+		dbr:San_Antonio ,
+		<http://dbpedia.org/resource/Category:1967_births> ,
+		dbr:HTML_Working_Group ,
+		dbc:Internet_pioneers ,
+		dbr:World_Wide_Web_Consortium ,
+		dbr:Robert_Cailliau ,
+		dbc:University_of_Texas_at_Austin_College_of_Natural_Sciences_alumni ,
+		dbr:X_Window_System ,
+		dbc:World_Wide_Web_Consortium .
+@prefix dbt:	<http://dbpedia.org/resource/Template:> .
+<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)>	dbp:wikiPageUsesTemplate	dbt:Infobox_person ,
+		dbt:Authority_control ,
+		dbt:Birth_year_and_age ,
+		dbt:OL_author ,
+		dbt:Short_description ,
+		dbt:Reflist ,
+		dbt:US-compu-bio-stub ;
+	dbo:nationality	dbr:Americans .
+dbr:Markup_language	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+<http://dbpedia.org/resource/Chris_Lilley_(computer_scientist)>	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+dbr:XML	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+dbr:HTML	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+dbr:CSS	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+dbr:Convex_Computer	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+dbr:Web_resource	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+dbr:Tag_soup	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+<http://dbpedia.org/resource/Turtle_(syntax)>	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+<http://dbpedia.org/resource/Cwm_(software)>	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+dbr:Dan_Connolly	dbo:wikiPageDisambiguates	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> ;
+	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+<http://dbpedia.org/resource/D._Connolly>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> ;
+	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .
+<http://dbpedia.org/resource/Daniel_Connolly_(computer_scientist)>	dbo:wikiPageRedirects	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> ;
+	dbo:wikiPageWikiLink	<http://dbpedia.org/resource/Dan_Connolly_(computer_scientist)> .

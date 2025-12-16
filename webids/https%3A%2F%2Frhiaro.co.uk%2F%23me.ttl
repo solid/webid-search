@@ -1,0 +1,18 @@
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<https://rhiaro.co.uk/>
+  as:name "tampering with arrangements" ;
+  a as:Collection, ldp:Container ;
+  as:items <https://rhiaro.co.uk/2025/12/693aae8c483ad> ;
+  ldp:contains <https://rhiaro.co.uk/2025/12/693aae8c483ad> .
+
+<https://rhiaro.co.uk/2025/12/693aae8c483ad> a as:Activity .
+<https://rhiaro.co.uk/#me>
+  a as:Person ;
+  as:name "Amy Guy" ;
+  as:image <https://rhiaro.co.uk/stash/dp.png>, <https://webmention.io/avatar/twitter.com/db387eb43790e49d67e4d78dfbda85674e669bd59211bb75e73ce4c4555f8eee.png>, <https://twitter.com/rhiaro/profile_image?size=original>, <https://webmention.io/avatar/twitter.com/41b920ce806077f84fa4f364225ab7a7d7f257846b17f73840317d76597a1edd.png> ;
+  as:url <https://rhiaro.co.uk/> ;
+  as:outbox <https://rhiaro.co.uk/outgoing/> ;
+  as:inbox <https://rhiaro.co.uk/incoming/> .
+

@@ -1,0 +1,39 @@
+@prefix : <https://jeswr.solidcommunity.net/profile/card#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix pro: <https://jeswr.solidcommunity.net/profile/>.
+@prefix inbox: <https://jeswr.solidcommunity.net/inbox/>.
+@prefix jes: <https://jeswr.solidcommunity.net/>.
+
+pro:card a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a schema:Person, foaf:Person;
+    acl:trustedApp _:b1466_n3-175, _:b1466_n3-176, _:b1466_n3-177, _:b1466_n3-178, _:b1466_n3-179, _:b1466_n3-180, _:b1466_n3-181;
+    ldp:inbox <https://jeswr.solidcommunity.net/inbox/>;
+    space:preferencesFile <https://jeswr.solidcommunity.net/settings/prefs.ttl>;
+    space:storage <https://jeswr.solidcommunity.net/>;
+    solid:account <https://jeswr.solidcommunity.net/>;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex <https://jeswr.solidcommunity.net/settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex <https://jeswr.solidcommunity.net/settings/publicTypeIndex.ttl>;
+    foaf:name "Jesse Wright";
+    foaf:knows <#me>, <https://timbl.solidcommunity.net/profile/card#me>.
+_:b1466_n3-175 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.solidcommunity.net:8443>.
+_:b1466_n3-176 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://martin.vincenttunru.com>.
+_:b1466_n3-177 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://penny.vincenttunru.com>.
+_:b1466_n3-178 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b1466_n3-179 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid-health-app.vercel.app>.
+_:b1466_n3-180 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b1466_n3-181 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.

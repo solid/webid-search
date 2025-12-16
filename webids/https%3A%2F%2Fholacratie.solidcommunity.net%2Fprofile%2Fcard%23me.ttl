@@ -1,0 +1,64 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix pro: <./>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix schem: <http://schema.org/>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix n2: <http://>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix hol: </>.
+@prefix che: </public/chess_20200109.ttl#>.
+@prefix stor: <http://example.org/storage/>.
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:me
+    a schem:Person, n0:Person;
+    n:fn "Holacratie";
+    n:note "";
+    n:organization-name "";
+    n:role "Methode";
+    n1:trustedApp
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://localhost:9000>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <http://localhost:8080>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <http://localhost:9001>
+            ],
+        [ n1:mode n1:Append, n1:Read, n1:Write; n1:origin n2:localhost ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://edit.o.team>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://otto-aa.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://scenaristeur.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://solidarity.inrupt.net>
+            ];
+    ldp:inbox inbox:;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage hol:;
+    solid:account hol:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    n0:name "Holacratie".
+che:k56uhvye stor:storeIn </public/chess_20200109.ttl>; schem:contributor :me.
+
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

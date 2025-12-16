@@ -1,0 +1,161 @@
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix wikipedia-en:	<http://en.wikipedia.org/wiki/> .
+@prefix dbr:	<http://dbpedia.org/resource/> .
+wikipedia-en:Michael_Genesereth	foaf:primaryTopic	dbr:Michael_Genesereth .
+@prefix dbo:	<http://dbpedia.org/ontology/> .
+dbr:Macsyma	dbo:wikiPageWikiLink	dbr:Michael_Genesereth .
+dbr:Game_Description_Language	dbo:wikiPageWikiLink	dbr:Michael_Genesereth .
+@prefix dbp:	<http://dbpedia.org/property/> .
+<http://dbpedia.org/resource/Stuart_J._Russell>	dbp:doctoralAdvisor	dbr:Michael_Genesereth ;
+	dbo:wikiPageWikiLink	dbr:Michael_Genesereth ;
+	dbo:doctoralAdvisor	dbr:Michael_Genesereth .
+dbr:Russell_Greiner	dbp:doctoralAdvisor	dbr:Michael_Genesereth ;
+	dbo:doctoralAdvisor	dbr:Michael_Genesereth .
+<http://dbpedia.org/resource/Jock_D._Mackinlay>	dbp:doctoralAdvisor	dbr:Michael_Genesereth ;
+	dbo:wikiPageWikiLink	dbr:Michael_Genesereth ;
+	dbo:doctoralAdvisor	dbr:Michael_Genesereth .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wikidata:	<http://www.wikidata.org/entity/> .
+dbr:Michael_Genesereth	rdf:type	wikidata:Q215627 ,
+		dbo:Person ,
+		dbo:Animal ,
+		dbo:Eukaryote ,
+		dbo:Species ,
+		wikidata:Q5 ,
+		wikidata:Q19088 .
+@prefix ns7:	<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+dbr:Michael_Genesereth	rdf:type	ns7:NaturalPerson .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+dbr:Michael_Genesereth	rdf:type	owl:Thing .
+@prefix schema:	<http://schema.org/> .
+dbr:Michael_Genesereth	rdf:type	schema:Person ,
+		wikidata:Q901 ,
+		foaf:Person ,
+		wikidata:Q729 .
+@prefix ns10:	<https://dblp.org/pid/g/> .
+dbr:Michael_Genesereth	owl:sameAs	ns10:MRGenesereth ,
+		<https://global.dbpedia.org/id/221cM> ,
+		wikidata:Q21191195 ,
+		<http://viaf.org/viaf/91769380> .
+@prefix ns11:	<http://data.bibliotheken.nl/id/thes/> .
+dbr:Michael_Genesereth	owl:sameAs	ns11:p073177261 ,
+		<http://d-nb.info/gnd/172094615> ,
+		dbr:Michael_Genesereth ;
+	foaf:name	"Michael Genesereth"@en .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+dbr:Michael_Genesereth	rdfs:label	"Michael Genesereth"@en ;
+	dbp:doctoralStudents	dbr:Russell_Greiner ,
+		dbr:Vishal_Sikka ,
+		<http://dbpedia.org/resource/Jock_D._Mackinlay> ,
+		<http://dbpedia.org/resource/Stuart_J._Russell> ;
+	dbp:doctoralAdvisor	"Joel Moses"@en ,
+		"Thomas Cheatham"@en .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+dbr:Michael_Genesereth	prov:wasDerivedFrom	<http://en.wikipedia.org/wiki/Michael_Genesereth?oldid=1296464860&ns=0> .
+@prefix dct:	<http://purl.org/dc/terms/> .
+dbr:Michael_Genesereth	dct:subject	<http://dbpedia.org/resource/Category:1948_births> .
+@prefix dbc:	<http://dbpedia.org/resource/Category:> .
+dbr:Michael_Genesereth	dct:subject	dbc:Fellows_of_the_Association_for_the_Advancement_of_Artificial_Intelligence ,
+		dbc:Harvard_University_alumni ,
+		dbc:Massachusetts_Institute_of_Technology_School_of_Science_alumni ,
+		dbc:American_people_of_Welsh_descent ,
+		dbc:Formal_methods_people ,
+		dbc:American_people_of_Polish_descent ,
+		dbc:Living_people ,
+		dbc:Logic_programming_researchers ;
+	foaf:isPrimaryTopicOf	wikipedia-en:Michael_Genesereth ;
+	dbp:knownFor	dbr:Computational_law ,
+		dbr:General_game_playing ,
+		dbr:Artificial_intelligence ;
+	dbp:awards	"AAAI Fellow ."@en ;
+	dbo:almaMater	dbr:Harvard_University ,
+		dbr:Massachusetts_Institute_of_Technology ;
+	dbp:almaMater	dbr:Harvard_University ,
+		dbr:Massachusetts_Institute_of_Technology ;
+	dbo:knownFor	dbr:General_game_playing ,
+		dbr:Computational_law ,
+		dbr:Artificial_intelligence ;
+	dbo:doctoralStudent	<http://dbpedia.org/resource/Stuart_J._Russell> ,
+		dbr:Russell_Greiner ,
+		dbr:Vishal_Sikka ,
+		<http://dbpedia.org/resource/Jock_D._Mackinlay> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+dbr:Michael_Genesereth	dbo:birthDate	"1948-10-15"^^xsd:date ;
+	dbp:birthDate	"1948-10-15"^^xsd:date ;
+	dbp:workInstitution	dbr:Stanford_University ;
+	dbp:thesisYear	1978 ;
+	dbp:thesisTitle	"Automated Consultation for Complex Computer Systems"@en ;
+	dbp:name	"Michael Genesereth"@en ;
+	dbo:description	"computer scientist"@en ,
+		"\u043D\u0430\u0443\u043A\u043E\u0432\u0435\u0446\u044C \u0443 \u0433\u0430\u043B\u0443\u0437\u0456 \u043A\u043E\u043C\u043F'\u044E\u0442\u0435\u0440\u043D\u0438\u0445 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0456\u0439"@uk ,
+		"United States of America karimba \u014Bun ny\u025B doo"@dag ;
+	dbo:wikiPageWikiLink	dbc:MIT_Department_of_Physics_alumni ,
+		dbr:Knowledge-based_systems ,
+		<http://dbpedia.org/resource/Artificial_Intelligence_(journal)> ,
+		dbr:Common_Logic ,
+		dbr:Enterprise_management ,
+		dbr:Jacques_Herbrand ,
+		dbr:Harvard_University ,
+		dbr:Symbolic_artificial_intelligence ,
+		dbr:International_Conference_on_Autonomous_Agents_and_Multiagent_Systems ,
+		dbc:Logic_programming_researchers ,
+		dbr:General_game_playing ,
+		dbr:Logical_spreadsheet ,
+		dbr:Computational_law ,
+		dbc:Harvard_University_alumni ,
+		dbr:Vishal_Sikka ,
+		dbr:Symposium_on_Principles_of_Database_Systems ,
+		dbr:Joel_Moses ,
+		dbr:Logician ,
+		dbr:Knowledge_Interchange_Format ,
+		dbr:Massachusetts_Institute_of_Technology ,
+		<http://dbpedia.org/resource/Stuart_J._Russell> ,
+		dbr:American_Association_for_the_Advancement_of_Artificial_Intelligence ,
+		dbr:Russell_Greiner ,
+		dbr:Association_for_the_Advancement_of_Artificial_Intelligence ,
+		<http://dbpedia.org/resource/Jock_D._Mackinlay> ,
+		dbc:Living_people ,
+		dbr:Logic ,
+		dbr:Game_Description_Language ,
+		dbr:Macsyma ,
+		<http://dbpedia.org/resource/Diagnosis_(artificial_intelligence)> ,
+		dbr:Morgan_Kaufmann_Publishers ,
+		dbr:CodeX ,
+		dbr:Computer_scientist ,
+		dbr:Artificial_Intelligence ,
+		dbr:Deductive_database ,
+		dbr:Rational_agent ,
+		dbr:CommerceNet ,
+		dbc:American_people_of_Welsh_descent ,
+		dbr:Computational_logic ,
+		dbr:Computer_science ,
+		dbc:Formal_methods_people ,
+		dbr:Vaumpus_world ,
+		dbr:MOOC ,
+		dbr:Stanford_University ,
+		<http://dbpedia.org/resource/Category:1948_births> ,
+		dbr:Mycin ,
+		dbc:American_people_of_Polish_descent ,
+		dbr:The_Web_Conference .
+@prefix dbt:	<http://dbpedia.org/resource/Template:> .
+dbr:Michael_Genesereth	dbp:wikiPageUsesTemplate	dbt:Birth_date_and_age ,
+		dbt:Cite_book ,
+		dbt:Reflist ,
+		dbt:Short_description ,
+		dbt:Authority_control ,
+		dbt:Infobox_scientist ,
+		dbt:Citation_needed ;
+	dbp:field	dbr:Computer_science ,
+		dbr:Logic ;
+	dbo:award	dbr:Association_for_the_Advancement_of_Artificial_Intelligence ;
+	dbo:academicDiscipline	dbr:Logic ,
+		dbr:Computer_science ;
+	dbo:doctoralAdvisor	dbr:Joel_Moses .
+dbr:Logical_spreadsheet	dbo:wikiPageWikiLink	dbr:Michael_Genesereth .
+dbr:Knowledge_Interchange_Format	dbo:wikiPageWikiLink	dbr:Michael_Genesereth .
+dbr:Vishal_Sikka	dbo:wikiPageWikiLink	dbr:Michael_Genesereth .
+dbr:List_of_Polish_Americans	dbo:wikiPageWikiLink	dbr:Michael_Genesereth .
+dbr:Genesereth	dbo:wikiPageRedirects	dbr:Michael_Genesereth ;
+	dbo:wikiPageWikiLink	dbr:Michael_Genesereth .
+<http://dbpedia.org/resource/Michael_Genesereth_(professor)>	dbo:wikiPageRedirects	dbr:Michael_Genesereth ;
+	dbo:wikiPageWikiLink	dbr:Michael_Genesereth .

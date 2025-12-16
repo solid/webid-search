@@ -1,0 +1,219 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix loc: <http://localhost:3000/>.
+@prefix c7: <https://timea.solidcommunity.net/profile/card#>.
+@prefix jef: </>.
+@prefix c: <https://solidproject.solidcommunity.net/profile/card#>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+@prefix lo: <http://localhost:3101/>.
+@prefix je: <https://jeff-zucker.solidcommunity.net:8443/>.
+@prefix jeff: <https://jeffzucker.inrupt.net/>.
+@prefix c0: <https://solidos.solidcommunity.net/profile/card#>.
+@prefix c24: <https://sharonstrats.inrupt.net/profile/card#>.
+@prefix c36: <https://bourgeoa.solidcommunity.net/profile/card#>.
+@prefix c37: <https://ewingson.solidcommunity.net/profile/card#>.
+@prefix c38: <https://noeldemartin.solidcommunity.net/profile/card#>.
+@prefix c40: <https://timbl.solidcommunity.net/profile/card#>.
+@prefix c32: <https://angelo.veltens.org/profile/card#>.
+@prefix profi: <./>.
+@prefix n3: <http://>.
+@prefix n4: <https://>.
+@prefix n5: <file://>.
+@prefix inb0: </inbox/>.
+@prefix sol: <https://solidcommunity.net/>.
+
+profi:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1731004640342 a soc:FacebookAccount; foaf:id "dubzed".
+
+:id1731004699999 a soc:MatrixAccount; foaf:id "jeff-zucker".
+
+:id1731004729864
+a soc:OtherAccount; rdfs:label "testaccount"; foaf:homepage <https:example.com>.
+:me
+    a schema:Person, foaf:Person;
+    rdfs:seeAlso <card2.ttl>;
+    vcard:fn "Jeff Zucker";
+    vcard:hasPhoto <me.jpg>;
+    vcard:note "test note";
+    vcard:organization-name "";
+    vcard:role "software developer";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://example.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:8444>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin n3:localhost
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://bourgeoa.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://jeff-zucker.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin n4:solid-node-client
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://solid.github.io>
+            ],
+        [ acl:mode acl:Append, acl:Read, acl:Write; acl:origin n5: ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://127.0.0.1:3001>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3001>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3101>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3103>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3105>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3300>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:7000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://podpro.fly.dev:443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://api.liqid.chat>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://css.verborgh.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://forum.solidproject.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://hello.0data.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://inrupt.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://jackson2.inrupt.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://jasonjgreen.inrupt.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://jeff-zucker.solidcommunity.net:8443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://localhost:8442>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://localhost:8443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://mysilio.garden>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://noeldemartin.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://phochste.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://podbrowser.inrupt.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://rrustom.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidcommunity.net:8443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidos.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidos.solidcommunity.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://timbl.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://umai.noeldemartin.com>
+            ];
+    ldp:inbox inb0:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage lo:, je:, jef:, jeff:, <https://solidproject.solidcommunity.net/>;
+    solid:account jef:;
+    solid:community c0:me, c:me;
+    solid:oidcIssuer loc:, sol:;
+    solid:oidcIssuerRegistrationToken
+        "571cc33a-c83b-4e62-8dc7-100ef31930c9",
+        "fbd62817-9a1e-4871-abc0-d4d9547d6db6";
+    solid:preferredObjectPronoun "him";
+    solid:preferredSubjectPronoun "he";
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:account ( :id1731004640342 :id1731004699999 :id1731004729864 );
+    foaf:knows
+    c32:me, c36:me, c37:me, c38:me, c24:me, c0:me, c:me, c40:me, c7:me;
+    foaf:name "Jeff Zucker";
+    foaf:nick "jeffz".

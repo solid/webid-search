@@ -1,0 +1,114 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix c0: <https://spoggy-test5.solid.community/profile/card#>.
+@prefix c1: <https://spoggy-test3.solid.community/profile/card#>.
+@prefix c2: <https://spoggy.solid.community/profile/card#>.
+@prefix pr: <./>.
+@prefix inb: </inbox/>.
+@prefix spog: </>.
+@prefix c3: <https://spoggy-test8.solid.community/profile/card#>.
+@prefix c4: <https://spoggy.solidweb.org/profile/card#>.
+@prefix gro: </public/group_with_profile_update.ttl#>.
+@prefix tes: </public/test_with_p_up.ttl#>.
+@prefix new: </public/new_test_group.ttl#>.
+@prefix ne: </public/new_group_test_redirect.ttl#>.
+@prefix gr: </public/group_test_redirect.ttl#>.
+@prefix Bin: </public/group_test_redirect/Bing_test_sub_group.ttl#>.
+@prefix sub: </public/new_test_group/subgroup.ttl#>.
+@prefix gft: </public/group_test_redirect/gft.ttl#>.
+@prefix su: </public/new_test_group/subsub.ttl#>.
+@prefix subi: </public/new_test_group/subisuba.ttl#>.
+@prefix n1: </public/new_test_group/subisuba/another_sub.ttl#>.
+@prefix bnh: </public/group_test_redirect/gft/bnhjuiuyi.ttl#>.
+@prefix vgf: </public/group_test_redirect/gft/bnhjuiuyi/vgftr.ttl#>.
+@prefix dfc: </public/dfcv.ttl#>.
+@prefix swi: </public/dfcv/swing_pop.ttl#>.
+@prefix poP: </public/poPock.ttl#>.
+@prefix te: </public/gouvernance/groups/test_inbox_.ttl#>.
+@prefix test: </public/gouvernance/groups/test_inbox.ttl#>.
+@prefix wik: </public/gouvernance/groups/wik.ttl#>.
+@prefix sw: </public/gouvernance/groups/swing_test.ttl#>.
+@prefix cre: </public/gouvernance/groups/creation_group_test.ttl#>.
+@prefix t: </public/gouvernance/groups/creation_group_test/test_sub_group.ttl#>.
+@prefix Ano: </public/gouvernance/groups/creation_group_test/test_sub_group/Another_sub_group.ttl#>.
+@prefix s: </public/gouvernance/groups/wik/sub_of_wik.ttl#>.
+@prefix wit: </public/gouvernance/groups/wik/without_purpose.ttl#>.
+@prefix Pop: </public/poPock/PopockEditor.ttl#>.
+@prefix Pro: </public/gouvernance/groups/Promotion_de_Group.ttl#>.
+@prefix n2: </public/gouvernance/groups/creation_group_test/test_sub_group/test_for_superDoc.ttl#>.
+@prefix n10: </public/test_avec_l_apostrophe_dans_l_nom_d_group.ttl#>.
+@prefix p: </public/gouvernance/groups/patouf_group.ttl#>.
+@prefix An: </public/dfcv/Another_pseudo_mail.ttl#>.
+@prefix n7: </public/dfcv/sub_group_test.ttl#>.
+@prefix ssu: </public/dfcv/sub_group_test/ssub_sub_.ttl#>.
+@prefix SOO: </public/dfcv/SOOOO.ttl#>.
+@prefix Tie: </public/Tiers_Lieu.ttl#>.
+@prefix Tes: </public/Test.ttl#>.
+@prefix n0: </public/another%20group%20in%20the%20wall%20.ttl#>.
+@prefix n3: </public/group_with_profile_update/test%20with%20l_encode67.ttl#>.
+@prefix L: </public/L_njvbhj%20l_hgjhgf%20liuougkj_.ttl#>.
+@prefix n: </public/new%20test%20sans%20aopopopopopopopo.ttl#>.
+
+pr:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a org:Group, foaf:Group;
+    vcard:fn "Spoggy-test7";
+    vcard:hasPhoto <4020744%5B1%5D.png>;
+    vcard:organization-name "Spoggy";
+    vcard:role "Solid Experiments & Devs";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://127.0.0.1:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://127.0.0.1:8081>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:8081>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:9000>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://dokie.li>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://podbrowser.inrupt.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://scenaristeur.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://ramen.noeldemartin.com>
+            ];
+    ldp:inbox inb:;
+    org:memberOf
+        n0:we, dfc:we, An:we, SOO:we, n7:we, ssu:we, swi:we, cre:we, t:we,
+        Ano:we, n2:we, p:we, Pro:we, sw:we, te:we, test:we, wik:we, s:we,
+        wit:we, gr:we, Bin:we, gft:we, bnh:we, vgf:we, gro:we, n3:we, L:we,
+        ne:we, new:we, sub:we, subi:we, n1:we, su:we, n:we, poP:we, Pop:we,
+        n10:we, tes:we, Tes:we, Tie:we;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage spog:;
+    solid:account spog:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c1:me, c0:me, c3:me, c2:me, c4:me;
+    foaf:name "spoggy-test7".
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

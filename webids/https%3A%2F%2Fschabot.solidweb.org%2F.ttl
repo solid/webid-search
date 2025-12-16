@@ -1,0 +1,73 @@
+@prefix : </#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix stat: <http://www.w3.org/ns/posix/stat#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix sch: <>.
+@prefix n0: </.well-known/>.
+@prefix inbox: </inbox/>.
+@prefix po: </popock/>.
+@prefix priv: </private/>.
+@prefix pro: </profile/>.
+@prefix pub: </public/>.
+@prefix set: </settings/>.
+@prefix vnd: <http://www.w3.org/ns/iana/media-types/image/vnd.microsoft.icon#>.
+@prefix c: </profile/card#>.
+@prefix pl: <http://www.w3.org/ns/iana/media-types/text/plain#>.
+
+sch:
+    a ldp:BasicContainer, ldp:Container, space:Storage;
+    dct:modified "2021-09-09T13:59:44Z"^^xsd:dateTime;
+    ldp:contains
+    n0:, </favicon.ico>, inbox:, po:, priv:, pro:, pub:, </robots.txt>, set:;
+    stat:mtime 1631195984.462;
+    stat:size 4096 .
+n0:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2021-09-09T13:59:44Z"^^xsd:dateTime;
+    stat:mtime 1631195984.458;
+    stat:size 4096 .
+</favicon.ico>
+    a vnd:Resource, ldp:Resource;
+    dct:modified "2021-09-09T13:59:44Z"^^xsd:dateTime;
+    stat:mtime 1631195984.459;
+    stat:size 4286 .
+inbox:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2021-09-09T13:59:44Z"^^xsd:dateTime;
+    stat:mtime 1631195984.461;
+    stat:size 4096 .
+po:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2021-09-09T13:59:44Z"^^xsd:dateTime;
+    stat:mtime 1631195984.457;
+    stat:size 4096 .
+priv:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2021-09-09T13:59:44Z"^^xsd:dateTime;
+    stat:mtime 1631195984.459;
+    stat:size 4096 .
+pro:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2022-06-26T20:54:07Z"^^xsd:dateTime;
+    stat:mtime 1656276847.106;
+    stat:size 4096 .
+c:me solid:account sch: .
+
+pub:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2021-09-09T13:59:44Z"^^xsd:dateTime;
+    stat:mtime 1631195984.461;
+    stat:size 4096 .
+</robots.txt>
+    a pl:Resource, ldp:Resource;
+    dct:modified "2021-09-09T13:59:44Z"^^xsd:dateTime;
+    stat:mtime 1631195984.459;
+    stat:size 83 .
+set:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2021-09-09T13:59:44Z"^^xsd:dateTime;
+    stat:mtime 1631195984.458;
+    stat:size 4096 .

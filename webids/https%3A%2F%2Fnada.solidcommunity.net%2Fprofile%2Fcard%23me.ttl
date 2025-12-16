@@ -1,0 +1,46 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix pro: <./>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix schem: <http://schema.org/>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix n2: </>.
+@prefix XML: <http://www.w3.org/2001/XMLSchema#>.
+@prefix c: <https://angelo.veltens.org/profile/card#>.
+@prefix c0: <https://gaia.solid.community/profile/card#>.
+@prefix c1: <https://giulio.solid.community/profile/card#>.
+@prefix c2: <https://jollyorc.solid.community/profile/card#>.
+@prefix k: <https://karstenvoigt.solid.community/>.
+@prefix c3: <https://melvin.solid.community/profile/card#>.
+@prefix c4: <https://neuroplastic.databox.me/profile/card#>.
+@prefix c5: <https://spoggy.solid.community/profile/card#>.
+@prefix c6: <https://timbl.solid.community/profile/card#>.
+@prefix c7: <https://vincent-test.inrupt.net/profile/card#>.
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:me
+    a schem:Person, n0:Person;
+    n:fn "nada";
+    n:hasPhoto <6gmJbyU8_400x400.jpg>;
+    n:note "https://darcy.is/ibex/";
+    n:organization-name "Darcy";
+    n:role "internet bureaucrat";
+    n1:trustedApp
+    [ n1:mode n1:Append, n1:Read, n1:Write; n1:origin <https://ibex.darcy.is> ];
+    ldp:inbox inbox:;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage n2:;
+    solid:account n2:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:profileBackgroundColor "#ffffff"^^XML:color;
+    solid:profileHighlightColor "#aa7942"^^XML:color;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    n0:knows c:me, c0:me, c1:me, c2:me, k:, c3:me, c4:me, c5:me, c6:me, c7:me;
+    n0:name "Nada".
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

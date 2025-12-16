@@ -1,0 +1,103 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix wf: <http://www.w3.org/2005/01/wf/flow#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix sol: </>.
+@prefix inbox: </inbox/>.
+@prefix pro: <./>.
+@prefix so: <https://solidproject.org/>.
+@prefix n: <http://paymentpointers.org/ns#>.
+@prefix ent: <http://www.wikidata.org/entity/>.
+@prefix www: <https://www.mt.edu/>.
+@prefix c: <https://solidos.solidcommunity.net/profile/card#>.
+@prefix skill: <http://data.europa.eu/esco/skill/>.
+
+skill:3740b2a0-c94e-4116-bf18-f9fdd5b59f56 schema:name "provide leadership".
+
+skill:8696aff0-18c0-4ba6-a4d0-9a21861b3e5e
+schema:name "World Wide Web Consortium standards".
+ent:Q49108 schema:name "Massachusetts Institute of Technology"@it.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:id1621014914071 solid:publicId skill:3740b2a0-c94e-4116-bf18-f9fdd5b59f56 .
+
+:id1621014915319 solid:publicId skill:8696aff0-18c0-4ba6-a4d0-9a21861b3e5e.
+
+:id1621015006458
+    a solid:PastRole;
+    schema:endDate "2021-05-14"^^xsd:date;
+    schema:startDate "2018-01-01"^^xsd:date;
+    vcard:role "MIT lead the initial research on Solid";
+    org:member :me;
+    org:organization :id1621018700611 .
+:id1621018700611
+    a schema:ResearchOrganization;
+    schema:name "MIT";
+    schema:uri www:;
+    solid:publicId ent:Q49108 .
+:me
+    a schema:Organization, schema:Project, vcard:Organization;
+    n:PaymentPointer "";
+    schema:skills :id1621014914071, :id1621014915319;
+    wf:attachment so:;
+    vcard:fn "The Solid Project";
+    vcard:hasPhoto <solid-emblem.svg>;
+    vcard:note
+        """The Solid project is a movement to build a world in which individuals -- and organizations -- have complete control of their data.
+
+The sold architecture adds more standards to he existing web: Global single sign in (webids), global access control (with WAC and ACP), and a universal  API for fast reads and writes to and from Solid stores.
+
+Solid stores are called pods. You can have one or a few, just as you may have more than one email address.  The servers just store and protect data but do not know anything about which app is using them to store what.
+
+This is the profile of the Solid Project itself. Its web site is at solidproject.org, linked below:
+""";
+    vcard:organization-name "The Solid Project";
+    vcard:role "The organization itself";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://pod.inrupt.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://testingsolidos.solidcommunity.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://timbl.com>
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage sol:;
+    solid:account sol:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:preferredObjectPronoun "it";
+    solid:preferredRelativePronoun "its";
+    solid:preferredSubjectPronoun "it";
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:profileBackgroundColor "#e7dfff"^^xsd:color;
+    solid:profileHighlightColor "#5107f6"^^xsd:color;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c:me;
+    foaf:name "Tim";
+    foaf:nick "SolidProject".

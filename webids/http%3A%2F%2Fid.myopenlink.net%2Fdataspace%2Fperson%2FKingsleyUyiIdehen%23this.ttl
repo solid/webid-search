@@ -1,0 +1,499 @@
+@prefix svc:	<http://rdfs.org/sioc/services#> .
+@prefix ns1:	<https://id.myopenlink.net/dataspace/services/> .
+@prefix ns2:	<https://id.myopenlink.net/dataspace/person/> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns4:	<https://id.myopenlink.net/dataspace/> .
+@prefix sioc:	<http://rdfs.org/sioc/ns#> .
+@prefix ns6:	<https://id.myopenlink.net/feeds/people/> .
+@prefix ns7:	<https://id.myopenlink.net/feeds/people/KingsleyUyiIdehen/> .
+@prefix opl:	<http://www.openlinksw.com/schema/attribution#> .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix ns10:	<https://my-profile.eu/people/Houbens/card#> .
+@prefix ns11:	<https://my-profile.eu/people/deiu/card#> .
+@prefix ns12:	<https://id.myopenlink.net/dataspace/KingsleyUyiIdehen/> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix as:	<https://www.w3.org/ns/activitystreams#> .
+@prefix ns15:	<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen#> .
+@prefix ns16:	<http://id.myopenlink.net/OAuth2/> .
+@prefix ns17:	<skype:kidehen?> .
+@prefix vcard:	<http://www.w3.org/2006/vcard/ns#> .
+@prefix geo:	<http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dc:	<http://purl.org/dc/elements/1.1/> .
+@prefix sec:	<https://w3id.org/security#> .
+@prefix cert:	<http://www.w3.org/ns/auth/cert#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix oplcert:	<http://www.openlinksw.com/schemas/cert#> .
+@prefix ns25:	<http://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen#> .
+@prefix ns26:	<http://www.linkedin.com/in/> .
+@prefix ns27:	<https://kidehen3.solid.openlinksw.com:8445/profile/card#> .
+@prefix ns28:	<https://kidehen3.solid.openlinksw.com:8444/profile/card#> .
+@prefix ns29:	<http://linkedin.com/> .
+@prefix ns30:	<http://twitter.com/> .
+@prefix ns31:	<http://id.myopenlink.net/about/id/entity/http/twitter.com/> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix ns33:	<https://kidehen3.solid.openlinksw.com/profile/card#> .
+@prefix ldp:	<http://www.w3.org/ns/ldp#> .
+@prefix ns35:	<http://www.w3.org/ns/activitystreams#> .
+@prefix ns36:	<http://www.w3.org/ns/solid/terms#> .
+@prefix bio:	<http://vocab.org/bio/0.1/> .
+@prefix ns38:	<http://id.myopenlink.net/about/id/entity/http/del.icio.us/> .
+@prefix ns39:	<http://id.myopenlink.net/about/id/entity/http/picasaweb.google.com/> .
+@prefix ns40:	<http://id.myopenlink.net/about/id/entity/http/twitpic.com/photos/> .
+@prefix ns41:	<http://id.myopenlink.net/about/id/entity/http/www.last.fm/user/> .
+@prefix ns42:	<http://id.myopenlink.net/about/id/entity/http/www.linkedin.com/> .
+@prefix ns43:	<http://id.myopenlink.net/about/id/entity/http/www.slideshare.net/> .
+@prefix ns44:	<http://id.myopenlink.net/about/id/entity/http/www.youtube.com/> .
+@prefix ns45:	<http://del.icio.us/> .
+@prefix ns46:	<http://picasaweb.google.com/> .
+@prefix ns47:	<http://twitpic.com/photos/> .
+@prefix ns48:	<http://www.last.fm/user/> .
+@prefix ns49:	<http://www.linkedin.com/> .
+@prefix ns50:	<http://www.slideshare.net/> .
+@prefix ns51:	<http://www.youtube.com/> .
+@prefix ns52:	<https://id.myopenlink.net/dataspace/tag/> .
+
+ns1:user
+	svc:services_of	ns2:KingsleyUyiIdehen .
+ns4:KingsleyUyiIdehen
+	rdf:type	sioc:User ;
+	svc:has_service	ns6:KingsleyUyiIdehen , ns7:friends ;
+	sioc:account_of	ns2:KingsleyUyiIdehen ;
+	sioc:email_sha1	"r6z2uGjmyzb3HSzsxtUxomzh8u8=" ;
+	opl:isDescribedUsing	<https://id.myopenlink.net/dataspace/KingsleyUyiIdehen/sioc.rdf> ;
+	sioc:id	"KingsleyUyiIdehen" ;
+	sioc:link	ns4:KingsleyUyiIdehen ;
+	sioc:name	"Kingsley Uyi Idehen" ;
+	foaf:knows	ns10:me , ns11:me .
+ns12:space
+	rdf:type	sioc:Space ;
+	sioc:link	ns4:KingsleyUyiIdehen .
+ns6:KingsleyUyiIdehen
+	rdf:type	svc:Service ;
+	svc:service_endpoint	ns6:KingsleyUyiIdehen ;
+	svc:service_of	ns4:KingsleyUyiIdehen ;
+	svc:service_protocol	"OpenSocial" ;
+	rdfs:label	"OpenSocial" .
+ns7:friends
+	rdf:type	svc:Service ;
+	svc:service_endpoint	ns7:friends ;
+	svc:service_of	ns4:KingsleyUyiIdehen ;
+	svc:service_protocol	"OpenSocial" ;
+	rdfs:label	"OpenSocial" .
+ns15:siob
+	as:sharedInbox	<http://id.myopenlink.net/DAV/sharedInbox/> ;
+	as:oauthAuthorizationEndpoint	ns16:authorize ;
+	as:oauthTokenEndpoint	ns16:token .
+<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/skype/skype%3Akidehen%3Fchat>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"skype" ;
+	foaf:accountServiceHomepage	ns17:chat .
+ns15:home
+	rdf:type	vcard:Home , vcard:Voice ;
+	vcard:hasValue	"tel:7812730900" .
+ns15:geo
+	rdf:type	geo:Point ;
+	geo:lat	"42.184189" ;
+	geo:long	"-97.000000" .
+ns15:icon
+	as:url	<https://id.myopenlink.net/home/KingsleyUyiIdehen/wa/images/kingsley_idehen-150x150.png> ;
+	as:mediaType	"image/png" ;
+	rdf:type	as:Image .
+ns15:org
+	rdf:type	foaf:Organization ;
+	dc:title	"OpenLink Software" ;
+	foaf:homepage	<http://www.openlinksw.com> .
+ns15:addr
+	rdf:type	vcard:Home ;
+	vcard:country-name	"United States" .
+ns15:work
+	rdf:type	vcard:Work ;
+	vcard:country-name	"United States" ;
+	vcard:extended-address	"Suie 265" ;
+	vcard:street-address	"10 Mall Road" .
+ns15:key-511
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6QqiMN/neTOw1ENMSgt4BVnxChMn\r\nSo5kit60bKjBzq9edV3fwUYrxC5OLMTulj3uF74GFNraxTv2DgmY5UmPEahpk12HK4eKxlYL\r\ndkCBnVhmphxMtIPs1xcZdaUXPvAH1pL6NON68QhU12Tgx/6CPXY19PEJ+AqAFmbwfezDRTFu\r\nEQKR4PFMRo5vRaDMUfv/GviBZUo68DSIamHzKWUNOkMqdGlJ87ih7QbHwBFMY3pBCN1eW7ev\r\nVm2AxEVvTTUb+RBB3Ur2UZtxIWy29a+nVXcLh0ViHF82jpfD+g6liFqWXeFU4c3tf0F9Ekup\r\n7KkBX1iScV2Xl9t3iY7Xf8+X0QIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"e90aa230dfe77933b0d4434c4a0b780559f10a13274a8e648adeb46ca8c1ceaf5e755ddfc1462bc42e4e2cc4ee963dee17be0614dadac53bf60e0998e5498f11a869935d872b878ac6560b7640819d5866a61c4cb483ecd7171975a5173ef007d692fa34e37af10854d764e0c7fe823d7635f4f109f80a801666f07decc345316e110291e0f14c468e6f45a0cc51fbff1af881654a3af034886a61f329650d3a432a746949f3b8a1ed06c7c0114c637a4108dd5e5bb7af566d80c4456f4d351bf91041dd4af6519b71216cb6f5afa755770b8745621c5f368e97c3fa0ea5885a965de154e1cded7f417d124ba9eca9015f5892715d9797db77898ed77fcf97d1"^^xsd:hexBinary .
+ns15:cert14D4E7B2A35E1B335A5849B4D391AF18
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;FNTnsqNeGzNaWEm005GvGA?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"14:D4:E7:B2:A3:5E:1B:33:5A:58:49:B4:D3:91:AF:18" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-511 ;
+	oplcert:issuer	"/C=US/ST=Massachusetts/O=OpenLink Software/OU=id.myopenlink.net/CN=Identity Management /emailAddress=kidehen@openlinksw.com" ;
+	oplcert:notAfter	"2022-06-15T19:58:01Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2022-03-17T19:58:01Z"^^xsd:dateTime ;
+	oplcert:serial	"3019" ;
+	oplcert:signature	<di:sha256WithRSAEncryption;j_HuvgGHxA65oRc3ZCWig-p0UZWLpZrRLliRjnbEsuw9jBTKtWAsAFQWEktrWf6cUVdK0grqLwRfz-pZnYoOQMSE7WfsgxAv3loF6FmikTYI8mtra-pdcgJ4uPJmA0c_f02PGUho9AJ5CK62H-WFhbQjv5sDj2wACtARzrSN5cDNdZTi4G919PhCIrEDNrfr8Pf5L7OXL8DO2h3uxBCWiq45h8-f2xD13APTQdFUJilv5Paj-gavZbMey0Apm4yhWJEiRu3tRC-Z7TmY7gsOtq7GaddF8EN9NqPDnPdU59s6M9STaU2Yu7fShRd2lrtnI_YcVu_0qt2Rb8Q7LR8WHA?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=Kingsley Uyi Idehen (ID.MyOpenLink.NET)/O=OpenLink Software/OU=Identity Management/emailAddress=kidehen@openlinksw.com" .
+ns15:key-508
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2NAkh53ZOlpcFSxMgz488x5xObY7\r\njfs77epeTR11MoKCjxdf6r0fnSvuKApsIcfY8BZ3GVdroDY5G6XDkJlV1yfUPaEo9mkCC4oi\r\nEidneVkfqka7Sgl/fLCNTj2EoNxLpA5zU6Rj2Uf7D0GtdAE9ZG9PTUOHSTkoCUf33OkE4VMI\r\nFgwOeigTfGCemQsf+mlEC56andm/fuSJmpkxQbuJbkh1BiHTdRQG5F3OWH+nwLwsxpqXO3vI\r\nP7V0C93ggnOcuGMy0zp3DzX9SKwpYN4y8lNhTxmcw3/ulT9vepVQ38X3Ozi55dnh5O2LKL4N\r\nNz9bHFQXsRPTHLNqThYZUO4cQwIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"d8d024879dd93a5a5c152c4c833e3cf31e7139b63b8dfb3bedea5e4d1d753282828f175feabd1f9d2bee280a6c21c7d8f0167719576ba036391ba5c3909955d727d43da128f669020b8a2212276779591faa46bb4a097f7cb08d4e3d84a0dc4ba40e7353a463d947fb0f41ad74013d646f4f4d43874939280947f7dce904e15308160c0e7a28137c609e990b1ffa69440b9e9a9dd9bf7ee4899a993141bb896e48750621d3751406e45dce587fa7c0bc2cc69a973b7bc83fb5740bdde082739cb86332d33a770f35fd48ac2960de32f253614f199cc37fee953f6f7a9550dfc5f73b38b9e5d9e1e4ed8b28be0d373f5b1c5417b113d31cb36a4e161950ee1c43"^^xsd:hexBinary .
+ns15:cert21E75AE9A522D27F78BC03C1A4D17176
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;Ieda6aUi0n94vAPBpNFxdg?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"21:E7:5A:E9:A5:22:D2:7F:78:BC:03:C1:A4:D1:71:76" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-508 ;
+	oplcert:issuer	"/ST=Massachusetts/O=OpenLink Software /OU=Identity Management /CN=id.myopenlink.net/emailAddress=kidehen@openlinksw.com" ;
+	oplcert:notAfter	"2019-05-01T17:14:08Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2019-01-31T17:14:08Z"^^xsd:dateTime ;
+	oplcert:serial	"2490" ;
+	oplcert:signature	<di:sha256WithRSAEncryption;S0psEexY-KPJZnRkdLJDU-n4LhIlyb9V1JlI_mkSReBmrK9x0jmEFXKlzLgw24nWNmkpHCDke3isYp2-uh2Le-mWZNWB4CPGRtKef2cIrLNOi8lLqJvNibtc-gwAhYHpAZMrSSgNr1ipRt5Mpt_JmrPy7Yd75xxDiAd8tyXx7ce-A3U909UBMMy1L4HkorLrTRLBYy9UHwk7BQM81aeJViYo7ApBd1BLYqiGccsMwM8-A78ALhkCFsaLl29Ivvk0X1ShSWVGKAZrsoP0H4wt4OK0PvJG5KPcQ51x42Q6yR1h_KFgKvbm9__11-Gp-xxMx_3rO7zm-SSZuIQQ2Uwt5g?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=Kingsley Uyi Idehen/O=OpenLink Software/OU=Data Spaces/emailAddress=kidehen@openlinksw.com" .
+ns15:key-229
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwqVlEOhGg/Bi/jtVq90kEQz9flym\r\n1jyA5Mrn0PWAxcAY5211Y9/3cwbdnu1XgDrvLDHn3uQ+POLSPFzgYVXXQYmgzTlFtkGmeWKR\r\neE7yEKRcfA0PuuN3GE5yi+eftcJ97L3MEw4GYI/gRYe4VV1JT3WhwEJehqX9wSxDn/l61kCB\r\nWj3+dy7zNTeJpRHP28lRHy9Wv+A5ZpFidIhC/Kwbf33OZh3SiDV9rxXNcs+LcuYKa3hnnxoE\r\nnyLrX20dZ48GoLvSrLN++9U++lXQAmQK0E0Z/X3Mbn5vdmprsK+vgB1zupNEqPmlac+0pi8N\r\nkgAyp/ajtXeGSCEtGO1rRp47HwIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"c2a56510e84683f062fe3b55abdd24110cfd7e5ca6d63c80e4cae7d0f580c5c018e76d7563dff77306dd9eed57803aef2c31e7dee43e3ce2d23c5ce06155d74189a0cd3945b641a6796291784ef210a45c7c0d0fbae377184e728be79fb5c27decbdcc130e06608fe04587b8555d494f75a1c0425e86a5fdc12c439ff97ad640815a3dfe772ef3353789a511cfdbc9511f2f56bfe039669162748842fcac1b7f7dce661dd288357daf15cd72cf8b72e60a6b78679f1a049f22eb5f6d1d678f06a0bbd2acb37efbd53efa55d002640ad04d19fd7dcc6e7e6f766a6bb0afaf801d73ba9344a8f9a569cfb4a62f0d920032a7f6a3b5778648212d18ed6b469e3b1f"^^xsd:hexBinary .
+ns15:cert3294369735B9A07C2EADB70861978FA7
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;MpQ2lzW5oHwurbcIYZePpw?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"32:94:36:97:35:B9:A0:7C:2E:AD:B7:08:61:97:8F:A7" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-229 ;
+	oplcert:issuer	"/C=US/ST=Massachusetts/L=Burlington/O=Openlink Software Inc/CN=id.myopenlink.net" ;
+	oplcert:notAfter	"2013-01-24T14:24:48Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2012-01-25T14:24:48Z"^^xsd:dateTime ;
+	oplcert:serial	"271" ;
+	oplcert:signature	<di:sha1WithRSAEncryption;EAL0-OO-7AQzrNe_Zv1UdDEX4fEb7oKHoOW7YIBhac1viTF6HtIP58M-RJ_HXH4GZabJxMnbZINs4gzbogsZRYsmxIUGaFCwhOMdIeR9yI59D2ssIONPA3ceQIAi16wbG3--33torjrhpAgTIeUAF04rX7v2wLFSrgkedGb2txg?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=Kingsley Uyi Idehen (MyOpenLink)/O=OpenLink Software/emailAddress=kidehen@openlinksw.com" .
+ns15:key-235
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArza4zsIHKKBK80Hcan4FGuAWOzAx\r\nlwhT9bN+RbF9hfhoqr96FEr04sQ2G/fauprtiB8ul90xoCcj0KXShDeoRdMMrBwB9fsFuqIR\r\nIaKO4wKZyQLkiyfVwxevRUFs1eecgTe83TnV12fy5Jkdu98Egr13EnhhMathLgVdEbT4Y4x8\r\nmQJ698VtGH/XygU0jsp/4LJN/RCy7+5u4gHvnCCdxsEl5MBwb7gBxCYP37nff+XviiYCpuMV\r\nVMn0sKUJ7xttqr+K7Hffz7/TUWrZb0XtZvZlblhKsN65MmvftbFd6+18Dec0xgF92hjyQQYP\r\nLv0e707iI4XYNeJ3OH/LbKOyawIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"af36b8cec20728a04af341dc6a7e051ae0163b3031970853f5b37e45b17d85f868aabf7a144af4e2c4361bf7daba9aed881f2e97dd31a02723d0a5d28437a845d30cac1c01f5fb05baa21121a28ee30299c902e48b27d5c317af45416cd5e79c8137bcdd39d5d767f2e4991dbbdf0482bd7712786131ab612e055d11b4f8638c7c99027af7c56d187fd7ca05348eca7fe0b24dfd10b2efee6ee201ef9c209dc6c125e4c0706fb801c4260fdfb9df7fe5ef8a2602a6e31554c9f4b0a509ef1b6daabf8aec77dfcfbfd3516ad96f45ed66f6656e584ab0deb9326bdfb5b15debed7c0de734c6017dda18f241060f2efd1eef4ee22385d835e277387fcb6ca3b26b"^^xsd:hexBinary .
+ns15:cert370422CE49DC84E9D5C204388A8609F8
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;NwQizknchOnVwgQ4ioYJ-A?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"37:04:22:CE:49:DC:84:E9:D5:C2:04:38:8A:86:09:F8" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-235 ;
+	oplcert:issuer	"/C=US/ST=Massachusetts/L=Burlington/O=Openlink Software Inc/CN=id.myopenlink.net" ;
+	oplcert:notAfter	"2013-02-09T16:10:04Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2012-02-10T16:10:04Z"^^xsd:dateTime ;
+	oplcert:serial	"293" ;
+	oplcert:signature	<di:sha1WithRSAEncryption;wHgPTcicOlaIpHTxMJRrphC2XNP4lI0DJw-77QXQf-mjlmiCMLoa6xYDGZHRnKdCKUppuOObdf7F5qHszOdYTbQjaljFzYLaic6fVSRbfChXl74jzow63Rl6pI0gbID3R4bwU4Mf25Ovm3oHzbkj5RKXo2OR46aq3i-0KtBMaKw?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=Kingsley Uyi Idehen (S/MIME & MyOpenLink)/O=OpenLink Software/emailAddress=kidehen@openlinksw.com" .
+ns15:key-320
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAulYSESbqhoQ4jpUPgtS1xtylCZY8\r\nqeWaZnfBvn+7ZR/mGp33mSUef5IGpc+hXeSQ/5ePdnsoWT4fF/WxULmWJMuBeUOktBIOB8Qz\r\nFOZKrMVN3FYbsfRvmoRO8L7Q4ZJuNGCtC9zewB60spFcDyRLFFUKe6REaH/UGKy1lg4eTLJG\r\nYMXS+Kw3+eTHuCJG7OpjtDnsPGkxQmMJA1yK2HPT+nVtD+IJWt+cwsWzylawBQWnWHNnu5wx\r\nkbvGcbismoHusbF/frsQW53Ou/3qLYQhWH8QGlULn5kzVgTaHgDtPopIxprsvqjomm8DnXD0\r\nunyJFvKg/kwGvIV+oC4t1Rr8owIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"ba56121126ea8684388e950f82d4b5c6dca509963ca9e59a6677c1be7fbb651fe61a9df799251e7f9206a5cfa15de490ff978f767b28593e1f17f5b150b99624cb817943a4b4120e07c43314e64aacc54ddc561bb1f46f9a844ef0bed0e1926e3460ad0bdcdec01eb4b2915c0f244b14550a7ba444687fd418acb5960e1e4cb24660c5d2f8ac37f9e4c7b82246ecea63b439ec3c6931426309035c8ad873d3fa756d0fe2095adf9cc2c5b3ca56b00505a7587367bb9c3191bbc671b8ac9a81eeb1b17f7ebb105b9dcebbfdea2d8421587f101a550b9f99335604da1e00ed3e8a48c69aecbea8e89a6f039d70f4ba7c8916f2a0fe4c06bc857ea02e2dd51afca3"^^xsd:hexBinary .
+ns15:cert47F3607E9F6B5FA22F17B1ADF1196B43
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;R_Ngfp9rX6IvF7Gt8RlrQw?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"47:F3:60:7E:9F:6B:5F:A2:2F:17:B1:AD:F1:19:6B:43" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-320 ;
+	oplcert:issuer	"/CN=OpenLink Software Local CA/O=OpenLink Software" ;
+	oplcert:notAfter	"2013-06-13T21:30:27Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2012-06-13T21:30:27Z"^^xsd:dateTime ;
+	oplcert:serial	"692" ;
+	oplcert:signature	<di:sha1WithRSAEncryption;xNoDDzbkfzoN-pCY1kcc7lglqc1gbDjOJH7ZU3ia9YLHlV5_nBu_xTEydRMrrkLzhjWIPgC1CpqmYvHAK4VYscYE8r1m0Jwc5BridpS9vI0rqEnndDvX9Yg6_wgCVIHQpMaJFU8T0-GlotNV1YtzFW9YTFX_xxLlv1dj1hmgoFG_ewrWs3ZyC7TYVWwNJRDdCFsx7ggzGMiGc0V0-nFmMmDvZcKQUemLgIqv2lsws3TP9b9iXI5AftiRdg8RiLi29HOfYLlRb1ntMbxtYZk1G_asC8e9Xl83SkyqufNOyCmk4Kq9Fgttt-4tJY1E6xW0Rt4tsmEJAKqnI7jXgs-iqw?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=Kingsley Idehen (@MyOpenLink)/O=My Personal Data Space/emailAddress=kidehen@openlinksw.com" .
+ns15:key-216
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArcHDWpAE10jl7co+TlitbdZSIKQS\r\nvtNNhQ2k/HqTA22k4eZkfgTuDloJzjc9DvH8OTNQooDbKdEI679/YQO1knzXD/6J9Ya/YOgQ\r\n3F8RB6ubrt9x4XpkjyS4iDncHXkm+2y6/ZQCdwnpVihPcAcSKWafAtMeq/bvnrF0QyfyvXf1\r\ny5Amg5AFwlZkybj2k+oOgZ8hgiVZ+0K184G45DAcgU4jwrbJFgkIpHdsHV+FGdMl6wdaZ7iB\r\nX1LAkYnCUBWNQalW0M95mx9543E/d7vWdQ5FaSDbOGaZhSkkDcAKVdlOmKAqrbNKr27YAD0F\r\nXoPWUtX2c2aY0HuKZMd7rRO2YQIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"adc1c35a9004d748e5edca3e4e58ad6dd65220a412bed34d850da4fc7a93036da4e1e6647e04ee0e5a09ce373d0ef1fc393350a280db29d108ebbf7f6103b5927cd70ffe89f586bf60e810dc5f1107ab9baedf71e17a648f24b88839dc1d7926fb6cbafd94027709e956284f70071229669f02d31eabf6ef9eb1744327f2bd77f5cb9026839005c25664c9b8f693ea0e819f21822559fb42b5f381b8e4301c814e23c2b6c9160908a4776c1d5f8519d325eb075a67b8815f52c09189c250158d41a956d0cf799b1f79e3713f77bbd6750e456920db3866998529240dc00a55d94e98a02aadb34aaf6ed8003d055e83d652d5f6736698d07b8a64c77bad13b661"^^xsd:hexBinary .
+ns15:cert4E9B5BB9015CFCCE857D95FB3F91F71C
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;TptbuQFc_M6FfZX7P5H3HA?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"4E:9B:5B:B9:01:5C:FC:CE:85:7D:95:FB:3F:91:F7:1C" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-216 ;
+	oplcert:issuer	"/C=US/ST=Massachusetts/L=Burlington/O=Openlink Software Inc/CN=id.myopenlink.net" ;
+	oplcert:notAfter	"2013-01-03T18:11:07Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2012-01-04T18:11:07Z"^^xsd:dateTime ;
+	oplcert:serial	"222" ;
+	oplcert:signature	<di:sha1WithRSAEncryption;CEqLCuIamUMREFv19RGmU9OylnXzhsfqdbb9LkXSbDYAk8j7OWTmfBoUs59Qf6srN-nZ5z_kWB8Omrg9jNGh5qPdQoEVsJL9KMvLuUTjwB7zQ9NQGClFIdBnt_dFXCLHZK_XOckwdl8xo9NJBzK8d3q9idb0mt0okcfRaZKRkLg?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=Kingsley Uyi Idehen (MyOpenLink New)/O=OpenLink Software/emailAddress=kidehen@openlinksw.com" .
+ns15:key-398
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCWeh+ssabwVya0omOuHzvD4ctVJ8phCQId\r\ncPQCo6x7qYShZqu3kNARSg1Ni3pLW+D2e0qo/9bkdPFkfM/Ve4Ito9HNXJ5XTWeEWUdTvMDP\r\nSGaT8V21mLBHJ8jO4xwc68xZIdD5g1jM2MADK8891PIybCqJVML+tpH3wNAViN8c/wIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"967a1facb1a6f05726b4a263ae1f3bc3e1cb5527ca6109021d70f402a3ac7ba984a166abb790d0114a0d4d8b7a4b5be0f67b4aa8ffd6e474f1647ccfd57b822da3d1cd5c9e574d6784594753bcc0cf486693f15db598b04727c8cee31c1cebcc5921d0f98358ccd8c0032bcf3dd4f2326c2a8954c2feb691f7c0d01588df1cff"^^xsd:hexBinary .
+ns15:certA5F708228E2CC22BED9BF2B88D0EFA67
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;pfcIIo4swivtm_K4jQ76Zw?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"A5:F7:08:22:8E:2C:C2:2B:ED:9B:F2:B8:8D:0E:FA:67" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-398 ;
+	oplcert:issuer	"/CN=OpenLink Software Local CA/O=OpenLink Software" ;
+	oplcert:notAfter	"2014-10-11T22:25:19Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2012-10-11T22:25:19Z"^^xsd:dateTime ;
+	oplcert:serial	"97053190344721046405386712975430189105" ;
+	oplcert:signature	<di:sha1WithRSAEncryption;s9NSXF_z4wSrRqNoOc0-fJvvPEfXChYW4K_GS2EFfRW-5aSLLyhCtWIXkhMJEtuPcnMSnlXCHVXaO7yOC30dwrDlHSMvapM0aQLroQFiWjQOg1shs5SK7IL7TbLiEQ7h0OdDfLD1cFLL6ac_9frb5LzG5qeA02ApuBSrBMAwQcW4lZ4zUKdjnjGa0chUmruQDTOrcZJxZtNcrLEOoB4JuyGgx60YSb4kclMnYIjUhyhHpobfctqq_Dd_j2LWB2daHvgAo_qVYZGx5Qfp9PNLcId3J9kzRw24L9SBbphClWfdDS4oj47icpjKOUUGQkwbR2JeYPSJ1906nyWCxhBD4A?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=Kingsley Uyi Idehen (@ MyOpenLink.NET)/O=OpenLink Software" .
+ns15:key-282
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzVrldx3hulvqxPAMo0b9MzUO+JiR\r\nOEuKML8M8ZaOHQ1GcGUGVv/CcufyXPrpD2APaMLzm/hBS1iEI2M+rdbjHnpcXRdGZ9UFnuzi\r\nIcwvVxwLFD3TcH9TTg9Xs1SiWqgqrxq3EJhCEELQjIZjainr1E+OubQLE23ZH7EL2h4a6BTc\r\nS/DorPxn32h0c4qHa94gsLRks6JnD3gBa+0HNtKnxURSoQMS708DAPzPw0ntzxJkZ7RcM5/v\r\nRWa7JPeb4+dx7Bn89noxl3/rs0jndNJx+Ad7orO9mxIJH+mFM7U7VpK3RJQMi7LBXb3MbXUA\r\nTo7uVwhrD0m9+FBJkxrsiFCjRwIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"cd5ae5771de1ba5beac4f00ca346fd33350ef89891384b8a30bf0cf1968e1d0d4670650656ffc272e7f25cfae90f600f68c2f39bf8414b588423633eadd6e31e7a5c5d174667d5059eece221cc2f571c0b143dd3707f534e0f57b354a25aa82aaf1ab71098421042d08c86636a29ebd44f8eb9b40b136dd91fb10bda1e1ae814dc4bf0e8acfc67df6874738a876bde20b0b464b3a2670f78016bed0736d2a7c54452a10312ef4f0300fccfc349edcf126467b45c339fef4566bb24f79be3e771ec19fcf67a31977febb348e774d271f8077ba2b3bd9b12091fe98533b53b5692b744940c8bb2c15dbdcc6d75004e8eee57086b0f49bdf85049931aec8850a347"^^xsd:hexBinary .
+ns15:certD14CA0DFD1E5129781FF440CABCEBE04
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;0Uyg39HlEpeB_0QMq86-BA?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"D1:4C:A0:DF:D1:E5:12:97:81:FF:44:0C:AB:CE:BE:04" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-282 ;
+	oplcert:issuer	"/CN=OpenLink Software Local CA/O=OpenLink Software" ;
+	oplcert:notAfter	"2013-03-30T15:42:07Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2012-03-30T15:42:07Z"^^xsd:dateTime ;
+	oplcert:serial	"465" ;
+	oplcert:signature	<di:sha1WithRSAEncryption;RRqvPGXPTVkfuHKKLPMMjV70wukNtlY5LN00q73DhcUUv1CTg7p8M6mA9pJSpZiUGjAQFt8btmevuNs-eW2mPCt6uhjDJ10zi6hz4UnSAobPGwM3jXqaHr5XMCrWxrO9ICufK9MvZDd3W47H7M9Q6kssDg6q0_ybe34ctG27QjL8cGgWhgIKi199fE79MZjj9afv1ZqQVYr6o_wO1VhvA6Fdtkg2a1TUZPZy3Kqx66P_Ph7USrVO9LOrcTojEBA8wfiZp2cR8QiBxjtSIEkX_JuKVycXMSkBsLg1dKFRduzxNFxvncw16N4uTq49CmNDrdRIHF-JEzx3hM-7gl-5MA?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=@kidehen (id.myopenlink.net)/C=US/O=Personal ODS hosted Data Space/emailAddress=kidehen@openlinksw.com" .
+ns15:key-455
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArmRIIWBwQ34oxFXjkwu9vPjJKZFK\r\nK1XSa82BARhl/xlQW4iAnYMx4Bnvn8JZ8oni0NJN0x0Uyk1yU/qIAXGR8FIlMMvwvxYPKzW3\r\nmfWdNPwHkwqsZHLOcMA9iZREPq6aP80wuc3rM7fsroNQdIzgukFr0zA9HFX4OuaUZ/nmhAQw\r\nzK4K8RES0iG8xkvajPOBPZgxbT5ytAYq8Gkr5aCL5zKnN/QhpLFzXDn2Z+aL3q2C2BI2ql3m\r\nah9GvipVb28Se3EN8eTGdGaV/9EBHHkf4BCPtYqE4jIU+Q2+NKTwQonb24vyTdgzF30+4Upi\r\nitlFDtF2f6J69cMel7q0N6e1nwIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"ae6448216070437e28c455e3930bbdbcf8c929914a2b55d26bcd81011865ff19505b88809d8331e019ef9fc259f289e2d0d24dd31d14ca4d7253fa88017191f0522530cbf0bf160f2b35b799f59d34fc07930aac6472ce70c03d8994443eae9a3fcd30b9cdeb33b7ecae8350748ce0ba416bd3303d1c55f83ae69467f9e6840430ccae0af11112d221bcc64bda8cf3813d98316d3e72b4062af0692be5a08be732a737f421a4b1735c39f667e68bdead82d81236aa5de66a1f46be2a556f6f127b710df1e4c6746695ffd1011c791fe0108fb58a84e23214f90dbe34a4f04289dbdb8bf24dd833177d3ee14a628ad9450ed1767fa27af5c31e97bab437a7b59f"^^xsd:hexBinary .
+ns15:certD1876C52A2A8969802563A665B753DA1
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;0YdsUqKolpgCVjpmW3U9oQ?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"D1:87:6C:52:A2:A8:96:98:02:56:3A:66:5B:75:3D:A1" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-455 ;
+	oplcert:issuer	"/CN=OpenLink Software Local CA/O=OpenLink Software" ;
+	oplcert:notAfter	"2014-08-21T13:29:10Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2013-08-21T13:29:10Z"^^xsd:dateTime ;
+	oplcert:serial	"1505" ;
+	oplcert:signature	<di:sha1WithRSAEncryption;N0An0CcmKnfWL7fcZ731tmHYDJ9KHsjnWZ8oVjA-zrUQCvR46fIaxnosUKghKRwAwoPB9Tz0G8vwgJpZX31k32bjPTHEEaJ_wHMHXZDjTKTLXHq5FuQ9hMCqQrDlUQ57yrzGqX7wut9IS11jzWiMK0iE0urG3wnYOPCUancod3_lZT8yAA-9Hb-ELHXWQEvKEgwM63nPOmPmA4jjJbP5ETZ-lM7q2E5B3mw7VpPo3pouSbPMuwifnC1adOTBhDWBx5NG2UxIJB-ClusQa90h3B7KG3R9fLLESslETve8cmrpvS5ACQqRCsNOhc_UUoM_8Xfd2HZdgK3Jmr0bZnTTyA?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=Kingsley Uyi Idehen (MyOpenLink)/O=OpenLink Software/emailAddress=kidehen@openlinksw.com" .
+ns15:key-226
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqMsfRgJs4YfblX3ic3m/nMNeW2Pl\r\nOa2UG/Ip5PZz1vTNbdpe77ptXFgDhPF+uDyLiTB6oXMWo4bazkkUhucA/iICVmm8SX2e3vK2\r\nThE+6yyehjJFSBIAuj7h0Vl3XkLgSjmEWg/gDDcufj1PDa2HMHaS5vcFe/crHz+nIi9F5kOM\r\ncFFk5Q/VrqOkKAnJn2kBql3bMxDpCecpX0wIvwCs3bHkKCxtF509qTSIvv/R30GaMMHssCvQ\r\nyF/Efb9nYztUEA+vpn1h9EfrOvzD+wsuX/Nzv8wl/P6rQ2hq4huI4xzXGlE1+iv/OUA6Tj1W\r\nOILwB7Eoq7VVvGmOUWe7manfowIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"a8cb1f46026ce187db957de27379bf9cc35e5b63e539ad941bf229e4f673d6f4cd6dda5eefba6d5c580384f17eb83c8b89307aa17316a386dace491486e700fe22025669bc497d9edef2b64e113eeb2c9e863245481200ba3ee1d159775e42e04a39845a0fe00c372e7e3d4f0dad87307692e6f7057bf72b1f3fa7222f45e6438c705164e50fd5aea3a42809c99f6901aa5ddb3310e909e7295f4c08bf00acddb1e4282c6d179d3da93488beffd1df419a30c1ecb02bd0c85fc47dbf67633b54100fafa67d61f447eb3afcc3fb0b2e5ff373bfcc25fcfeab43686ae21b88e31cd71a5135fa2bff39403a4e3d563882f007b128abb555bc698e5167bb99a9dfa3"^^xsd:hexBinary .
+ns15:certD261AA77426E1320C7EFB3BEBCBFC6D3
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;0mGqd0JuEyDH77O-vL_G0w?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"D2:61:AA:77:42:6E:13:20:C7:EF:B3:BE:BC:BF:C6:D3" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-226 ;
+	oplcert:issuer	"/C=US/ST=Massachusetts/L=Burlington/O=Openlink Software Inc/CN=id.myopenlink.net" ;
+	oplcert:notAfter	"2013-01-16T17:25:53Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2012-01-17T17:25:53Z"^^xsd:dateTime ;
+	oplcert:serial	"256" ;
+	oplcert:signature	<di:sha1WithRSAEncryption;ZXw7Sd2U9lIHKB7i8_ruyRRPBi2si5VSpQTvM9uhaCTKEPheQn3HZ_v8-lRKKEr8yPO5OQZIwMq_jS1kSe35PeYzXcXsAyGZ2_y0s56y16957jtV8cEnkrPRAsrXgLe5ZvHj_ueWB58_lyV5rShKssEFUiFKB9fYSaiKOf9xiNE?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=Kingsley Uyi Idehen (MyOpenLink New)/O=OpenLink Software/emailAddress=kidehen@openlinksw.com" .
+ns15:key-217
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/nhjoGKm5SzRoPvnWhdaUIvA8taPBVO2Q\r\nVIu4Ro7YM0sbunswNASVDIhfdet2UP8hZ9m6+whYy/k7CkFVcSb6DWcen5ozPH+siCgdW3yE\r\nIKWl2QLQmERiqU309zwkSog0BRHcOL+y5Y1mNJgKFWumXNIhEXWx6orL0DxLL930pQIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"bf9e18e818a9b94b34683ef9d685d69422f03cb5a3c154ed90548bb8468ed8334b1bba7b303404950c885f75eb7650ff2167d9bafb0858cbf93b0a41557126fa0d671e9f9a333c7fac88281d5b7c8420a5a5d902d0984462a94df4f73c244a88340511dc38bfb2e58d6634980a156ba65cd2211175b1ea8acbd03c4b2fddf4a5"^^xsd:hexBinary .
+ns15:certE47AAB21FE4C53B717BF7E95D8E27D28
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;5HqrIf5MU7cXv36V2OJ9KA?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"E4:7A:AB:21:FE:4C:53:B7:17:BF:7E:95:D8:E2:7D:28" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-217 ;
+	oplcert:issuer	"/CN=OpenLink Software Local CA/O=OpenLink Software" ;
+	oplcert:notAfter	"2014-01-04T23:27:07Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2012-01-04T23:27:07Z"^^xsd:dateTime ;
+	oplcert:serial	"147864630888684134515278476141052533377" ;
+	oplcert:signature	<di:sha1WithRSAEncryption;MApFa-_u7h9J8oLF2oXxRL34nr5u7MCHqK4ejupspv0Jivp89brrpIvYkVaXP16EvlJhF9FG_yJApj1MPtduz7oOySg0i5NlpK6F_9WBaboFIy4EbKD16GCAOm3IIzT8X4wlhbLakPpFzcK6ZHZpiB3_K4rUhEzo7svFEtH4Sh-QAuA4lNn-asDM893_U1sT0_eTjDvVyKkpA70lcsmq5sCwaFctwU2_nTn_3fcZLiv2D_U1CeUkmnHQ1lmgqhECZ5e2NSicWbF56bCNFMIIG0TN5Kig5vMpgKPhlWZ8_PwggMcCHEVmNfkF2GRtVbs7TJ9IVw4W0gm7aHtmXADU7w?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=Kingsley Uyi Idehen (WebID & S/MIME)/O=Personal Data Space" .
+ns15:key-435
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAun8PsZGCJvxI+x+Prt508na+aURR\r\n0ICKjsjwwhcPAhB7LSUMpPz/t3pHBxwBBDc/pCqqo5dSZxncZvZ+bC3ZsZHYg04LOLMaVje8\r\nAUDB74A723qC8EWn2UNxUwhB6PK1zX4bteKYQaViwNXYRYO+2G57KaAT7YE9k27n40CGxz58\r\njpCCgmMcFF53TPn76qGmwrgIlHcbQoKUxNr2Dr4Aga4K6SH4Kke3ZL+NFalfDXHFWncvq0Z0\r\nYhdb99fgM4qtSkfSgwo0E305qSYtNvglyrSaaUj2ZQrX0WAaqMu63U+cWjwWAOM1aR/xTVxH\r\nEUlKQt++hvI0yPOxyvdymvAO/QIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"ba7f0fb1918226fc48fb1f8faede74f276be694451d0808a8ec8f0c2170f02107b2d250ca4fcffb77a47071c0104373fa42aaaa397526719dc66f67e6c2dd9b191d8834e0b38b31a5637bc0140c1ef803bdb7a82f045a7d94371530841e8f2b5cd7e1bb5e29841a562c0d5d84583bed86e7b29a013ed813d936ee7e34086c73e7c8e908282631c145e774cf9fbeaa1a6c2b80894771b428294c4daf60ebe0081ae0ae921f82a47b764bf8d15a95f0d71c55a772fab467462175bf7d7e0338aad4a47d2830a34137d39a9262d36f825cab49a6948f6650ad7d1601aa8cbbadd4f9c5a3c1600e335691ff14d5c4711494a42dfbe86f234c8f3b1caf7729af00efd"^^xsd:hexBinary .
+ns15:certEA1329D6801EEFCFFD144AD88F2EEE76
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;6hMp1oAe78_9FErYjy7udg?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"EA:13:29:D6:80:1E:EF:CF:FD:14:4A:D8:8F:2E:EE:76" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-435 ;
+	oplcert:issuer	"/CN=OpenLink Software Local CA/O=OpenLink Software" ;
+	oplcert:notAfter	"2014-02-23T21:50:58Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2013-02-23T21:50:58Z"^^xsd:dateTime ;
+	oplcert:serial	"1167" ;
+	oplcert:signature	<di:sha1WithRSAEncryption;prvJMPqaBszcJp0XN7FooVQDbaUjWIQIBynHY8ezwJdsh-r5tHXvxdWOnf4c4MhtPVtxNHESy2pGr9Y3uv_JKL-wQZ6rP25x70pJzrHYFZbsMbkUzLQ4bkzd7QRyKlhyty87f2r5LRqQ0fLtsA2vdejaEUT0OSuRr2KfKXu_l6c_-FmxSWtvGMPKLkjok44kS4w-B2eyQWthaemj1g8vLPM3LvsgkWzWVAMdP-vmOaa6bqOYuIkfqTHLh0uhGuoWYCMOcBUI1MnwMN6WCysn0y4J2yUsfs375v8wdo1AgQHg5QEVEwLrYDRh_1EZzjrDWhWURE-etB8rm8TBYSx6Nw?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=Kingsley Uyi Idehen/O=OpenLink Software/emailAddress=kidehen@openlinksw.com" .
+ns15:key-292
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlpzAuyy+UH0x6PSDJh+z0UfVyQZL\r\npzi1PC9FAr03simXIiGamxfb2yU1wQE8T+g4m7NqlzvbbP9trCBh5ez8ijNsOBJUHM+FWyjg\r\nc09gqANlOxOEMedATSca1wtdvDhETtPAJzX4aGX1UYfGu+5qt3B8tCqSMINp++TOorTkMkP1\r\nicN+5LbPxuy9maQkHdEsf72qUARBvBXQ8gqfLGlc6riIVeiP52vzV8abFEgj4QHWePABI1yl\r\n3fot3EdyMovIUNtD6jheFsH9PHZzhpaRwVWsJ2baFlNFr6OM8BVrBcr5c3rtsRobFR0X38PC\r\nLoV32qMWX0Qkhev6ovJQHix+TwIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"969cc0bb2cbe507d31e8f483261fb3d147d5c9064ba738b53c2f4502bd37b2299722219a9b17dbdb2535c1013c4fe8389bb36a973bdb6cff6dac2061e5ecfc8a336c3812541ccf855b28e0734f60a803653b138431e7404d271ad70b5dbc38444ed3c02735f86865f55187c6bbee6ab7707cb42a92308369fbe4cea2b4e43243f589c37ee4b6cfc6ecbd99a4241dd12c7fbdaa500441bc15d0f20a9f2c695ceab88855e88fe76bf357c69b144823e101d678f001235ca5ddfa2ddc4772328bc850db43ea385e16c1fd3c7673869691c155ac2766da165345afa38cf0156b05caf9737aedb11a1b151d17dfc3c22e8577daa3165f442485ebfaa2f2501e2c7e4f"^^xsd:hexBinary .
+ns15:certEFD42FB5E8494D2A8531D40B483A0F04
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;79QvtehJTSqFMdQLSDoPBA?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"EF:D4:2F:B5:E8:49:4D:2A:85:31:D4:0B:48:3A:0F:04" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-292 ;
+	oplcert:issuer	"/CN=OpenLink Software Local CA/O=OpenLink Software" ;
+	oplcert:notAfter	"2013-04-12T19:56:20Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2012-04-12T19:56:20Z"^^xsd:dateTime ;
+	oplcert:serial	"527" ;
+	oplcert:signature	<di:sha1WithRSAEncryption;Cflkp1J4TSt5n2PZGdh_E9UwhNZFSj6yYDu7-M9z_D1UjebhjJGv7ZgSfVQADvkNxdsoBK_zyd3U_F26iWpV0j-8mR_HBZmyKUWwQmD4XfNCJpboHpymGtDYCRK0sQGAGoNxzWWrjgsoLbXP0HeoFYTDEvOvmwlL3W6hqLknzDeISA0jXaNT8sGXR6axBfrFCDFsXP2XA1P3uOPxffX6FJlFW5q52tHSbWGMEg_LWUfs_gyBogF3HUaW-89UEZZKzUyAn89o8J04XjtA1gPArrnsbSdvL1lH0gW1qX0t0VMEEAiKBhsTCf7MJadTlBvyCUXHTwNnyST_dRydWUUCxw?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=Kingsley Uyi Idehen (MyOpenLink)/O=My OpenLink Data Space/emailAddress=kidehen@openlinksw.com" .
+ns15:key-506
+	sec:owner	ns2:KingsleyUyiIdehen ;
+	sec:publicKeyPem	"-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqQw2nHZ7h3mQ3Ue6E1pLDbXveTcB\r\n7dCneDRSezAy2wUGdfiFxIoMsmSDK5qtS+aqTQAZNbiVmhDLOp0MFeVgQtWjEgnUhZJJxLhN\r\nrl96fsVLekcQNoD0/TmD1xV5kwGQ6Xsiz7rw30KRTEvRiSk796idD5HhilM1Px9OfzgiDmRq\r\n+tJIKByBCUZGSc2U+8Q968FZ9/wti/jD26FY0vboi/Wd88+jX8LFxh3L/3sI1kHNXrEyYVVz\r\n2WH8AawVWuhTezoZ/QY/JNhOJuVMqh0vmdFYll67Rkx+QibGKgD3rf8cYgQPwavK9VXXZ9b0\r\n63i/N2OdYikig6NJtEj/rQsHTQIDAQAB\r\n-----END PUBLIC KEY-----\r\n" ;
+	rdf:type	cert:RSAPublicKey ;
+	cert:exponent	"65537"^^xsd:int ;
+	cert:modulus	"a90c369c767b877990dd47ba135a4b0db5ef793701edd0a77834527b3032db050675f885c48a0cb264832b9aad4be6aa4d001935b8959a10cb3a9d0c15e56042d5a31209d4859249c4b84dae5f7a7ec54b7a47103680f4fd3983d71579930190e97b22cfbaf0df42914c4bd189293bf7a89d0f91e18a53353f1f4e7f38220e646afad248281c8109464649cd94fbc43debc159f7fc2d8bf8c3dba158d2f6e88bf59df3cfa35fc2c5c61dcbff7b08d641cd5eb132615573d961fc01ac155ae8537b3a19fd063f24d84e26e54caa1d2f99d158965ebb464c7e4226c62a00f7adff1c62040fc1abcaf555d767d6f4eb78bf37639d62292283a349b448ffad0b074d"^^xsd:hexBinary .
+ns15:certFCD22123D33B451A2F8BB7DB2CDB82FF
+	rdf:type	oplcert:Certificate ;
+	oplcert:digestURI	<di:md5;_NIhI9M7RRovi7fbLNuC_w?hashtag=webid&http=id.myopenlink.net> ;
+	oplcert:fingerprint	"FC:D2:21:23:D3:3B:45:1A:2F:8B:B7:DB:2C:DB:82:FF" ;
+	oplcert:fingerprint-digest	"md5" ;
+	oplcert:hasPublicKey	ns15:key-506 ;
+	oplcert:issuer	"/ST=Massachusetts/O=OpenLink Software /OU=Identity Management /CN=id.myopenlink.net/emailAddress=kidehen@openlinksw.com" ;
+	oplcert:notAfter	"2019-01-24T16:24:26Z"^^xsd:dateTime ;
+	oplcert:notBefore	"2018-10-26T16:24:26Z"^^xsd:dateTime ;
+	oplcert:serial	"2465" ;
+	oplcert:signature	<di:sha256WithRSAEncryption;CA7lBqeBz3T4gFN_zbL9PC2u1WF9Rz4lOR6Cq8YYNRTKKwMVeF2_CGH_Clnm_MOntgJ0a4orFO5AJgfZLqxWqQqc3YNxqRp9S0j8qMMaEWzJd3iOZ3M9QD6biy8deQHoSoONXpmuLHd8hfItQpxJaPySdNxc0BpFNB5IxEKmM1ZNtP_QnSqKIkm2x_aGeOqfteebxAkpXC6x8d33ZOSv-wsqBBcSwLQyVKWcla4_0nsAnhk0DhnVo137l2J4qp2iZxPmEmrvwiyP1MY8yRtd2RVEfHiVn29otYCnUTSuHOkeOgDtIu5U1sr1oJwDzbYT1ryli48VEBWoRg7NLC_GoA?http=id.myopenlink.net> ;
+	oplcert:subject	"/CN=Kingsley Uyi Idehen (ODS)/O=OpenLink Software/emailAddress=kidehen@openlinksw.com" .
+<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/webid/http%3A%2F%2Fid.myopenlink.net%2Fdataspace%2Fperson%2FKingsleyUyiIdehen%23this>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"webid" ;
+	foaf:accountServiceHomepage	ns25:this .
+<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/linkedin/http%3A%2F%2Fwww.linkedin.com%2Fin%2Fkidehen>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"linkedin" ;
+	foaf:accountServiceHomepage	ns26:kidehen .
+<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/openlink_nss_8445/https%3A%2F%2Fkidehen3.solid.openlinksw.com%3A8445%2Fprofile%2Fcard%23me>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"openlink_nss_8445" ;
+	foaf:accountServiceHomepage	ns27:me .
+<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/my_openlink_oauth_3/https%3A%2F%2Fkidehen3.solid.openlinksw.com%3A8444%2Fprofile%2Fcard%23me>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"my_openlink_oauth_3" ;
+	foaf:accountServiceHomepage	ns28:me .
+<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/openlink_nss_844/https%3A%2F%2Fkidehen3.solid.openlinksw.com%3A8444%2Fprofile%2Fcard%23me>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"openlink_nss_844" ;
+	foaf:accountServiceHomepage	ns28:me .
+<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/openlink_nss_8444/https%3A%2F%2Fkidehen3.solid.openlinksw.com%3A8444%2Fprofile%2Fcard%23me>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"openlink_nss_8444" ;
+	foaf:accountServiceHomepage	ns28:me .
+<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/openlink_solid_server_8444/https%3A%2F%2Fkidehen3.solid.openlinksw.com%3A8444%2Fprofile%2Fcard%23me>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"openlink_solid_server_8444" ;
+	foaf:accountServiceHomepage	ns28:me .
+<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/opl_solid_8444/https%3A%2F%2Fkidehen3.solid.openlinksw.com%3A8444%2Fprofile%2Fcard%23me>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"opl_solid_8444" ;
+	foaf:accountServiceHomepage	ns28:me .
+<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/linkedin/http%3A%2F%2Flinkedin.com%2FOuUMeFZCHX>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"linkedin" ;
+	foaf:accountServiceHomepage	ns29:OuUMeFZCHX .
+<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/facebook/https%3A%2F%2Ffacebook.com%2F10158250271870751>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"facebook" ;
+	foaf:accountServiceHomepage	<https://facebook.com/10158250271870751> .
+<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/twitter/http%3A%2F%2Ftwitter.com%2Fkidehen>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"twitter" ;
+	foaf:accountServiceHomepage	ns30:kidehen .
+<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/my_openlink_oauth_3/http%3A%2F%2Fmy.openlinksw.com%2Fdataspace%2Fperson%2Fkidehen@openlinksw.com>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"my_openlink_oauth_3" ;
+	foaf:accountServiceHomepage	<http://my.openlinksw.com/dataspace/person/kidehen@openlinksw.com> .
+ns31:kidehen
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"Twitter" ;
+	foaf:accountServiceHomepage	ns30:kidehen .
+ns25:this
+	owl:sameAs	ns33:me ;
+	ldp:inbox	<https://id.myopenlink.net/DAV/home/KingsleyUyiIdehen/RWW/> .
+ns2:KingsleyUyiIdehen
+	ns35:tag	[	ns35:href	ns52:don_lovett ;
+				ns35:name	"#don_lovett" ;
+				rdf:type	ns35:Hashtag ] ;
+	as:published	"2010-07-19T14:24:57-04:00"^^xsd:dateTime ;
+	as:manuallyApprovesFollowers	"false" ;
+	as:url	<http://www.openlinksw.com/blog/~kidehen> ;
+	as:icon	ns15:icon ;
+	as:followers	ns12:followers ;
+	as:following	ns12:following ;
+	as:endpoints	ns15:siob ;
+	owl:sameAs	ns4:KingsleyUyiIdehen , <acct:kidehen@openlinksw.com> ;
+	rdf:type	vcard:Individual , foaf:Person ;
+	ns36:oidcIssuer	<https://id.myopenlink.net/> ;
+	foaf:family_name	"Idehen" ;
+	foaf:openid	ns4:KingsleyUyiIdehen ;
+	foaf:primaryTopic	ns2:KingsleyUyiIdehen ;
+	foaf:workplaceHomepage	<http://www.openlinksw.com> ;
+	oplcert:hasCertificate	ns15:cert14D4E7B2A35E1B335A5849B4D391AF18 , ns15:cert21E75AE9A522D27F78BC03C1A4D17176 , ns15:cert3294369735B9A07C2EADB70861978FA7 , ns15:cert370422CE49DC84E9D5C204388A8609F8 , ns15:cert47F3607E9F6B5FA22F17B1ADF1196B43 , ns15:cert4E9B5BB9015CFCCE857D95FB3F91F71C , ns15:certA5F708228E2CC22BED9BF2B88D0EFA67 , ns15:certD14CA0DFD1E5129781FF440CABCEBE04 , ns15:certD1876C52A2A8969802563A665B753DA1 , ns15:certD261AA77426E1320C7EFB3BEBCBFC6D3 , ns15:certE47AAB21FE4C53B717BF7E95D8E27D28 , ns15:certEA1329D6801EEFCFFD144AD88F2EEE76 , ns15:certEFD42FB5E8494D2A8531D40B483A0F04 , ns15:certFCD22123D33B451A2F8BB7DB2CDB82FF ;
+	vcard:given-name	"Kingsley " ;
+	vcard:hasAddress	ns15:addr , ns15:work ;
+	vcard:hasTelephone	ns15:home ;
+	vcard:organization-name	"OpenLink Software" ;
+	svc:has_services	ns1:user ;
+	bio:keywords	"Don_Lovett" ;
+	ldp:inbox	<http://id.myopenlink.net/DAV/home/KingsleyUyiIdehen/inbox/> ;
+	as:outbox	<https://id.myopenlink.net/DAV/home/KingsleyUyiIdehen/outbox/> ;
+	cert:key	ns15:key-511 , ns15:key-508 , ns15:key-229 , ns15:key-235 , ns15:key-320 , ns15:key-216 , ns15:key-398 , ns15:key-282 , ns15:key-455 , ns15:key-226 , ns15:key-217 , ns15:key-435 , ns15:key-292 , ns15:key-506 ;
+	foaf:name	"Kingsley Uyi Idehen" ;
+	foaf:nick	"KingsleyUyiIdehen" ;
+	foaf:mbox_sha1sum	"r6z2uGjmyzb3HSzsxtUxomzh8u8=" ;
+	foaf:mbox	<mailto:kidehen@openlinksw.com> ;
+	rdfs:seeAlso	ns2:KingsleyUyiIdehen ;
+	foaf:homepage	<http://www.openlinksw.com/blog/~kidehen> ;
+	foaf:accountName	"KingsleyUyiIdehen" ;
+	opl:isDescribedUsing	<https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/sioc.rdf> ;
+	foaf:depiction	<https://id.myopenlink.net/home/KingsleyUyiIdehen/wa/images/kingsley_idehen-150x150.png> ;
+	foaf:gender	"male" ;
+	foaf:title	"Mr" ;
+	foaf:made	<https://id.myopenlink.net/dataspace/KingsleyUyiIdehen/briefcase/Kingsley%20Uyi%20Idehen%27s%20Briefcase> , <https://id.myopenlink.net/dataspace/KingsleyUyiIdehen/calendar/Kingsley%20Uyi%20Idehen%27s%20Calendar> , <https://id.myopenlink.net/dataspace/KingsleyUyiIdehen/mail/KingsleyUyiIdehen@id.myopenlink.net> ;
+	foaf:firstName	"Kingsley " ;
+	foaf:account	ns4:KingsleyUyiIdehen , <https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/skype/skype%3Akidehen%3Fchat> , <https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/webid/http%3A%2F%2Fid.myopenlink.net%2Fdataspace%2Fperson%2FKingsleyUyiIdehen%23this> , <https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/linkedin/http%3A%2F%2Fwww.linkedin.com%2Fin%2Fkidehen> , <https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/openlink_nss_8445/https%3A%2F%2Fkidehen3.solid.openlinksw.com%3A8445%2Fprofile%2Fcard%23me> , <https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/my_openlink_oauth_3/https%3A%2F%2Fkidehen3.solid.openlinksw.com%3A8444%2Fprofile%2Fcard%23me> , <https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/openlink_nss_844/https%3A%2F%2Fkidehen3.solid.openlinksw.com%3A8444%2Fprofile%2Fcard%23me> , <https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/openlink_nss_8444/https%3A%2F%2Fkidehen3.solid.openlinksw.com%3A8444%2Fprofile%2Fcard%23me> , <https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/openlink_solid_server_8444/https%3A%2F%2Fkidehen3.solid.openlinksw.com%3A8444%2Fprofile%2Fcard%23me> , <https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/opl_solid_8444/https%3A%2F%2Fkidehen3.solid.openlinksw.com%3A8444%2Fprofile%2Fcard%23me> , <https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/linkedin/http%3A%2F%2Flinkedin.com%2FOuUMeFZCHX> , <https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/facebook/https%3A%2F%2Ffacebook.com%2F10158250271870751> , <https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/twitter/http%3A%2F%2Ftwitter.com%2Fkidehen> , <https://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen/online_account/my_openlink_oauth_3/http%3A%2F%2Fmy.openlinksw.com%2Fdataspace%2Fperson%2Fkidehen@openlinksw.com> , ns31:kidehen , <http://id.myopenlink.net/about/id/entity/bitcoin/162953sKBVgL7KPbThyzZWdfM7P1JsBqHB> , ns38:kidehen , ns39:kidehen , ns40:kidehen , ns41:kidehen , ns42:kidehen , ns43:kidehen , ns44:kidehen , <http://id.myopenlink.net/about/id/entity/http/www.openlinksw.com/blog/~kidehen> ;
+	foaf:based_near	ns15:geo ;
+	foaf:phone	"tel:7812730900" .
+<http://id.myopenlink.net/about/id/entity/bitcoin/162953sKBVgL7KPbThyzZWdfM7P1JsBqHB>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"Bitcoin (http://bitcoin.org)" ;
+	foaf:accountServiceHomepage	<bitcoin:162953sKBVgL7KPbThyzZWdfM7P1JsBqHB> .
+ns38:kidehen
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"Del.icio.us" ;
+	foaf:accountServiceHomepage	ns45:kidehen .
+ns39:kidehen
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"Picasa Web Albums" ;
+	foaf:accountServiceHomepage	ns46:kidehen .
+ns40:kidehen
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"Twitpic" ;
+	foaf:accountServiceHomepage	ns47:kidehen .
+ns41:kidehen
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"Last.fm" ;
+	foaf:accountServiceHomepage	ns48:kidehen .
+ns42:kidehen
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"LinkedIn" ;
+	foaf:accountServiceHomepage	ns49:kidehen .
+ns43:kidehen
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"SlideShare" ;
+	foaf:accountServiceHomepage	ns50:kidehen .
+ns44:kidehen
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"YouTube" ;
+	foaf:accountServiceHomepage	ns51:kidehen .
+<http://id.myopenlink.net/about/id/entity/http/www.openlinksw.com/blog/~kidehen>
+	rdf:type	foaf:OnlineAccount ;
+	foaf:accountName	"Blog" ;
+	foaf:accountServiceHomepage	<http://www.openlinksw.com/blog/~kidehen> .

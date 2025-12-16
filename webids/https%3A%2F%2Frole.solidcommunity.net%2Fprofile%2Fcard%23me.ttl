@@ -1,0 +1,80 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix che: <https://holacratie.solid.community/public/chess_20200109.ttl#>.
+@prefix stor: <http://example.org/storage/>.
+@prefix schem: <http://schema.org/>.
+@prefix pro: <./>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix rol: </>.
+@prefix dre: <https://dredd.solid.community/>.
+@prefix c: <https://holacratie.solid.community/profile/card#>.
+@prefix n2: <https://melvincarvalho.com/#>.
+@prefix n3: <https://ruben.verborgh.org/profile/#>.
+@prefix c0: <https://smag0.solid.community/profile/card#>.
+@prefix c1: <https://spoggy.solid.community/profile/card#>.
+@prefix ch: </public/chess_20200109.ttl#>.
+
+che:k56uhvye stor:storeIn </public/chess_20200109.ttl>; schem:contributor :me.
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:me
+    a schem:Person, n0:Person;
+    n:fn "Role";
+    n:organization-name "Holacratie";
+    n1:trustedApp
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <http://localhost:3456>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <http://localhost:9000>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <http://localhost:9001>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <http://localtest.localhost:3456>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://localhost:8443>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://markbook.org>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://otto-aa.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://scenaristeur.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://useconcept.art>
+            ];
+    ldp:inbox inbox:;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage rol:;
+    solid:account rol:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    n0:knows dre:, c:me, n2:me, n3:me, c0:me, c1:me;
+    n0:name "Role".
+ch:k56uegex stor:storeIn </public/chess_20200109.ttl>; schem:contributor :me.
+
+ch:k56ufcuc stor:storeIn </public/chess_20200109.ttl>; schem:contributor :me.
+
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

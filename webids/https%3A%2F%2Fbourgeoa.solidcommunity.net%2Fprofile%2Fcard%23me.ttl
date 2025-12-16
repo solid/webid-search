@@ -1,0 +1,296 @@
+@prefix : <https://bourgeoa.solidcommunity.net/profile/card#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix sioc: <http://rdfs.org/sioc/ns#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix soc: <https://solidos.github.io/profile-pane/src/ontology/socialMedia.ttl#>.
+@prefix www: <https://www.pod-chat.com/>.
+@prefix n0: <https://>.
+@prefix c: <https://solidos.solidcommunity.net/profile/card#>.
+@prefix c3: <https://timbl.inrupt.net/profile/card#>.
+@prefix prof: <https://bourgeoa.solidcommunity.net/profile/>.
+@prefix inbo: <https://bourgeoa.solidcommunity.net/inbox/>.
+@prefix bo: <https://bourgeoa.solidcommunity.net/>.
+@prefix c13: <http://localhost:3000/bourgeoa/profile/card#>.
+@prefix c14: <https://alain.localhost:8443/profile/card#>.
+@prefix c17: <https://bourgeoa1.solidcommunity.net/profile/card#>.
+@prefix c20: <https://inbox-app.inrupt.net/profile/card#>.
+@prefix c21: <https://pod-chat.solidcommunity.net/profile/card#>.
+
+prof:card a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a schema:Person, foaf:Person;
+    schema:knowsLanguage _:b11059_b10157_b10035_b26096_n3-18923, _:b11059_b10157_b10035_b26096_n3-18924, _:b11059_b10157_b10035_b26096_n3-18925;
+    vcard:fn "bourgeoa@solidcommunity";
+    vcard:hasAddress <#id1617716357631>;
+    vcard:organization-name "individuel";
+    vcard:url _:b11059_b10157_b10035_b26096_n3-18926;
+    acl:trustedApp _:b11059_b10157_b10035_b26096_n3-18927, _:b11059_b10157_b10035_b26096_n3-18928, _:b11059_b10157_b10035_b26096_n3-18929, _:b11059_b10157_b10035_b26096_n3-18930, _:b11059_b10157_b10035_b26096_n3-18931, _:b11059_b10157_b10035_b26096_n3-18932, _:b11059_b10157_b10035_b26096_n3-18933, _:b11059_b10157_b10035_b26096_n3-18934, _:b11059_b10157_b10035_b26096_n3-18935, _:b11059_b10157_b10035_b26096_n3-18936, _:b11059_b10157_b10035_b26096_n3-18937, _:b11059_b10157_b10035_b26096_n3-18938, _:b11059_b10157_b10035_b26096_n3-18939, _:b11059_b10157_b10035_b26096_n3-18940, _:b11059_b10157_b10035_b26096_n3-18941, _:b11059_b10157_b10035_b26096_n3-18942, _:b11059_b10157_b10035_b26096_n3-18943, _:b11059_b10157_b10035_b26096_n3-18944, _:b11059_b10157_b10035_b26096_n3-18945, _:b11059_b10157_b10035_b26096_n3-18946, _:b11059_b10157_b10035_b26096_n3-18947, _:b11059_b10157_b10035_b26096_n3-18948, _:b11059_b10157_b10035_b26096_n3-18949, _:b11059_b10157_b10035_b26096_n3-18950, _:b11059_b10157_b10035_b26096_n3-18951, _:b11059_b10157_b10035_b26096_n3-18952, _:b11059_b10157_b10035_b26096_n3-18953, _:b11059_b10157_b10035_b26096_n3-18954, _:b11059_b10157_b10035_b26096_n3-18955, _:b11059_b10157_b10035_b26096_n3-18956, _:b11059_b10157_b10035_b26096_n3-18957, _:b11059_b10157_b10035_b26096_n3-18958, _:b11059_b10157_b10035_b26096_n3-18959, _:b11059_b10157_b10035_b26096_n3-18960, _:b11059_b10157_b10035_b26096_n3-18961, _:b11059_b10157_b10035_b26096_n3-18962, _:b11059_b10157_b10035_b26096_n3-18963, _:b11059_b10157_b10035_b26096_n3-18964, _:b11059_b10157_b10035_b26096_n3-18965, _:b11059_b10157_b10035_b26096_n3-18966, _:b11059_b10157_b10035_b26096_n3-18967, _:b11059_b10157_b10035_b26096_n3-18968, _:b11059_b10157_b10035_b26096_n3-18969, _:b11059_b10157_b10035_b26096_n3-18970, _:b11059_b10157_b10035_b26096_n3-18971, _:b11059_b10157_b10035_b26096_n3-18972, _:b11059_b10157_b10035_b26096_n3-18973, _:b11059_b10157_b10035_b26096_n3-18974, _:b11059_b10157_b10035_b26096_n3-18975, _:b11059_b10157_b10035_b26096_n3-18976, _:b11059_b10157_b10035_b26096_n3-18977, _:b11059_b10157_b10035_b26096_n3-18978, _:b11059_b10157_b10035_b26096_n3-18979, _:b11059_b10157_b10035_b26096_n3-18980, _:b11059_b10157_b10035_b26096_n3-18981, _:b11059_b10157_b10035_b26096_n3-18982, _:b11059_b10157_b10035_b26096_n3-18983, _:b11059_b10157_b10035_b26096_n3-18984, _:b11059_b10157_b10035_b26096_n3-18985, _:b11059_b10157_b10035_b26096_n3-18986, _:b11059_b10157_b10035_b26096_n3-18987, _:b11059_b10157_b10035_b26096_n3-18988, _:b11059_b10157_b10035_b26096_n3-18989, _:b11059_b10157_b10035_b26096_n3-18990, _:b11059_b10157_b10035_b26096_n3-18991, _:b11059_b10157_b10035_b26096_n3-18992, _:b11059_b10157_b10035_b26096_n3-18993, _:b11059_b10157_b10035_b26096_n3-18994, _:b11059_b10157_b10035_b26096_n3-18995, _:b11059_b10157_b10035_b26096_n3-18996, _:b11059_b10157_b10035_b26096_n3-18997, _:b11059_b10157_b10035_b26096_n3-18998, _:b11059_b10157_b10035_b26096_n3-18999, _:b11059_b10157_b10035_b26096_n3-19000, _:b11059_b10157_b10035_b26096_n3-19001, _:b11059_b10157_b10035_b26096_n3-19002, _:b11059_b10157_b10035_b26096_n3-19003, _:b11059_b10157_b10035_b26096_n3-19004, _:b11059_b10157_b10035_b26096_n3-19005, _:b11059_b10157_b10035_b26096_n3-19006, _:b11059_b10157_b10035_b26096_n3-19007, _:b11059_b10157_b10035_b26096_n3-19008, _:b11059_b10157_b10035_b26096_n3-19009, _:b11059_b10157_b10035_b26096_n3-19010, _:b11059_b10157_b10035_b26096_n3-19011, _:b11059_b10157_b10035_b26096_n3-19012, _:b11059_b10157_b10035_b26096_n3-19013, _:b11059_b10157_b10035_b26096_n3-19014, _:b11059_b10157_b10035_b26096_n3-19015, _:b11059_b10157_b10035_b26096_n3-19016, _:b11059_b10157_b10035_b26096_n3-19017, _:b11059_b10157_b10035_b26096_n3-19018, _:b11059_b10157_b10035_b26096_n3-19019, _:b11059_b10157_b10035_b26096_n3-19020, _:b11059_b10157_b10035_b26096_n3-19021, _:b11059_b10157_b10035_b26096_n3-19022, _:b11059_b10157_b10035_b26096_n3-19023, _:b11059_b10157_b10035_b26096_n3-19024, _:b11059_b10157_b10035_b26096_n3-19025, _:b11059_b10157_b10035_b26096_n3-19026, _:b11059_b10157_b10035_b26096_n3-19027, _:b11059_b10157_b10035_b26096_n3-19028, _:b11059_b10157_b10035_b26096_n3-19029, _:b11059_b10157_b10035_b26096_n3-19030, _:b11059_b10157_b10035_b26096_n3-19031, _:b11059_b10157_b10035_b26096_n3-19032, _:b11059_b10157_b10035_b26096_n3-19033, _:b11059_b10157_b10035_b26096_n3-19034, _:b11059_b10157_b10035_b26096_n3-19035, _:b11059_b10157_b10035_b26096_n3-19036, _:b11059_b10157_b10035_b26096_n3-19037, _:b11059_b10157_b10035_b26096_n3-19038, _:b11059_b10157_b10035_b26096_n3-19039, _:b11059_b10157_b10035_b26096_n3-19040;
+    ldp:inbox <https://bourgeoa.solidcommunity.net/inbox/>;
+    space:preferencesFile <https://bourgeoa.solidcommunity.net/settings/prefs.ttl>;
+    space:storage <https://bourgeoa.solidcommunity.net/>;
+    solid:account <https://bourgeoa.solidcommunity.net/>;
+    solid:community c:me, c3:me;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex <https://bourgeoa.solidcommunity.net/settings/privateTypeIndex.ttl>, <https://bourgeoa.solidcommunity.net/settings/privateTypeIndex>, <https://bourgeoa.solidcommunity.net/settings/privateTypeIndex-7844370b-4959-402d-84eb-ea0f5b8768bd>, <https://bourgeoa.solidcommunity.net/settings/privateTypeIndex-58af1e9b-a397-4dda-aa2a-263c187831d3>;
+    solid:publicTypeIndex <https://bourgeoa.solidcommunity.net/settings/publicTypeIndex.ttl>;
+    foaf:account _:b11059_b10157_b10035_b26096_n3-19041;
+    foaf:knows c13:me, c14:me, c17:me, c20:me, c21:me;
+    foaf:name "Alain Bourgeois".
+_:b11059_b10157_b10035_b26096_n3-18923 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1647029238955>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:b11059_b10157_b10035_b26096_n3-18924 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1647029238955>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:b11059_b10157_b10035_b26096_n3-18925 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1647029238955>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+<#id1617716357631> vcard:postal-code "75014";
+    vcard:street-address "";
+    vcard:country-name "France";
+    vcard:region "75".
+_:b11059_b10157_b10035_b26096_n3-18926 a vcard:WebID;
+    vcard:value "https://bourgeoa.solidcommunity.net/profile/card#me".
+_:b11059_b10157_b10035_b26096_n3-18927 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <http://example.org>.
+_:b11059_b10157_b10035_b26096_n3-18928 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <http://localhost:3000>.
+_:b11059_b10157_b10035_b26096_n3-18929 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <http://localhost:8080>.
+_:b11059_b10157_b10035_b26096_n3-18930 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <http://podpro.dev:443>.
+_:b11059_b10157_b10035_b26096_n3-18931 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <http://podpro.fly.dev:443>.
+_:b11059_b10157_b10035_b26096_n3-18932 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://0dataapp.github.io>.
+_:b11059_b10157_b10035_b26096_n3-18933 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://alain.localhost:8443>.
+_:b11059_b10157_b10035_b26096_n3-18934 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://annie-talbot.github.io>.
+_:b11059_b10157_b10035_b26096_n3-18935 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://api.liqid.chat>.
+_:b11059_b10157_b10035_b26096_n3-18936 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bob.localhost:8443>.
+_:b11059_b10157_b10035_b26096_n3-18937 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa-ga.loca.lt>.
+_:b11059_b10157_b10035_b26096_n3-18938 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.bourgeoa.ga:8443>.
+_:b11059_b10157_b10035_b26096_n3-18939 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.bourgeoa.ga>.
+_:b11059_b10157_b10035_b26096_n3-18940 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.dev.inrupt.net>.
+_:b11059_b10157_b10035_b26096_n3-18941 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.ga:3000>.
+_:b11059_b10157_b10035_b26096_n3-18942 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.github.io>.
+_:b11059_b10157_b10035_b26096_n3-18943 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.inrupt.net>.
+_:b11059_b10157_b10035_b26096_n3-18944 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.localhost:8443>.
+_:b11059_b10157_b10035_b26096_n3-18945 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.solidcommunity.net:3000>.
+_:b11059_b10157_b10035_b26096_n3-18946 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.solidweb.org>.
+_:b11059_b10157_b10035_b26096_n3-18947 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa1.solidcommunity.net:8443>.
+_:b11059_b10157_b10035_b26096_n3-18948 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://chunt.solidcommunity.net>.
+_:b11059_b10157_b10035_b26096_n3-18949 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://crspybits.inrupt.net>.
+_:b11059_b10157_b10035_b26096_n3-18950 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://css.verborgh.org>.
+_:b11059_b10157_b10035_b26096_n3-18951 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://dev.inrupt.net>.
+_:b11059_b10157_b10035_b26096_n3-18952 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://drive.owntech.de>.
+_:b11059_b10157_b10035_b26096_n3-18953 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://drive.verborgh.org>.
+_:b11059_b10157_b10035_b26096_n3-18954 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://example.solidweb.org>.
+_:b11059_b10157_b10035_b26096_n3-18955 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://formgenerator.smessie.com>.
+_:b11059_b10157_b10035_b26096_n3-18956 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://generator.inrupt.com>.
+_:b11059_b10157_b10035_b26096_n3-18957 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://hochstenbach.solidcommunity.net:8443>.
+_:b11059_b10157_b10035_b26096_n3-18958 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://inrupt.net>.
+_:b11059_b10157_b10035_b26096_n3-18959 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://jeff-zucker.github.io>.
+_:b11059_b10157_b10035_b26096_n3-18960 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://jeff-zucker.solidcommunity.net:8443>.
+_:b11059_b10157_b10035_b26096_n3-18961 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://jeff-zucker.solidcommunity.net>.
+_:b11059_b10157_b10035_b26096_n3-18962 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://jeffz.solidcommunity.net:8443>.
+_:b11059_b10157_b10035_b26096_n3-18963 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://julian-cole.github.io>.
+_:b11059_b10157_b10035_b26096_n3-18964 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://km.aifb.kit.edu>.
+_:b11059_b10157_b10035_b26096_n3-18965 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://kyosch.inrupt.net>.
+_:b11059_b10157_b10035_b26096_n3-18966 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://localhost:3000>.
+_:b11059_b10157_b10035_b26096_n3-18967 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://localhost:8443>.
+_:b11059_b10157_b10035_b26096_n3-18968 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://mdr-tools.com>.
+_:b11059_b10157_b10035_b26096_n3-18969 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://michielbdejong.solidcommunity.net:8443>.
+_:b11059_b10157_b10035_b26096_n3-18970 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://mypod.dev>.
+_:b11059_b10157_b10035_b26096_n3-18971 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://noeldemartin.github.io>.
+_:b11059_b10157_b10035_b26096_n3-18972 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://ohmypod.netlify.app>.
+_:b11059_b10157_b10035_b26096_n3-18973 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://otto-aa.github.io>.
+_:b11059_b10157_b10035_b26096_n3-18974 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://pdsinterop.org>.
+_:b11059_b10157_b10035_b26096_n3-18975 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://penny.vincenttunru.com>.
+_:b11059_b10157_b10035_b26096_n3-18976 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://phochste.github.io>.
+_:b11059_b10157_b10035_b26096_n3-18977 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://pod-chat.com>.
+_:b11059_b10157_b10035_b26096_n3-18978 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://podpro.dev>.
+_:b11059_b10157_b10035_b26096_n3-18979 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://portal.inrupt.net>.
+_:b11059_b10157_b10035_b26096_n3-18980 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://projektor.technology>.
+_:b11059_b10157_b10035_b26096_n3-18981 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://ramen.noeldemartin.com>.
+_:b11059_b10157_b10035_b26096_n3-18982 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://scenaristeur.github.io>.
+_:b11059_b10157_b10035_b26096_n3-18983 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://server-admin.solidcommunity.net:8443>.
+_:b11059_b10157_b10035_b26096_n3-18984 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://sharon.solidcommunity.net:8443>.
+_:b11059_b10157_b10035_b26096_n3-18985 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://sleepy.bike>.
+_:b11059_b10157_b10035_b26096_n3-18986 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://solid-client-authn-js.vercel.app>.
+_:b11059_b10157_b10035_b26096_n3-18987 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://solid-demo.generativeobjects.com>.
+_:b11059_b10157_b10035_b26096_n3-18988 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://solid.github.io>.
+_:b11059_b10157_b10035_b26096_n3-18989 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://solidarity.inrupt.net>.
+_:b11059_b10157_b10035_b26096_n3-18990 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://solidcryptpad.github.io>.
+_:b11059_b10157_b10035_b26096_n3-18991 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://solidelight.stieger.io>.
+_:b11059_b10157_b10035_b26096_n3-18992 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://solidos.github.io>.
+_:b11059_b10157_b10035_b26096_n3-18993 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://solidos.solidcommunity.net>.
+_:b11059_b10157_b10035_b26096_n3-18994 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://solidproject.solidcommunity.net>.
+_:b11059_b10157_b10035_b26096_n3-18995 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://solidweb.me>.
+_:b11059_b10157_b10035_b26096_n3-18996 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://test-pod.solidcommunity.net:8443>.
+_:b11059_b10157_b10035_b26096_n3-18997 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin n0:tester.
+_:b11059_b10157_b10035_b26096_n3-18998 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://testpro.solidweb.org>.
+_:b11059_b10157_b10035_b26096_n3-18999 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://timbl.solidcommunity.net:8443>.
+_:b11059_b10157_b10035_b26096_n3-19000 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://timea.solidcommunity.net>.
+_:b11059_b10157_b10035_b26096_n3-19001 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://trinpod.us>.
+_:b11059_b10157_b10035_b26096_n3-19002 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://umai.noeldemartin.com>.
+_:b11059_b10157_b10035_b26096_n3-19003 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://understory.garden>.
+_:b11059_b10157_b10035_b26096_n3-19004 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://uvdsl.solid.aifb.kit.edu>.
+_:b11059_b10157_b10035_b26096_n3-19005 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://web.inox.app>.
+_:b11059_b10157_b10035_b26096_n3-19006 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    acl:origin <https://www.bourgeoa.ga>.
+_:b11059_b10157_b10035_b26096_n3-19007 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://bob.localhost:8080>.
+_:b11059_b10157_b10035_b26096_n3-19008 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://localhost:3001>.
+_:b11059_b10157_b10035_b26096_n3-19009 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <http://localhost:9000>.
+_:b11059_b10157_b10035_b26096_n3-19010 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://alain.bourgeoa.fr:3000>.
+_:b11059_b10157_b10035_b26096_n3-19011 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://alice.localhost:8443>.
+_:b11059_b10157_b10035_b26096_n3-19012 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://asdf.pivot.pondersource.com>.
+_:b11059_b10157_b10035_b26096_n3-19013 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.bourgeoa.ga:8560>.
+_:b11059_b10157_b10035_b26096_n3-19014 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://bourgeoa.solidcommunity.net:8443>.
+_:b11059_b10157_b10035_b26096_n3-19015 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://empty-solid-app.5apps.com>.
+_:b11059_b10157_b10035_b26096_n3-19016 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://hello.0data.app>.
+_:b11059_b10157_b10035_b26096_n3-19017 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://hendrikbecker.solidcommunity.net:8443>.
+_:b11059_b10157_b10035_b26096_n3-19018 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://inbox-app.inrupt.net>.
+_:b11059_b10157_b10035_b26096_n3-19019 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://king-cello.bnr.la>.
+_:b11059_b10157_b10035_b26096_n3-19020 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://liqidchat.inrupt.net>.
+_:b11059_b10157_b10035_b26096_n3-19021 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://martin.vincenttunru.com>.
+_:b11059_b10157_b10035_b26096_n3-19022 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://me.ryey.icu>.
+_:b11059_b10157_b10035_b26096_n3-19023 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://melvincarvalho.github.io>.
+_:b11059_b10157_b10035_b26096_n3-19024 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://notepod.vincenttunru.com>.
+_:b11059_b10157_b10035_b26096_n3-19025 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://openlinksoftware.github.io>.
+_:b11059_b10157_b10035_b26096_n3-19026 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://pod-os-browser.netlify.app>.
+_:b11059_b10157_b10035_b26096_n3-19027 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://podbrowser.inrupt.com>.
+_:b11059_b10157_b10035_b26096_n3-19028 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://refarmer.inrupt.net>.
+_:b11059_b10157_b10035_b26096_n3-19029 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://sigmafied.com>.
+_:b11059_b10157_b10035_b26096_n3-19030 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid-migrator.dev.muze.nl>.
+_:b11059_b10157_b10035_b26096_n3-19031 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solid.redpencil.io>.
+_:b11059_b10157_b10035_b26096_n3-19032 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://solidcommunity.net:3001>.
+_:b11059_b10157_b10035_b26096_n3-19033 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://teamid.live>.
+_:b11059_b10157_b10035_b26096_n3-19034 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.com>.
+_:b11059_b10157_b10035_b26096_n3-19035 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://timbl.inrupt.net>.
+_:b11059_b10157_b10035_b26096_n3-19036 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://vincenttunru.gitlab.io>.
+_:b11059_b10157_b10035_b26096_n3-19037 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://whyineedtofillusername.github.io>.
+_:b11059_b10157_b10035_b26096_n3-19038 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://www.semantyk.com>.
+_:b11059_b10157_b10035_b26096_n3-19039 acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <https://ylebre.solidcommunity.net:8443>.
+_:b11059_b10157_b10035_b26096_n3-19040 acl:origin <https://bourgeoa.solidcommunity.net>.
+_:b11059_b10157_b10035_b26096_n3-19041 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732376791296>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b11059_b10157_b10035_b26096_n3-19042.
+<#id1732376791296> a soc:GithubAccount.
+_:b11059_b10157_b10035_b26096_n3-19042 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <#id1732376807736>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+<#id1732376807736> a soc:MatrixAccount;
+    foaf:accountName "@bourgeoa-5bdf2c09d73408ce4fadd1b5:gitter.im".
+<#id1607101589203> vcard:postal-code "07220";
+    vcard:street-address "Rue Du Terral".
+<#id1617716234209> vcard:postal-code "07220";
+    vcard:street-address "35 Rue Du Terral";
+    vcard:country-name "France".
+www:RSAPublicKey sioc:content_encoded "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA092NgbChWNzXD6bCCoFGiBWsCXMoQUcCr20A6EMvxAGzCLuSOmz72B3I34KzOZ9jFoVm2KxGa57skfK809yUuBZsf4b3b5q8+ggDaLzDzLsWitMUMKfZDsXOM9B9YTxkGlg6a6pD3MWSaTzvgFg4qjY/A34YKaBGrSrR9GM6xnapokCensY/TeUnkyzjjCvn2HXNsTjQ+6vQ9mDnTcl6ThlnVyh9pBvG6vrJN+QJQAauTm3/TxlCDlijalnaRN7HOtIrUjKEtN0we05G1ELJ3b+G1+Z7dcAM2gubvOufu6I9mVPTlYXbuoFHN5SkNGd+7dN4YAsGD0gHf2ECDTuDOEm5r95Nuz4LWRNNQdNRXDsyxJYrJD8KuaQ+LmHReSPyBfoyvuOD64iaaQsFVfQ4PXppu28aHGs452nN2dU/zS/SQiFt9IwKDW33iUkcR17znN76fQbZYZyvm59LSSdPli+TA88RQfERMXW1NO39mX6/UEGR5X5oZJbbT+16qUIG/PX3K0OvCicxgIsGbiqKydfTCM7SIvVoRgPln7Y4swdt3tIDWGSGfsLTy3zSYYBCHcxDfsK5yBCWRfQpPbKbQC01FYIahODsOOaWr/mN1YTLMATF2HE7jPvJ7eYxRrs7x/lLfc0b2Sa6580lMgciWUQ1IppRRetxrIS9s38guCkCAwEAAQ==".

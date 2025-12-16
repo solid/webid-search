@@ -1,0 +1,58 @@
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix cert:   <http://www.w3.org/ns/auth/cert#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbp:    <http://dbpedia.org/ontology/> .
+@prefix scoro:  <http://purl.org/spar/scoro/> .
+@prefix solid:  <http://www.w3.org/ns/solid/terms#> .
+@prefix ov:     <http://open.vocab.org/terms/> .
+@prefix vcard:  <http://www.w3.org/2006/vcard/ns#> .
+@prefix schema: <http://schema.org/>.
+@prefix me:     <https://pieterheyvaert.com/#me>.
+@prefix knows:  <https://data.knows.idlab.ugent.be/person/office/#> .
+@prefix wdt:    <http://www.wikidata.org/prop/direct/> .
+
+me:
+    a                             foaf:Person ;
+    foaf:name                     "Pieter Heyvaert"@en ;
+    foaf:name                     "Pieter Heyvaert"@nl ;
+    schema:name                   "Pieter Heyvaert"@en ;
+    schema:name                   "Pieter Heyvaert"@nl ;
+    foaf:givenName                "Pieter"@en ;
+    foaf:givenName                "Pieter"@nl ;
+    foaf:familyName               "Heyvaert"@en ;
+    foaf:familyName               "Heyvaert"@nl ;
+    vcard:title                   "Development Lead, Developer Advocate, and Diversity & Inclusion ambassador" ;
+    vcard:hasEmail                <mailto:pieter.heyvaert@ugent.be> ;
+    foaf:mbox                     <mailto:pieter.heyvaert@ugent.be> ;
+    foaf:img                      <https://pieterheyvaert.com/img/profile.jpg> ;
+    ov:twitter-id                 "HeyPieter" ;
+    wdt:P4033                     "pheyvaer@mastodon.online";
+    dbp:orcidId                   "0000−0002−1583−5719" ;
+    scoro:hasORCID                "0000−0002−1583−5719" ;
+    cert:key                      <https://pieterheyvaert.com/#rsa-public-key> ;
+    knows:hasAvailabilityCalendar <https://pieterheyvaert.com/#availability-calendar> ;
+    knows:hasVacationCalendar     <https://pheyvaer.pod.knows.idlab.ugent.be/vacation-calendar#> ;
+    foaf:account                  <https://pieterheyvaert.com/#github> .
+
+<https://pieterheyvaert.com/#github>
+    a                           knows:GitHubAccount ;
+    foaf:accountName            "pheyvaer" ;
+    foaf:accountServiceHomepage <https://github.com/> .
+
+<https://pieterheyvaert.com/#rsa-public-key>
+    a             cert:RSAPublicKey ;
+    cert:modulus  "CAABC0524A1F2196199DC7F19FF70142D0E456849F08A5A271B06A53B95FB99C3062975BF05E5FE3809CD548DA3B2FB23CD92951FD43DB92F80C6B648B242FADF8FB0CFEF8FF2394453055C11813285DDE9AA70802BF4F211527C8DE9C603D7770E38B575F09349109155B2F8B2D9F0D9BCE69E55FD80041ED9CCE5C0F2549872672F5D17FC44AE3126BCB85E97DB87E315B883208DA0BB895DBFF75DBF4BEA813C13CBB21C7156E70C405A7B92D2BCDBB256AC1E554723B253FA886924CC8E33A676E01E03FFAFBC8254A4C1F4DE66395E0075D7AE3567E24948932DB38378F3CFBDC3DC522D1759F04A55F9AB4847C9ABA053EDAF1B5EC77C945216B1162DB"^^xsd:hexBinary ;
+    cert:exponent 65537 .
+
+<https://pieterheyvaert.com/#availability-calendar>
+    schema:url "https://pheyvaer.pod.knows.idlab.ugent.be/availability" .
+
+<https://pieterheyvaert.com/blog/2020/08/31/getting-started-with-walder/#>
+    a                  schema:HowTo ;
+    schema:name        "Getting started with Walder" ;
+    schema:url         "https://pieterheyvaert.com/blog/2020/08/31/getting-started-with-walder/" ;
+    schema:contributor me: ;
+    schema:author      me: .
+
+<https://pieterheyvaert.com/#me>
+    solid:oidcIssuer <https://pheyvaer.pod.knows.idlab.ugent.be/> .

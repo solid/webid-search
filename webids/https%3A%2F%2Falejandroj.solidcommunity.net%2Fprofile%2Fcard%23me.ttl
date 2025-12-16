@@ -1,0 +1,97 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix fri: </friends.ttl#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix fr: </friend-requests-inbox/>.
+@prefix pro: <./>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix schem: <http://schema.org/>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix n2: </>.
+@prefix XML: <http://www.w3.org/2001/XMLSchema#>.
+@prefix test1: </test1/>.
+@prefix c: <https://angelo.veltens.org/profile/card#>.
+@prefix c0: <https://astrid.solid.community/profile/card#>.
+@prefix c1: <https://bourgeoa.solid.community/profile/card#>.
+@prefix c2: <https://devolution.inrupt.net/profile/card#>.
+@prefix c3: <https://ewingson.solidweb.org/profile/card#>.
+@prefix c4: <https://javifake3.solid.community/profile/card#>.
+@prefix c5: <https://jollyorc.solid.community/profile/card#>.
+@prefix c6: <https://labra.solid.community/profile/card#>.
+@prefix c7: <https://megoth.solid.community/profile/card#>.
+@prefix n3: <https://melvincarvalho.com/#>.
+@prefix c8: <https://michielbdejong.inrupt.net/profile/card#>.
+@prefix c9: <https://mitzilaszlo.solid.community/profile/card#>.
+@prefix n4: <https://ruben.verborgh.org/profile/#>.
+@prefix c10: <https://solid.zwifi.eu/profile/card#>.
+@prefix c11: <https://spoggy.solid.community/profile/card#>.
+@prefix c12: <https://tvachon.inrupt.net/profile/card#>.
+@prefix c13: <https://vincentt.inrupt.net/profile/card#>.
+@prefix n5: <https://www.w3.org/TR/activitypub/#>.
+@prefix c14: <https://alejandrojg.inrupt.net/profile/card#>.
+
+fri:this ldp:inbox fr:.
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:id1572518362256 a n:Work; n:value <mailto:>.
+
+:id1572872769726 a n:Home.
+
+:me
+    a schem:Person, n0:Person;
+    n:fn "Alex";
+    n:hasEmail :id1572518362256;
+    n:hasPhoto <carTesla.png>;
+    n:hasTelephone <#phone:1573126138749>;
+    n:note "Solid community enthusiast";
+    n:organization-name "";
+    n:role "";
+    n1:trustedApp
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://arquisoft.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://ohmypod.netlify.app>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://solid.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://drive.verborgh.org>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://ibex.darcy.is>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://podbrowser.inrupt.com>
+            ];
+    ldp:inbox inbox:;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage n2:;
+    solid:account n2:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:profileBackgroundColor "#ffffff"^^XML:color;
+    solid:profileHighlightColor "#79787b"^^XML:color;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    solid:timeline test1:;
+    n0:knows
+        c:me, c0:me, c1:me, c2:me, c3:me, c4:me, c5:me, c6:me, c7:me, n3:me,
+        c8:me, c9:me, n4:me, c10:me, c11:me, c12:me, c13:me;
+    n0:name "Alejandro";
+    n5:following fri:this.
+<#phone:1573126138749> a n:Work; n:type "Home"; n:value <tel:+6XXXXXXXX>.
+
+c14:me n0:knows n2:.
+
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

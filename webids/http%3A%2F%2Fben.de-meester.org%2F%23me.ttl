@@ -1,0 +1,23 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns0: <http://www.w3.org/ns/solid/terms#> .
+@prefix ns1: <https://data.knows.idlab.ugent.be/person/office/#> .
+@prefix schema: <http://schema.org/> .
+
+<https://ben.de-meester.org/#me>
+  a foaf:Person ;
+  vcard:title "Postdoctoral Researcher"^^xsd:string ;
+  ns0:oidcIssuer <https://bjdmeest.pod.knows.idlab.ugent.be/> ;
+  foaf:account <https://github.com/bjdmeest> ;
+  foaf:familyName "De Meester"@en ;
+  foaf:givenName "Ben"@en ;
+  foaf:img <https://gravatar.com/avatar/92707f5c614704469138dbc868efb7c0?s=320> ;
+  foaf:mbox "mailto:ben.demeester@ugent.be"^^xsd:string ;
+  ns1:hasAvailabilityCalendar [ schema:url "https://bjdmeest.pod.knows.idlab.ugent.be/availability"^^xsd:string ] .
+
+<https://github.com/bjdmeest>
+  a ns1:GitHubAccount ;
+  foaf:accountName "bjdmeest"^^xsd:string ;
+  foaf:accountServiceHomepage <https://github.com/> .
+

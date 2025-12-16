@@ -1,0 +1,56 @@
+@prefix : <#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix terms: <http://www.w3.org/ns/solid/terms#>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix schem: <http://schema.org/>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix gro: </public/group_test_.ttl#>.
+@prefix c17: <https://solidarity.inrupt.net/profile/card#>.
+@prefix prof: <./>.
+@prefix inb: </inbox/>.
+@prefix spog: </>.
+@prefix c8: <https://almgwillow.inrupt.net/profile/card#>.
+@prefix c35: <https://enkogu.inrupt.net/profile/card#>.
+@prefix c36: <https://spoggy.solidcommunity.net/profile/card#>.
+
+prof:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:me
+    a schem:Person, n0:Person;
+    n:fn "Spoggy-test4";
+    n:hasPhoto <Gilloux.jpg>;
+    n:note "Here some notes";
+    n:organization-name "Smag0";
+    n:role "developer / Research";
+    n1:trustedApp
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://127.0.0.1:8080>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://localhost:8080>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://scenaristeur.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://shepherd.darcy.is>
+            ],
+        [ n1:mode n1:Control, n1:Read; n1:origin <https://shepherd.darcy.is> ];
+    ldp:inbox inb:;
+    org:memberOf gro:we;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage spog:;
+    terms:account spog:;
+    terms:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    terms:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    n0:knows c8:me, c35:me, c17:me, c36:me;
+    n0:name "Spoggy-Test4".
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

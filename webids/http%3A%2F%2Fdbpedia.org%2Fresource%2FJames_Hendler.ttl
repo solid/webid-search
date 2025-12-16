@@ -1,0 +1,241 @@
+@prefix dbo:	<http://dbpedia.org/ontology/> .
+@prefix dbr:	<http://dbpedia.org/resource/> .
+dbr:Web_Science_Trust	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:List_of_computer_scientists	dbo:wikiPageWikiLink	dbr:James_Hendler .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix wikipedia-en:	<http://en.wikipedia.org/wiki/> .
+wikipedia-en:James_Hendler	foaf:primaryTopic	dbr:James_Hendler .
+dbr:Tetherless_World_Constellation	dbo:head	dbr:James_Hendler .
+@prefix dbp:	<http://dbpedia.org/property/> .
+dbr:Tetherless_World_Constellation	dbp:head	dbr:James_Hendler ;
+	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:List_of_Brown_University_alumni	dbo:wikiPageWikiLink	dbr:James_Hendler .
+<http://dbpedia.org/resource/Data.gov>	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:Dean_Allemang	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:Drew_McDermott	dbo:wikiPageWikiLink	dbr:James_Hendler .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wikidata:	<http://www.wikidata.org/entity/> .
+dbr:James_Hendler	rdf:type	wikidata:Q19088 .
+@prefix schema:	<http://schema.org/> .
+dbr:James_Hendler	rdf:type	schema:Person ,
+		wikidata:Q901 ,
+		foaf:Person .
+@prefix ns8:	<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+dbr:James_Hendler	rdf:type	ns8:NaturalPerson ,
+		wikidata:Q729 ,
+		wikidata:Q5 .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+dbr:James_Hendler	rdf:type	owl:Thing ,
+		wikidata:Q215627 ,
+		dbo:Person ,
+		dbo:Animal ,
+		dbo:Eukaryote ,
+		dbo:Species ;
+	owl:sameAs	<http://viaf.org/viaf/107818627> .
+@prefix yago-res:	<http://yago-knowledge.org/resource/> .
+dbr:James_Hendler	owl:sameAs	yago-res:James_Hendler ,
+		dbr:James_Hendler ,
+		<https://global.dbpedia.org/id/4nzad> ,
+		wikidata:Q6135847 .
+@prefix ns11:	<http://data.bibliotheken.nl/id/thes/> .
+dbr:James_Hendler	owl:sameAs	ns11:p073473170 ,
+		<https://orcid.org/0000-0003-3056-1960> .
+@prefix ns12:	<https://dblp.org/pid/h/> .
+dbr:James_Hendler	owl:sameAs	ns12:JamesAHendler ,
+		<http://d-nb.info/gnd/115664564> ,
+		<http://rdf.freebase.com/ns/m.07_7kq> ;
+	foaf:name	"James Alexander Hendler"@en .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+dbr:James_Hendler	rdfs:label	"James Hendler"@en ;
+	dbp:doctoralStudents	dbr:Jen_Golbeck ;
+	dbp:doctoralAdvisor	dbr:Eugene_Charniak ;
+	foaf:depiction	<http://commons.wikimedia.org/wiki/Special:FilePath/SWIB_18_-_day_2-0840_(cropped).jpg> .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+dbr:James_Hendler	prov:wasDerivedFrom	<http://en.wikipedia.org/wiki/James_Hendler?oldid=1276779516&ns=0> .
+@prefix dct:	<http://purl.org/dc/terms/> .
+@prefix dbc:	<http://dbpedia.org/resource/Category:> .
+dbr:James_Hendler	dct:subject	dbc:Fellows_of_the_Association_for_the_Advancement_of_Artificial_Intelligence ,
+		dbc:Fellows_of_the_British_Computer_Society ,
+		<http://dbpedia.org/resource/Category:2016_fellows_of_the_Association_for_Computing_Machinery> ,
+		dbc:Rensselaer_Polytechnic_Institute_faculty ,
+		dbc:Living_people ,
+		dbc:Yale_University_alumni ,
+		dbc:Southern_Methodist_University_alumni ,
+		dbc:American_computer_scientists ,
+		<http://dbpedia.org/resource/Category:University_of_Maryland,_College_Park_faculty> ,
+		dbc:Fellows_of_the_American_Association_for_the_Advancement_of_Science ,
+		dbc:Fellows_of_the_IEEE ,
+		dbc:Artificial_intelligence_researchers ,
+		<http://dbpedia.org/resource/Category:1957_births> ,
+		dbc:Brown_University_alumni ,
+		dbc:Semantic_Web_people ;
+	foaf:isPrimaryTopicOf	wikipedia-en:James_Hendler ;
+	schema:sameAs	<http://viaf.org/viaf/107818627> ;
+	dbp:knownFor	"Significant Contributions to the Semantic Web"@en ;
+	dbp:spouse	"Terry Horowit"@en ;
+	dbp:children	"Sharon Horowit-Hendler"@en ;
+	dbo:almaMater	dbr:Brown_University ,
+		dbr:Southern_Methodist_University ,
+		dbr:Yale_University ;
+	dbp:almaMater	dbr:Southern_Methodist_University ,
+		dbr:Brown_University ,
+		dbr:Yale_University ;
+	dbo:knownFor	dbr:Semantic_Web ;
+	dbo:doctoralStudent	dbr:Jen_Golbeck ;
+	dbo:thumbnail	<http://commons.wikimedia.org/wiki/Special:FilePath/SWIB_18_-_day_2-0840_(cropped).jpg?width=300> ;
+	dbo:birthPlace	<http://dbpedia.org/resource/New_York_(state)> ,
+		dbr:Queens .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+dbr:James_Hendler	dbo:birthDate	"1957-04-02"^^xsd:date ;
+	dbp:birthDate	"1957-04-02"^^xsd:date ;
+	dbp:birthPlace	<http://dbpedia.org/resource/New_York_(state)> ,
+		dbr:Queens ;
+	dbp:nationality	"American"@en ;
+	dbo:institution	dbr:Rensselaer_Polytechnic_Institute ;
+	dbp:workplaces	dbr:Rensselaer_Polytechnic_Institute ,
+		<http://dbpedia.org/resource/University_of_Maryland,_College_Park> ;
+	dbp:fields	"Semantic Web"@en ,
+		dbr:Artificial_intelligence ;
+	dbp:thesisYear	1986 ;
+	dbp:thesisUrl	<https://www.proquest.com/docview/303438400> ;
+	dbp:thesisTitle	"Integrating Marker-Passing and Problem-Solving: A Spreading-Activation Approach to Improved Choice in Planning"@en ;
+	dbp:name	"James Alexander Hendler"@en ;
+	dbo:description	"amerikansk datalog"@da ,
+		"United States of America karimba \u014Bun ny\u025B doo"@dag ,
+		"amerikansk datavetare och AI-forskare"@sv ,
+		"American artificial intelligence researcher"@en ,
+		"Amerikaans kunstmatige intelligentie-onderzoeker"@nl ,
+		"US Informatiker"@de ;
+	dbo:wikiPageExternalLink	<http://search.proquest.com/docview/303438400> ;
+	dbo:wikiPageWikiLink	dbr:Brown_University ,
+		<http://dbpedia.org/resource/Category:1957_births> ,
+		dbc:Semantic_Web_people ,
+		<http://dbpedia.org/resource/Data.gov> ,
+		<http://dbpedia.org/resource/Dana_S._Nau> ,
+		dbr:Smartphone ,
+		<http://dbpedia.org/resource/Kieron_O\u0027Hara> ,
+		dbr:IBM ,
+		dbc:Fellows_of_the_American_Association_for_the_Advancement_of_Science ,
+		<http://dbpedia.org/resource/New_York_(state)> ,
+		dbr:AAAI_Press ,
+		dbr:Tetherless_World_Constellation ,
+		dbc:Brown_University_alumni ,
+		dbr:Playboy ,
+		dbr:Common_Crawl ,
+		dbr:Andrew_Hugill ,
+		dbc:Rensselaer_Polytechnic_Institute_faculty ,
+		<http://dbpedia.org/resource/National_Academy_of_Public_Administration_(United_States)> ,
+		dbr:Personal_digital_assistant ,
+		dbr:Intelligent_agent ,
+		<http://dbpedia.org/resource/Category:University_of_Maryland,_College_Park_faculty> ,
+		<http://dbpedia.org/resource/Government_of_New_York_(state)> ,
+		dbc:Fellows_of_the_Association_for_Computing_Machinery ,
+		dbr:Yale_University ,
+		dbr:United_States_Department_of_Homeland_Security ,
+		dbc:American_computer_scientists ,
+		dbr:Association_for_Computing_Machinery ,
+		dbr:Morgan_Kaufmann ,
+		dbr:Edward_Feigenbaum ,
+		dbc:Fellows_of_the_Association_for_the_Advancement_of_Artificial_Intelligence ,
+		dbr:Eugene_Charniak ,
+		dbr:Fulbright_Program ,
+		<http://dbpedia.org/resource/Science_(journal)> ,
+		dbr:Wendy_Hall ,
+		dbr:Scientific_American ,
+		dbr:IEEE ,
+		dbc:Fellow_Members_of_the_IEEE ,
+		dbr:Queens ,
+		dbr:Artificial_intelligence ,
+		dbr:Department_of_the_Air_Force_Decoration_for_Exceptional_Civilian_Service ,
+		dbr:Jack_Minker ,
+		dbc:Living_people ,
+		dbr:Tim_Berners-Lee ,
+		dbr:Semantic_Web ,
+		dbr:Ben_Shneiderman ,
+		dbr:Cognitive_psychology ,
+		dbr:IEEE_Intelligent_Systems ,
+		dbr:Institute_of_Electrical_and_Electronics_Engineers ,
+		dbr:PNNL ,
+		dbr:University_of_Leicester ,
+		dbr:Hebrew_University ,
+		dbr:British_Computer_Society ,
+		dbr:DARPA_Agent_Markup_Language ,
+		dbc:Southern_Methodist_University_alumni ,
+		dbr:WAMC ,
+		dbc:Artificial_intelligence_researchers ,
+		dbr:Ora_Lassila ,
+		<http://dbpedia.org/resource/University_of_Maryland,_College_Park> ,
+		dbr:DeMontfort_University ,
+		dbr:DARPA ,
+		dbr:MIT_Press ,
+		dbc:Yale_University_alumni ,
+		dbr:Semantic_Technology_Institute_International ,
+		dbr:AAAI ,
+		dbr:IBM_Research ,
+		dbr:Fellows_of_the_Association_for_Computing_Machinery ,
+		dbr:Web_Science_Trust ,
+		dbr:Fabien_Gandon ,
+		<http://dbpedia.org/resource/File:Aaron_Swartz_s_A_Programmable_Web_An_Unfinished_Work.pdf> ,
+		dbr:Rensselaer_Polytechnic_Institute ,
+		dbr:Doctor_of_Philosophy ,
+		dbr:Bright_Hub ,
+		dbr:University_of_Maryland ,
+		dbr:Automated_planning_and_scheduling ,
+		dbr:Noshir_Contractor ,
+		dbr:Bath_Spa_University ,
+		dbr:Nigel_Shadbolt ,
+		dbr:Jen_Golbeck ,
+		dbr:Apress ,
+		dbc:Fellows_of_the_British_Computer_Society ,
+		dbr:Radar_Networks ,
+		dbr:University_of_Edinburgh ,
+		dbr:Dean_Allemang ,
+		dbr:Southern_Methodist_University ,
+		dbr:American_Association_for_Artificial_Intelligence ,
+		dbr:Wuhan_University ,
+		dbr:Fellow_of_the_AAAS ,
+		dbr:Technology .
+@prefix dbt:	<http://dbpedia.org/resource/Template:> .
+dbr:James_Hendler	dbp:wikiPageUsesTemplate	dbt:URL ,
+		dbt:Doi ,
+		dbt:Cite_web ,
+		dbt:Authority_control ,
+		dbt:Semantic_Web ,
+		dbt:Reflist ,
+		dbt:Short_description ,
+		dbt:ISBN ,
+		dbt:Birth_date_and_age ,
+		dbt:Infobox_scientist ;
+	dbp:citizenship	"United States"@en ;
+	dbo:academicDiscipline	dbr:Artificial_intelligence ,
+		dbr:Semantic_Web ;
+	dbo:doctoralAdvisor	dbr:Eugene_Charniak .
+@prefix gold:	<http://purl.org/linguistics/gold/> .
+dbr:James_Hendler	gold:hypernym	dbr:Researcher .
+dbr:Jen_Golbeck	dbp:doctoralAdvisor	dbr:James_Hendler ;
+	dbo:wikiPageWikiLink	dbr:James_Hendler ;
+	dbo:doctoralAdvisor	dbr:James_Hendler .
+dbr:Semantic_Web	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:DARPA_Agent_Markup_Language	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:Social_machine	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:List_of_fellows_of_the_Association_for_Computing_Machinery	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:Ora_Lassila	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:Hendler	dbo:wikiPageDisambiguates	dbr:James_Hendler ;
+	dbo:wikiPageWikiLink	dbr:James_Hendler .
+<http://dbpedia.org/resource/National_Academy_of_Public_Administration_(United_States)>	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:Technology_governance	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:List_of_Rensselaer_Polytechnic_Institute_people	dbo:wikiPageWikiLink	dbr:James_Hendler .
+<http://dbpedia.org/resource/2007_cyberattacks_on_Estonia>	dbo:wikiPageWikiLink	dbr:James_Hendler .
+<http://dbpedia.org/resource/Hendler,_James>	dbo:wikiPageRedirects	dbr:James_Hendler ;
+	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:Jim_Hendler	dbo:wikiPageRedirects	dbr:James_Hendler ;
+	dbo:wikiPageWikiLink	dbr:James_Hendler .
+<http://dbpedia.org/resource/Peter_Fox_(professor)>	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:International_World_Wide_Web_Conference_Committee	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:IEEE_Intelligent_Systems	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:Rensselaer_Polytechnic_Institute	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:Web_Ontology_Language	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:AI_winter	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:Semantic_Web_Stack	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:Deborah_McGuinness	dbo:wikiPageWikiLink	dbr:James_Hendler .
+dbr:Simple_HTML_Ontology_Extensions	dbo:wikiPageWikiLink	dbr:James_Hendler .

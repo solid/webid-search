@@ -1,0 +1,48 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix pim: <http://www.w3.org/ns/pim/space#>.
+@prefix schema: <http://schema.org/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix pro: <./>.
+@prefix n0: <http://www.w3.org/ns/auth/acl#>.
+@prefix inbox: </inbox/>.
+@prefix spo: </>.
+@prefix c: <https://spoggy.solid.community/profile/card#>.
+@prefix c0: <https://spoggy-test.solid.community/profile/card#>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    n0:trustedApp
+            [
+                n0:mode n0:Append, n0:Control, n0:Read, n0:Write;
+                n0:origin <http://127.0.0.1:8080>
+            ],
+            [
+                n0:mode n0:Append, n0:Control, n0:Read, n0:Write;
+                n0:origin <http://localhost:3000>
+            ],
+            [
+                n0:mode n0:Append, n0:Control, n0:Read, n0:Write;
+                n0:origin <http://localhost:8080>
+            ],
+            [
+                n0:mode n0:Append, n0:Control, n0:Read, n0:Write;
+                n0:origin <https://noeldemartin.github.io>
+            ],
+            [
+                n0:mode n0:Append, n0:Control, n0:Read, n0:Write;
+                n0:origin <https://scenaristeur.github.io>
+            ];
+    ldp:inbox inbox:;
+    pim:preferencesFile </settings/prefs.ttl>;
+    pim:storage spo:;
+    solid:account spo:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c0:me, :me, c:me;
+    foaf:name "Spoggy-Test".
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://https://solidweb.org>. # Automatically added for Solid 0.9 compatibility

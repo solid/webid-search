@@ -1,0 +1,100 @@
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix wikipedia-en:	<http://en.wikipedia.org/wiki/> .
+@prefix dbr:	<http://dbpedia.org/resource/> .
+wikipedia-en:Dieter_Fensel	foaf:primaryTopic	dbr:Dieter_Fensel .
+@prefix dbo:	<http://dbpedia.org/ontology/> .
+dbr:Ontology_Inference_Layer	dbo:wikiPageWikiLink	dbr:Dieter_Fensel .
+dbr:John_Mylopoulos	dbo:wikiPageWikiLink	dbr:Dieter_Fensel .
+dbr:Rudi_Studer	dbo:doctoralStudent	dbr:Dieter_Fensel ;
+	dbo:wikiPageWikiLink	dbr:Dieter_Fensel .
+dbr:John_Domingue	dbo:wikiPageWikiLink	dbr:Dieter_Fensel .
+dbr:Semantic_Technology_Institute_International	dbo:keyPerson	dbr:Dieter_Fensel ;
+	dbo:wikiPageWikiLink	dbr:Dieter_Fensel .
+@prefix dbp:	<http://dbpedia.org/property/> .
+dbr:Semantic_Technology_Institute_International	dbp:keyPeople	dbr:Dieter_Fensel .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+dbr:Dieter_Fensel	rdf:type	dbo:Eukaryote ,
+		dbo:Species ,
+		dbo:Person ,
+		dbo:Animal .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+dbr:Dieter_Fensel	owl:sameAs	<https://dblp.org/pid/31/4309> ,
+		<https://global.dbpedia.org/id/54mmh> .
+@prefix ns7:	<http://data.bibliotheken.nl/id/thes/> .
+dbr:Dieter_Fensel	owl:sameAs	ns7:p141310103 .
+@prefix dbpedia-de:	<http://de.dbpedia.org/resource/> .
+dbr:Dieter_Fensel	owl:sameAs	dbpedia-de:Dieter_Fensel ,
+		<http://arz.dbpedia.org/resource/\u062F\u064A\u062A\u0631_\u0641\u064A\u0646\u0633\u0644> ,
+		<http://d-nb.info/gnd/121025462> .
+@prefix yago-res:	<http://yago-knowledge.org/resource/> .
+dbr:Dieter_Fensel	owl:sameAs	yago-res:Dieter_Fensel ,
+		<http://rdf.freebase.com/ns/m.02x593q> ,
+		<http://viaf.org/viaf/7571976> .
+@prefix wikidata:	<http://www.wikidata.org/entity/> .
+dbr:Dieter_Fensel	owl:sameAs	wikidata:Q92918 ,
+		dbr:Dieter_Fensel ,
+		<http://ar.dbpedia.org/resource/\u062F\u064A\u062A\u0631_\u0641\u064A\u0646\u0633\u0644> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+dbr:Dieter_Fensel	rdfs:label	"Dieter Fensel"@en ,
+		"\u062F\u064A\u062A\u0631 \u0641\u064A\u0646\u0633\u0644"@ar ,
+		"Dieter Fensel"@de .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+dbr:Dieter_Fensel	prov:wasDerivedFrom	<http://en.wikipedia.org/wiki/Dieter_Fensel?oldid=1295533596&ns=0> .
+@prefix dct:	<http://purl.org/dc/terms/> .
+@prefix dbc:	<http://dbpedia.org/resource/Category:> .
+dbr:Dieter_Fensel	dct:subject	dbc:Semantic_Web_people ,
+		dbc:Scientists_from_Nuremberg ,
+		<http://dbpedia.org/resource/Category:1960_births> ,
+		dbc:German_computer_scientists ,
+		dbc:Academic_staff_of_the_University_of_Innsbruck ;
+	foaf:isPrimaryTopicOf	wikipedia-en:Dieter_Fensel .
+@prefix schema:	<http://schema.org/> .
+dbr:Dieter_Fensel	schema:sameAs	<http://viaf.org/viaf/7571976> ;
+	dbo:description	"\u0639\u0627\u0644\u0650\u0645 \u062D\u0627\u0633\u0648\u0628 \u0623\u0644\u0645\u0627\u0646\u064A"@ar ,
+		"Duits informaticus"@nl ,
+		"r\u00EDomheola\u00ED Gearm\u00E1nach"@ga ,
+		"inform\u00E1ticu te\u00F3ricu alem\u00E1n"@ast ,
+		"tysk datavetare"@sv ,
+		"\u062F\u0627\u0646\u0634\u0645\u0646\u062F \u0639\u0644\u0648\u0645 \u06A9\u0627\u0645\u067E\u06CC\u0648\u062A\u0631 \u0622\u0644\u0645\u0627\u0646\u06CC"@fa ,
+		"tysk informatikar"@nn ,
+		"informaticien allemand"@fr ,
+		"tysk informatiker"@da ,
+		"\u0639\u0627\u0644\u0645 \u0643\u0648\u0645\u0628\u064A\u0648\u062A\u0631 \u0645\u0646 \u0627\u0644\u0645\u0627\u0646\u064A\u0627"@arz ,
+		"German computer scientist"@en ,
+		"investigador e inform\u00E1tico alem\u00E1n (n. 1960)"@es ,
+		"n\u011Bmeck\u00FD po\u010D\u00EDta\u010Dov\u00FD v\u011Bdec"@cs ,
+		"deutscher Informatiker"@de ;
+	dbo:wikiPageExternalLink	<http://www.fensel.com/> ;
+	dbo:wikiPageWikiLink	dbr:John_Mylopoulos ,
+		dbr:Formal_language ,
+		dbr:SOA4All ,
+		dbr:Rudi_Studer ,
+		dbr:Digital_Enterprise_Research_Institute ,
+		dbc:Scientists_from_Nuremberg ,
+		dbr:Air_charter ,
+		dbr:University_of_Amsterdam ,
+		dbc:Semantic_Web_people ,
+		dbr:NUI_Galway ,
+		dbr:Science_Foundation_Ireland ,
+		dbr:Elwin_Huaman ,
+		dbr:Insemtives ,
+		<http://dbpedia.org/resource/Category:1960_births> ,
+		dbr:The_Large_Knowledge_Collider ,
+		dbr:University_of_Karlsruhe ,
+		dbr:Nuremberg ,
+		dbc:Living_people ,
+		dbr:Semantic_web ,
+		dbr:University_of_Innsbruck ,
+		dbr:Semantic_Technology_Institute_International ,
+		dbr:Republic_of_Ireland ,
+		dbc:Academics_of_the_University_of_Innsbruck ,
+		dbr:Knowledge_management ,
+		dbc:German_computer_scientists .
+@prefix dbt:	<http://dbpedia.org/resource/Template:> .
+dbr:Dieter_Fensel	dbp:wikiPageUsesTemplate	dbt:Authority_control ,
+		dbt:Short_description ,
+		dbt:Reflist .
+@prefix gold:	<http://purl.org/linguistics/gold/> .
+dbr:Dieter_Fensel	gold:hypernym	dbr:Researcher .
+dbr:Fensel	dbo:wikiPageRedirects	dbr:Dieter_Fensel ;
+	dbo:wikiPageWikiLink	dbr:Dieter_Fensel .

@@ -1,0 +1,209 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix sioc: <http://rdfs.org/sioc/ns#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix wf: <http://www.w3.org/2005/01/wf/flow#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix pro: <./>.
+@prefix inbox: </inbox/>.
+@prefix ewi: </>.
+@prefix ex: <https://example.solidweb.org/>.
+@prefix tes: <https://testpro.solidweb.org/>.
+@prefix www: <https://www.pod-chat.com/>.
+@prefix pb: <https://stashdat.link/pb.ttl#>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    wf:attachment ex:, tes:;
+    vcard:bday "1968-11-01"^^xsd:date;
+    vcard:fn "Matthias Evering";
+    vcard:hasPhoto <00gravatar.jpg>;
+    vcard:note "Autodidact";
+    vcard:role "";
+    vcard:url
+        [ a vcard:WebID; vcard:value "https://example.solidweb.org/" ],
+        [ a vcard:WebID; vcard:value "https://testpro.solidweb.org/" ];
+    acl:trustedApp
+        :trust-webclip,
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://dokie.li>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://jeff-zucker.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://martin.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://notepod.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://otto-aa.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://pod-chat.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://podbrowser.inrupt.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://podpro.dev>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://scenaristeur.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://solid-migrator.dev.muze.nl>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://solidos.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://solidos.solid.community>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://stashdat.link>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://testpro.solidweb.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://w3c-cg.solid.community>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://web.inox.app>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://whyineedtofillusername.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:3000>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://badminton-shop.de>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://cbdshop24.de>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://de.wikipedia.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://drive.verborgh.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://example.solidweb.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://jeff-zucker.solidcommunity.net:8443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://mdr-tools.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin
+                <https://mfgjcggbpdkbnnpgllaicoeplfgkfnkj.chromiumapp.org>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://server8443.solidcommunity.net:8443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidelight.stieger.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solidweb.me>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://test-pod.solidcommunity.net:8443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://timbl.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://timbl.solidcommunity.net:8443>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://vimeo.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://www.booklooker.de>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://www.conrad.de>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://www.reichelt.de>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://www.serverproject.de>
+            ],
+        [ acl:origin <https://mypod.dev> ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage ewi:;
+    solid:account ewi:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows ex:, tes:;
+    foaf:name "Matthias Evering";
+    pb:bookmarkIndex </bookmarks.ttl>;
+    pb:privateBookmarkIndex </privateBookmarks.ttl>;
+    pb:privateCommentIndex </comments.ttl>;
+    pb:privateLikeIndex </likes.ttl>;
+    pb:privateTopicIndex </privateTopics.ttl>;
+    pb:topicIndex </topics.ttl>.
+:trust-webclip
+    acl:mode acl:Append, acl:Read, acl:Write;
+    acl:origin <chrome-extension://mfgjcggbpdkbnnpgllaicoeplfgkfnkj>.
+www:RSAPublicKey
+    sioc:content_encoded
+        "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAyMVWZDj7uPIeJTnN/Ft+HXYFL7TAKLsOnNnPSAYy1EGzHxEtHeRkOOpukohQnpvsLB+T40Bfo8ie41FSDv9D8EYxyw4Hs6kYrPTw9iM0fmz1RC8KNGg/pxH+aWVXZN/QK2tWCZSoBLLO2OwnGEsekQvXUi/MM7lt0uCcXhrZO7k9C15wTPXOGeeYaooSWb14WXG5A2/xnp9NITif5of2hnbZ+A1SpLyPozdVGGPWezzLrJb612+OqsikG4/yq2nb/rRfMR6wr1NQiTlHa7DZcTp6FWQuoqiWMlZJlYAcnPgJpEVEQLBjZ85spjTSSRstlYU0Ad78RnaUExxfXF8zj5r+edWb2gP9rDkf1W+ECpWw2OwADjvCaOSxMSeJGnfsWB1OVGH+Lhx6+6TqdY8z6EuT/YG9nGJU+M2MfZYgOfJBlbA+YCIuHYrHjfQ+Eeg729NcrinCNfLml+EW0qPyUsqXHX3t+ck+aju0O17It59wYqKyNLOKjYogRo1BXaQQTXqXLPjxqDTZz8ZRNTnFeDBCwy1C0fMe8X32YmmmQmaOWkFL1q3TlsiNHya5pE/yv/VepMqduC1vCxGimYWxjQIJmdbRFtvWE4T6uZ0MM3gMBfIxLnszma4wiwQ9wY2eTzfpnq9eqvU4CUTeAaD/z3Wy/XaiJr94pZI9ltaRI9kCAwEAAQ==".

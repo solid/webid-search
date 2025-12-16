@@ -1,0 +1,32 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix pro: <./>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix schem: <http://schema.org/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix c: </>.
+@prefix pix: </public/pixolid/>.
+@prefix c0: <https://angelo.veltens.org/profile/card#>.
+@prefix c1: <https://carloss.inrupt.net/profile/card#>.
+@prefix c2: <https://goodman.solid.community/profile/card#>.
+@prefix c3: <https://jmartin-6.inrupt.net/profile/card#>.
+@prefix c4: <https://kidehen3.solid.openlinksw.com:8444/profile/card#>.
+@prefix n1: <https://ruben.verborgh.org/profile/#>.
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:me
+    a schem:Person, n0:Person;
+    ldp:inbox inbox:;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage c:;
+    solid:account c:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    solid:timeline pix:;
+    n0:knows c0:me, c1:me, c2:me, c3:me, c4:me, n1:me;
+    n0:name "carloss".
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

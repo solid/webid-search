@@ -1,0 +1,39 @@
+@prefix dc: <http://purl.org/dc/terms/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix posix: <http://www.w3.org/ns/posix/stat#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<profile/card#me> <http://www.w3.org/ns/solid/terms#account> <>.
+<> a <http://www.w3.org/ns/pim/space#Storage>, ldp:Container, ldp:BasicContainer, ldp:Resource;
+    dc:modified "2025-03-21T10:21:56.000Z"^^xsd:dateTime.
+<favicon.ico> a ldp:Resource, <http://www.w3.org/ns/iana/media-types/image/vnd.microsoft.icon#Resource>;
+    dc:modified "2020-11-19T13:52:15.000Z"^^xsd:dateTime.
+<inbox/> a ldp:Container, ldp:BasicContainer, ldp:Resource;
+    dc:modified "2020-11-30T02:51:16.000Z"^^xsd:dateTime.
+<public/> a ldp:Container, ldp:BasicContainer, ldp:Resource;
+    dc:modified "2020-11-19T14:34:53.000Z"^^xsd:dateTime.
+<profile/> a ldp:Container, ldp:BasicContainer, ldp:Resource;
+    dc:modified "2022-06-26T19:43:37.000Z"^^xsd:dateTime.
+<popock/> a ldp:Container, ldp:BasicContainer, ldp:Resource;
+    dc:modified "2020-11-19T14:05:49.000Z"^^xsd:dateTime.
+<settings/> a ldp:Container, ldp:BasicContainer, ldp:Resource;
+    dc:modified "2020-11-19T13:52:15.000Z"^^xsd:dateTime.
+<private/> a ldp:Container, ldp:BasicContainer, ldp:Resource;
+    dc:modified "2020-11-19T13:52:15.000Z"^^xsd:dateTime.
+<robots.txt> a ldp:Resource, <http://www.w3.org/ns/iana/media-types/text/plain#Resource>;
+    dc:modified "2020-11-19T13:52:15.000Z"^^xsd:dateTime.
+<.well-known/> a ldp:Container, ldp:BasicContainer, ldp:Resource;
+    dc:modified "2020-11-19T13:52:15.000Z"^^xsd:dateTime.
+<> posix:mtime 1742552516;
+    ldp:contains <favicon.ico>, <inbox/>, <public/>, <profile/>, <popock/>, <settings/>, <private/>, <robots.txt>, <.well-known/>.
+<favicon.ico> posix:mtime 1605793935;
+    posix:size 4286.
+<inbox/> posix:mtime 1606704676.
+<public/> posix:mtime 1605796493.
+<profile/> posix:mtime 1656272617.
+<popock/> posix:mtime 1605794749.
+<settings/> posix:mtime 1605793935.
+<private/> posix:mtime 1605793935.
+<robots.txt> posix:mtime 1605793935;
+    posix:size 83.
+<.well-known/> posix:mtime 1605793935.

@@ -1,0 +1,34 @@
+@prefix : <https://www.thundr.be/profile/laurens.ttl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+<https://www.thundr.be/profile/laurens.ttl>
+    a foaf:Document, foaf:PersonalProfileDocument;
+    foaf:maker :me;
+    foaf:primaryTopic :me.
+
+:me a foaf:Person;
+    foaf:name  "Laurens Debackere"@en, "Laurens Debackere"@nl;
+    con:preferredURI "https://thundr.be/profile/laurens.ttl#me";
+    foaf:givenName "Laurens"@en, "Laurens"@nl;
+    foaf:familyName "Debackere"@en, "Debackere"@nl;
+    foaf:gender "male"@en;
+    foaf:img <https://www.thundr.be/img/laurens.jpg>;
+    foaf:mbox <mailto:laurens.debackere@thundr.be>;
+    foaf:account <https://github.com/laurensdeb>,
+                 <https://twitter.com/0x8deb>,
+                 <https://www.linkedin.com/in/laurensdebackere/>;
+    dbo:orcidId "0000-0002-5401-418X";
+    foaf:workplaceHomepage <https://thundr.be>,
+                           <https://www.vlaanderen.be/digitaal-vlaanderen>;
+    org:memberOf <https://data.vlaanderen.be/doc/organisatie/OVO002949>.
+
+<https://data.vlaanderen.be/id/organisatie/OVO002949> 
+    a foaf:Agent, org:Organization;
+    rdfs:label "agentschap Digitaal Vlaanderen"@nl;
+    skos:prefLabel "agentschap Digitaal Vlaanderen"@nl;
+    foaf:homepage <https://www.vlaanderen.be/digitaal-vlaanderen>.

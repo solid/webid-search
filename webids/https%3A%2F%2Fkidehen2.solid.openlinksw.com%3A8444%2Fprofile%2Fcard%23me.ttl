@@ -1,0 +1,54 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix kin: <https://id.myopenlink.net/DAV/home/KingsleyUyiIdehen/Public/kingsley.ttl#>.
+@prefix link: <http://www.w3.org/2007/ont/link#>.
+@prefix pro: <./>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix cert: <http://www.w3.org/ns/auth/cert#>.
+@prefix terms: <http://purl.org/dc/terms/>.
+@prefix XML: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rd: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix schem: <http://schema.org/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix c: <https://kidehen5.solid.openlinksw.com:8444/profile/card#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix kid: </>.
+@prefix ki: <https://kidehen3.solid.openlinksw.com:8444/>.
+
+kin:this link:uri "https://kidehen2.solid.openlinksw.com:8444/profile/card#me".
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:key-1535666700000
+    a cert:RSAPublicKey;
+    terms:created "2018-08-30T22:05:00.000Z"^^XML:dateTime;
+    terms:title "Created by solid-server";
+    rd:label "Kingsley Idehen (kidehen2-844 solid grounded)";
+    cert:exponent "65537"^^XML:int;
+    cert:modulus
+        "a73b19471fe2667574af85992042d7071dedafa54a353e525e62584f14921ee63911eba7260c4c5dcc73c684bc73ca62628504b95e18128ceb0c35cb1108bc5b6bcbb9f08453d965bbe8e2f463c48a0c7ee58c74feb2df4acf148ddc37e3f1f7c5a4e7845aa31768dabc776e31c9f328d2bfe988c846ad5c110ff7ee290f951da7014f43170a727b59ba1c606c94932018ced6147502817d368c939b3c66d175cd8a81cc9f77b88e06e1407136b28855385c4881f3ed3ce799397ae61085a55a5bae926f3c2db743f316990d1aa6cc3de995c114aafbd9b649e6fc8316957ff2e6566f7156f185d902d7b44fcedce7c640b903e57bb94c3e69ded7e393f34c1b"^^XML:hexBinary.
+:me
+    a schem:Person, n0:Person;
+    owl:sameAs kin:this;
+    n1:delegates c:me;
+    cert:key :key-1535666700000;
+    ldp:inbox inbox:;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage kid:;
+    solid:account kid:;
+    solid:oidcIssuer <https://solid.openlinksw.com:8444>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    n0:knows ki:;
+    n0:name "Kingsley Idehen (kidehen2-844 solid grounded)".
+c:me
+    cert:key
+            [
+                a cert:RSAPublicKey;
+                cert:exponent "65537"^^XML:int;
+                cert:modulus
+                    "91053C3CEB5D2E175E29A3AA9E6E906FD0E6CB965712467DE8E5E17B22A666B175E843BE0837EC9BDB365AAE14D7567612C74E6C64C6DAD1E5E67BDAF04E6E3FBF811B59A13A55643E1B367F9421386578A0778B3F139BDCB2FD4743027C4BB27FD445598117C1C8C99B38F86C23CC8224ABCF14762346A13C24040D0190608373D1DBA5E49176F7B4A3B902F1274C384909820EA948E2CC194984799D3FC1FD373FD7F3E1BC15D73CF210B0F7903BD669360BFD41B4E7ACE410AC5394B48B78D7CBC44B7A6D9A9291200AC49471975B4F0F02D1CDEA040C57AE02E7CEFE1A8ACDAE848F6F41638B1AE7AF0CAB2D6E7D3E5ABA5920C7CCB2ECEED6C167F6639B"^^XML:hexBinary
+            ].

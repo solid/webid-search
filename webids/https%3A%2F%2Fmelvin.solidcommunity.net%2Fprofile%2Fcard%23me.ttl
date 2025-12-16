@@ -1,0 +1,106 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix fri: </friends.ttl#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix fr: </friend-requests-inbox/>.
+@prefix pro: <./>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix schem: <http://schema.org/>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix mel: </>.
+@prefix c: <https://www.w3.org/People/Berners-Lee/card#>.
+@prefix n3: <https://www.w3.org/TR/activitypub/#>.
+
+fri:this ldp:inbox fr:.
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:id1539045968937 a n:Home; n:value <mailto:melvincarvalho@gmail.com>.
+
+:id1539155231410 a n:Home; n:value <mailto:melvincarvalho@gmail.com>.
+
+:id1539155421090 a n:Home; n:value <mailto:melvincarvalho@gmail.com>.
+
+:id1539185491639 n:street-address "10 letsbeavenue".
+
+:id1539185914297 a n:ISDN; n:value <mailto:test@test.com>.
+
+:me
+    a schem:Person, n0:Person;
+    n:fn "Melvin Carvalho (test)";
+    n:hasAddress :id1539185491639;
+    n:hasEmail :id1539185914297;
+    n:note
+        "This is my solid community account, not my main...  Please use https://melvincarvalho.com/#me";
+    n:organization-name "Independent";
+    n:role "Developer";
+    n1:trustedApp
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://example.org>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://192.168.0.17:8443>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://friend-requests-exploration.inrupt.app>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://ibex.darcy.is>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://kingsley.idehen.net>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://noeldemartin.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://ods-qa.openlinksw.com>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://ohmypod.netlify.app>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://play-grounds.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://podbrowser.inrupt.com>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://preview.myportal.zone>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://scenaristeur.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://timbl.inrupt.net>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://useconcept.art>
+            ];
+    ldp:inbox inbox:;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage mel:;
+    solid:account mel:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    n0:name "Melvin Carvalho";
+    n3:following fri:this.
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

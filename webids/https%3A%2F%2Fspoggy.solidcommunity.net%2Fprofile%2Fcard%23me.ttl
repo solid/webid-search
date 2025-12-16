@@ -1,0 +1,249 @@
+@prefix : <#>.
+@prefix pro: <./>.
+@prefix fri: </friends.ttl#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix fr: </friend-requests-inbox/>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix schem: <http://schema.org/>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix dok: <https://dokie.li/>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix spo: </>.
+@prefix terms: <http://www.w3.org/ns/solid/terms#>.
+@prefix c: <https://adrianperezmanso.solidcommunity.net/profile/card#>.
+@prefix c0: <https://alejandroj.solidcommunity.net/profile/card#>.
+@prefix c1: <https://angelo.veltens.org/profile/card#>.
+@prefix c2: <https://bourgeoa.solidcommunity.net/profile/card#>.
+@prefix c3: <https://doctorbud.solidcommunity.net/profile/card#>.
+@prefix c4: <https://ewingson.solidweb.org/profile/card#>.
+@prefix c5: <https://gaia.solidcommunity.net/profile/card#>.
+@prefix c6: <https://holacratie.solidcommunity.net/profile/card#>.
+@prefix c7: <https://jollyorc.solidcommunity.net/profile/card#>.
+@prefix c8: <https://julian-cole.inrupt.net/profile/card#>.
+@prefix k: <https://karstenvoigt.solidcommunity.net/>.
+@prefix c9: <https://markjspivey.inrupt.net/profile/card#>.
+@prefix c10: <https://mitzilaszlo.solidcommunity.net/profile/card#>.
+@prefix c11: <https://morettian.solidcommunity.net/profile/card#>.
+@prefix c12: <https://nada.solidcommunity.net/profile/card#>.
+@prefix c13: <https://parle.inrupt.net/profile/card#>.
+@prefix c14: <https://role.solidcommunity.net/profile/card#>.
+@prefix c15: <https://smag0.solidcommunity.net/profile/card#>.
+@prefix c16: <https://solid.zwifi.eu/profile/card#>.
+@prefix c17: <https://solidarity.inrupt.net/profile/card#>.
+@prefix c18: <https://spoggy-test.solidcommunity.net/profile/card#>.
+@prefix c19: <https://tension.solidcommunity.net/profile/card#>.
+@prefix c20: <https://teodora.solidcommunity.net/profile/card#>.
+@prefix c21: <https://thewebalyst.solidcommunity.net/profile/card#>.
+@prefix c22: <https://touchepasamapizza.solidcommunity.net/profile/card#>.
+@prefix c23: <https://victorgon.inrupt.net/profile/card#>.
+@prefix vin: <https://vincent-test.inrupt.net/>.
+@prefix c24: <https://www.w3.org/People/Berners-Lee/card#>.
+@prefix n2: <https://www.w3.org/TR/activitypub/#>.
+@prefix pub: </public/>.
+@prefix mee: <http://www.w3.org/ns/pim/meeting#>.
+@prefix flow: <http://www.w3.org/2005/01/wf/flow#>.
+@prefix c25: <https://michielbdejong.solidcommunity.net/profile/card#>.
+@prefix c26: <https://benoitferchaud.solidcommunity.net/profile/card#>.
+@prefix c27: <https://jackson.solidcommunity.net/profile/card#>.
+@prefix pr: <https://rubeniswc.inrupt.net/profile/>.
+@prefix c28: <https://rubeniswc.inrupt.net/profile/card#>.
+@prefix c29: <https://spoggy-test3.solidcommunity.net/profile/card#>.
+@prefix c30: <https://hegemon.inrupt.net/profile/card#>.
+@prefix c31: <https://virginia.inrupt.net/profile/card#>.
+@prefix c32: <https://kidehen3.solid.openlinksw.com:8444/profile/card#>.
+@prefix c34: <https://arthurlogilab.solidweb.org/profile/card#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix tes: </public/test.ttl#>.
+
+fri:this ldp:inbox fr:.
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:id1583628998531
+    n:country-name "France";
+    n:locality "Lyon";
+    n:postal-code "post";
+    n:region "region";
+    n:street-address "street".
+:me
+    a schem:Person, n0:Person;
+    n:bday "1977-05-14";
+    n:fn "Spoggy";
+    n:hasAddress :id1583628998531;
+    n:hasGender "Male";
+    n:hasPhoto <highres_274291645.jpeg>;
+    n:note
+        """Hi, Welcome here, give a try to Popock at https://scenaristeur.github.io/solid-vue-panes/
+;-)""";
+    n:organization-name "Popock";
+    n:role "Developer";
+    n1:trustedApp
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://127.0.0.1:8080>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://127.0.0.1:8081>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://127.0.0.1:8082>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://localhost:3000>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://localhost:8080>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://localhost:8081>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://localhost:9000>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://localhost:9001>
+            ],
+        [ n1:mode n1:Append, n1:Control, n1:Read, n1:Write; n1:origin dok: ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://dokie.li>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://otman.solidcommunity.net>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://otto-aa.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://scenaristeur.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://spoggy.solidweb.org>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://ewingson.solidweb.org>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://friend-requests-exploration.inrupt.app>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://gca-solid.now.sh>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://generator.inrupt.com>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://graphmetrix.net>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://ibex.darcy.is>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://james-martin-jd.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://jeff-zucker.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://julian-cole.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://julian-cole.inrupt.net>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://markbook.org>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://markisforbookmarks.herokuapp.com>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://noeldemartin.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://ohmypod.netlify.app>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://ohmypod.netlify.com>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://parle.inrupt.net>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://pmbrull.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://podbrowser.inrupt.com>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://solidarity.inrupt.net>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://solidcommunity.net:8443>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://useconcept.art>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://victorgon.inrupt.net>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://vincenttunru.gitlab.io>
+            ],
+        [ n1:origin <https://preview.myportal.zone> ];
+    ldp:inbox inbox:;
+    org:memberOf tes:we;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage spo:;
+    terms:account spo:;
+    terms:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    terms:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    n0:knows
+        c:me, c0:me, c1:me, c34:me, c26:me, c2:me, c3:me, c4:me, c5:me, c30:me,
+        c6:me, c27:me, c7:me, c8:me, k:, c32:me, c9:me, c25:me, c10:me, c11:me,
+        c12:me, c13:me, c14:me, pr:card, c28:me, c15:me, c16:me, c17:me, c18:me,
+        c29:me, c19:me, c20:me, c21:me, c22:me, c23:me, vin:, c31:me,
+        c24:i;
+    n0:name "Spoggy";
+    n2:following fri:this.
+pub:e8f3e1f8
+    a mee:LongChat;
+    flow:participant
+    c5:me, c7:me, c8:me, k:, c11:me, c12:me, c14:me, c17:me, c19:me, vin:.
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

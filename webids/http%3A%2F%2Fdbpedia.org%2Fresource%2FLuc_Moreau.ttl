@@ -1,0 +1,95 @@
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix wikipedia-en:	<http://en.wikipedia.org/wiki/> .
+@prefix dbr:	<http://dbpedia.org/resource/> .
+wikipedia-en:Luc_Moreau	foaf:primaryTopic	dbr:Luc_Moreau .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+dbr:Luc_Moreau	rdf:type	owl:Thing .
+@prefix wikidata:	<http://www.wikidata.org/entity/> .
+dbr:Luc_Moreau	rdf:type	wikidata:Q729 .
+@prefix ns6:	<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+dbr:Luc_Moreau	rdf:type	ns6:NaturalPerson ,
+		wikidata:Q215627 .
+@prefix schema:	<http://schema.org/> .
+dbr:Luc_Moreau	rdf:type	schema:Person .
+@prefix dbo:	<http://dbpedia.org/ontology/> .
+dbr:Luc_Moreau	rdf:type	dbo:Person ,
+		dbo:Animal ,
+		wikidata:Q5 ,
+		foaf:Person ,
+		dbo:Eukaryote ,
+		dbo:Species ,
+		wikidata:Q19088 ,
+		wikidata:Q901 .
+@prefix dbpedia-global:	<https://global.dbpedia.org/id/> .
+dbr:Luc_Moreau	owl:sameAs	dbpedia-global:n56p ,
+		wikidata:Q18356018 ,
+		dbr:Luc_Moreau ,
+		<http://d-nb.info/gnd/1202486169> ,
+		<https://orcid.org/0000-0002-3494-120X> .
+@prefix yago-res:	<http://yago-knowledge.org/resource/> .
+dbr:Luc_Moreau	owl:sameAs	yago-res:Luc_Moreau ,
+		<http://rdf.freebase.com/ns/m.0123kl1t> ,
+		<http://viaf.org/viaf/4061154983542067860002> ,
+		wikidata:Q57022895 ,
+		<https://dblp.org/pid/31/5619> ;
+	foaf:name	"Luc Moreau"@en .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+dbr:Luc_Moreau	rdfs:label	"Luc Moreau"@en ;
+	foaf:homepage	<https://nms.kcl.ac.uk/luc.moreau/> .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+dbr:Luc_Moreau	prov:wasDerivedFrom	<http://en.wikipedia.org/wiki/Luc_Moreau?oldid=1222169280&ns=0> .
+@prefix dct:	<http://purl.org/dc/terms/> .
+dbr:Luc_Moreau	dct:subject	<http://dbpedia.org/resource/Category:University_of_Li\u00E8ge_alumni> .
+@prefix dbc:	<http://dbpedia.org/resource/Category:> .
+dbr:Luc_Moreau	dct:subject	dbc:Living_people ,
+		dbc:Academics_of_the_University_of_Southampton ,
+		<http://dbpedia.org/resource/Category:Year_of_birth_missing_(living_people)> ;
+	foaf:isPrimaryTopicOf	wikipedia-en:Luc_Moreau .
+@prefix dbp:	<http://dbpedia.org/property/> .
+dbr:Luc_Moreau	dbp:knownFor	"Provenance"@en ,
+		""@en ;
+	dbp:website	<https://nms.kcl.ac.uk/luc.moreau/> ;
+	dbo:almaMater	<http://dbpedia.org/resource/University_of_Li\u00E8ge> ;
+	dbp:almaMater	<http://dbpedia.org/resource/University_of_Li\u00E8ge> ;
+	dbo:knownFor	dbr:Provenance ;
+	dbo:institution	<http://dbpedia.org/resource/King\u0027s_College_London> ,
+		dbr:University_of_Southampton ;
+	dbp:workplaces	"University of Southampton, King's College"@en ,
+		""@en ;
+	dbp:fields	""@en ,
+		"Computer Science"@en ;
+	dbp:thesisYear	1994 ;
+	dbp:thesisTitle	"Sound evaluation of parallel functional programs with first-class continuations"@en ;
+	dbp:name	"Luc Moreau"@en ;
+	dbo:description	"\u0434\u043E\u0441\u043B\u0456\u0434\u043D\u0438\u043A"@uk ,
+		"\u0D15\u0D2E\u0D4D\u0D2A\u0D4D\u0D2F\u0D42\u0D1F\u0D4D\u0D1F\u0D7C \u0D36\u0D3E\u0D38\u0D4D\u0D24\u0D4D\u0D30\u0D1C\u0D4D\u0D1E\u0D7B"@ml ,
+		"\u7814\u7A76\u8005"@ja ,
+		"computer scientist"@en ,
+		"\u7814\u7A76\u8005"@zh ,
+		"informatico"@it ,
+		"\uC5F0\uAD6C\uC6D0"@ko ,
+		"wetenschapper"@nl ,
+		"\u0570\u0565\u057F\u0561\u0566\u0578\u057F\u0578\u0572"@hy ;
+	dbo:wikiPageWikiLink	dbc:Academics_of_the_University_of_Southampton ,
+		<http://dbpedia.org/resource/Category:University_of_Li\u00E8ge_alumni> ,
+		dbr:Electrical_Engineering ,
+		<http://dbpedia.org/resource/King\u0027s_College_London> ,
+		dbr:Computer_Science ,
+		dbc:Living_people ,
+		dbr:Association_for_Computing_Machinery ,
+		dbr:University_of_Southampton ,
+		dbr:United_Kingdom ,
+		dbr:Provenance ,
+		<http://dbpedia.org/resource/University_of_Li\u00E8ge> ,
+		dbr:World_Wide_Web_Consortium ,
+		<http://dbpedia.org/resource/Category:Year_of_birth_missing_(living_people)> .
+@prefix dbt:	<http://dbpedia.org/resource/Template:> .
+dbr:Luc_Moreau	dbp:wikiPageUsesTemplate	dbt:Authority_control ,
+		dbt:Infobox_scientist ,
+		dbt:Reflist ,
+		dbt:Short_description ;
+	dbo:academicDiscipline	dbr:Computer_science .
+@prefix gold:	<http://purl.org/linguistics/gold/> .
+dbr:Luc_Moreau	gold:hypernym	dbr:Professor .
+dbr:List_of_University_of_Southampton_people	dbo:wikiPageWikiLink	dbr:Luc_Moreau .

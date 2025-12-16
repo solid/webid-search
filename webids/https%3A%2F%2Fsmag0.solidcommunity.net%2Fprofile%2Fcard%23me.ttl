@@ -1,0 +1,103 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix pro: <./>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix schem: <http://schema.org/>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix sm: </>.
+@prefix pub: </public/>.
+@prefix dre: <https://dredd.solid.community/>.
+@prefix c: <https://jpl54321.solid.community/profile/card#>.
+@prefix n2: <https://melvincarvalho.com/#>.
+@prefix c0: <https://role.solid.community/profile/card#>.
+@prefix n3: <https://ruben.verborgh.org/profile/#>.
+@prefix mee: <http://www.w3.org/ns/pim/meeting#>.
+@prefix flow: <http://www.w3.org/2005/01/wf/flow#>.
+@prefix che: </public/chess_20191116.ttl#>.
+@prefix stor: <http://example.org/storage/>.
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+<#email:1540740811961>
+a n:Pref; n:type "Personal"; n:value <mailto:scenaristeur@gmail.com>.
+:id1532705055998
+    n:country-name "France";
+    n:locality "Lyon";
+    n:postal-code "69008";
+    n:region "zer";
+    n:street-address "zsdfr".
+:id1532706451311 n:region "Blop".
+
+:id1540486115632
+    n:country-name "France Pays";
+    n:locality "Lyon Ville";
+    n:postal-code "";
+    n:street-address "Lyon".
+:id1540771507411 n:value <tel:0671>.
+
+:me
+    a schem:Person, n0:Person;
+    n:bday "1977-05-14";
+    n:fn "Smag0";
+    n:hasAddress :id1540486115632;
+    n:hasEmail <#email:1540740811961>;
+    n:hasGender "Male";
+    n:hasPhoto "";
+    n:note "Description from https://scenaristeur.github.io/salut/";
+    n:organization-name "Smag0";
+    n:role "Research & developer";
+    n1:trustedApp
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://otto-aa.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://scenaristeur.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <http://localhost:9000>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <http://localhost:9001>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://ewingson.solidweb.org>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://nmalcev.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://pmbrull.github.io>
+            ];
+    ldp:inbox inbox:;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage sm:;
+    solid:account sm:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex
+    <publicTypeIndex.ttl>, </settings/publicTypeIndex.ttl>;
+    solid:timeline pub:;
+    n0:knows dre:, c:me, n2:me, c0:me, n3:me;
+    n0:name "smag0".
+<#phone:1540771889385> n:type "Home"; n:value <tel:+undefined>.
+
+<#phone:1540771900292> n:type "Home"; n:value <tel:+undefined>.
+
+<#phone:1540771923680> n:type "Home"; n:value <tel:+undefined>.
+
+pub:60f14ef0 a mee:LongChat; flow:participant n3:me.
+
+che:k31jio01 stor:storeIn </public/chess_20191116.ttl>; schem:contributor :me.
+
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

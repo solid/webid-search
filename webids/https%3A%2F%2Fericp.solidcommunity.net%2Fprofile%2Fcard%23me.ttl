@@ -1,0 +1,52 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix pro: <./>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix schem: <http://schema.org/>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix n2: <http://>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix eri: </>.
+@prefix c: <https://melvin.solid.community/profile/card#>.
+@prefix n3: <https://ruben.verborgh.org/profile/#>.
+@prefix c0: <https://www.w3.org/People/Berners-Lee/card#>.
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:id1585574593515
+    n:country-name "France";
+    n:locality "";
+    n:postal-code "63000";
+    n:region "Auvergne";
+    n:street-address "2 rue nouvelle de Wailly".
+:id1585574646269 a n:Work; n:value <mailto:eric.prudhommeaux@janeirodigital.com>.
+
+:id1585574691804 a n:Work; n:value <mailto:eric@w3.org>.
+
+:me
+    a schem:Person, n0:Person;
+    n:fn "ericP";
+    n:hasAddress :id1585574593515;
+    n:hasEmail :id1585574646269, :id1585574691804;
+    n:hasPhoto <Image_1585574763020.png>;
+    n:organization-name "Janeiro Digital";
+    n:role "probably engineer";
+    n1:trustedApp
+        [ n1:mode n1:Append, n1:Read, n1:Write; n1:origin n2:localhost ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://solidsdk.inrupt.net>
+            ];
+    ldp:inbox inbox:;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage eri:;
+    solid:account eri:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    n0:knows c:me, n3:me, c0:i;
+    n0:name "Eric Prud'hommeaux".
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

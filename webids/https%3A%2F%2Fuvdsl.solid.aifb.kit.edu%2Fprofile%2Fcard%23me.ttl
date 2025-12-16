@@ -1,0 +1,24 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+
+<https://uvdsl.solid.aifb.kit.edu/profile/card> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a foaf:Person;
+    solid:oidcIssuer <https://solid.aifb.kit.edu/>;
+    vcard:hasPhoto <https://avatars.githubusercontent.com/u/25323625?v=4>;
+    vcard:fn "Christoph Braun";
+    foaf:name "Christoph Braun";
+    space:storage <https://uvdsl.solid.aifb.kit.edu/>;
+    solid:privateTypeIndex <https://uvdsl.solid.aifb.kit.edu/settings/privateTypeIndex>;
+    <https://w3id.org/security#assertionMethod> <https://uvdsl.solid.aifb.kit.edu/public/keys/4c9be941-d85c-4445-887e-360a553921c8#key>;
+    vcard:organization-name "Karlsruhe Institute of Technology (KIT)";
+    vcard:role "Research Associate and PhD Student";
+    vcard:note "I am a research associate and PhD student at the Karlsruhe Institute of Technology (KIT).\n";
+    solid:publicTypeIndex <https://uvdsl.solid.aifb.kit.edu/profile/publicTypeIndex.ttl>;
+    space:preferencesFile <https://uvdsl.solid.aifb.kit.edu/Settings/Preferences.ttl>;
+ldp:inbox </inbox/>.

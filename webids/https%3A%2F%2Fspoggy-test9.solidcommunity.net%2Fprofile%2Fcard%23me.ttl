@@ -1,0 +1,101 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix pro: <./>.
+@prefix inbox: </inbox/>.
+@prefix spo: </>.
+@prefix c: <https://spoggy-test.solidcommunity.net/profile/card#>.
+@prefix c0: <https://spoggy-test2.solidcommunity.net/profile/card#>.
+@prefix c1: <https://spoggy-test3.solidcommunity.net/profile/card#>.
+@prefix c2: <https://spoggy-test4.solidcommunity.net/profile/card#>.
+@prefix c3: <https://spoggy-test5.solidcommunity.net/profile/card#>.
+@prefix c4: <https://spoggy-test6.solidcommunity.net/profile/card#>.
+@prefix c5: <https://spoggy-test7.solidcommunity.net/profile/card#>.
+@prefix c6: <https://spoggy-test8.solidcommunity.net/profile/card#>.
+@prefix tes: </public/test_group.ttl#>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    vcard:fn "SpoggyTest9";
+    vcard:hasPhoto <Gilloux.jpg>;
+    vcard:organization-name "Smag0";
+    vcard:role "test for Decentralized Apps";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://127.0.0.1:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <http://localhost:9000>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://drive.owntech.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://harrystminrupt.inrupt.net>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://itme.online>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://podbrowser.inrupt.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://scenaristeur.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://127.0.0.1:8081>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://divoplade.frama.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://dvo1.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://pod-chat.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://solid-demo.generativeobjects.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <https://spoggy.solidweb.org>
+            ];
+    ldp:inbox inbox:;
+    org:memberOf tes:we;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage spo:;
+    solid:account spo:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:knows c:me, c0:me, c1:me, c2:me, c3:me, c4:me, c5:me, c6:me, :me;
+    foaf:name "spoggy-test9".

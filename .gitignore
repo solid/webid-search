@@ -1,6 +1,5 @@
 node_modules/
 dist/
-webids/
 *.log
 .DS_Store
 src/ldo/

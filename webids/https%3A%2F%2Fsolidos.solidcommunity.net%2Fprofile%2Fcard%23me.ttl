@@ -1,0 +1,58 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix wf: <http://www.w3.org/2005/01/wf/flow#>.
+@prefix pro: <./>.
+@prefix pr: <https://github.com/solid/mashlib/projects/>.
+@prefix sol: <https://github.com/solid/>.
+@prefix inbox: </inbox/>.
+@prefix so: </>.
+@prefix priv: </settings/privateTypeIndex.ttl#>.
+@prefix inde: </public/Roadmap/Tasks/index.ttl#>.
+@prefix Sol: </Team/SolidOs%20team%20chat/>.
+@prefix soli: <https://solidcommunity.net/>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Organization, schema:Project, vcard:Organization, foaf:Organization;
+    schema:knowsLanguage ( :id1765375100040 );
+    wf:attachment inde:this;
+    vcard:fn "SolidOS";
+    vcard:hasPhoto <solidos-logo-v5.svg>;
+    vcard:note
+        """This is the pod of a project, not a person: the Solid OS project.
+
+Solid OS -- the Solid open source "operating System" gives basic functionality to anyone who has a solid pod.   Like the OS on your Mac or PC or phone, except that it has no disk drives: the solid pod is your disk drive in the sky.
+
+See the link to the Roadmap below for the (huge) lists of things in the vision.  (Check the "Task" and "Category"  tabs). Help us build it!""";
+    vcard:organization-name "Solid";
+    vcard:role "Project developing an operating system for";
+    vcard:url pr:1, sol:solidos, Sol:;
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://liqid.chat>
+            ],
+            [
+                acl:mode acl:Append, acl:Read, acl:Write;
+                acl:origin <http://localhost:8080>
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage so:;
+    solid:account so:;
+    solid:oidcIssuer soli:;
+    solid:preferredObjectPronoun "it";
+    solid:preferredRelativePronoun "its";
+    solid:preferredSubjectPronoun "it";
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:name "Solid Open Source Operating System".
+priv:id1595347492212 solid:forClass wf:Tracker; solid:instance inde:this.
+

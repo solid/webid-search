@@ -1,0 +1,131 @@
+@prefix : <#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix pro: <./>.
+@prefix n0: <http://xmlns.com/foaf/0.1/>.
+@prefix n: <http://www.w3.org/2006/vcard/ns#>.
+@prefix n1: <http://www.w3.org/ns/auth/acl#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix inbox: </inbox/>.
+@prefix sp: <http://www.w3.org/ns/pim/space#>.
+@prefix spo: </>.
+@prefix c: <https://spoggy-test2.solidcommunity.net/profile/card#>.
+@prefix c0: <https://spoggy-test9.solidcommunity.net/profile/card#>.
+@prefix c1: <https://spoggy.solidcommunity.net/profile/card#>.
+@prefix fri: </friends.ttl#>.
+@prefix fr: </friend-requests-inbox/>.
+@prefix n2: <https://www.w3.org/TR/activitypub/#>.
+@prefix c2: <https://spoggy-test.solidweb.org/profile/card#>.
+@prefix c3: <https://cdr.solidcommunity.net/profile/card#>.
+@prefix flow: <http://www.w3.org/2005/01/wf/flow#>.
+@prefix ind: </public/Tasks/index.ttl#>.
+@prefix in: </public/tasks2/index.ttl#>.
+@prefix c4: <https://thibault.pibit.net/profile/card#>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix New: </public/gouvernance/groups/New_group_with_another_account.ttl#>.
+@prefix Ne: </public/gouvernance/groups/New_group_with_another_account/New_subgroup.ttl#>.
+@prefix Loc: </public/gouvernance/groups/Local_Tic_Reporters.ttl#>.
+@prefix Les: </public/gouvernance/groups/Les_modules_de_l_application_Group.ttl#>.
+@prefix N: </public/gouvernance/groups/Ne_peut_pas_trouver_les_geoupes.ttl#>.
+
+fri:this ldp:inbox fr:.
+
+pro:card a n0:PersonalProfileDocument; n0:maker :me; n0:primaryTopic :me.
+
+:id1587748083850 a n:Home; n:value <mailto:test@solid.test>.
+
+:id1587748108886 a n:Dom; n:value <mailto:swing@pop.boo>.
+
+:id1587748123046 n:value <mailto:hello@me.cool>.
+
+:id1587748147974 a n:Dom; n:value <tel:0123456789>.
+
+:id1587748173361 a n:Home; n:value <tel:9876543210>.
+
+:id1587748195447
+    n:country-name "France";
+    n:locality "Lyon";
+    n:postal-code "12345";
+    n:region "Cool region";
+    n:street-address "00 my street".
+:id1587748237533
+    n:country-name "Somewhere";
+    n:locality "UnderTheSea";
+    n:postal-code "888888";
+    n:region "Sea Under";
+    n:street-address "123 another street".
+:me
+    a org:Group, n0:Group;
+    n:fn "Spoggy-Test";
+    n:hasAddress :id1587748195447, :id1587748237533;
+    n:hasEmail :id1587748083850, :id1587748108886, :id1587748123046;
+    n:hasPhoto <highres_274291645%5B1%5D.jpeg>;
+    n:hasTelephone :id1587748147974, :id1587748173361;
+    n:note
+        "This is a test account for building Solid Apps like https://scenaristeur.github.io/solid-vue-panes";
+    n:organization-name "Smag0";
+    n:role "Developpeur";
+    n1:trustedApp
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://127.0.0.1:8080>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://127.0.0.1:8081>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://localhost:3000>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://localhost:8080>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <http://localhost:9000>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://dokie.li>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://friend-requests-exploration.inrupt.app>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://otto-aa.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://scenaristeur.github.io>
+            ],
+            [
+                n1:mode n1:Append, n1:Control, n1:Read, n1:Write;
+                n1:origin <https://solid-demo.generativeobjects.com>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://itme.online>
+            ],
+            [
+                n1:mode n1:Append, n1:Read, n1:Write;
+                n1:origin <https://useconcept.art>
+            ];
+    ldp:inbox inbox:;
+    org:memberOf Les:we, Loc:we, N:we, New:we, Ne:we;
+    sp:preferencesFile </settings/prefs.ttl>;
+    sp:storage spo:;
+    solid:account spo:;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    n0:knows c3:me, c2:me, c:me, c0:me, c1:me, c4:me;
+    n0:name "Spoggy-Test";
+    n2:following fri:this.
+<#me#id1603012768106> solid:forClass flow:Tracker; solid:instance ind:this.
+
+<#me#id1603297464480> solid:forClass flow:Tracker; solid:instance in:this.
+
+
+<#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://solidcommunity.net/>. # Automatically added for Solid 0.9 compatibility

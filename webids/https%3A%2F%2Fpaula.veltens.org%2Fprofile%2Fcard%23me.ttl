@@ -1,0 +1,11 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+
+<https://paula.veltens.org/profile/card> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+<#me> a foaf:Person;
+    solid:oidcIssuer <https://paula.veltens.org/>;
+    solid:publicTypeIndex <https://paula.veltens.org/profile/publicTypeIndex.ttl>;
+    <http://www.w3.org/ns/pim/space#preferencesFile> <https://paula.veltens.org/Settings/Preferences.ttl>;
+    <http://www.w3.org/2006/vcard/ns#fn> "Paula".

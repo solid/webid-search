@@ -1,0 +1,146 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bio: <http://vocab.org/bio/0.1/> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sec: <https://w3id.org/security#> .
+
+<https://www.ivan-herman.net/foaf> a foaf:PersonalProfileDocument ;
+    dc:creator "Ivan Herman" ;
+    dc:date "2024-03-11"^^xsd:date ;
+    dc:title "Ivan Herman’s homepage" ;
+    foaf:primaryTopic <https://www.ivan-herman.net/foaf#me> ;
+    sec:proof <https://www.ivan-herman.net/foaf_proof.ttl#eddsa> ,
+              <https://www.ivan-herman.net/foaf_proof.ttl#ecdsa> ;
+    wot:assurance <https://www.ivan-herman.net/foaf.rdf.asc> .
+
+<https://www.ivan-herman.net/foaf#me> a dc:Agent,
+        schema:Person,
+        foaf:Person ;
+    schema:address [ a schema:Address ;
+            schema:addressLocality "Aix-en-Provence" ;
+            schema:url <http://dbpedia.org/resource/Aix-en-Provence> ;
+            rdfs:seeAlso <http://sws.geonames.org/3038354/> 
+        ] ;
+    schema:alumniOf <http://www.elte.hu/> ;
+    schema:birthDate "1955-02-24"^^xsd:date ;
+    schema:children <https://www.ivan-herman.net/David_Herman> ;
+    schema:familyName "Herman" ;
+    schema:gender "male" ;
+    schema:givenName "Ivan", "Iván"@hu ;
+    schema:image <https://www.ivan-herman.net/Images/me2014-small.jpg> ;
+    schema:jobTitle "Digital Publishing Activity Lead" ;
+    schema:name "Ivan Herman" ;
+    schema:nationality "French", "Hungarian" ;
+    schema:spouse <https://www.ivan-herman.net/Eva_Boka> ;
+    schema:url <https://www.ivan-herman.net> ;
+    schema:worksFor <http://www.w3.org/Data#W3C> ;
+    bio:event [ a bio:Birth ;
+                bio:date "1955-02-24"^^xsd:date ;
+                bio:place <http://dbpedia.org/resource/Budapest>
+            ] ;
+    bio:olb <https://www.ivan-herman.net/professional/CV.html> ;
+    rdfs:seeAlso <https://www.ivan-herman.net/AboutMe.html>,
+        <https://www.ivan-herman.net/Photos>,
+        <https://www.ivan-herman.net/professional/> ;
+    owl:sameAs <http://isni-url.oclc.nl/isni/0000000109243509>,
+        <http://viaf.org/viaf/91712206/>,
+        <http://www.ivan-herman.net/Ivan_Herman>,
+        <http://www.ivan-herman.net/foaf#me>,
+        <http://www.ivan-herman.net/me>,
+        <https://graph.facebook.com/555188827#>,
+        <https://orcid.org/0000-0003-0782-2704> ;
+    foaf:based_near [ a geo:Point ;
+            geo:lat "43.526299"^^xsd:float ;
+            geo:long "5.44543"^^xsd:float
+        ],
+        <https://en.wikipedia.org/wiki/Aix-en-Provence>,
+        <https://en.wikipedia.org/wiki/Marseille> ;
+    foaf:birthday "1955-02-24"^^xsd:date ;
+    foaf:gender "male" ;
+    foaf:givenname "Ivan", "Iván"@hu ;
+    foaf:holdsAccount 
+        <http://www.facebook.com/ivan.herman>,
+        <https://www.ivan-herman.net/foaf#me> ;
+    foaf:homepage 
+        <https://www.ivan-herman.net>,
+        <https://www.ivan-herman.net/professional>,
+        <https://www.w3.org/People/Ivan> ;
+    foaf:img <https://www.ivan-herman.net/Images/me2014-small.jpg> ;
+    foaf:interest 
+        <http://dbpedia.org/resource/Architecture>,
+        <http://dbpedia.org/resource/Art>,
+        <http://dbpedia.org/resource/Classical_music>,
+        <http://dbpedia.org/resource/Digital_publishing>,
+        <http://dbpedia.org/resource/History>,
+        <http://dbpedia.org/resource/Internationalization_and_localization>,
+        <http://dbpedia.org/resource/Literature>,
+        <http://dbpedia.org/resource/Photography>,
+        <http://dbpedia.org/resource/Politics>,
+        <http://dbpedia.org/resource/Scalable_Vector_Graphics>,
+        <https://dbpedia.org/page/Verifiable_credentials>,
+        <http://dbpedia.org/resource/Semantic_Web> ;
+    foaf:mbox_sha1sum 
+        "3c21b7ed00d78a35efcd8e567f8fd9cca71058c5",
+        "5ac8032d5f6012aa1775ea2f63e1676bafd5e80b",
+        "bbe548de18dbd6d31dc3a81001d549a03258c855",
+        "eccd01ba8ce2391a439e9b052a9fbf37eae9f732" ;
+    foaf:name "Ivan Herman", "Herman Iván"@hu ;
+    foaf:pastProject 
+        <http://db.cwi.nl/projecten/project.php4?prjnr=106>,
+        <http://db.cwi.nl/projecten/project.php4?prjnr=113>,
+        <http://db.cwi.nl/projecten/project.php4?prjnr=133>,
+        <http://www.iw3c2.org>,
+        <http://www.eg.org>,
+        <http://www.force1.org>,
+        <https://www.w3.org/2001/sw/#activity>,
+        <https://www.w3.org/Consortium/Offices> ;
+    foaf:publications 
+        <https://www.ivan-herman.net/professional/CV/W3CTalks.rdf>,
+        <https://www.ivan-herman.net/professional/publist> ;
+    foaf:schoolHomepage <http://www.elte.hu/>, <http://www.fazekas.hu/> ;
+    foaf:skypeID "ivan_herman" ;
+    foaf:surname "Herman" ;
+    foaf:title "Dr" ;
+    foaf:workInfoHomepage <https://www.w3.org/publishing/> ;
+    foaf:workplaceHomepage <https://www.w3.org> .
+
+<http://www.facebook.com/ivan.herman> a foaf:OnlineAccount ;
+    foaf:accountName "ivan.herman" ;
+    foaf:accountServiceHomepage <http://www.facebook.com> .
+
+<http://www.iw3c2.org> a schema:Organization ;
+    dc:title "International World Wide Web Conference Committee" .
+
+<http://www.linkedin.com/pub/dir/ivan/herman> a foaf:OnlineAccount ;
+    foaf:accountName "2352277" ;
+    foaf:accountServiceHomepage <http://www.linkedin.com/> .
+
+<http://www.w3.org/Data#W3C> dc:title "World Wide Web Consortium (W3C)" .
+
+<https://www.flickr.com/photos/ivan_herman/> a foaf:OnlineAccount ;
+    foaf:accountName "ivan_herman" ;
+    foaf:accountServiceHomepage <http://www.flickr.com/> .
+
+<https://www.force11.org> a schema:Organization .
+
+<https://www.ivan-herman.net/David_Herman> a schema:Person,
+        foaf:Person ;
+        foaf:name "David Herman" .
+
+<https://www.ivan-herman.net/Eva_Boka> a schema:Person,
+        foaf:Person ;
+        foaf:name "Éva Bóka" .
+
+<https://www.w3.org/2001/sw/#activity> rdfs:seeAlso <https://www.w3.org/2001/sw/Overview.rdf> .
+
+<https://www.w3.org/Consortium/Offices> dc:title "W3C Offices" .
+
+<http://www.elte.hu/> dc:title "Eötvös Loránd University of Budapest" .

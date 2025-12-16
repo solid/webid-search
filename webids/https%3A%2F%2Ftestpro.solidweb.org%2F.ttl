@@ -1,0 +1,230 @@
+@prefix : </#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix stat: <http://www.w3.org/ns/posix/stat#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix tes: <>.
+@prefix n0: </.well-known/>.
+@prefix bookm: </bookmarks/>.
+@prefix ch: </chats/>.
+@prefix cont: </contacts/>.
+@prefix eve: </events/>.
+@prefix inbox: </inbox/>.
+@prefix Ind: </IndividualChats/>.
+@prefix pod: </pod-chat.com/>.
+@prefix po: </popock/>.
+@prefix pr8: </pr8/>.
+@prefix priv: </private/>.
+@prefix pro: </profile/>.
+@prefix pub: </public/>.
+@prefix set: </settings/>.
+@prefix todos: </todos/>.
+@prefix tur: <http://www.w3.org/ns/iana/media-types/text/turtle#>.
+@prefix vnd: <http://www.w3.org/ns/iana/media-types/image/vnd.microsoft.icon#>.
+@prefix c: </profile/card#>.
+@prefix pl: <http://www.w3.org/ns/iana/media-types/text/plain#>.
+@prefix coo: </cookbook/>.
+@prefix m: </martin_beta/>.
+@prefix n: </name/>.
+@prefix sol: </solidcryptpad-data/>.
+@prefix so: </solidcryptpad/>.
+@prefix soli: </solidelight/>.
+@prefix t: </tasks/>.
+
+tes:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        space:Storage;
+    dct:modified
+    "2021-09-09T13:59:43Z"^^xsd:dateTime, "2025-03-06T05:52:37Z"^^xsd:dateTime;
+    ldp:contains
+        n0:, n0:, </0e88e7e0-ee02-11ea-83d5-694c10edacfe.ttl>,
+        </0e88e7e0-ee02-11ea-83d5-694c10edacfe.ttl>, bookm:, bookm:, ch:, ch:,
+        cont:, cont:, coo:, eve:, eve:, </favicon.ico>, </favicon.ico>, inbox:,
+        inbox:, Ind:, Ind:, m:, n:, pod:, pod:, po:, po:, pr8:, pr8:, priv:,
+        priv:, pro:, pro:, pub:, pub:, </robots.txt>, </robots.txt>, set:, set:,
+        sol:, so:, soli:, t:, </test.txt>, todos:, todos:;
+    stat:mtime 1631195983.012, 1741240357.565;
+    stat:size 4096, 4096 .
+n0:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:42Z"^^xsd:dateTime, "2023-12-05T11:34:40Z"^^xsd:dateTime;
+    stat:mtime 1631195982.528, 1701776080.402;
+    stat:size 4096, 4096 .
+</0e88e7e0-ee02-11ea-83d5-694c10edacfe.ttl>
+    a tur:Resource, tur:Resource, ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-10-17T23:05:59Z"^^xsd:dateTime, "2025-09-28T18:02:14Z"^^xsd:dateTime;
+    stat:mtime 1634511959.501, 1759082534.481;
+    stat:size 2511, 5831 .
+bookm:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:42Z"^^xsd:dateTime, "2021-09-09T13:59:42Z"^^xsd:dateTime;
+    stat:mtime 1631195982.528, 1631195982.528;
+    stat:size 4096, 4096 .
+ch:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:42Z"^^xsd:dateTime, "2022-01-24T08:13:03Z"^^xsd:dateTime;
+    stat:mtime 1631195982.528, 1643011983.964;
+    stat:size 4096, 4096 .
+cont:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:43Z"^^xsd:dateTime, "2023-01-15T18:27:18Z"^^xsd:dateTime;
+    stat:mtime 1631195983.012, 1673807238.38;
+    stat:size 4096, 4096 .
+coo:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2024-10-27T08:27:04Z"^^xsd:dateTime;
+    stat:mtime 1730017624.706;
+    stat:size 4096 .
+eve:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:42Z"^^xsd:dateTime, "2021-09-09T13:59:42Z"^^xsd:dateTime;
+    stat:mtime 1631195982.528, 1631195982.528;
+    stat:size 4096, 4096 .
+</favicon.ico>
+    a vnd:Resource, vnd:Resource, ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:42Z"^^xsd:dateTime, "2021-09-09T13:59:42Z"^^xsd:dateTime;
+    stat:mtime 1631195982.528, 1631195982.528;
+    stat:size 4286, 4286 .
+inbox:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:43Z"^^xsd:dateTime, "2024-07-20T21:56:52Z"^^xsd:dateTime;
+    stat:mtime 1631195983.011, 1721512612.112;
+    stat:size 4096, 4096 .
+Ind:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:43Z"^^xsd:dateTime, "2021-09-09T13:59:43Z"^^xsd:dateTime;
+    stat:mtime 1631195983.011, 1631195983.011;
+    stat:size 4096, 4096 .
+m:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2023-12-05T11:34:33Z"^^xsd:dateTime;
+    stat:mtime 1701776073.138;
+    stat:size 4096 .
+n:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2025-03-06T05:52:46Z"^^xsd:dateTime;
+    stat:mtime 1741240366.682;
+    stat:size 4096 .
+pod:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:42Z"^^xsd:dateTime, "2023-03-08T16:20:03Z"^^xsd:dateTime;
+    stat:mtime 1631195982.53, 1678292403.904;
+    stat:size 4096, 4096 .
+po:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:42Z"^^xsd:dateTime, "2021-09-09T13:59:42Z"^^xsd:dateTime;
+    stat:mtime 1631195982.528, 1631195982.528;
+    stat:size 4096, 4096 .
+pr8:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:42Z"^^xsd:dateTime, "2021-09-09T13:59:42Z"^^xsd:dateTime;
+    stat:mtime 1631195982.528, 1631195982.528;
+    stat:size 4096, 4096 .
+priv:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:42Z"^^xsd:dateTime, "2025-10-15T10:23:37Z"^^xsd:dateTime;
+    stat:mtime 1631195982.53, 1760523817.833;
+    stat:size 4096, 4096 .
+pro:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:43Z"^^xsd:dateTime, "2024-02-20T16:09:19Z"^^xsd:dateTime;
+    stat:mtime 1631195983.013, 1708445359.426;
+    stat:size 4096, 4096 .
+c:me solid:account tes: .
+
+pub:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:43Z"^^xsd:dateTime, "2024-10-19T22:52:35Z"^^xsd:dateTime;
+    stat:mtime 1631195983.007, 1729378355.163;
+    stat:size 4096, 4096 .
+</robots.txt>
+    a pl:Resource, pl:Resource, ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:42Z"^^xsd:dateTime, "2021-09-09T13:59:42Z"^^xsd:dateTime;
+    stat:mtime 1631195982.528, 1631195982.528;
+    stat:size 83, 83 .
+set:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:42Z"^^xsd:dateTime, "2024-02-20T16:09:19Z"^^xsd:dateTime;
+    stat:mtime 1631195982.528, 1708445359.986;
+    stat:size 4096, 4096 .
+sol:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2022-11-13T12:23:31Z"^^xsd:dateTime;
+    stat:mtime 1668342211.389;
+    stat:size 4096 .
+so:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2022-11-13T12:17:42Z"^^xsd:dateTime;
+    stat:mtime 1668341862.307;
+    stat:size 4096 .
+soli:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2022-04-11T18:45:41Z"^^xsd:dateTime;
+    stat:mtime 1649702741.78;
+    stat:size 4096 .
+t:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2025-03-08T17:27:36Z"^^xsd:dateTime;
+    stat:mtime 1741454856.72;
+    stat:size 4096 .
+</test.txt>
+    a pl:Resource, ldp:Resource;
+    dct:modified "2024-04-09T00:25:40Z"^^xsd:dateTime;
+    stat:mtime 1712622340.65;
+    stat:size 25 .
+todos:
+    a
+        ldp:BasicContainer, ldp:BasicContainer, ldp:Container, ldp:Container,
+        ldp:Resource, ldp:Resource;
+    dct:modified
+    "2021-09-09T13:59:42Z"^^xsd:dateTime, "2024-04-08T23:59:54Z"^^xsd:dateTime;
+    stat:mtime 1631195982.528, 1712620794.382;
+    stat:size 4096, 4096 .

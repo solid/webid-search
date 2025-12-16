@@ -1,0 +1,68 @@
+@prefix : <#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix sioc: <http://rdfs.org/sioc/ns#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix pro: <./>.
+@prefix inbox: </inbox/>.
+@prefix pod: </>.
+@prefix www: <https://www.pod-chat.com/>.
+
+pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+
+:me
+    a schema:Person, foaf:Person;
+    vcard:hasPhoto <logo-300x300.png>;
+    vcard:organization-name "POD-CHAT.COM";
+    acl:trustedApp
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://api.liqid.chat>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://mysilio.garden>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://oxfordhcc.github.io>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://pod-chat.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://pod.ideniox.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://podbrowser.inrupt.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://store.solid-wm.discover.ilabt.imec.be>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://whyineedtofillusername.github.io>
+            ];
+    ldp:inbox inbox:;
+    space:preferencesFile </settings/prefs.ttl>;
+    space:storage pod:;
+    solid:account pod:;
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    foaf:name "PodChat".
+www:RSAPublicKey
+    sioc:content_encoded
+        "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAouc2en41PZuYE0NMZ4iDFUEVj2RFQfFvtDZ0nqe9793Ui9QJyCK5+bWro9E91aGjGLWv7iBqalUYIUOPxzIq+mdRVKMzal70bPgu6RCUCMkSjMEZyq8p8HCoZL3+7W/qRqQIH240BBSS4aJptLeersYE5/4P25eKAN3cwYTnTsiqqhDPPuLLGlDsmN3JXENMHd9SERLtNefxMRc8KGrJPqNBrV690mcDX6XkgblZogPdho66BgVJNORgQ4teS6BtNdULfvUGMgcXNZZkX0tZZXfyZHrvfyLq8XIC4+ys0J6e2wxPWO3KhFfquCMKLMPH13DhTEaVQnzvq6QTuuN0KWvG3/41b8t328xWRvoCU8javt1F7DybLptwgyFsV2VDIejYt98F02t+MqIdrWcmgsPEkpA8nJEhXwgwE+B93KcRyQWGe91fJBT92FNcD2iaErI2n/2lEMrUHIqCnD+2lIldahrYR1Mv+79GLJ6aEhbvnVzkv6krU1Fv/jNszZLgH2Nlr+TNOxaQuoQYjmIBHvTxdLRV+L/YjxYdqaFrBuDxog6L4g7XczJ/0aa2765OOXFX5R6/oBb7wTgpFEiCZ+WdLrmWU3LPlFtkV1BymbU+8lDgR9xsLZUcJrsrocrb5NXuQHGc9e8N25yayd4T9VN7RvfPmJhG7fkLgqagZlUCAwEAAQ==".

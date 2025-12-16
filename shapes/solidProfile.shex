@@ -14,7 +14,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
   
   # Name predicates
   foaf:name xsd:string? ;
-  vcard:fn xsd:string? ;
   schema:name xsd:string? ;
   
   # Social connections - the main predicate we follow
@@ -23,16 +22,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
   # Solid-specific predicates that indicate a valid WebID
   solid:oidcIssuer IRI? ;
   pim:storage IRI? ;
-  
-  # Additional Solid predicates
-  solid:publicTypeIndex IRI? ;
-  solid:privateTypeIndex IRI? ;
-  solid:inbox IRI? ;
-  solid:preferencesFile IRI? ;
-  
+
   # Additional profile info
   foaf:img IRI? ;
-  foaf:depiction IRI? ;
-  foaf:homepage IRI? ;
-  foaf:mbox IRI? ;
 }

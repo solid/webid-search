@@ -1,0 +1,53 @@
+@prefix : <https://aharth.solidcommunity.net/profile/card#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix schema: <http://schema.org/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix pro: <https://aharth.solidcommunity.net/profile/>.
+@prefix inbox: <https://aharth.solidcommunity.net/inbox/>.
+@prefix n1: <https://aharth.solidcommunity.net/>.
+@prefix fo: <http://harth.org/andreas/foaf#>.
+@prefix c: <https://aharth.inrupt.net/profile/card#>.
+@prefix c5: <https://brennanr.solidcommunity.net/profile/card#>.
+@prefix c6: <https://camelialemnaru.solidcommunity.net/profile/card#>.
+@prefix c7: <https://chayaliebeskind.inrupt.net/profile/card#>.
+@prefix c8: <https://kaefer3000.solidcommunity.net/profile/card#>.
+@prefix c9: <https://manuelnoguera.inrupt.net/profile/card#>.
+@prefix c10: <https://micsik.inrupt.net/profile/card#>.
+@prefix c11: <https://mlefranc.solidcommunity.net/profile/card#>.
+@prefix c12: <https://ngarcia.solidcommunity.net/profile/card#>.
+@prefix orc: <https://orcid.org/>.
+@prefix c13: <https://skirrane.solidcommunity.net/profile/card#>.
+@prefix c14: <https://sunwalker.solidcommunity.net/profile/card#>.
+@prefix c15: <https://tkuhn.solidcommunity.net/profile/card#>.
+@prefix pmx: <http://purl.org/pmx#>.
+
+pro:card a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    pmx:config <https://aharth.solidcommunity.net/profile/config.ttl>;
+    foaf:primaryTopic <#me>.
+<#me> a schema:Person, foaf:Person;
+    vcard:fn "Andreas Harth";
+    solid:oidcIssuer <https://solidcommunity.net/>;
+    foaf:account _:n3-834;
+    ldp:inbox <https://aharth.solidcommunity.net/inbox/>;
+    space:preferencesFile <https://aharth.solidcommunity.net/settings/prefs.ttl>;
+    space:storage <https://aharth.solidcommunity.net/>;
+    solid:account <https://aharth.solidcommunity.net/>;
+    solid:privateTypeIndex <https://aharth.solidcommunity.net/settings/privateTypeIndex.ttl>;
+    solid:publicTypeIndex <https://aharth.solidcommunity.net/settings/publicTypeIndex.ttl>;
+    foaf:name "Andreas Harth";
+    pmx:cupa <https://cupa.solidweb.org/profile/card#me> ;
+    vcard:hasPhoto <https://aharth.solidcommunity.net/profile/Image_1758320685181.png>.
+_:n3-834 solid:oidcIssuer <https://solidcommunity.net/>;
+    foaf:accountName "aharth".
+<#dkg> a vcard:Group;
+    vcard:fn "Members of the EU COST Action Distributed Knowledge Graphs";
+    vcard:hasMember <#me>, fo:ah, c:me, c5:me, c6:me, c7:me, c8:me, c9:me, c10:me, c11:me, c12:me, orc:0000-0003-0503-6451, c13:me, c14:me, c15:me, _:b5658_b7278_b7276_b7273_b7271_b7269_b7267_b7265_n3-3123, _:b5658_b7278_b7276_b7273_b7271_b7269_b7267_b7265_n3-3124.
+_:b5658_b7278_b7276_b7273_b7271_b7269_b7267_b7265_n3-3123 foaf:page orc:0000-0003-0503-6451.
+_:b5658_b7278_b7276_b7273_b7271_b7269_b7267_b7265_n3-3124 foaf:username "mhamdaqa".
+<#id1538399933169> a vcard:Pref;
+    vcard:value <mailto:andreas@harth.org>.
