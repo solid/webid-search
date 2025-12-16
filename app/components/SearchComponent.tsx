@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 
 interface WebIDResult {
@@ -15,17 +16,21 @@ interface SearchResults {
   results: WebIDResult[];
 }
 
-export default function SearchComponent() {
-  const [query, setQuery] = useState('');
+interface SearchComponentProps {
+  initialQuery?: string;
+}
+
+export default function SearchComponent({ initialQuery = '' }: SearchComponentProps) {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const [query, setQuery] = useState(initialQuery);
   const [results, setResults] = useState<SearchResults | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const handleSearch = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!query.trim()) {
-      setError('Please enter a search query');
+  const performSearch = useCallback(async (searchQuery: string) => {
+    if (!searchQuery.trim()) {
+      setResults(null);
       return;
     }
 
@@ -33,7 +38,7 @@ export default function SearchComponent() {
     setError(null);
 
     try {
-      const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+      const response = await fetch(`/api/search?q=${encodeURIComponent(searchQuery)}`);
       const data = await response.json();
 
       if (!response.ok) {
@@ -47,6 +52,35 @@ export default function SearchComponent() {
     } finally {
       setLoading(false);
     }
+  }, []);
+
+  // Perform search on initial load if there's a query parameter
+  useEffect(() => {
+    const q = searchParams.get('q');
+    if (q) {
+      setQuery(q);
+      performSearch(q);
+    }
+  }, [searchParams, performSearch]);
+
+  const handleSearch = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!query.trim()) {
+      setError('Please enter a search query');
+      // Clear the URL parameter if query is empty
+      router.push('/');
+      return;
+    }
+
+    // Update URL with query parameter
+    router.push(`/?q=${encodeURIComponent(query)}`);
+    
+    await performSearch(query);
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setQuery(e.target.value);
   };
 
   return (
@@ -65,7 +99,7 @@ export default function SearchComponent() {
           <input
             type="text"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={handleInputChange}
             placeholder="Enter search query..."
             className="flex-1 px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white"
           />
