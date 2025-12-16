@@ -4,11 +4,23 @@ import fs from 'fs/promises';
 
 const MAX_CONCURRENT_REQUESTS = 100;
 
-const queue: { url: string, depth: number }[] = (await fs.readdir('webids/'))
+// Parse CLI arguments for additional seed URLs
+const cliSeeds = process.argv.slice(2).map((url) => ({ url, depth: 0 }));
+
+const existingSeeds: { url: string, depth: number }[] = (await fs.readdir('webids/'))
   .filter((file) => file.endsWith('.ttl'))
   .map((file) => ({ url: decodeURIComponent(file.slice(0, -4)), depth: 0 }));
 
-const visited = new Set<string>(queue.map(item => item.url));
+// Combine existing seeds with CLI seeds, avoiding duplicates
+const visited = new Set<string>(existingSeeds.map(item => item.url));
+const queue: { url: string, depth: number }[] = [...existingSeeds];
+
+for (const seed of cliSeeds) {
+  if (!visited.has(seed.url)) {
+    visited.add(seed.url);
+    queue.push(seed);
+  }
+}
 let count = 0;
 
 async function handleWebID(webID: { url: string, depth: number }): Promise<void> {
@@ -32,7 +44,9 @@ async function handleWebID(webID: { url: string, depth: number }): Promise<void>
       .usingType(SolidProfileShapeType)
       .fromSubject(webID.url);
 
-    if (webIDInfo.oidcIssuer) {
+    const oidcIssuers = [...(webIDInfo.oidcIssuer || [])];
+    const hasOidcIssuer = oidcIssuers.length > 0;
+    if (hasOidcIssuer) {
       console.log(`Discovered WebID: ${webID.url}`);
       count++;
       await fs.writeFile(`webids/${encodeURIComponent(webID.url)}.ttl`, ttl).catch(() => {});
@@ -42,9 +56,10 @@ async function handleWebID(webID: { url: string, depth: number }): Promise<void>
 
     if (webID.depth < 3) {
       for (const friend of webIDInfo.knows || []) {
-        if (!visited.has(friend)) {
-          visited.add(friend);
-          queue.push({ url: friend, depth: webIDInfo.oidcIssuer ? 0 : webID.depth + 1 });
+        const friendUrl = friend['@id'];
+        if (!visited.has(friendUrl)) {
+          visited.add(friendUrl);
+          queue.push({ url: friendUrl, depth: hasOidcIssuer ? 0 : webID.depth + 1 });
         }
       }
     }
@@ -68,7 +83,10 @@ function processQueue(): void {
 
 processQueue();
 
-console.log('Crawling started. Press Ctrl+C to stop.');
+if (cliSeeds.length > 0) {
+  console.log(`Added ${cliSeeds.length} seed(s) from CLI arguments.`);
+}
+console.log(`Crawling started with ${queue.length} initial seed(s). Press Ctrl+C to stop.`);
 
 process.on('exit', () => {
   console.log(`Crawled ${count} WebIDs.`);

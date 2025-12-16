@@ -13,16 +13,16 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
   rdf:type [foaf:Person foaf:Agent schema:Person]* ;
   
   # Name predicates
-  foaf:name xsd:string? ;
-  schema:name xsd:string? ;
+  foaf:name xsd:string* ;
+  schema:name xsd:string* ;
   
   # Social connections - the main predicate we follow
   foaf:knows IRI* ;
   
   # Solid-specific predicates that indicate a valid WebID
-  solid:oidcIssuer IRI? ;
-  pim:storage IRI? ;
+  solid:oidcIssuer IRI* ;
+  pim:storage IRI* ;
 
   # Additional profile info
-  foaf:img IRI? ;
+  foaf:img IRI* ;
 }
