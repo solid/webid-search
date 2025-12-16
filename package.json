@@ -5,11 +5,14 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build:tsc": "tsc",
     "build:ldo": "ldo build --input ./shapes --output ./src/ldo",
-    "start": "node dist/index.js",
-    "dev": "tsx src/index.ts",
-    "crawl": "tsx src/crawler.ts"
+    "crawl": "tsx src/crawler.ts",
+    "build:data": "tsx src/prepareData.ts",
+    "build:next": "next build",
+    "build": "npm run build:ldo && npm run build:tsc && npm run build:data && npm run build:next",
+    "dev": "next dev",
+    "start": "next start"
   },
   "keywords": [
     "solid",
@@ -21,11 +24,22 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@ldo/ldo": "^1.0.0-alpha.32"
+    "@jeswr/pretty-turtle": "^1.8.2",
+    "@ldo/ldo": "^1.0.0-alpha.32",
+    "jsonld": "^9.0.0",
+    "next": "16.0.10",
+    "react": "19.2.1",
+    "react-dom": "19.2.1"
   },
   "devDependencies": {
     "@ldo/cli": "^1.0.0-alpha.32",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20.10.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.10",
+    "tailwindcss": "^4",
     "tsx": "^4.6.2",
     "typescript": "^5.3.2"
   }

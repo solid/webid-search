@@ -1,35 +1,27 @@
 import { NextRequest, NextResponse } from 'next/server';
+import profilesData from '@/public/profiles.json';
 
-export const runtime = 'edge';
+interface ProfileNode {
+  '@id': string;
+  'foaf:name'?: string | string[];
+  'schema:name'?: string | string[];
+  'foaf:img'?: string;
+  'solid:oidcIssuer'?: string | string[];
+  'pim:storage'?: string | string[];
+}
 
-// Mock WebID data - in a real application, this would be fetched from a database or external source
-const webIDs = [
-  {
-    webid: 'https://example.com/alice',
-    name: 'Alice Johnson',
-    content: 'Software engineer passionate about web technologies and semantic web'
-  },
-  {
-    webid: 'https://example.com/bob',
-    name: 'Bob Smith',
-    content: 'Data scientist working on machine learning and AI projects'
-  },
-  {
-    webid: 'https://example.com/charlie',
-    name: 'Charlie Brown',
-    content: 'Web developer specializing in React and TypeScript'
-  },
-  {
-    webid: 'https://example.com/diana',
-    name: 'Diana Prince',
-    content: 'Full stack developer with expertise in Next.js and semantic web'
-  },
-  {
-    webid: 'https://example.com/eve',
-    name: 'Eve Martinez',
-    content: 'Frontend developer focused on user experience and accessibility'
-  }
-];
+const profiles: ProfileNode[] = (profilesData as { '@graph': ProfileNode[] })['@graph'];
+
+// Helper to normalize name field (can be string or array)
+function getName(value: string | string[] | undefined): string {
+  if (!value) return '';
+  return Array.isArray(value) ? value[0] : value;
+}
+
+function getNameForSearch(value: string | string[] | undefined): string {
+  if (!value) return '';
+  return Array.isArray(value) ? value.join(' ') : value;
+}
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
@@ -41,12 +33,20 @@ export async function GET(request: NextRequest) {
 
   const searchTerm = query.toLowerCase();
 
-  // Search by name (foaf:name) or content
-  const results = webIDs.filter(webid => {
-    const nameMatch = webid.name.toLowerCase().includes(searchTerm);
-    const contentMatch = webid.content.toLowerCase().includes(searchTerm);
-    return nameMatch || contentMatch;
-  });
+  // Search by name (foaf:name or schema:name) or WebID
+  const results = profiles
+    .filter(profile => {
+      const name = getNameForSearch(profile['foaf:name']) || getNameForSearch(profile['schema:name']);
+      const webid = profile['@id'] || '';
+      const nameMatch = name.toLowerCase().includes(searchTerm);
+      const webidMatch = webid.toLowerCase().includes(searchTerm);
+      return nameMatch || webidMatch;
+    })
+    .map(profile => ({
+      webid: profile['@id'],
+      name: getName(profile['foaf:name']) || getName(profile['schema:name']) || 'Unknown',
+      img: profile['foaf:img'] || null
+    }));
 
   return NextResponse.json({
     query,

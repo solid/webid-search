@@ -1,0 +1,282 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix solid: <http://www.w3.org/ns/solid/terms#> .
+@prefix pim: <http://www.w3.org/ns/pim/space#> .
+
+<http://dbpedia.org/resource/James_Hendler> foaf:name "James Alexander Hendler" .
+
+<http://dbpedia.org/resource/Luc_Moreau> foaf:name "Luc Moreau" .
+
+<http://dbpedia.org/resource/Michael_Genesereth> foaf:name "Michael Genesereth" .
+
+<http://harth.org/andreas/foaf#ah> foaf:name "Andreas Harth" ;
+  solid:oidcIssuer <https://solid.iis.fraunhofer.de/> .
+
+<http://harth.org/andreas/foaf#rene> foaf:name "Rene Schubotz" .
+
+<http://harth.org/andreas/foaf#tim> foaf:name "Tim Clark" .
+
+<http://harth.org/andreas/foaf#tony> foaf:name "Tony Shaw" .
+
+<https://adrianperezmanso.solidcommunity.net/profile/card#me> foaf:name "Adrián" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://adrianperezmanso.solidcommunity.net/> .
+
+<https://aharth.solidcommunity.net/profile/card#me> foaf:name "Andreas Harth" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://aharth.solidcommunity.net/> .
+
+<https://alejandroj.solidcommunity.net/profile/card#me> foaf:name "Alejandro" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://alejandroj.solidcommunity.net/> .
+
+<https://angelo.veltens.org/profile/card#me> foaf:name "Angelo Veltens" ;
+  solid:oidcIssuer <https://angelo.veltens.org/> ;
+  pim:storage <https://angelo.veltens.org/>, <https://angelo.veltens.org/private/>, <https://angelo.veltens.org/public/>, <https://solidweb.me/aveltens/> ;
+  foaf:img <https://angelo.veltens.org/profile/me.jpg> .
+
+<https://arthurlogilab.solidcommunity.net/profile/card#me> solid:oidcIssuer <https://solidcommunity.net/> .
+
+<https://arthurlogilab.solidweb.org/profile/card#me> foaf:name "Arthur Lutz (Logilab)" ;
+  solid:oidcIssuer <https://https://solidweb.org> ;
+  pim:storage <https://arthurlogilab.solidweb.org/> .
+
+<https://benoitferchaud.solidcommunity.net/profile/card#me> foaf:name "Benoît Ferchaud" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://benoitferchaud.solidcommunity.net/> .
+
+<https://bourgeoa.solidcommunity.net/profile/card#me> foaf:name "Alain Bourgeois" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://bourgeoa.solidcommunity.net/> .
+
+<https://bourgeoa1.solidcommunity.net/profile/card#me> foaf:name "bourgeoa1" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://bourgeoa1.solidcommunity.net/> .
+
+<https://carloss.solidcommunity.net/profile/card#me> foaf:name "carloss" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://carloss.solidcommunity.net/> .
+
+<https://cdr.solidcommunity.net/profile/card#me> foaf:name "Château des Robots" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://cdr.solidcommunity.net/> .
+
+<https://chunt.solidcommunity.net/profile/card#me> foaf:name "Chase" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://chunt.solidcommunity.net/> .
+
+<https://ciaoquentin.solidweb.org/profile/card#me> foaf:name "Quentin" ;
+  solid:oidcIssuer <https://solidweb.org> ;
+  pim:storage <https://ciaoquentin.solidweb.org/> .
+
+<https://data.knows.idlab.ugent.be/person/SindhuVasireddy/#me> solid:oidcIssuer <https://svasired.pod.knows.idlab.ugent.be/> ;
+  foaf:img <https://data.knows.idlab.ugent.be/person/SindhuVasireddy/sv.jpg> .
+
+<https://dewomser.solidcommunity.net/profile/card#me> foaf:name "Stefan Höhn" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://dewomser.solidcommunity.net/> .
+
+<https://doctorbud.solidcommunity.net/profile/card#me> foaf:name "Daniel Keith" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://doctorbud.solidcommunity.net/> .
+
+<https://ejbyne.solidcommunity.net/profile/card#me> foaf:name "Edward Byne" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://ejbyne.solidcommunity.net/> .
+
+<https://ericp.solidcommunity.net/profile/card#me> foaf:name "Eric Prud'hommeaux" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://ericp.solidcommunity.net/> .
+
+<https://ewingson.solidcommunity.net/profile/card#me> foaf:name "Matthias Evering" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://ewingson.solidcommunity.net/> .
+
+<https://gaia.solidcommunity.net/profile/card#me> foaf:name "Gaia" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://gaia.solidcommunity.net/> .
+
+<https://holacratie.solidcommunity.net/profile/card#me> foaf:name "Holacratie" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://holacratie.solidcommunity.net/> .
+
+<https://jackson.solidcommunity.net/profile/card#me> foaf:name "Jackson" ;
+  solid:oidcIssuer <https://solidcommunity.net/>, <http://localhost:3000/> ;
+  pim:storage <https://jackson.solidcommunity.net/> .
+
+<https://jacobdaniel.solidcommunity.net/profile/card#me> foaf:name "Jacob" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://jacobdaniel.solidcommunity.net/> .
+
+<https://jeff-zucker.solidcommunity.net/profile/card#me> foaf:name "Jeff Zucker" ;
+  solid:oidcIssuer <https://solidcommunity.net/>, <http://localhost:3000/> ;
+  pim:storage <http://localhost:3101/>, <https://jeff-zucker.solidcommunity.net:8443/>, <https://jeff-zucker.solidcommunity.net/>, <https://jeffzucker.inrupt.net/>, <https://solidproject.solidcommunity.net/> .
+
+<https://jeswr.solidcommunity.net/profile/card#me> foaf:name "Jesse Wright" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://jeswr.solidcommunity.net/> .
+
+<https://jollyorc.solidcommunity.net/profile/card#me> foaf:name "Christian Buggedei" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://jollyorc.solidcommunity.net/> .
+
+<https://kidehen2.solid.openlinksw.com:8444/profile/card#me> foaf:name "Kingsley Idehen (kidehen2-844 solid grounded)" ;
+  solid:oidcIssuer <https://solid.openlinksw.com:8444> ;
+  pim:storage <https://kidehen2.solid.openlinksw.com:8444/> .
+
+<https://kidehen3.solid.openlinksw.com:8444/profile/card#me> foaf:name "Kingsley Idehen" ;
+  solid:oidcIssuer <https://solid.openlinksw.com:8444> ;
+  pim:storage <https://kidehen3.solid.openlinksw.com:8444/> .
+
+<https://melvin.solidcommunity.net/profile/card#me> foaf:name "Melvin Carvalho" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://melvin.solidcommunity.net/> .
+
+<https://michielbdejong.solidcommunity.net/profile/card#me> foaf:name "Michiel B. de Jong bla" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://michielbdejong.solidcommunity.net/> .
+
+<https://morettian.solidcommunity.net/profile/card#me> foaf:name "Giulio" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://morettian.solidcommunity.net/> .
+
+<https://nada.solidcommunity.net/profile/card#me> foaf:name "Nada" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://nada.solidcommunity.net/> .
+
+<https://noeldemartin.solidcommunity.net/profile/card#me> foaf:name "Noel De Martin" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://noeldemartin.solidcommunity.net/> .
+
+<https://paula.veltens.org/profile/card#me> solid:oidcIssuer <https://paula.veltens.org/> .
+
+<https://pduchesne.solidcommunity.net/profile/card#me> foaf:name "Philippe Duchesne" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://pduchesne.solidcommunity.net/> .
+
+<https://pieterheyvaert.com/#me> foaf:name "Pieter Heyvaert" ;
+  solid:oidcIssuer <https://pheyvaer.pod.knows.idlab.ugent.be/> ;
+  foaf:img <https://pieterheyvaert.com/img/profile.jpg> .
+
+<https://pod-chat.solidcommunity.net/profile/card#me> foaf:name "PodChat" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://pod-chat.solidcommunity.net/> .
+
+<https://role.solidcommunity.net/profile/card#me> foaf:name "Role" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://role.solidcommunity.net/> .
+
+<https://ruben.verborgh.org/profile/#me> foaf:name "Ruben Verborgh" ;
+  solid:oidcIssuer <https://drive.verborgh.org/> ;
+  pim:storage <https://drive.verborgh.org/> ;
+  foaf:img <https://ruben.verborgh.org/images/ruben.jpg> .
+
+<https://schabot.solidcommunity.net/profile/card#me> foaf:name "Simon Chabot" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://schabot.solidcommunity.net/> .
+
+<https://semweb.solidcommunity.net/profile/card#me> foaf:name "SemWeb" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://semweb.solidcommunity.net/> .
+
+<https://smag0.solidcommunity.net/profile/card#me> foaf:name "smag0" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://smag0.solidcommunity.net/> .
+
+<https://solidos.solidcommunity.net/profile/card#me> foaf:name "Solid Open Source Operating System" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://solidos.solidcommunity.net/> .
+
+<https://solidproject.solidcommunity.net/profile/card#me> foaf:name "Tim" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://solidproject.solidcommunity.net/> .
+
+<https://spoggy-test.solidcommunity.net/profile/card#me> foaf:name "Spoggy-Test" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://spoggy-test.solidcommunity.net/> .
+
+<https://spoggy-test.solidweb.org/profile/card#me> foaf:name "Spoggy-Test" ;
+  solid:oidcIssuer <https://https://solidweb.org> ;
+  pim:storage <https://spoggy-test.solidweb.org/> .
+
+<https://spoggy-test2.solidcommunity.net/profile/card#me> foaf:name "Spoggy-Test2" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://spoggy-test2.solidcommunity.net/> .
+
+<https://spoggy-test3.solidcommunity.net/profile/card#me> foaf:name "Spoggy-Test3" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://spoggy-test3.solidcommunity.net/> .
+
+<https://spoggy-test4.solidcommunity.net/profile/card#me> foaf:name "Spoggy-Test4" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://spoggy-test4.solidcommunity.net/> .
+
+<https://spoggy-test5.solidcommunity.net/profile/card#me> foaf:name "spoggy-test5" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://spoggy-test5.solidcommunity.net/> .
+
+<https://spoggy-test6.solidcommunity.net/profile/card#me> foaf:name "spoggy-test6" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://spoggy-test6.solidcommunity.net/> .
+
+<https://spoggy-test7.solidcommunity.net/profile/card#me> foaf:name "spoggy-test7" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://spoggy-test7.solidcommunity.net/> .
+
+<https://spoggy-test8.solidcommunity.net/profile/card#me> foaf:name "spoggy-test8" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://spoggy-test8.solidcommunity.net/> .
+
+<https://spoggy-test9.solidcommunity.net/profile/card#me> foaf:name "spoggy-test9" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://spoggy-test9.solidcommunity.net/> .
+
+<https://spoggy.solidcommunity.net/profile/card#me> foaf:name "Spoggy" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://spoggy.solidcommunity.net/> .
+
+<https://spoggy.solidweb.org/profile/card#me> foaf:name "Spoggy" ;
+  solid:oidcIssuer <https://https://solidweb.org> ;
+  pim:storage <https://spoggy.solidweb.org/> .
+
+<https://srs.solidcommunity.net/profile/card#me> foaf:name "Stefan Rother-Stuebs" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://srs.solidcommunity.net/> .
+
+<https://tension.solidcommunity.net/profile/card#me> foaf:name "Tension" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://tension.solidcommunity.net/> .
+
+<https://teodora.solidcommunity.net/profile/card#me> foaf:name "Teodora Petkova" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://teodora.solidcommunity.net/> .
+
+<https://testingsolidos.solidcommunity.net/profile/card#me> foaf:name "Testing SolidOS" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://testingsolidos.solidcommunity.net/> .
+
+<https://timbl.solidcommunity.net/profile/card#me> foaf:name "Tim Berners-Lee (solidcommunity.net)" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://timbl.solidcommunity.net/> .
+
+<https://timea.solidcommunity.net/profile/card#me> foaf:name "Timea Turdean" ;
+  solid:oidcIssuer <https://solidcommunity.net/>, <https://teamid.live/> ;
+  pim:storage <https://timea.solidcommunity.net/> .
+
+<https://touchepasamapizza.solidcommunity.net/profile/card#me> foaf:name "touchepasamapizza" ;
+  solid:oidcIssuer <https://solidcommunity.net/> ;
+  pim:storage <https://touchepasamapizza.solidcommunity.net/> .
+
+<https://uvdsl.solid.aifb.kit.edu/profile/card#me> foaf:name "Christoph Braun" ;
+  solid:oidcIssuer <https://solid.aifb.kit.edu/> ;
+  pim:storage <https://uvdsl.solid.aifb.kit.edu/> .
+
+<https://www.ivan-herman.net/foaf#me> foaf:name "Ivan Herman", "Herman Iván" ;
+  foaf:img <https://www.ivan-herman.net/Images/me2014-small.jpg> .
+
+<https://www.thundr.be/profile/laurens.ttl#me> foaf:name "Laurens Debackere" ;
+  foaf:img <https://www.thundr.be/img/laurens.jpg> .
+
+<https://www.w3.org/People/Berners-Lee/card#i> foaf:name "Timothy Berners-Lee" ;
+  solid:oidcIssuer <https://timbl.com> ;
+  pim:storage <https://timbl.com/timbl/Public/>, <https://timbl.inrupt.net/>, <https://timbl.solid.community/> ;
+  foaf:img <https://www.w3.org/Press/Stock/Berners-Lee/2001-europaeum-eighth.jpg> .

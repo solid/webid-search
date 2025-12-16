@@ -1,0 +1,489 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "solid": "http://www.w3.org/ns/solid/terms#",
+    "pim": "http://www.w3.org/ns/pim/space#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "foaf:name": {
+      "@id": "http://xmlns.com/foaf/0.1/name",
+      "@type": "xsd:string"
+    },
+    "schema:name": {
+      "@id": "https://schema.org/name",
+      "@type": "xsd:string"
+    },
+    "foaf:knows": {
+      "@id": "http://xmlns.com/foaf/0.1/knows",
+      "@type": "@id"
+    },
+    "solid:oidcIssuer": {
+      "@id": "http://www.w3.org/ns/solid/terms#oidcIssuer",
+      "@type": "@id"
+    },
+    "pim:storage": {
+      "@id": "http://www.w3.org/ns/pim/space#storage",
+      "@type": "@id"
+    },
+    "foaf:img": {
+      "@id": "http://xmlns.com/foaf/0.1/img",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://dbpedia.org/resource/James_Hendler",
+      "foaf:name": "James Alexander Hendler"
+    },
+    {
+      "@id": "http://dbpedia.org/resource/Luc_Moreau",
+      "foaf:name": "Luc Moreau"
+    },
+    {
+      "@id": "http://dbpedia.org/resource/Michael_Genesereth",
+      "foaf:name": "Michael Genesereth"
+    },
+    {
+      "@id": "http://harth.org/andreas/foaf#ah",
+      "solid:oidcIssuer": "https://solid.iis.fraunhofer.de/",
+      "foaf:name": "Andreas Harth"
+    },
+    {
+      "@id": "http://harth.org/andreas/foaf#rene",
+      "foaf:name": "Rene Schubotz"
+    },
+    {
+      "@id": "http://harth.org/andreas/foaf#tim",
+      "foaf:name": "Tim Clark"
+    },
+    {
+      "@id": "http://harth.org/andreas/foaf#tony",
+      "foaf:name": "Tony Shaw"
+    },
+    {
+      "@id": "https://adrianperezmanso.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://adrianperezmanso.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Adrián"
+    },
+    {
+      "@id": "https://aharth.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://aharth.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Andreas Harth"
+    },
+    {
+      "@id": "https://alejandroj.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://alejandroj.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Alejandro"
+    },
+    {
+      "@id": "https://angelo.veltens.org/profile/card#me",
+      "pim:storage": [
+        "https://angelo.veltens.org/",
+        "https://angelo.veltens.org/private/",
+        "https://angelo.veltens.org/public/",
+        "https://solidweb.me/aveltens/"
+      ],
+      "solid:oidcIssuer": "https://angelo.veltens.org/",
+      "foaf:img": "https://angelo.veltens.org/profile/me.jpg",
+      "foaf:name": "Angelo Veltens"
+    },
+    {
+      "@id": "https://arthurlogilab.solidcommunity.net/profile/card#me",
+      "solid:oidcIssuer": "https://solidcommunity.net/"
+    },
+    {
+      "@id": "https://arthurlogilab.solidweb.org/profile/card#me",
+      "pim:storage": "https://arthurlogilab.solidweb.org/",
+      "solid:oidcIssuer": "https://https://solidweb.org",
+      "foaf:name": "Arthur Lutz (Logilab)"
+    },
+    {
+      "@id": "https://benoitferchaud.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://benoitferchaud.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Benoît Ferchaud"
+    },
+    {
+      "@id": "https://bourgeoa.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://bourgeoa.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Alain Bourgeois"
+    },
+    {
+      "@id": "https://bourgeoa1.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://bourgeoa1.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "bourgeoa1"
+    },
+    {
+      "@id": "https://carloss.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://carloss.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "carloss"
+    },
+    {
+      "@id": "https://cdr.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://cdr.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Château des Robots"
+    },
+    {
+      "@id": "https://chunt.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://chunt.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Chase"
+    },
+    {
+      "@id": "https://ciaoquentin.solidweb.org/profile/card#me",
+      "pim:storage": "https://ciaoquentin.solidweb.org/",
+      "solid:oidcIssuer": "https://solidweb.org",
+      "foaf:name": "Quentin"
+    },
+    {
+      "@id": "https://data.knows.idlab.ugent.be/person/SindhuVasireddy/#me",
+      "solid:oidcIssuer": "https://svasired.pod.knows.idlab.ugent.be/",
+      "foaf:img": "https://data.knows.idlab.ugent.be/person/SindhuVasireddy/sv.jpg"
+    },
+    {
+      "@id": "https://dewomser.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://dewomser.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Stefan Höhn"
+    },
+    {
+      "@id": "https://doctorbud.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://doctorbud.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Daniel Keith"
+    },
+    {
+      "@id": "https://ejbyne.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://ejbyne.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Edward Byne"
+    },
+    {
+      "@id": "https://ericp.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://ericp.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Eric Prud'hommeaux"
+    },
+    {
+      "@id": "https://ewingson.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://ewingson.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Matthias Evering"
+    },
+    {
+      "@id": "https://gaia.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://gaia.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Gaia"
+    },
+    {
+      "@id": "https://holacratie.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://holacratie.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Holacratie"
+    },
+    {
+      "@id": "https://jackson.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://jackson.solidcommunity.net/",
+      "solid:oidcIssuer": [
+        "http://localhost:3000/",
+        "https://solidcommunity.net/"
+      ],
+      "foaf:name": "Jackson"
+    },
+    {
+      "@id": "https://jacobdaniel.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://jacobdaniel.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Jacob"
+    },
+    {
+      "@id": "https://jeff-zucker.solidcommunity.net/profile/card#me",
+      "pim:storage": [
+        "http://localhost:3101/",
+        "https://jeff-zucker.solidcommunity.net:8443/",
+        "https://jeff-zucker.solidcommunity.net/",
+        "https://jeffzucker.inrupt.net/",
+        "https://solidproject.solidcommunity.net/"
+      ],
+      "solid:oidcIssuer": [
+        "http://localhost:3000/",
+        "https://solidcommunity.net/"
+      ],
+      "foaf:name": "Jeff Zucker"
+    },
+    {
+      "@id": "https://jeswr.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://jeswr.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Jesse Wright"
+    },
+    {
+      "@id": "https://jollyorc.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://jollyorc.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Christian Buggedei"
+    },
+    {
+      "@id": "https://kidehen2.solid.openlinksw.com:8444/profile/card#me",
+      "pim:storage": "https://kidehen2.solid.openlinksw.com:8444/",
+      "solid:oidcIssuer": "https://solid.openlinksw.com:8444",
+      "foaf:name": "Kingsley Idehen (kidehen2-844 solid grounded)"
+    },
+    {
+      "@id": "https://kidehen3.solid.openlinksw.com:8444/profile/card#me",
+      "pim:storage": "https://kidehen3.solid.openlinksw.com:8444/",
+      "solid:oidcIssuer": "https://solid.openlinksw.com:8444",
+      "foaf:name": "Kingsley Idehen"
+    },
+    {
+      "@id": "https://melvin.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://melvin.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Melvin Carvalho"
+    },
+    {
+      "@id": "https://michielbdejong.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://michielbdejong.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Michiel B. de Jong bla"
+    },
+    {
+      "@id": "https://morettian.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://morettian.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Giulio"
+    },
+    {
+      "@id": "https://nada.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://nada.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Nada"
+    },
+    {
+      "@id": "https://noeldemartin.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://noeldemartin.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Noel De Martin"
+    },
+    {
+      "@id": "https://paula.veltens.org/profile/card#me",
+      "solid:oidcIssuer": "https://paula.veltens.org/"
+    },
+    {
+      "@id": "https://pduchesne.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://pduchesne.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Philippe Duchesne"
+    },
+    {
+      "@id": "https://pieterheyvaert.com/#me",
+      "solid:oidcIssuer": "https://pheyvaer.pod.knows.idlab.ugent.be/",
+      "foaf:img": "https://pieterheyvaert.com/img/profile.jpg",
+      "foaf:name": "Pieter Heyvaert"
+    },
+    {
+      "@id": "https://pod-chat.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://pod-chat.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "PodChat"
+    },
+    {
+      "@id": "https://role.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://role.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Role"
+    },
+    {
+      "@id": "https://ruben.verborgh.org/profile/#me",
+      "pim:storage": "https://drive.verborgh.org/",
+      "solid:oidcIssuer": "https://drive.verborgh.org/",
+      "foaf:img": "https://ruben.verborgh.org/images/ruben.jpg",
+      "foaf:name": "Ruben Verborgh"
+    },
+    {
+      "@id": "https://schabot.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://schabot.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Simon Chabot"
+    },
+    {
+      "@id": "https://semweb.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://semweb.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "SemWeb"
+    },
+    {
+      "@id": "https://smag0.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://smag0.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "smag0"
+    },
+    {
+      "@id": "https://solidos.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://solidos.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Solid Open Source Operating System"
+    },
+    {
+      "@id": "https://solidproject.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://solidproject.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Tim"
+    },
+    {
+      "@id": "https://spoggy-test.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://spoggy-test.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Spoggy-Test"
+    },
+    {
+      "@id": "https://spoggy-test.solidweb.org/profile/card#me",
+      "pim:storage": "https://spoggy-test.solidweb.org/",
+      "solid:oidcIssuer": "https://https://solidweb.org",
+      "foaf:name": "Spoggy-Test"
+    },
+    {
+      "@id": "https://spoggy-test2.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://spoggy-test2.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Spoggy-Test2"
+    },
+    {
+      "@id": "https://spoggy-test3.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://spoggy-test3.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Spoggy-Test3"
+    },
+    {
+      "@id": "https://spoggy-test4.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://spoggy-test4.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Spoggy-Test4"
+    },
+    {
+      "@id": "https://spoggy-test5.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://spoggy-test5.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "spoggy-test5"
+    },
+    {
+      "@id": "https://spoggy-test6.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://spoggy-test6.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "spoggy-test6"
+    },
+    {
+      "@id": "https://spoggy-test7.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://spoggy-test7.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "spoggy-test7"
+    },
+    {
+      "@id": "https://spoggy-test8.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://spoggy-test8.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "spoggy-test8"
+    },
+    {
+      "@id": "https://spoggy-test9.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://spoggy-test9.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "spoggy-test9"
+    },
+    {
+      "@id": "https://spoggy.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://spoggy.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Spoggy"
+    },
+    {
+      "@id": "https://spoggy.solidweb.org/profile/card#me",
+      "pim:storage": "https://spoggy.solidweb.org/",
+      "solid:oidcIssuer": "https://https://solidweb.org",
+      "foaf:name": "Spoggy"
+    },
+    {
+      "@id": "https://srs.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://srs.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Stefan Rother-Stuebs"
+    },
+    {
+      "@id": "https://tension.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://tension.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Tension"
+    },
+    {
+      "@id": "https://teodora.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://teodora.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Teodora Petkova"
+    },
+    {
+      "@id": "https://testingsolidos.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://testingsolidos.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Testing SolidOS"
+    },
+    {
+      "@id": "https://timbl.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://timbl.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "Tim Berners-Lee (solidcommunity.net)"
+    },
+    {
+      "@id": "https://timea.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://timea.solidcommunity.net/",
+      "solid:oidcIssuer": [
+        "https://solidcommunity.net/",
+        "https://teamid.live/"
+      ],
+      "foaf:name": "Timea Turdean"
+    },
+    {
+      "@id": "https://touchepasamapizza.solidcommunity.net/profile/card#me",
+      "pim:storage": "https://touchepasamapizza.solidcommunity.net/",
+      "solid:oidcIssuer": "https://solidcommunity.net/",
+      "foaf:name": "touchepasamapizza"
+    },
+    {
+      "@id": "https://uvdsl.solid.aifb.kit.edu/profile/card#me",
+      "pim:storage": "https://uvdsl.solid.aifb.kit.edu/",
+      "solid:oidcIssuer": "https://solid.aifb.kit.edu/",
+      "foaf:name": "Christoph Braun"
+    },
+    {
+      "@id": "https://www.ivan-herman.net/foaf#me",
+      "foaf:img": "https://www.ivan-herman.net/Images/me2014-small.jpg",
+      "foaf:name": [
+        "Ivan Herman",
+        "Herman Iván"
+      ]
+    },
+    {
+      "@id": "https://www.thundr.be/profile/laurens.ttl#me",
+      "foaf:img": "https://www.thundr.be/img/laurens.jpg",
+      "foaf:name": "Laurens Debackere"
+    },
+    {
+      "@id": "https://www.w3.org/People/Berners-Lee/card#i",
+      "pim:storage": [
+        "https://timbl.com/timbl/Public/",
+        "https://timbl.inrupt.net/",
+        "https://timbl.solid.community/"
+      ],
+      "solid:oidcIssuer": "https://timbl.com",
+      "foaf:img": "https://www.w3.org/Press/Stock/Berners-Lee/2001-europaeum-eighth.jpg",
+      "foaf:name": "Timothy Berners-Lee"
+    }
+  ]
+}

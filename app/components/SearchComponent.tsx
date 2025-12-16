@@ -1,11 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface WebIDResult {
   webid: string;
   name: string;
-  content: string;
+  img: string | null;
 }
 
 interface SearchResults {
@@ -103,20 +104,33 @@ export default function SearchComponent() {
                   key={result.webid}
                   className="p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-lg transition-shadow"
                 >
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
-                    {result.name}
-                  </h3>
-                  <a
-                    href={result.webid}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 hover:underline mb-3 block"
-                  >
-                    {result.webid}
-                  </a>
-                  <p className="text-gray-700 dark:text-gray-300">
-                    {result.content}
-                  </p>
+                  <div className="flex items-start gap-4">
+                    {result.img && (
+                      <div className="flex-shrink-0">
+                        <Image
+                          src={result.img}
+                          alt={`Profile picture of ${result.name}`}
+                          width={64}
+                          height={64}
+                          className="rounded-full object-cover"
+                          unoptimized
+                        />
+                      </div>
+                    )}
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+                        {result.name}
+                      </h3>
+                      <a
+                        href={result.webid}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 dark:text-blue-400 hover:underline break-all"
+                      >
+                        {result.webid}
+                      </a>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
