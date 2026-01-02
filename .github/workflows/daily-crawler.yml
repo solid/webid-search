@@ -82,7 +82,7 @@ jobs:
         run: |
           gh pr merge --auto --squash "${{ steps.create_pr.outputs.pull-request-number }}"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       
       - name: Summary
         if: steps.check_changes.outputs.has_changes == 'true'
