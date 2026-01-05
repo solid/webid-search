@@ -1,5 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+// CORS headers to allow all origins
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+  'Access-Control-Allow-Headers': '*',
+};
+
+// Helper function to add CORS headers to a response
+function addCorsHeaders(response: NextResponse): NextResponse {
+  for (const [key, value] of Object.entries(corsHeaders)) {
+    response.headers.set(key, value);
+  }
+  return response;
+}
+
 function getPreferredContentType(acceptHeader: string | null): 'turtle' | 'jsonld' | 'json' | 'html' {
   if (!acceptHeader) return 'html';
   
@@ -43,9 +58,17 @@ function getPreferredContentType(acceptHeader: string | null): 'turtle' | 'jsonl
 export function proxy(request: NextRequest) {
   const { pathname, searchParams } = request.nextUrl;
   
-  // Only handle the root path
+  // Handle preflight OPTIONS requests
+  if (request.method === 'OPTIONS') {
+    return new NextResponse(null, {
+      status: 204,
+      headers: corsHeaders,
+    });
+  }
+  
+  // Only handle content negotiation for the root path
   if (pathname !== '/') {
-    return NextResponse.next();
+    return addCorsHeaders(NextResponse.next());
   }
   
   const acceptHeader = request.headers.get('Accept');
@@ -63,13 +86,14 @@ export function proxy(request: NextRequest) {
     }
     url.searchParams.set('format', format);
     
-    return NextResponse.rewrite(url);
+    return addCorsHeaders(NextResponse.rewrite(url));
   }
   
   // For HTML requests, let the page render normally
-  return NextResponse.next();
+  return addCorsHeaders(NextResponse.next());
 }
 
 export const config = {
-  matcher: '/',
+  // Match all routes for CORS headers
+  matcher: '/(.*)',
 };
