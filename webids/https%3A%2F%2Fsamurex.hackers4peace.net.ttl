@@ -1,7 +1,4 @@
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX solid: <http://www.w3.org/ns/solid/terms#>
 
-<https://samurex.hackers4peace.net>
-    a foaf:Person ;
-    foaf:name "Maciej Samoraj" ;
-    solid:oidcIssuer <https://oidc.hackers4peace.net/> .
+<https://samurex.hackers4peace.net> <http://www.w3.org/ns/solid/interop#hasRegistrySet> <https://reg.hackers4peace.net/samurex/> ;
+  <http://www.w3.org/ns/solid/interop#hasAuthorizationAgent> <https://auth.hackers4peace.net/.sai/agents/aHR0cHM6Ly9zYW11cmV4LmhhY2tlcnM0cGVhY2UubmV0> ;
+  <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://auth.hackers4peace.net/> .
