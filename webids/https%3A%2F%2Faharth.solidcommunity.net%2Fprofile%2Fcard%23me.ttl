@@ -39,7 +39,7 @@ pro:card a foaf:PersonalProfileDocument;
     solid:account <https://aharth.solidcommunity.net/>;
     solid:privateTypeIndex <https://aharth.solidcommunity.net/settings/privateTypeIndex.ttl>;
     solid:publicTypeIndex <https://aharth.solidcommunity.net/settings/publicTypeIndex.ttl>;
-    foaf:name "Andreas Harth";
+    foaf:name "Andreas Harth"@de;
     pmx:cupa <https://cupa.solidweb.org/profile/card#me> ;
     vcard:hasPhoto <https://aharth.solidcommunity.net/profile/Image_1758320685181.png>.
 _:n3-834 solid:oidcIssuer <https://solidcommunity.net/>;
