@@ -11,6 +11,7 @@
 @prefix mrk: </>.
 @prefix c: <https://mrkvon.solidcommunity.net/profile/card#>.
 @prefix www: <https://www.pod-chat.com/>.
+@prefix ent: <http://www.wikidata.org/entity/>.
 
 pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
 
@@ -40,6 +41,10 @@ pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
             [
                 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
                 acl:origin <https://penny.vincenttunru.com>
+            ],
+            [
+                acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+                acl:origin <https://tired.bike>
             ],
             [
                 acl:mode acl:Append, acl:Read, acl:Write;
@@ -85,7 +90,8 @@ pro:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
     solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
     solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
     foaf:knows c:me;
-    foaf:name "Michal".
+    foaf:name "Michal";
+    foaf:topic_interest ent:Q131436 .
 www:RSAPublicKey
     sioc:content_encoded
         "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA6BhT2WYmxHvjQZWjJIhKLOC1KmsTMtxAWFb5PtdzKeS8S7s6iibPdcAamQi7+46X/okWcmrsEJCfPPecQ3cyKRp2j6JqJp1kl+0wZBGA1bc32b+wzi31pgJpmThSCG7wMtj9zKd7Ka5EzRrn+pXm7rOOs78e3tJvJ6qvEoInO/nfVs2O1Ixj1vFCSVTo2AUTJcbpI4ZB6l37nQZO5CO2ACG4Mi3UvXvwdqb2NdZs1++VcpTs0xuVL/7/saG22dF5n+sKgN450fPB4hdvyGnL36W2ODS0f2+b3jdDtVAwMFPynDA3tCyON1Qw+GOxjLUbE4UgSd7tz7C/oKobK4151NCGz1dk4aQLMRW48EfGWwjxOgZiNKwq+VqhbjkOoVrKxaEu2H/rcR7ar5BPgrf+C22qhPqi49uu4gPFwGdpYSg/eS/7R7YNRmuNK9HtGtcE5zirtTnijqHggsu8TcRrIYLUjxMBFwmLLWeC0DJch2TEnl1aAbbHDJIkI2pWqKnGLNxXddcgxn6wUp6a2Zc6VDbkW2viEaMfGE80SC02BiBYZpBhwEtvXsB0JGEPjKNfcAud13RE1PkiuwmPN8tXqUR7MM5HrTE++hTht1g8AiEQgKkwImd5lkgCqC04ExkT5hIzYVgPirzywOfc+e8+FqybEOwYGQdGeQbofs3CXY8CAwEAAQ==".
