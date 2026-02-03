@@ -3,21 +3,22 @@
 @prefix space: <http://www.w3.org/ns/pim/space#>.
 @prefix ldp: <http://www.w3.org/ns/ldp#>.
 @prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@base <https://data.mrkvon.org/profile/card>.
 
-<https://data.mrkvon.org/profile/card> a foaf:PersonalProfileDocument;
+<> a foaf:PersonalProfileDocument;
     foaf:maker <https://id.mrkvon.org>;
     foaf:primaryTopic <https://id.mrkvon.org>.
 <https://id.mrkvon.org> a foaf:Person;
     foaf:name "michal";
-    solid:oidcIssuer <https://data.mrkvon.org/>, <https://ap.mrkvon.org>;
-    space:storage <https://data.mrkvon.org/>;
-    space:preferencesFile <https://data.mrkvon.org/settings/prefs.ttl>;
-    ldp:inbox <https://data.mrkvon.org/inbox/>;
-    foaf:knows <https://grouptest2.solidcommunity.net/profile/card#me>, <https://mrkvon.solidcommunity.net/profile/card#me>, <https://grouptest1.solidcommunity.net/profile/card#me>, <https://mariha.solidcommunity.net/profile/card#me>, <https://dzikudzik.solidcommunity.net/profile/card#me>, <https://testsleepybike.solidcommunity.net/profile/card#me>, <https://talita-dzik.solidcommunity.net/profile/card#me>, <https://srosset.solidcommunity.net/profile/card#me>, <https://pod.liquid.surf/thhck/profile/card#me>;
-    solid:publicTypeIndex <https://data.mrkvon.org/settings/publicTypeIndex.ttl>;
-    solid:privateTypeIndex <https://data.mrkvon.org/settings/privateTypeIndex.ttl>;
-    acl:trustedApp _:b3135_b9851_b79526_b75347_b61202_b61195_b53009_b53002_b52993_b52986_b52979_b52972_b52915_b52908_b52793_b52786_b52685_b52607_b52600_b52593_b52243_b49183_b49070_b49056_b49049_b48980_b48971_b47074_b47067_b47016_b39661_b39419_b35361_b35223_b35184_n3-3347;
-    foaf:topic_interest <http://www.wikidata.org/entity/Q2373919>, <http://www.wikidata.org/entity/Q177634>, <http://www.wikidata.org/entity/Q1145523>, <http://www.wikidata.org/entity/Q8355>, <http://www.wikidata.org/entity/Q58697>, <http://www.wikidata.org/entity/Q55408718>, <http://www.wikidata.org/entity/Q2979>, <http://www.wikidata.org/entity/Q181138>, <http://www.wikidata.org/entity/Q520867>, <http://www.wikidata.org/entity/Q1110145>, <http://www.wikidata.org/entity/Q9350>, <http://www.wikidata.org/entity/Q131327>, <http://www.wikidata.org/entity/Q76611>, <http://www.wikidata.org/entity/Q1000032>, <http://www.wikidata.org/entity/Q22908619>, <http://www.wikidata.org/entity/Q27098516>, <http://www.wikidata.org/entity/Q7860>, <http://www.wikidata.org/entity/Q31920>, <http://www.wikidata.org/entity/Q564606>, <http://www.wikidata.org/entity/Q116423243>, <http://www.wikidata.org/entity/Q188961>, <http://www.wikidata.org/entity/Q6388>, <http://www.wikidata.org/entity/Q454>;
-    <https://soap.example/activitypub#hasActor> <https://data.mrkvon.org/martin_beta/profile/actor>.
-_:b3135_b9851_b79526_b75347_b61202_b61195_b53009_b53002_b52993_b52986_b52979_b52972_b52915_b52908_b52793_b52786_b52685_b52607_b52600_b52593_b52243_b49183_b49070_b49056_b49049_b48980_b48971_b47074_b47067_b47016_b39661_b39419_b35361_b35223_b35184_n3-3347 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
+    solid:oidcIssuer <../>, <https://ap.mrkvon.org>;
+    space:storage <../>;
+    space:preferencesFile <../settings/prefs.ttl>;
+    ldp:inbox <../inbox/>;
+    foaf:knows <https://grouptest2.solidcommunity.net/profile/card#me>, <https://mrkvon.solidcommunity.net/profile/card#me>, <https://grouptest1.solidcommunity.net/profile/card#me>, <https://mariha.solidcommunity.net/profile/card#me>, <https://dzikudzik.solidcommunity.net/profile/card#me>, <https://testsleepybike.solidcommunity.net/profile/card#me>, <https://talita-dzik.solidcommunity.net/profile/card#me>, <https://srosset.solidcommunity.net/profile/card#me>, <https://pod.liquid.surf/thhck/profile/card#me>, <https://fdsa.solidcommunity.net/profile/card#me>;
+    solid:publicTypeIndex <../settings/publicTypeIndex.ttl>;
+    solid:privateTypeIndex <../settings/privateTypeIndex.ttl>;
+    acl:trustedApp _:b2331_b53440_b19733_b19726_b19719_b14944_b6740_b6034_b3135_b9851_b79526_b75347_b61202_b61195_b53009_b53002_b52993_b52986_b52979_b52972_b52915_b52908_b52793_b52786_b52685_b52607_b52600_b52593_b52243_b49183_b49070_b49056_b49049_b48980_b48971_b47074_b47067_b47016_b39661_b39419_b35361_b35223_b35184_n3-3347;
+    foaf:topic_interest <http://www.wikidata.org/entity/Q2373919>, <http://www.wikidata.org/entity/Q177634>, <http://www.wikidata.org/entity/Q1145523>, <http://www.wikidata.org/entity/Q8355>, <http://www.wikidata.org/entity/Q58697>, <http://www.wikidata.org/entity/Q55408718>, <http://www.wikidata.org/entity/Q2979>, <http://www.wikidata.org/entity/Q181138>, <http://www.wikidata.org/entity/Q520867>, <http://www.wikidata.org/entity/Q1110145>, <http://www.wikidata.org/entity/Q9350>, <http://www.wikidata.org/entity/Q131327>, <http://www.wikidata.org/entity/Q76611>, <http://www.wikidata.org/entity/Q1000032>, <http://www.wikidata.org/entity/Q22908619>, <http://www.wikidata.org/entity/Q27098516>, <http://www.wikidata.org/entity/Q7860>, <http://www.wikidata.org/entity/Q564606>, <http://www.wikidata.org/entity/Q116423243>, <http://www.wikidata.org/entity/Q188961>, <http://www.wikidata.org/entity/Q6388>, <http://www.wikidata.org/entity/Q454>, <http://www.wikidata.org/entity/Q39760>, <http://www.wikidata.org/entity/Q23792>, <http://www.wikidata.org/entity/Q219060>, <http://www.wikidata.org/entity/Q2987018>;
+    <https://soap.example/activitypub#hasActor> <../martin_beta/profile/actor>.
+_:b2331_b53440_b19733_b19726_b19719_b14944_b6740_b6034_b3135_b9851_b79526_b75347_b61202_b61195_b53009_b53002_b52993_b52986_b52979_b52972_b52915_b52908_b52793_b52786_b52685_b52607_b52600_b52593_b52243_b49183_b49070_b49056_b49049_b48980_b48971_b47074_b47067_b47016_b39661_b39419_b35361_b35223_b35184_n3-3347 acl:mode acl:Append, acl:Control, acl:Read, acl:Write;
     acl:origin <https://tired.bike>.
