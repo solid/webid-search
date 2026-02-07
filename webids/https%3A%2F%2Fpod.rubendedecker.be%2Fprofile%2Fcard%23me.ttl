@@ -27,7 +27,7 @@
     foaf:givenName "Ruben"@en;
     foaf:familyName "Dedecker"@en;
     foaf:age "27"^^xsd:integer;
-    foaf:knows <https://patrickhochstenbach.net/profile/card#me>, <https://pietercolpaert.be/#me>, <https://ruben.verborgh.org/profile/#me>, <https://pieterheyvaert.com/#me>, <http://www.rubensworks.net/#me>, <http://ben.de-meester.org/#me>, <https://josd.github.io/card.ttl#me>, <https://solid.smessie.com/profile/card#me>;
+    foaf:knows <https://patrickhochstenbach.net/profile/card#me>, <https://pietercolpaert.be/#me>, <https://pieterheyvaert.com/#me>, <http://www.rubensworks.net/#me>, <http://ben.de-meester.org/#me>, <https://josd.github.io/card.ttl#me>, <https://solid.smessie.com/profile/card#me>;
     vcard:title "PhD Student";
     foaf:mbox <mailto:Ruben.Dedecker@UGent.be>;
     foaf:img <https://pod.rubendedecker.be/profile/image.png>;
