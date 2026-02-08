@@ -16,7 +16,6 @@
 @prefix c9: <https://talita.solidcommunity.net/profile/card#>.
 @prefix mrk: </>.
 @prefix fri: </friend-requests-inbox/>.
-@prefix pr: <./>.
 @prefix inb: </inbox/>.
 @prefix res: <http://dbpedia.org/resource/>.
 @prefix ent: <http://www.wikidata.org/entity/>.
@@ -27,10 +26,14 @@
 @prefix c2: <https://grouptest2.solidcommunity.net/profile/card#>.
 @prefix c4: <https://vcxy.solidcommunity.net/profile/card#>.
 @prefix n1: <https://www.w3.org/TR/activitypub/#>.
+@prefix set: </settings/>.
+@prefix math: </private/math/>.
+@prefix mat: </public/math/>.
+@prefix test: </public/math/test/>.
 
 fr:this ldp:inbox fri: .
 
-pr:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
+<> a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
 
 :me
     a schema:Person, foaf:Person;
@@ -266,7 +269,7 @@ pr:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
             ],
         [ acl:mode acl:Read; acl:origin <https://solidweb.me> ];
     ldp:inbox inb:;
-    space:preferencesFile </settings/prefs.ttl>;
+    space:preferencesFile set:prefs.ttl;
     space:storage mrk:;
     solid:account mrk:;
     solid:oidcIssuer so:;
@@ -274,8 +277,8 @@ pr:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
         "3f02ab96-bd0c-4933-971b-f3eb3c99487d",
         "7108e24a-bf3f-4d46-aa47-fa924938912c",
         "97071033-c0be-4aa8-bebd-e5bfae06c5bb";
-    solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
-    solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+    solid:privateTypeIndex set:privateTypeIndex.ttl;
+    solid:publicTypeIndex set:publicTypeIndex.ttl;
     foaf:account ( :id1764660797920 );
     foaf:img "/profile/9b87d930-ad4a-11ed-8937-df0b96824124.jpeg";
     foaf:knows
@@ -283,16 +286,15 @@ pr:card a foaf:PersonalProfileDocument; foaf:maker :me; foaf:primaryTopic :me.
         c3:me, c4:me;
     foaf:name "Janka";
     foaf:topic_interest
-        res:Homelessness, res:Wild_boar, ent:Q1000032, ent:Q1145523, ent:Q12029,
-        ent:Q131327, ent:Q131572, ent:Q1513352, ent:Q169940, ent:Q177634,
-        ent:Q188728, ent:Q2373919, ent:Q2979, ent:Q2987018, ent:Q395, ent:Q454,
+        res:Homelessness, res:Wild_boar, ent:Q1000032, ent:Q106498513,
+        ent:Q1145523, ent:Q12029, ent:Q131327, ent:Q131572, ent:Q1513352,
+        ent:Q169940, ent:Q177634, ent:Q188728, ent:Q214912, ent:Q2294523,
+        ent:Q2373919, ent:Q2979, ent:Q2987018, ent:Q395, ent:Q454,
         ent:Q55408718, ent:Q564606, ent:Q58697, ent:Q6199, ent:Q831735,
         ent:Q8355, ent:Q90614242;
     ter:storage
-        </private/math/index.ttl>, </public/math/category.ttl>,
-        </public/math/category2.ttl>, </public/math/index.ttl>,
-        </public/math/test/asdf.ttl>, </public/math/test/test.ttl>,
-        </public/math/test/test2.ttl>, </public/math/test/test3.ttl>;
+        math:index.ttl, mat:category.ttl, mat:category2.ttl, mat:index.ttl,
+        test:asdf.ttl, test:test.ttl, test:test2.ttl, test:test3.ttl;
     lp:lpStorage mrk:linkedpipes;
     n1:following fr:this;
     <urn:podtok:core#userInfo> :userInfo.
